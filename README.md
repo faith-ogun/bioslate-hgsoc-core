@@ -1,10 +1,7 @@
-# Bioslate: Synthetic Lethality in HGSOC
-
-## 🔬 Project Title
-**Bioslate: Synthetic Lethality and Target Prioritisation in High-Grade Serous Ovarian Cancer (HGSOC)**
+# BioSLATE: Biomarker Selection and Synthetic Lethality Analysis for Therapeutic Exploration in HGSOC
 
 ## 🧠 Description
-This repository contains all code, documentation, and deliverables from a 10-week consulting engagement led by **Oncydra**, in collaboration with **Breakthrough Cancer Research**. The objective of this project was to identify and prioritise clinically actionable synthetic lethal gene pairs in HGSOC using publicly available multi-omics data and CRISPR screens.
+This repository contains all code, documentation, and deliverables from a 10-week research project, led by Dr. Colm Ryan at University College Dublin (UCD), in collaboration with **Breakthrough Cancer Research**. The objective of this project was to identify and prioritise clinically actionable synthetic lethal gene pairs in HGSOC using publicly available multi-omics data and CRISPR screens.
 
 ## 🚀 Objectives
 - Identify recurrent genomic alterations (biomarkers) in HGSOC
@@ -17,7 +14,7 @@ This repository contains all code, documentation, and deliverables from a 10-wee
 ## 📁 Repository Structure
 
 ```
-bioslate-hgsoc-sl/
+bioslate-hgsoc-core/
 ├── data/                   # Cleaned and processed input data (non-sensitive)
 ├── notebooks/              # Jupyter notebooks for each analysis phase
 ├── scripts/                # Python and R scripts for reproducible workflows
@@ -36,8 +33,8 @@ bioslate-hgsoc-sl/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/bioslate-hgsoc-sl.git
-cd bioslate-hgsoc-sl
+git clone https://github.com/faith-ogun/bioslate-hgsoc-core.git
+cd bioslate-hgsoc-core
 ```
 
 ### 2. Create environment
@@ -101,8 +98,10 @@ A lay-friendly summary and patient feedback loop were integrated into the resear
 
 ## 👥 Contributors
 
-- **Faith [Your Full Name]** – Principal Consultant, Oncydra  
-- **Breakthrough Cancer Research** – Client & Research Sponsor  
+- **Faith Ogundimu** – Undergraduate (now Postgraduate) Researcher funded by Breakthrough Cancer Research
+- **Supervisor** - Associate Professor Colm Ryan
+- **Postdoctoral Researcher** (Mentor) - Dr. Metin Yazar
+- **Breakthrough Cancer Research** – Funding Body (Grant Code: SUMSCH037)   
 - PPI Panel (anonymous) – Feedback on priorities and communication
 
 ---
@@ -115,10 +114,7 @@ This repository is licensed for non-commercial academic/research use. See `LICEN
 
 ## 📫 Contact
 
-**Oncydra Consulting**  
-✉️ hello@oncydra.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/YOUR_PROFILE)  
-🌐 www.oncydra.com (coming soon)
+🔗 [LinkedIn]([https://www.linkedin.com/in/YOUR_PROFILE](https://www.linkedin.com/in/faith-ogundimu-3895421b9/))  
 
 ---
 
@@ -126,4 +122,4 @@ This repository is licensed for non-commercial academic/research use. See `LICEN
 
 If you use this project or analysis approach in your work, please cite:
 
-> Oncydra Consulting. *Bioslate: Synthetic Lethality in HGSOC*. 2025. In collaboration with Breakthrough Cancer Research.
+(_Coming soon_)
