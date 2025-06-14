@@ -114,8 +114,7 @@ This repository is licensed for non-commercial academic/research use. See `LICEN
 
 ## 📫 Contact
 
-🔗 [LinkedIn](https://www.linkedin.com/in/faith-ogundimu-3895421b9/)  
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/faith-ogundimu-3895421b9)
 ---
 
 ## 🧭 Citation / Acknowledgement
