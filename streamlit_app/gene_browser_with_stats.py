@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Gene Biomarker Explorer", layout="wide")
 
 # Load data
-merged_df = pd.read_csv("data/cnv_prot_boxplot.csv")
-stats_df = pd.read_csv("data/per_gene_stats_filtered.csv")
+merged_df = pd.read_csv("streamlit_app/data/cnv_prot_boxplot.csv")
+stats_df = pd.read_csv("streamlit_app/data/per_gene_stats_filtered.csv")
 
 # Sidebar: filtering
 st.sidebar.title("🔍 Filter Options")
