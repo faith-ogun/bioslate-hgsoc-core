@@ -1,2 +1,3 @@
 ### Large Database files that probably won't upload
 database_files/
+.DS_Store
