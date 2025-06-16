@@ -1,3 +1,4 @@
 ### Large Database files that probably won't upload
 database_files/
 results/per_gene_boxplots
+streamlit_app/gene_browser_with_stats_home.py
