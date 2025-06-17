@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Set page config
 st.set_page_config(page_title="Gene Biomarker Explorer", layout="wide")
 
-# Load data
+# Load data - GitHub
 merged_df = pd.read_csv("streamlit_app/data/cnv_prot_boxplot.csv")
 stats_df = pd.read_csv("streamlit_app/data/per_gene_stats_filtered.csv")
 
@@ -15,6 +15,7 @@ st.sidebar.title("🔍 Filter Options")
 p_thresh = st.sidebar.slider("P-value cutoff", 0.0, 0.1, 0.05, 0.005)
 d_thresh = st.sidebar.slider("Effect size (Cohen’s d)", 0.0, 2.0, 0.3, 0.1)
 
+# Drop NaN values
 filtered_stats = stats_df.dropna(subset=[
     "P-value (Amplification vs Neutral)", 
     "P-value (Deletion vs Neutral)",
@@ -22,6 +23,7 @@ filtered_stats = stats_df.dropna(subset=[
     "Cohen's d (Deletion vs Neutral)"
 ])
 
+# Filtering criteria
 filtered_stats = filtered_stats[
     ((filtered_stats["P-value (Amplification vs Neutral)"] < p_thresh) & 
      (filtered_stats["Cohen's d (Amplification vs Neutral)"].abs() >= d_thresh)) |
@@ -29,6 +31,7 @@ filtered_stats = filtered_stats[
      (filtered_stats["Cohen's d (Deletion vs Neutral)"].abs() >= d_thresh))
 ]
 
+# Find the more significant p-value
 filtered_stats["Min P-value"] = filtered_stats[[
     "P-value (Amplification vs Neutral)", 
     "P-value (Deletion vs Neutral)"
@@ -71,8 +74,12 @@ else:
 
     col1, col2 = st.columns(2)
 
+    # Loop through two columns (col1, col2) and the selected genes (gene1, gene2)
     for col, gene in zip([col1, col2], [gene1, gene2]):
+    # Filter merged_df to get data for the current gene
         gene_df = merged_df[merged_df["Gene"] == gene]
+    
+    # Get the stats row for the current gene
         gene_stats = stats_df[stats_df["Gene"] == gene].iloc[0]
 
         col.markdown(f"### 🧬 {gene}")
