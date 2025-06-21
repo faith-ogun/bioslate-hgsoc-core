@@ -1,5 +1,6 @@
 ### Large Database files that probably won't upload
 database_files/
-results/per_gene_boxplots
+figures/per_gene_boxplots
 streamlit_app/gene_browser_with_stats_home.py
 streamlit_app/streamlit_ui
+results/candidate_genes_tcga
