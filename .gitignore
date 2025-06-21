@@ -2,3 +2,4 @@
 database_files/
 results/per_gene_boxplots
 streamlit_app/gene_browser_with_stats_home.py
+streamlit_app/streamlit_ui
