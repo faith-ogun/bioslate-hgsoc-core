@@ -32,4 +32,4 @@ with col3:
     st.write("Visualize machine models predictictions on how TCGA PanCancer patients will respond to different cancer therapies.")
 
 st.markdown("---")
-st.markdown("📊 Use the sidebar to navigate between modules.")
+st.markdown("Use the sidebar to navigate between modules.")
