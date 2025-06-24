@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Set page config
-st.set_page_config(page_title="🔎 Gene Explorer")
+st.set_page_config(page_title="Gene Explorer")
 
 st.title("Gene Biomarker Explorer")
 
