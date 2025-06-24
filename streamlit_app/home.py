@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="BioSLATE Home", layout="wide")
+st.set_page_config(page_title="🏠 Home", page_icon="🧬")
 
 # Display logo
 st.image("streamlit_app/assets/bioslate_logo.png", width=500)  # Adjust width as needed
