@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 # Set page config
 st.set_page_config(page_title="Gene Biomarker Explorer", layout="wide")
 
+st.title("Gene Biomarker Explorer")
+
 # Load data - GitHub
 merged_df = pd.read_csv("streamlit_app/data/cnv_prot_boxplot.csv")
 stats_df = pd.read_csv("streamlit_app/data/per_gene_stats_filtered.csv")
