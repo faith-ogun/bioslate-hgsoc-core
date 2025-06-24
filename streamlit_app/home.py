@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="BioSLATE Home", layout="wide")
 
 # Display logo
-st.image("streamlit_app/assets/bioslate_logo.png", width=500)  # Adjust width as needed
+st.image("streamlit_app/assets/bioslate_logo.png", width=250)  # Adjust width as needed
 
 st.subheader("Data-driven Precision Oncology")
 st.markdown(
@@ -17,17 +17,17 @@ st.markdown("### 🚀 Available Modules")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.image("streamlit_app/assets/gene_biomarker.png", width=60)
+    st.image("streamlit_app/assets/gene_biomarker.png", width=300)
     st.markdown("#### Gene Biomarker Dashboard")
     st.write("Visualize multi-omics data to uncover protein-coding genes associated with HGSOC.")
 
 with col2:
-    st.image("streamlit_app/assets/synthetic_lethality.png", width=60)
+    st.image("streamlit_app/assets/synthetic_lethality.png", width=300)
     st.markdown("#### Explore Synthetic Lethality")
     st.write("Identify potential drug targets that exhibit synthetic lethality with cancer-specific mutations.")
 
 with col3:
-    st.image("streamlit_app/assets/responder-non-responder.png", width=60)
+    st.image("streamlit_app/assets/responder-non-responder.png", width=300)
     st.markdown("#### Drug Response Prediction")
     st.write("Visualize machine models predictictions on how TCGA PanCancer patients will respond to different cancer therapies.")
 
