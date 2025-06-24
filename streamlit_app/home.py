@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="BioSLATE Home", layout="wide")
 
 # Display logo
-st.image("streamlit_app/assets/bioslate_logo.png", width=250)  # Adjust width as needed
+st.image("streamlit_app/assets/bioslate_logo.png", width=500)  # Adjust width as needed
 
 st.subheader("Data-driven Precision Oncology")
 st.markdown(
