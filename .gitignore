@@ -5,3 +5,4 @@ streamlit_app/gene_browser_with_stats_home.py
 streamlit_app/streamlit_ui
 results/candidate_genes_tcga
 sandbox/
+results/synthetic_lethality_screen.csv
