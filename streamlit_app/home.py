@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="BioSLATE Home", layout="wide")
 
 # Display logo
-st.image("streamlit_app/assets/bioslate_logo.png", width=280)  # Adjust width as needed
+st.image("streamlit_app/assets/bioslate_logo.png", width=500)  # Adjust width as needed
 
 st.subheader("Data-driven Precision Oncology")
 st.markdown(
@@ -22,7 +22,7 @@ with col1:
     st.write("Visualize multi-omics data to uncover protein-coding genes associated with HGSOC.")
 
 with col2:
-    st.image("assets/synthetic_lethality.png", width=60)
+    st.image("streamlit_app/assets/synthetic_lethality.png", width=60)
     st.markdown("#### Explore Synthetic Lethality")
     st.write("Identify potential drug targets that exhibit synthetic lethality with cancer-specific mutations.")
 
