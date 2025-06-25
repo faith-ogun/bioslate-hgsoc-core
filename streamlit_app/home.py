@@ -12,7 +12,7 @@ st.markdown(
     """
 )
 
-st.markdown("### 🚀 Available Modules")
+st.markdown("### 💡 Insights & Visualisations")
 
 col1, col2, col3 = st.columns(3)
 
