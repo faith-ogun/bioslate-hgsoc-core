@@ -12,6 +12,12 @@ st.markdown(
     """
 )
 
+st.markdown(
+    """
+    **Discover. Decode. Deliver.
+    """
+)
+
 st.markdown("### 💡 Insights & Visualisations")
 
 col1, col2, col3 = st.columns(3)
