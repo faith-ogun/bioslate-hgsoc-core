@@ -17,12 +17,12 @@ st.markdown("### 🚀 Available Modules")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.image("streamlit_app/assets/gene_biomarker.png", width=250)
+    st.image("streamlit_app/assets/gene_biomarker.png", width=150)
     st.markdown("#### Gene Biomarker Dashboard")
     st.write("Visualize multi-omics data to uncover protein-coding genes associated with HGSOC.")
 
 with col2:
-    st.image("streamlit_app/assets/synthetic_lethality.png", width=250)
+    st.image("streamlit_app/assets/synthetic_lethality.png", width=260)
     st.markdown("#### Explore Synthetic Lethality")
     st.write("Identify potential drug targets that exhibit synthetic lethality with cancer-specific mutations.")
 
