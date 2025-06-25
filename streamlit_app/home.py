@@ -6,17 +6,19 @@ st.set_page_config(page_title="BioSLATE Home", layout="wide")
 st.image("streamlit_app/assets/bioslate_logo.png", width=500)  # Adjust width as needed
 
 st.subheader("Data-Driven Precision Oncology")
+
+st.markdown(
+    """
+    **Discover. Decode. Deliver.**
+    """
+)
+
 st.markdown(
     """
     **BioSLATE** is an interactive platform for translational cancer research. It enables the exploration of synthetic lethality, biomarker discovery, and drug response prediction in high-grade serous ovarian cancer (HGSOC) using multi-omics data and AI models.
     """
 )
 
-st.markdown(
-    """
-    **Discover. Decode. Deliver.
-    """
-)
 
 st.markdown("### 💡 Insights & Visualisations")
 
