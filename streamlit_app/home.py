@@ -25,7 +25,7 @@ st.markdown("### 💡 Insights & Visualisations")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.image("streamlit_app/assets/gene_biomarker.png", width=160)
+    st.image("streamlit_app/assets/gene_biomarker.png", width=250)
     st.markdown("#### Gene Protein Explorer")
     st.write(
         "Explore multi-omics data to identify protein-coding genes associated with copy number alterations "
@@ -35,7 +35,7 @@ with col1:
 
 
 with col2:
-    st.image("streamlit_app/assets/synthetic_lethality.png", width=265)
+    st.image("streamlit_app/assets/synthetic_lethality.png", width=270)
     st.markdown("#### Explore Synthetic Lethality")
     st.write("Identify potential drug targets that exhibit synthetic lethality with cancer-specific mutations.")
 
