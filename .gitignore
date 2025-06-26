@@ -6,3 +6,4 @@ streamlit_app/streamlit_ui
 results/candidate_genes_tcga
 sandbox/
 results/synthetic_lethality_screen.csv
+notebooks/pdf/
