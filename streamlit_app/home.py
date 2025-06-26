@@ -35,7 +35,7 @@ with col1:
 
 
 with col2:
-    st.image("streamlit_app/assets/synthetic_lethality.png", width=270)
+    st.image("streamlit_app/assets/synthetic_lethality.png", width=275)
     st.markdown("#### Explore Synthetic Lethality")
     st.write("Identify potential drug targets that exhibit synthetic lethality with cancer-specific mutations.")
 
