@@ -133,26 +133,46 @@ elif mode == "Linear Regression":
         with pc2:
             plot_regression(gene2, cnv_prot_df)
 
-else:
+else:  # Advanced Mode
     st.title("Advanced Mode: CNA vs Protein Correlation")
-    gene_cna = st.selectbox("Select Gene for CNA:", cnv_prot_df["Gene"].unique())
-    gene_prot = st.selectbox("Select Gene for Protein:", cnv_prot_df["Gene"].unique())
 
-    df_cna = cnv_prot_df[cnv_prot_df["Gene"] == gene_cna][["Sample", "CNA"]]
-    df_prot = cnv_prot_df[cnv_prot_df["Gene"] == gene_prot][["Sample", "Protein"]]
-    merged = pd.merge(df_cna, df_prot, on="Sample").dropna()
+    selected_gene = st.selectbox("Select a gene (Entrez ID):", cnv_prot_df["Gene"].unique())
 
-    if len(merged) < 6:
-        st.warning("Not enough samples with data for both genes to perform regression.")
+    df_gene = cnv_prot_df[cnv_prot_df["Gene"] == selected_gene][["Sample", "CNA", "Protein"]].copy()
+
+    # Ensure numeric conversion
+    df_gene["CNA"] = pd.to_numeric(df_gene["CNA"], errors="coerce")
+    df_gene["Protein"] = pd.to_numeric(df_gene["Protein"], errors="coerce")
+
+    df_gene = df_gene.dropna()
+
+    if len(df_gene) < 6:
+        st.warning("Not enough samples with data to perform regression.")
     else:
-        slope, intercept, r_value, p_value, std_err = linregress(merged["CNA"], merged["Protein"])
-        st.write(f"**Slope:** {slope:.3f} | **P-value:** {p_value:.2e} | **R-squared:** {r_value**2:.3f}")
+        slope, intercept, r_value, p_value, std_err = linregress(df_gene["CNA"], df_gene["Protein"])
+        st.markdown("### 📊 Linear Regression Summary")
+        st.write(f"**Regression coefficient (slope):** {slope:.3f}")
+        st.write(f"**P-value:** {p_value:.2e}")
+        st.write(f"**R-squared:** {r_value**2:.3f}")
+
         fig, ax = plt.subplots(figsize=(8, 5))
-        sns.scatterplot(x="CNA", y="Protein", data=merged, ax=ax)
-        ax.plot(np.array(ax.get_xlim()), intercept + slope * np.array(ax.get_xlim()), color="red")
-        ax.set_title(f"CNA of {gene_cna} vs Protein of {gene_prot}")
+        sns.scatterplot(x="CNA", y="Protein", data=df_gene, ax=ax)
+        x_vals = np.array(ax.get_xlim())
+        y_vals = intercept + slope * x_vals
+        ax.plot(x_vals, y_vals, color="red")
+        ax.set_title(f"CNA vs Protein for {selected_gene}")
         st.pyplot(fig)
-        download_button(fig, f"{gene_cna}_{gene_prot}_advanced_regression.png", label="Download Plot")
+
+        # Download button for figure
+        from io import BytesIO
+        buf = BytesIO()
+        fig.savefig(buf, format="png", bbox_inches="tight")
+        st.download_button(
+            label="Download Plot as PNG",
+            data=buf.getvalue(),
+            file_name=f"{selected_gene}_advanced_regression.png",
+            mime="image/png"
+        )
 
 # Footer
 st.markdown("---")
