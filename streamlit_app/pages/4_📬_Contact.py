@@ -23,7 +23,6 @@ with col1:
     🖥️ [UCD Cancer Data Lab](https://cancerdata.ucd.ie/)  
 
     Passionate about advancing precision oncology through bioinformatics and AI.  
-    Working on multi-omics data integration, biomarker discovery, and drug response prediction in ovarian cancer.
 
     ---
 
@@ -38,18 +37,18 @@ with col1:
 
 
 with col2:
-    st.markdown("### 📍 Conway Institute – UCD, Dublin")
-    st.components.v1.html(
+    st.markdown("### 📍 UCD Conway Institute")
+    html(
         """
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2383.2429243141576!2d-6.223420184460338!3d53.307245979978675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9f3ac504ef%3A0xd96856d3a13ae886!2sUCD%20Conway%20Institute!5e0!3m2!1sen!2sie!4v1718274133066!5m2!1sen!2sie" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2383.8451648508526!2d-6.227360423397385!3d53.31021917742615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486709338b645959%3A0xfa11bb9c23e854c1!2sUCD%20Conway%20Institute%2C%20University%20College%20Dublin!5e0!3m2!1sen!2sie!4v1751030718414!5m2!1sen!2sie" 
             width="100%" 
-            height="400" 
+            height="450" 
             style="border:0; border-radius: 8px;" 
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         """,
-        height=420,
+        height=480,
     )
