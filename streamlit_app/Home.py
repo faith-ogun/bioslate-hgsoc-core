@@ -1,9 +1,6 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
-from utils import render_sidebar_logo
-render_sidebar_logo()
-
 st.set_page_config(page_title="BioSLATE Home", layout="wide")
 
 # Top logo
@@ -13,6 +10,10 @@ st.title("🔬 HGSOC Explorer Platform")
 st.caption("Last updated: June 27, 2025")
 st.subheader("Data-Driven Precision Oncology")
 
+with st.sidebar:
+    st.image("streamlit_app/assets/bioslate_logo.png", use_column_width=True)
+
+    
 # Justified main body
 st.markdown("""
 <div style='text-align: justify;'>
