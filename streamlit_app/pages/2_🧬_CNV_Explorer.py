@@ -19,7 +19,7 @@ def load_cnv_data():
     df = pd.read_csv("streamlit_app/data/cna_depmap_hgsoc.csv", index_col=0)
     return df
 
-cna_df = load_cnv_data()  # rows: genes (Entrez), cols: cell lines
+cna_df = load_cnv_data()  # rows: cell lines, columns: genes
 
 # --- Sidebar Threshold Inputs ---
 st.sidebar.header("🛠 Threshold Settings")
@@ -35,7 +35,7 @@ del_threshold = st.sidebar.number_input(
 
 min_cell_lines = st.sidebar.slider(
     "Minimum # of Cell Lines per Gene (for Amplified/Deleted)",
-    min_value=1, max_value=len(cna_df.columns), value=5
+    min_value=1, max_value=len(cna_df), value=5
 )
 
 # --- Flatten for Histogram ---
@@ -52,6 +52,7 @@ ax.axvline(x=amp_threshold, color="green", linestyle="--", label=f"Amplification
 ax.set_title("Absolute Copy Number Frequencies")
 ax.set_xlabel("Absolute CN Value")
 ax.set_ylabel("Frequency")
+ax.set_ylim(0, 15)
 ax.legend()
 st.pyplot(fig)
 
@@ -60,13 +61,13 @@ st.markdown(f"""
 ### 📌 Threshold Summary:
 - **Deep deletions (< {del_threshold}):** {num_deletions:,}
 - **Amplifications (> {amp_threshold}):** {num_amplifications:,}
-- **Total Genes:** {len(cna_df)}
-- **Total Cell Lines:** {len(cna_df.columns)}
+- **Total Cell Lines:** {len(cna_df)}
+- **Total Genes:** {len(cna_df.columns)}
 """)
 
 # --- Count Amplified / Deleted Genes ---
-amplified_counts = (cna_df > amp_threshold).sum(axis=1)
-deleted_counts = (cna_df < del_threshold).sum(axis=1)
+amplified_counts = (cna_df > amp_threshold).sum(axis=0)
+deleted_counts = (cna_df < del_threshold).sum(axis=0)
 
 amp_genes = amplified_counts[amplified_counts >= min_cell_lines].sort_values(ascending=False)
 del_genes = deleted_counts[deleted_counts >= min_cell_lines].sort_values(ascending=False)
