@@ -3,17 +3,23 @@ from streamlit.components.v1 import html
 
 st.set_page_config(page_title="BioSLATE Home", layout="wide")
 
-# Top logo
+# Inject BioSLATE logo above sidebar navigation using HTML
+st.sidebar.markdown(
+    """
+    <div style="text-align: center; margin-bottom: 15px;">
+        <img src="https://raw.githubusercontent.com/faith-ogun/bioslate-hgsoc-core/bd0af3cf25abd7e737dc7e6b9c60b1e2adfdd119/streamlit_app/assets/bioslate_logo.png" width="180">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# Top logo in the main view
 st.image("streamlit_app/assets/bioslate_logo.png", width=300)
 
 st.title("🔬 HGSOC Explorer Platform")
 st.caption("Last updated: June 27, 2025")
 st.subheader("Data-Driven Precision Oncology")
 
-with st.sidebar:
-    st.image("streamlit_app/assets/bioslate_logo.png", use_column_width=True)
-
-    
 # Justified main body
 st.markdown("""
 <div style='text-align: justify;'>
