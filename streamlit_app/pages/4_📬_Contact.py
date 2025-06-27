@@ -28,7 +28,7 @@ with col1:
 
     **Dr. Colm Ryan**  
     Associate Professor, UCD  
-    Principal Investigator & PhD Supervisor  
+    Project Supervisor  
 
     **Dr. Metin Yazar**  
     Postdoctoral Researcher  
