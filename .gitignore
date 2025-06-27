@@ -8,3 +8,4 @@ sandbox/
 results/synthetic_lethality_screen.csv
 notebooks/pdf/
 results/old/
+streamlit_app/1_🔎_Gene_Explorer.py
