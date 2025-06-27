@@ -83,4 +83,4 @@ html("""
         <img src="https://breakthroughcancerresearch.ie/wp-content/uploads/2024/10/bcr-main-logo.png" class="icon-img" title="Breakthrough Cancer Research">
     </a>
 </div>
-""", height=160)
+""", height=200)
