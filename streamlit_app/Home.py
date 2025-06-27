@@ -3,24 +3,18 @@ from streamlit.components.v1 import html
 
 st.set_page_config(page_title="BioSLATE Home", layout="wide")
 
-# Inject BioSLATE logo above sidebar navigation using HTML
-st.sidebar.markdown(
-    """
-    <div style="text-align: center; margin-bottom: 15px;">
-        <img src="https://raw.githubusercontent.com/faith-ogun/bioslate-hgsoc-core/bd0af3cf25abd7e737dc7e6b9c60b1e2adfdd119/streamlit_app/assets/bioslate_logo.png" width="180">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-# Top logo in the main view
+# Top logo
 st.image("streamlit_app/assets/bioslate_logo.png", width=300)
 
 st.title("🔬 HGSOC Explorer Platform")
 st.caption("Last updated: June 27, 2025")
 st.subheader("Data-Driven Precision Oncology")
 
-# Justified main body
+# Sidebar logo
+with st.sidebar:
+    st.image("streamlit_app/assets/bioslate_logo.png", use_container_width=True)
+
+# Justified intro
 st.markdown("""
 <div style='text-align: justify;'>
 
@@ -29,6 +23,14 @@ st.markdown("""
 **BioSLATE** is a free and open-source web application built for researchers and clinicians exploring translational cancer biology.  
 It facilitates the rapid interrogation of gene–protein relationships, biomarker discovery, and synthetic lethality interactions using large-scale, multi-omics datasets and AI-powered models.  
 
+</div>
+""", unsafe_allow_html=True)
+
+# 🔽 BioSLATE Infographic
+st.image("streamlit_app/assets/bioslate_infographic.png", use_container_width=True, caption="BioSLATE Workflow Overview")
+
+# Functional Overview
+st.markdown("""
 ---
 
 ### 📌 Functional Overview
@@ -43,9 +45,7 @@ This tool leverages gene dependency datasets to uncover potential synthetic leth
 **Drug Response Prediction**  
 This module hosts machine learning classifiers trained on gene expression data to predict how a patient's tumour might respond to specific treatments.  
 By comparing responder vs non-responder profiles across public datasets (e.g. TCGA), it assists in evaluating likely therapeutic outcomes and personalising cancer therapy.
-
-</div>
-""", unsafe_allow_html=True)
+""")
 
 # Licence and credits
 st.markdown("""
@@ -55,7 +55,7 @@ This software is distributed under an MIT licence. Please consult the LICENSE fi
 </div>
 """, unsafe_allow_html=True)
 
-# Footer icons 
+# Footer icons
 html("""
 <style>
 .icon-row {
