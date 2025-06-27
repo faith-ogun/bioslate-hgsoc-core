@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import statsmodels.api as sm
+from scipy.stats import linregress
 import numpy as np
 
 # Page config
@@ -131,17 +131,20 @@ else:  # Advanced Mode
     if len(merged) < 6:
         st.warning("Not enough samples with data for both genes to perform regression.")
     else:
-        X = merged["CNA"]
-        y = merged["Protein"]
-        X_const = sm.add_constant(X)
-        model = sm.OLS(y, X_const).fit()
-        st.write(f"Regression coefficient: {model.params['CNA']:.3f}")
-        st.write(f"P-value: {model.pvalues['CNA']:.2e}")
-        st.write(f"R-squared: {model.rsquared:.3f}")
+        # Use scipy.stats.linregress here instead of statsmodels
+        from scipy.stats import linregress
+
+        slope, intercept, r_value, p_value, std_err = linregress(merged["CNA"], merged["Protein"])
+        st.write(f"Regression coefficient (slope): {slope:.3f}")
+        st.write(f"P-value: {p_value:.2e}")
+        st.write(f"R-squared: {r_value**2:.3f}")
 
         fig, ax = plt.subplots(figsize=(8, 5))
         sns.scatterplot(x="CNA", y="Protein", data=merged, ax=ax)
-        sns.regplot(x="CNA", y="Protein", data=merged, scatter=False, ax=ax, color="r")
+        # Plot regression line
+        x_vals = np.array(ax.get_xlim())
+        y_vals = intercept + slope * x_vals
+        ax.plot(x_vals, y_vals, color="red")
         ax.set_title(f"CNA of {gene_cna} vs Protein of {gene_prot}")
         st.pyplot(fig)
 
