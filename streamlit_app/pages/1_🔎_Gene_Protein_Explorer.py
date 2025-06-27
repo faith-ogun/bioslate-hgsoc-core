@@ -52,10 +52,12 @@ else:
     gene2 = st.sidebar.selectbox("Choose Gene B:", gene_list, index=1 if len(gene_list) > 1 else 0)
 
 def plot_boxplot(gene, data):
-    gene_df = data[data["Gene"] == gene]
+    gene_df = data[data["Gene"] == gene].copy()
+    gene_df["Protein"] = pd.to_numeric(gene_df["Protein"], errors="coerce")
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.boxplot(x="CNA", y="Protein", data=gene_df, showfliers=False, palette="Set1", ax=ax, legend=False, hue="CNA")
     ax.set_title(f"Protein Expression vs CNA for {gene}")
+    ax.yaxis.set_major_locator(plt.MaxNLocator(6))
     st.pyplot(fig)
 
 if mode == "T-test + Cohen's d":
