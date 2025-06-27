@@ -60,18 +60,8 @@ else:
 def plot_boxplot(gene, data):
     gene_df = data[data["Gene"] == gene].copy()
     gene_df["Protein"] = pd.to_numeric(gene_df["Protein"], errors="coerce")
-    gene_df["CNA"] = pd.to_numeric(gene_df["CNA"], errors="coerce").astype("Int64")
-
-    # Define palette only for Cohen's d mode
-    cna_values = sorted(gene_df["CNA"].dropna().unique())
-    alternating_palette = ["#198ae5", "#75b9eb"]
-    palette = {val: alternating_palette[i % 2] for i, val in enumerate(cna_values)}
-
     fig, ax = plt.subplots(figsize=(8, 5))
-    sns.boxplot(
-        x="CNA", y="Protein", data=gene_df,
-        showfliers=False, palette=palette, ax=ax
-    )
+    sns.boxplot(x="CNA", y="Protein", data=gene_df, showfliers=False, palette="Set1", ax=ax)
     ax.set_title(f"Protein Expression vs CNA for {gene}")
     ax.yaxis.set_major_locator(plt.MaxNLocator(6))
     st.pyplot(fig)
