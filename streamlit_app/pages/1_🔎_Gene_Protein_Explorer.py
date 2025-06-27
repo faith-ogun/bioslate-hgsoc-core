@@ -169,7 +169,7 @@ else:
         fig.savefig(buf, format="png", bbox_inches="tight")
         buf.seek(0)
         st.download_button(
-            label="Download plot",
+            label="Download Plot",
             data=buf,
             file_name=f"{gene_cna}_{gene_prot}_advanced_regression.png",
             mime="image/png",
