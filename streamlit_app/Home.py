@@ -26,8 +26,8 @@ It facilitates the rapid interrogation of gene–protein relationships, biomarke
 </div>
 """, unsafe_allow_html=True)
 
-# 🔽 BioSLATE Infographic
-st.image("streamlit_app/assets/bioslate_infographic.png", use_container_width=True, caption="BioSLATE Workflow Overview")
+# BioSLATE Infographic
+st.image("streamlit_app/assets/bioslate_infographic.png", use_container_width=True)
 
 # Functional Overview
 st.markdown("""
