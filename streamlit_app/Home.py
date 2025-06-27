@@ -59,8 +59,8 @@ html("""
     text-decoration: none;
 }
 .icon-img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -83,4 +83,4 @@ html("""
         <img src="https://breakthroughcancerresearch.ie/wp-content/uploads/2024/10/bcr-main-logo.png" class="icon-img" title="Breakthrough Cancer Research">
     </a>
 </div>
-""", height=300)
+""", height=180)
