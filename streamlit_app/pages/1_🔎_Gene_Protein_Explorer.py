@@ -21,7 +21,10 @@ cnv_prot_df, t_test_stats_df, linear_regression_df = load_data()
 # Sidebar
 st.sidebar.title("Settings")
 mode = st.sidebar.radio("Select Analysis Mode:", ["T-test + Cohen's d", "Linear Regression", "Advanced Mode"])
-comp_mode = st.sidebar.radio("Comparison Mode:", ["Single Gene", "Compare Two Genes"])
+if mode == "Advanced Mode":
+    comp_mode = "Single Gene"  # Force single gene mode
+else:
+    comp_mode = st.sidebar.radio("Comparison Mode:", ["Single Gene", "Compare Two Genes"])
 
 if mode != "Advanced Mode":
     p_thresh = st.sidebar.slider("P-value cutoff", 0.0, 0.1, 0.05, 0.005)
