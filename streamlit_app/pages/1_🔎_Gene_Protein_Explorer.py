@@ -56,7 +56,7 @@ else:
     gene1 = st.sidebar.selectbox("Choose Gene A (Entrez ID):", gene_list, index=0)
     gene2 = st.sidebar.selectbox("Choose Gene B (Entrez ID):", gene_list, index=1 if len(gene_list) > 1 else 0)
 
-# Define alternating colour palette for CNA scores
+# Define alternating blue palette
 custom_palette = {
     -2: "#198ae5",
     -1: "#75b9eb",
@@ -69,6 +69,8 @@ custom_palette = {
 def plot_boxplot(gene, data):
     gene_df = data[data["Gene"] == gene].copy()
     gene_df["Protein"] = pd.to_numeric(gene_df["Protein"], errors="coerce")
+    gene_df["CNA"] = pd.to_numeric(gene_df["CNA"], errors="coerce").astype("Int64")
+
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.boxplot(x="CNA", y="Protein", data=gene_df, showfliers=False, palette=custom_palette, ax=ax)
     ax.set_title(f"Protein Expression vs CNA for {gene}")
@@ -106,106 +108,6 @@ def plot_regression(gene, data):
         file_name=f"{gene}_regression.png",
         mime="image/png"
     )
-
-# Main content
-if mode == "T-test + Cohen's d":
-    if comp_mode == "Single Gene":
-        st.title(f"🧬 Gene: {gene}")
-        gene_stats = t_test_stats_df[t_test_stats_df["Gene"] == gene].iloc[0]
-        st.markdown("### 📊 Statistical Summary")
-        col1, col2 = st.columns(2)
-        with col1:
-            st.write(f"**T-statistic (Amplification vs Neutral):** {gene_stats['T-statistic (Amplification vs Neutral)']:.3f}")
-            st.write(f"**P-value (Amplification vs Neutral):** {gene_stats['P-value (Amplification vs Neutral)']:.2e}")
-            st.write(f"**Cohen's d (Amplification vs Neutral):** {gene_stats['Cohen\'s d (Amplification vs Neutral)']:.3f}")
-        with col2:
-            st.write(f"**T-statistic (Deletion vs Neutral):** {gene_stats['T-statistic (Deletion vs Neutral)']:.3f}")
-            st.write(f"**P-value (Deletion vs Neutral):** {gene_stats['P-value (Deletion vs Neutral)']:.2e}")
-            st.write(f"**Cohen's d (Deletion vs Neutral):** {gene_stats['Cohen\'s d (Deletion vs Neutral)']:.3f}")
-        st.markdown("### 🧪 Protein Expression by CNA GISTIC Score")
-        plot_boxplot(gene, cnv_prot_df)
-
-    else:
-        st.title("🧬 Compare Two Genes")
-        col1, col2 = st.columns(2)
-        for col, g in zip([col1, col2], [gene1, gene2]):
-            gene_stats = t_test_stats_df[t_test_stats_df["Gene"] == g].iloc[0]
-            col.markdown(f"### {g}")
-            col.write(f"**T-statistic (Amplification vs Neutral):** {gene_stats['T-statistic (Amplification vs Neutral)']:.3f}")
-            col.write(f"**P-value (Amplification vs Neutral):** {gene_stats['P-value (Amplification vs Neutral)']:.2e}")
-            col.write(f"**Cohen's d (Amplification vs Neutral):** {gene_stats['Cohen\'s d (Amplification vs Neutral)']:.3f}")
-            col.write(f"**T-statistic (Deletion vs Neutral):** {gene_stats['T-statistic (Deletion vs Neutral)']:.3f}")
-            col.write(f"**P-value (Deletion vs Neutral):** {gene_stats['P-value (Deletion vs Neutral)']:.2e}")
-            col.write(f"**Cohen's d (Deletion vs Neutral):** {gene_stats['Cohen\'s d (Deletion vs Neutral)']:.3f}")
-        st.markdown("### 🧪 Protein Expression by CNA GISTIC Score")
-        plot_col1, plot_col2 = st.columns(2)
-        for plot_col, g in zip([plot_col1, plot_col2], [gene1, gene2]):
-            with plot_col:
-                plot_boxplot(g, cnv_prot_df)
-
-elif mode == "Linear Regression":
-    if comp_mode == "Single Gene":
-        st.title(f"🧬 Gene: {gene}")
-        gene_stats = linear_regression_df[linear_regression_df["Gene"] == gene].iloc[0]
-        st.markdown("### 📊 Linear Regression Summary")
-        st.write(f"**Regression Coefficient:** {gene_stats['Regression Coefficient (Effect Size)']:.3f}")
-        st.write(f"**P-value:** {gene_stats['P-value']:.2e}")
-        st.write(f"**R-squared:** {gene_stats['R-squared']:.3f}")
-        st.markdown("### 🧪 Protein Expression vs CNA with Regression Line")
-        plot_regression(gene, cnv_prot_df)
-    else:
-        st.title("🧬 Compare Two Genes")
-        col1, col2 = st.columns(2)
-        for col, g in zip([col1, col2], [gene1, gene2]):
-            gene_stats = linear_regression_df[linear_regression_df["Gene"] == g].iloc[0]
-            col.markdown(f"### {g}")
-            col.write(f"**Regression Coefficient:** {gene_stats['Regression Coefficient (Effect Size)']:.3f}")
-            col.write(f"**P-value:** {gene_stats['P-value']:.2e}")
-            col.write(f"**R-squared:** {gene_stats['R-squared']:.3f}")
-        st.markdown("### 🧪 Protein Expression vs CNA with Regression Line")
-        plot_col1, plot_col2 = st.columns(2)
-        for plot_col, g in zip([plot_col1, plot_col2], [gene1, gene2]):
-            with plot_col:
-                plot_regression(g, cnv_prot_df)
-
-else:  # Advanced Mode
-    st.title("🔍 Advanced Mode: Explore Any Gene Pair")
-
-    df_cna = cnv_prot_df[cnv_prot_df["Gene"] == gene_cna][["Sample", "CNA"]].rename(columns={"CNA": "CNA_val"})
-    df_prot = cnv_prot_df[cnv_prot_df["Gene"] == gene_prot][["Sample", "Protein"]].rename(columns={"Protein": "Prot_val"})
-
-    merged = pd.merge(df_cna, df_prot, on="Sample").dropna()
-    merged["CNA_val"] = pd.to_numeric(merged["CNA_val"], errors="coerce")
-    merged["Prot_val"] = pd.to_numeric(merged["Prot_val"], errors="coerce")
-    merged = merged.dropna()
-
-    if len(merged) < 6:
-        st.warning("Not enough samples with data for both genes.")
-    else:
-        slope, intercept, r_value, p_value, std_err = linregress(merged["CNA_val"], merged["Prot_val"])
-        st.markdown("### 📊 Cross-Gene Regression Summary")
-        st.write(f"**CNA Gene:** {gene_cna}")
-        st.write(f"**Protein Gene:** {gene_prot}")
-        st.write(f"**Regression coefficient (slope):** {slope:.3f}")
-        st.write(f"**P-value:** {p_value:.2e}")
-        st.write(f"**R-squared:** {r_value**2:.3f}")
-
-        fig, ax = plt.subplots(figsize=(8, 5))
-        sns.scatterplot(x="CNA_val", y="Prot_val", data=merged, ax=ax)
-        x_vals = np.array(ax.get_xlim())
-        y_vals = intercept * x_vals + intercept
-        ax.plot(x_vals, y_vals, color="red")
-        ax.set_title(f"CNA of {gene_cna} vs Protein of {gene_prot}")
-        st.pyplot(fig)
-
-        buf = io.BytesIO()
-        fig.savefig(buf, format="png")
-        st.download_button(
-            label="Download Plot",
-            data=buf.getvalue(),
-            file_name=f"{gene_cna}_{gene_prot}_advanced_regression.png",
-            mime="image/png"
-        )
 
 # Footer
 st.markdown("---")
