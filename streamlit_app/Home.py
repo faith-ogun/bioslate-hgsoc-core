@@ -6,7 +6,7 @@ st.set_page_config(page_title="BioSLATE Home", layout="wide")
 # Top logo
 st.image("streamlit_app/assets/bioslate_logo.png", width=300)
 
-st.title("🔬 BioSLATE HGSOC Explorer Platform")
+st.title("🔬 HGSOC Explorer Platform")
 st.caption("Last updated: June 27, 2025")
 st.subheader("Data-Driven Precision Oncology")
 
@@ -18,7 +18,6 @@ st.markdown("""
 
 **BioSLATE** is a free and open-source web application built for researchers and clinicians exploring translational cancer biology.  
 It facilitates the rapid interrogation of gene–protein relationships, biomarker discovery, and synthetic lethality interactions using large-scale, multi-omics datasets and AI-powered models.  
-Originally built to support ovarian cancer research during an internship with the UCD Cancer Data Lab, BioSLATE can be expanded to support pan-cancer contexts, drug repurposing, and patient stratification.
 
 ---
 
@@ -29,8 +28,7 @@ This module enables users to explore the association between copy number alterat
 By performing statistical comparisons (T-tests, Cohen’s d effect size, and linear regression), it helps identify genes whose alterations lead to significant proteomic changes, offering a foundation for biomarker discovery or drug target prioritisation.
 
 **Synthetic Lethality Discovery**  
-This tool leverages gene dependency datasets to uncover potential synthetic lethal pairs — genes that, when co-inhibited, selectively kill cancer cells with specific mutations or deletions.  
-Users can interactively explore dependency profiles, mutation filters, and identify promising targets for combination therapy strategies.
+This tool leverages gene dependency datasets to uncover potential synthetic lethal pairs, genes that, when co-inhibited, selectively kill cancer cells with specific mutations or deletions. Users can interactively explore dependency profiles, mutation filters, and identify promising targets for combination therapy strategies.
 
 **Drug Response Prediction**  
 This module hosts machine learning classifiers trained on gene expression data to predict how a patient's tumour might respond to specific treatments.  
@@ -47,7 +45,7 @@ This software is distributed under an MIT licence. Please consult the LICENSE fi
 </div>
 """, unsafe_allow_html=True)
 
-# Footer icons (now includes Breakthrough)
+# Footer icons 
 html("""
 <style>
 .icon-row {
@@ -61,8 +59,8 @@ html("""
     text-decoration: none;
 }
 .icon-img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -85,4 +83,4 @@ html("""
         <img src="https://breakthroughcancerresearch.ie/wp-content/uploads/2024/10/bcr-main-logo.png" class="icon-img" title="Breakthrough Cancer Research">
     </a>
 </div>
-""", height=150)
+""", height=160)
