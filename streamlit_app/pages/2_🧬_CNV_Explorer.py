@@ -52,7 +52,7 @@ ax.axvline(x=amp_threshold, color="green", linestyle="--", label=f"Amplification
 ax.set_title("Absolute Copy Number Frequencies")
 ax.set_xlabel("Absolute CN Value")
 ax.set_ylabel("Frequency")
-ax.set_ylim(0, 15)
+ax.set_xlim(0, 15)
 ax.legend()
 st.pyplot(fig)
 
