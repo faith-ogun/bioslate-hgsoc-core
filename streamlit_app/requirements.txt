@@ -3,5 +3,5 @@ numpy
 seaborn
 matplotlib
 streamlit
-statsmodels==0.14.0
-scipy==1.11.1
+statsmodels
+scipy
