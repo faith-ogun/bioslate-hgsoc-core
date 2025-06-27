@@ -22,7 +22,7 @@ cnv_prot_df, t_test_stats_df, linear_regression_df = load_data()
 st.sidebar.title("Settings")
 mode = st.sidebar.radio("Select Analysis Mode:", ["T-test + Cohen's d", "Linear Regression", "Advanced Mode"])
 if mode == "Advanced Mode":
-    comp_mode = "Single Gene"  # Force single gene mode
+    comp_mode = "Single Gene"
 else:
     comp_mode = st.sidebar.radio("Comparison Mode:", ["Single Gene", "Compare Two Genes"])
 
@@ -41,7 +41,7 @@ elif mode == "Linear Regression":
     stats_df = linear_regression_df.dropna(subset=["P-value"])
     stats_df = stats_df[stats_df["P-value"] < p_thresh]
 else:
-    stats_df = cnv_prot_df[["Gene"]].drop_duplicates()  # Show all
+    stats_df = cnv_prot_df[["Gene"]].drop_duplicates()
 
 gene_list = sorted(stats_df["Gene"].unique())
 
@@ -56,12 +56,21 @@ else:
     gene1 = st.sidebar.selectbox("Choose Gene A (Entrez ID):", gene_list, index=0)
     gene2 = st.sidebar.selectbox("Choose Gene B (Entrez ID):", gene_list, index=1 if len(gene_list) > 1 else 0)
 
+# Define alternating colour palette for CNA scores
+custom_palette = {
+    -2: "#198ae5",
+    -1: "#75b9eb",
+     0: "#198ae5",
+     1: "#75b9eb",
+     2: "#198ae5"
+}
+
 # Plotting functions
 def plot_boxplot(gene, data):
     gene_df = data[data["Gene"] == gene].copy()
     gene_df["Protein"] = pd.to_numeric(gene_df["Protein"], errors="coerce")
     fig, ax = plt.subplots(figsize=(8, 5))
-    sns.boxplot(x="CNA", y="Protein", data=gene_df, showfliers=False, palette="Set1", ax=ax)
+    sns.boxplot(x="CNA", y="Protein", data=gene_df, showfliers=False, palette=custom_palette, ax=ax)
     ax.set_title(f"Protein Expression vs CNA for {gene}")
     ax.yaxis.set_major_locator(plt.MaxNLocator(6))
     st.pyplot(fig)
@@ -184,7 +193,7 @@ else:  # Advanced Mode
         fig, ax = plt.subplots(figsize=(8, 5))
         sns.scatterplot(x="CNA_val", y="Prot_val", data=merged, ax=ax)
         x_vals = np.array(ax.get_xlim())
-        y_vals = intercept + slope * x_vals
+        y_vals = intercept * x_vals + intercept
         ax.plot(x_vals, y_vals, color="red")
         ax.set_title(f"CNA of {gene_cna} vs Protein of {gene_prot}")
         st.pyplot(fig)
