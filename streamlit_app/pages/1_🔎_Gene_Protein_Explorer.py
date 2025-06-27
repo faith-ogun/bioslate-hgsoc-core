@@ -59,7 +59,7 @@ def plot_boxplot(gene, data):
     ax.set_title(f"Protein Expression vs CNA for {gene}")
     ax.yaxis.set_major_locator(plt.MaxNLocator(6))
     st.pyplot(fig)
-    download_button(fig, f"{gene}_boxplot.png", label="Download plot")
+    download_button(fig, f"{gene}_boxplot.png", label="Download Plot")
 
 def plot_regression(gene, data):
     gene_df = data[data["Gene"] == gene].copy()
@@ -70,7 +70,7 @@ def plot_regression(gene, data):
     sns.regplot(x="CNA", y="Protein", data=gene_df, scatter=False, ax=ax, color="red")
     ax.set_title(f"Protein Expression vs CNA with Regression Line for {gene}")
     st.pyplot(fig)
-    download_button(fig, f"{gene}_regression.png", label="Download plot")
+    download_button(fig, f"{gene}_regression.png", label="Download Plot")
 
 if mode == "T-test + Cohen's d":
     if comp_mode == "Single Gene":
@@ -152,7 +152,7 @@ else:
         ax.plot(np.array(ax.get_xlim()), intercept + slope * np.array(ax.get_xlim()), color="red")
         ax.set_title(f"CNA of {gene_cna} vs Protein of {gene_prot}")
         st.pyplot(fig)
-        download_button(fig, f"{gene_cna}_{gene_prot}_advanced_regression.png", label="Download plot")
+        download_button(fig, f"{gene_cna}_{gene_prot}_advanced_regression.png", label="Download Plot")
 
 # Footer
 st.markdown("---")
