@@ -19,6 +19,7 @@ cnv_prot_df, t_test_stats_df, linear_regression_df = load_data()
 
 # Sidebar controls
 st.sidebar.title("Settings")
+st.sidebar.markdown("### Select gene by Entrez ID")  # <-- Added header here
 
 mode = st.sidebar.radio("Select Analysis Mode:", ["T-test + Cohen's d", "Linear Regression", "Advanced Mode"])
 
@@ -46,10 +47,10 @@ else:
     gene_list = cnv_prot_df["Gene"].unique().tolist()
 
 if comp_mode == "Single Gene":
-    gene = st.sidebar.selectbox("Choose a gene:", gene_list)
+    gene = st.sidebar.selectbox("Choose a gene (Entrez ID):", gene_list)  # <-- label updated here
 else:
-    gene1 = st.sidebar.selectbox("Choose Gene A:", gene_list, index=0)
-    gene2 = st.sidebar.selectbox("Choose Gene B:", gene_list, index=1 if len(gene_list) > 1 else 0)
+    gene1 = st.sidebar.selectbox("Choose Gene A (Entrez ID):", gene_list, index=0)  # <-- label updated here
+    gene2 = st.sidebar.selectbox("Choose Gene B (Entrez ID):", gene_list, index=1 if len(gene_list) > 1 else 0)  # <-- label updated here
 
 def plot_boxplot(gene, data):
     gene_df = data[data["Gene"] == gene].copy()
@@ -122,8 +123,8 @@ elif mode == "Linear Regression":
 else:  # Advanced Mode
     st.title("Advanced Mode: CNA vs Protein Correlation")
 
-    gene_cna = st.selectbox("Select Gene for CNA:", cnv_prot_df["Gene"].unique())
-    gene_prot = st.selectbox("Select Gene for Protein:", cnv_prot_df["Gene"].unique())
+    gene_cna = st.selectbox("Select Gene for CNA (Entrez ID):", cnv_prot_df["Gene"].unique())
+    gene_prot = st.selectbox("Select Gene for Protein (Entrez ID):", cnv_prot_df["Gene"].unique())
 
     df_cna = cnv_prot_df[cnv_prot_df["Gene"] == gene_cna][["Sample", "CNA"]]
     df_prot = cnv_prot_df[cnv_prot_df["Gene"] == gene_prot][["Sample", "Protein"]]
