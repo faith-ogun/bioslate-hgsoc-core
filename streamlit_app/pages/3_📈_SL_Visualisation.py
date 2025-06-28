@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 # --- Page config ---
 st.set_page_config(page_title="Synthetic Lethality Visualisation", layout="wide")
-st.title("🧬 Visualising Synthetic Lethality in Amplified Genes")
+st.title("📈 Visualising Synthetic Lethality in Amplified Genes")
 st.caption("Last updated: June 2025")
 
 # --- Load Data ---
