@@ -16,7 +16,7 @@ def load_data():
     url = f"https://drive.google.com/uc?export=download&id={file_id}"
     df = pd.read_csv(url)
     df["–log10(FDR)"] = -np.log10(df["FDR"] + 1e-10)
-    df["SL_Hit"] = (df["EffectSize"] <= -0.6) & (df["FDR"] < 0.05)
+    df["SL_Hit"] = (df["EffectSize"] < -0) & (df["FDR"] < 0.05)
     df["OncogeneAddiction"] = df["Biomarker"] == df["TargetGene"]
     return df
 
@@ -42,7 +42,7 @@ with tab1:
         edgecolor="black"
     )
     ax.axhline(y=-np.log10(0.05), linestyle="--", color="gray", label="FDR = 0.05")
-    ax.axvline(x=-0.6, linestyle="--", color="gray", label="Effect Size = -0.6")
+    ax.axvline(x=0, linestyle="--", color="gray", label="Effect Size = 0")
     ax.set_xlabel("Cohen's d (Effect Size)")
     ax.set_ylabel("–log₁₀(FDR)")
     ax.set_title("Volcano Plot: Synthetic Lethality in Amplified Biomarkers")
@@ -60,7 +60,7 @@ with tab2:
 
     # --- Filter SL hits ---
     filtered = results_df[
-        (results_df["EffectSize"] <= -0.6) & (results_df["FDR"] < 0.05)
+        (results_df["EffectSize"] < 0) & (results_df["FDR"] < 0.05)
     ].copy()
 
     all_biomarkers = sorted(filtered["Biomarker"].unique())
@@ -86,7 +86,7 @@ with tab2:
     value_column = "–log10(FDR)" if metric == "–log10(FDR)" else metric
     heatmap_df = filtered.pivot(index="TargetGene", columns="Biomarker", values=value_column)
 
-    st.markdown(f"Showing: **{metric}** for hits with EffectSize ≤ –0.6 and FDR < 0.05")
+    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.05")
 
     fig2, ax2 = plt.subplots(figsize=(12, 10))
     sns.heatmap(
