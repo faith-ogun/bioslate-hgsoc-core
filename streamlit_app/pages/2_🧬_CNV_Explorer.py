@@ -46,7 +46,7 @@ num_amplifications = np.sum(flattened_values > amp_threshold)
 # --- Histogram Plot ---
 st.subheader("📊 Absolute CN Value Distribution")
 fig, ax = plt.subplots()
-ax.hist(flattened_values, bins=50, color="blue", edgecolor="black", alpha=0.7)
+ax.hist(flattened_values, bins=50, color_continuous_scale=["#80accc"], edgecolor="black", alpha=0.7)
 ax.axvline(x=del_threshold, color="red", linestyle="--", label=f"Deletion Threshold ({del_threshold})")
 ax.axvline(x=amp_threshold, color="green", linestyle="--", label=f"Amplification Threshold ({amp_threshold})")
 ax.set_title("Absolute Copy Number Frequencies")
