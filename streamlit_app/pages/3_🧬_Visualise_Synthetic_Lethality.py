@@ -12,7 +12,9 @@ st.caption("Last updated: June 2025")
 # --- Load Data ---
 @st.cache_data
 def load_data():
-    df = pd.read_csv("streamlit_app/data/synthetic_lethality_screen.csv")
+    file_id = "1Wy7rWBtLYDxjEFc61DTdfcTlD_UwMGdB"  # file ID
+    url = f"https://drive.google.com/uc?export=download&id={file_id}"
+    df = pd.read_csv(url)
     df["–log10(FDR)"] = -np.log10(df["FDR"] + 1e-10)
     df["SL_Hit"] = (df["EffectSize"] <= -0.6) & (df["FDR"] < 0.05)
     df["OncogeneAddiction"] = df["Biomarker"] == df["TargetGene"]
