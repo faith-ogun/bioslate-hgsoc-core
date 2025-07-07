@@ -101,9 +101,9 @@ def plot_regression(gene, data):
 # Main content
 if mode == "T-test + Cohen's d":
     if comp_mode == "Single Gene":
-        st.title(f"🧬 Gene: {gene}")
+        st.title(f"Gene: {gene}")
         gene_stats = t_test_stats_df[t_test_stats_df["Gene"] == gene].iloc[0]
-        st.markdown("### 📊 Statistical Summary")
+        st.markdown("### Statistical Summary")
         col1, col2 = st.columns(2)
         with col1:
             st.write(f"**T-statistic (Amplification vs Neutral):** {gene_stats['T-statistic (Amplification vs Neutral)']:.3f}")
@@ -113,11 +113,11 @@ if mode == "T-test + Cohen's d":
             st.write(f"**T-statistic (Deletion vs Neutral):** {gene_stats['T-statistic (Deletion vs Neutral)']:.3f}")
             st.write(f"**P-value (Deletion vs Neutral):** {gene_stats['P-value (Deletion vs Neutral)']:.2e}")
             st.write(f"**Cohen's d (Deletion vs Neutral):** {gene_stats['Cohen\'s d (Deletion vs Neutral)']:.3f}")
-        st.markdown("### 🧪 Protein Expression by CNA GISTIC Score")
+        st.markdown("### Protein Expression by CNA GISTIC Score")
         plot_boxplot(gene, cnv_prot_df)
 
     else:
-        st.title("🧬 Compare Two Genes")
+        st.title("Compare Two Genes")
         col1, col2 = st.columns(2)
         for col, g in zip([col1, col2], [gene1, gene2]):
             gene_stats = t_test_stats_df[t_test_stats_df["Gene"] == g].iloc[0]
@@ -128,7 +128,7 @@ if mode == "T-test + Cohen's d":
             col.write(f"**T-statistic (Deletion vs Neutral):** {gene_stats['T-statistic (Deletion vs Neutral)']:.3f}")
             col.write(f"**P-value (Deletion vs Neutral):** {gene_stats['P-value (Deletion vs Neutral)']:.2e}")
             col.write(f"**Cohen's d (Deletion vs Neutral):** {gene_stats['Cohen\'s d (Deletion vs Neutral)']:.3f}")
-        st.markdown("### 🧪 Protein Expression by CNA GISTIC Score")
+        st.markdown("### Protein Expression by CNA GISTIC Score")
         plot_col1, plot_col2 = st.columns(2)
         for plot_col, g in zip([plot_col1, plot_col2], [gene1, gene2]):
             with plot_col:
@@ -136,16 +136,16 @@ if mode == "T-test + Cohen's d":
 
 elif mode == "Linear Regression":
     if comp_mode == "Single Gene":
-        st.title(f"🧬 Gene: {gene}")
+        st.title(f"Gene: {gene}")
         gene_stats = linear_regression_df[linear_regression_df["Gene"] == gene].iloc[0]
-        st.markdown("### 📊 Linear Regression Summary")
+        st.markdown("### Linear Regression Summary")
         st.write(f"**Regression Coefficient:** {gene_stats['Regression Coefficient (Effect Size)']:.3f}")
         st.write(f"**P-value:** {gene_stats['P-value']:.2e}")
         st.write(f"**R-squared:** {gene_stats['R-squared']:.3f}")
-        st.markdown("### 🧪 Protein Expression vs CNA with Regression Line")
+        st.markdown("### Protein Expression vs CNA with Regression Line")
         plot_regression(gene, cnv_prot_df)
     else:
-        st.title("🧬 Compare Two Genes")
+        st.title("Compare Two Genes")
         col1, col2 = st.columns(2)
         for col, g in zip([col1, col2], [gene1, gene2]):
             gene_stats = linear_regression_df[linear_regression_df["Gene"] == g].iloc[0]
@@ -153,7 +153,7 @@ elif mode == "Linear Regression":
             col.write(f"**Regression Coefficient:** {gene_stats['Regression Coefficient (Effect Size)']:.3f}")
             col.write(f"**P-value:** {gene_stats['P-value']:.2e}")
             col.write(f"**R-squared:** {gene_stats['R-squared']:.3f}")
-        st.markdown("### 🧪 Protein Expression vs CNA with Regression Line")
+        st.markdown("### Protein Expression vs CNA with Regression Line")
         plot_col1, plot_col2 = st.columns(2)
         for plot_col, g in zip([plot_col1, plot_col2], [gene1, gene2]):
             with plot_col:
@@ -174,7 +174,7 @@ else:  # Advanced Mode
         st.warning("Not enough samples with data for both genes.")
     else:
         slope, intercept, r_value, p_value, std_err = linregress(merged["CNA_val"], merged["Prot_val"])
-        st.markdown("### 📊 Cross-Gene Regression Summary")
+        st.markdown("### Cross-Gene Regression Summary")
         st.write(f"**CNA Gene:** {gene_cna}")
         st.write(f"**Protein Gene:** {gene_prot}")
         st.write(f"**Regression coefficient (slope):** {slope:.3f}")

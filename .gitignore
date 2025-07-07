@@ -1,6 +1,6 @@
 ### Large Database files that probably won't upload
 database_files/
-figures/per_gene_boxplots
+figures/
 streamlit_app/gene_browser_with_stats_home.py
 streamlit_app/streamlit_ui
 results/candidate_genes_tcga
@@ -8,4 +8,3 @@ sandbox/
 results/synthetic_lethality_screen.csv
 notebooks/pdf/
 results/old/
-streamlit_app/1_🔎_Gene_Explorer.py

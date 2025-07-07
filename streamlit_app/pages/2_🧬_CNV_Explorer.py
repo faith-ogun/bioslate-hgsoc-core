@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("🧬 DepMap CNV Explorer — Amplification & Deletion Calls")
+st.title("DepMap CNV Explorer — Amplification & Deletion Calls")
 st.caption("Last updated: June 2025")
 
 # --- Load Data ---
@@ -22,7 +22,7 @@ def load_cnv_data():
 cna_df = load_cnv_data()  # rows: cell lines, columns: genes
 
 # --- Sidebar Threshold Inputs ---
-st.sidebar.header("🛠 Threshold Settings")
+st.sidebar.header("Threshold Settings")
 
 amp_threshold = st.sidebar.number_input(
     "High-level Amplification Threshold (CN >)",
@@ -44,7 +44,7 @@ num_deletions = np.sum(flattened_values < del_threshold)
 num_amplifications = np.sum(flattened_values > amp_threshold)
 
 # --- Histogram Plot ---
-st.subheader("📊 Absolute CN Value Distribution")
+st.subheader("Absolute CN Value Distribution")
 fig, ax = plt.subplots()
 ax.hist(flattened_values, bins=50, color="#5084ac", edgecolor="black", alpha=0.7)
 ax.axvline(x=del_threshold, color="red", linestyle="--", label=f"Deletion Threshold ({del_threshold})")
@@ -58,7 +58,7 @@ st.pyplot(fig)
 
 # --- Display Summary Stats ---
 st.markdown(f"""
-### 📌 Threshold Summary:
+### Threshold Summary:
 - **Deep deletions (< {del_threshold}):** {num_deletions:,}
 - **Amplifications (> {amp_threshold}):** {num_amplifications:,}
 - **Total Cell Lines:** {len(cna_df)}
@@ -73,10 +73,10 @@ amp_genes = amplified_counts[amplified_counts >= min_cell_lines].sort_values(asc
 del_genes = deleted_counts[deleted_counts >= min_cell_lines].sort_values(ascending=False)
 
 # --- Display Tables ---
-st.subheader(f"🔥 Amplified Genes (≥ {min_cell_lines} cell lines)")
+st.subheader(f"Amplified Genes (≥ {min_cell_lines} cell lines)")
 st.dataframe(amp_genes.to_frame("Amplified Cell Line Count"))
 
-st.subheader(f"❄️ Deleted Genes (≥ {min_cell_lines} cell lines)")
+st.subheader(f"Deleted Genes (≥ {min_cell_lines} cell lines)")
 st.dataframe(del_genes.to_frame("Deleted Cell Line Count"))
 
 # --- Download Buttons ---
@@ -100,7 +100,7 @@ with col2:
     )
 
 # --- Markdown Explainer ---
-with st.expander("📚 What do these thresholds mean?"):
+with st.expander("What do these thresholds mean?"):
     st.markdown("""
 **Thresholds are inspired by GISTIC-like CNV scoring.**
 
