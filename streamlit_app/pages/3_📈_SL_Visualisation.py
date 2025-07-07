@@ -13,7 +13,7 @@ st.caption("Last updated: June 2025")
 # --- Load SL Results ---
 @st.cache_data
 def load_results():
-    synthetic_id = "13HG-iV-Vb3SlwXUtM29N9RHRKr8nGkNG"
+    synthetic_id = "1jXmfqrqAhMcOR0ExlJytzHBJ3GsFQpWG"
     url = f"https://drive.google.com/uc?export=download&id={synthetic_id}"
     df = pd.read_csv(url)
     df["Biomarker_HGNC"] = df["Biomarker_HGNC"].astype(str).str.strip()
