@@ -146,48 +146,48 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
         min_value=-1.5, max_value=0.0, value=-0.6, step=0.05
     )
 
-    valid_df = results_df[
-        (results_df["FDR"] < 0.05) &
-        (results_df["EffectSize"] < 0) &
-        (results_df["MeanEffect_WT"] > -1) &
-        (results_df["Biomarker"].astype(str).isin(amp_biomarkers))
-    ].copy()
+    # Add dropdown of all pairs (no filtering yet)
+    results_df["pair_display"] = results_df["Biomarker_HGNC"] + " → " + results_df["TargetGene_HGNC"]
+    selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=sorted(results_df["pair_display"].unique()))
 
-    strong_crispr_genes = [g for g in crispr_df.columns if (crispr_df[g] < effect_threshold).any()]
-    valid_df = valid_df[valid_df["TargetGene"].isin(strong_crispr_genes)]
+    row = results_df[results_df["pair_display"] == selected_display].iloc[0]
+    biomarker = str(row["Biomarker"])
+    target = str(row["TargetGene"])
+    biomarker_hgnc = row["Biomarker_HGNC"]
+    target_hgnc = row["TargetGene_HGNC"]
 
-    if valid_df.empty:
-        st.warning("No valid SL gene pairs passed all filters. Try relaxing the CRISPR threshold.")
+    biomarker_status_col = f"{biomarker}_status"
+
+    # Build CNA status for this biomarker
+    if biomarker in cna_df.columns:
+        cna_status = cna_df[biomarker].apply(lambda x: "Amplified" if x > amp_threshold else "WT")
+    else:
+        st.warning(f"CNA data for biomarker {biomarker} not found.")
         st.stop()
 
-    valid_df["pair_display"] = valid_df["Biomarker_HGNC"] + " → " + valid_df["TargetGene_HGNC"]
-    pair_options = valid_df["pair_display"].unique()
-    selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=pair_options)
-
-    sel_row = valid_df[valid_df["pair_display"] == selected_display].iloc[0]
-
-    biomarker = sel_row["Biomarker"]
-    target = sel_row["TargetGene"]
-    biomarker_hgnc = sel_row["Biomarker_HGNC"]
-    target_hgnc = sel_row["TargetGene_HGNC"]
-
-    if biomarker not in cna_df.columns or target not in crispr_df.columns:
-        st.warning(f"Selected genes not found in CNA or CRISPR matrix: {biomarker}, {target}")
+    if target not in crispr_df.columns:
+        st.warning(f"CRISPR data for target {target} not found.")
         st.stop()
 
-    cna_status = cna_df[biomarker].apply(lambda x: "Amplified" if x > amp_threshold else "WT")
+    # Intersect CNA and CRISPR index
     common = crispr_df.index.intersection(cna_status.index)
+    gene_effect = crispr_df.loc[common, target]
+    cna_status = cna_status.loc[common]
+
+    # Build plot data
     df_plot = pd.DataFrame({
-        "GeneEffect": crispr_df.loc[common, target],
-        "CNA_Status": cna_status.loc[common]
+        "GeneEffect": gene_effect,
+        "CNA_Status": cna_status
     }).dropna()
 
     df_plot = df_plot[df_plot["CNA_Status"].isin(["Amplified", "WT"])]
 
+    # Skip if too few per group
     if df_plot["CNA_Status"].value_counts().min() < min_group_size:
         st.warning("Too few samples per group to show boxplot.")
         st.stop()
 
+    # Plot
     fig3, ax3 = plt.subplots(figsize=(6, 5))
     sns.boxplot(data=df_plot, x="CNA_Status", y="GeneEffect", hue="CNA_Status",
                 palette={"Amplified": "#e74c3c", "WT": "#3498db"}, legend=False)
