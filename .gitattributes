@@ -1,3 +1,4 @@
 results/synthetic_lethality_screen_with_HGNC.csv filter=lfs diff=lfs merge=lfs -text
 results/synthetic_lethality_screen_with_HGNC.csv
 results/other/synthetic_lethality_screen.csv filter=lfs diff=lfs merge=lfs -text
+streamlit_app/data/synthetic_lethality_screen.csv filter=lfs diff=lfs merge=lfs -text
