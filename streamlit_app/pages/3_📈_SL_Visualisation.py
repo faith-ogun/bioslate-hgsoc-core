@@ -13,14 +13,14 @@ st.caption("Last updated: June 2025")
 # --- Load SL Results ---
 @st.cache_data
 def load_results():
-    synthetic_id = "1Wy7rWBtLYDxjEFc61DTdfcTlD_UwMGdB"
+    synthetic_id = "13HG-iV-Vb3SlwXUtM29N9RHRKr8nGkNG"
     url = f"https://drive.google.com/uc?export=download&id={synthetic_id}"
     df = pd.read_csv(url)
-    df["Biomarker"] = df["Biomarker"].astype(str).str.strip()
-    df["TargetGene"] = df["TargetGene"].astype(str).str.strip()
+    df["Biomarker_HGNC"] = df["Biomarker_HGNC"].astype(str).str.strip()
+    df["TargetGene_HGNC"] = df["TargetGene_HGNC"].astype(str).str.strip()
     df["–log10(FDR)"] = -np.log10(df["FDR"] + 1e-10)
     df["SL_Hit"] = (df["EffectSize"] < 0) & (df["FDR"] < 0.05)
-    df["OncogeneAddiction"] = df["Biomarker"] == df["TargetGene"]
+    df["OncogeneAddiction"] = df["Biomarker_HGNC"] == df["TargetGene_HGNC"]
     return df
 
 # --- Load CRISPR & CNA data ---
@@ -91,19 +91,19 @@ elif plot_option == "Heatmap":
         (results_df["EffectSize"] < 0) & (results_df["FDR"] < 0.05)
     ].copy()
 
-    all_biomarkers = sorted(filtered["Biomarker"].unique())
-    all_targets = sorted(filtered["TargetGene"].unique())
+    all_biomarkers = sorted(filtered["Biomarker_HGNC"].unique())
+    all_targets = sorted(filtered["TargetGene_HGNC"].unique())
 
     selected_biomarkers = st.multiselect("Filter by Biomarkers", all_biomarkers, default=all_biomarkers)
     selected_targets = st.multiselect("Filter by Target Genes", all_targets, default=all_targets)
 
     filtered = filtered[
-        filtered["Biomarker"].isin(selected_biomarkers) &
-        filtered["TargetGene"].isin(selected_targets)
+        filtered["Biomarker_HGNC"].isin(selected_biomarkers) &
+        filtered["TargetGene_HGNC"].isin(selected_targets)
     ]
 
     value_column = "–log10(FDR)" if metric == "–log10(FDR)" else metric
-    heatmap_df = filtered.pivot(index="TargetGene", columns="Biomarker", values=value_column)
+    heatmap_df = filtered.pivot(index="TargetGene_HGNC", columns="Biomarker_HGNC", values=value_column)
 
     st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.05")
 
@@ -140,20 +140,26 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     # Filter results
     valid_df = results_df[
         (results_df["FDR"] < 0.05) &
+        (results_df["EffectSize"] < 0) &
         (results_df["MeanEffect_WT"] > -1)
     ].copy()
 
-    # Only include targets with at least one value < -0.6
+    # Restrict to target genes with at least one cell line with dependency < threshold
     valid_df = valid_df[valid_df["TargetGene"].isin([
         g for g in crispr_df.columns if (crispr_df[g] < effect_threshold).any()
     ])]
 
-    valid_df["pair"] = valid_df["Biomarker"] + " → " + valid_df["TargetGene"]
-    selected_pair = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=valid_df["pair"].unique())
+    # Define HGNC display pairs
+    valid_df["pair_display"] = valid_df["Biomarker_HGNC"] + " → " + valid_df["TargetGene_HGNC"]
+    pair_options = valid_df["pair_display"].unique()
+    selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=pair_options)
 
-    sel_row = valid_df[valid_df["pair"] == selected_pair].iloc[0]
-    biomarker = sel_row["Biomarker"]
-    target = sel_row["TargetGene"]
+    # Find matching row
+    sel_row = valid_df[valid_df["pair_display"] == selected_display].iloc[0]
+    biomarker = sel_row["Biomarker"]  # Entrez
+    target = sel_row["TargetGene"]    # Entrez
+    biomarker_hgnc = sel_row["Biomarker_HGNC"]
+    target_hgnc = sel_row["TargetGene_HGNC"]
 
     if biomarker not in cna_df.columns or target not in crispr_df.columns:
         st.warning("Selected gene not found in CNA/CRISPR data.")
@@ -173,7 +179,7 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
             sns.boxplot(data=df_plot, x="CNA_Status", y="GeneEffect", hue="CNA_Status",
                         palette={"Amplified": "#e74c3c", "WT": "#3498db"}, legend=False)
             sns.stripplot(data=df_plot, x="CNA_Status", y="GeneEffect", color="black", alpha=0.4, jitter=True, size=4)
-            ax3.set_title(f"{target} Dependency in {biomarker}-Amplified vs WT")
+            ax3.set_title(f"{target_hgnc} Dependency in {biomarker_hgnc}-Amplified vs WT")
             ax3.set_ylabel("CRISPR Gene Effect Score")
             ax3.set_xlabel("CNA Status")
             ax3.axhline(0, linestyle="--", color="gray", linewidth=1)
@@ -184,6 +190,6 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
             st.download_button(
                 label="⬇️ Download Boxplot (.png)",
                 data=buf3.getvalue(),
-                file_name=f"boxplot_{biomarker}_{target}.png",
+                file_name=f"boxplot_{biomarker_hgnc}_{target_hgnc}.png",
                 mime="image/png"
             )
