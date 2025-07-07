@@ -153,7 +153,13 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=pair_options)
 
     # Find matching row
-    sel_row = valid_df[valid_df["pair_display"] == selected_display].iloc[0]
+    filtered_rows = valid_df[valid_df["pair_display"] == selected_display]
+    if filtered_rows.empty:
+        st.warning("Selected gene pair not available after filtering. Please select another.")
+        st.stop()
+    else:
+        sel_row = filtered_rows.iloc[0]
+    
     biomarker = sel_row["Biomarker"]  # Entrez
     target = sel_row["TargetGene"]    # Entrez
     biomarker_hgnc = sel_row["Biomarker_HGNC"]
