@@ -10,15 +10,23 @@ st.set_page_config(page_title="Synthetic Lethality Visualisation", layout="wide"
 st.title("Visualising Synthetic Lethality in Amplified Genes")
 st.caption("Last updated: July 2025")
 
-# --- Load SL Results ---
+# --- Load full SL screen for volcano/heatmap ---
 @st.cache_data
-def load_results():
+def load_full_screen():
     df = pd.read_csv("streamlit_app/data/synthetic_lethality_screen_with_HGNC.csv")
     df["Biomarker_HGNC"] = df["Biomarker_HGNC"].astype(str).str.strip()
     df["TargetGene_HGNC"] = df["TargetGene_HGNC"].astype(str).str.strip()
     df["–log10(FDR)"] = -np.log10(df["FDR"] + 1e-10)
     df["SL_Hit"] = (df["EffectSize"] < 0) & (df["FDR"] < 0.05)
     df["OncogeneAddiction"] = df["Biomarker_HGNC"] == df["TargetGene_HGNC"]
+    return df
+
+# --- Load selective hits for boxplot ---
+@st.cache_data
+def load_selective_hits():
+    df = pd.read_csv("streamlit_app/data/selective_synthetic_lethal_hits_with_HGNC.csv")
+    df["Biomarker_HGNC"] = df["Biomarker_HGNC"].astype(str).str.strip()
+    df["TargetGene_HGNC"] = df["TargetGene_HGNC"].astype(str).str.strip()
     return df
 
 # --- Load CRISPR & CNA data ---
@@ -40,8 +48,7 @@ def load_amp_sig_genes():
     df = pd.read_csv("streamlit_app/data/cross_val_amp_sig_genes.csv")
     return set(df["Gene"].astype(str).str.strip())
 
-# --- Load all data ---
-results_df = load_results()
+# --- Load common data ---
 crispr_df, cna_df = load_crispr_and_cna()
 amp_biomarkers = load_amp_sig_genes()
 
@@ -54,6 +61,7 @@ plot_option = st.radio(
 # === Volcano Plot ===
 if plot_option == "Volcano Plot":
     st.subheader("Volcano Plot: Effect Size vs FDR")
+    results_df = load_full_screen()
 
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.scatterplot(
@@ -87,6 +95,7 @@ if plot_option == "Volcano Plot":
 # === Heatmap ===
 elif plot_option == "Heatmap":
     st.subheader("Heatmap of SL Hits")
+    results_df = load_full_screen()
 
     metric = st.selectbox(
         "Select Metric to Visualise",
@@ -137,6 +146,7 @@ elif plot_option == "Heatmap":
 # === Boxplot View ===
 elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     st.subheader("Boxplot of Gene Effect by CNA Status")
+    results_df = load_selective_hits()
 
     amp_threshold = 4.0
     min_group_size = 3
@@ -146,7 +156,6 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
         min_value=-1.5, max_value=0.0, value=-0.6, step=0.05
     )
 
-    # Add dropdown of all pairs (no filtering yet)
     results_df["pair_display"] = results_df["Biomarker_HGNC"] + " → " + results_df["TargetGene_HGNC"]
     selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=sorted(results_df["pair_display"].unique()))
 
@@ -156,9 +165,7 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     biomarker_hgnc = row["Biomarker_HGNC"]
     target_hgnc = row["TargetGene_HGNC"]
 
-    biomarker_status_col = f"{biomarker}_status"
-
-    # Build CNA status for this biomarker
+    # Build CNA status
     if biomarker in cna_df.columns:
         cna_status = cna_df[biomarker].apply(lambda x: "Amplified" if x > amp_threshold else "WT")
     else:
@@ -174,20 +181,16 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     gene_effect = crispr_df.loc[common, target]
     cna_status = cna_status.loc[common]
 
-    # Build plot data
     df_plot = pd.DataFrame({
         "GeneEffect": gene_effect,
         "CNA_Status": cna_status
     }).dropna()
-
     df_plot = df_plot[df_plot["CNA_Status"].isin(["Amplified", "WT"])]
 
-    # Skip if too few per group
     if df_plot["CNA_Status"].value_counts().min() < min_group_size:
         st.warning("Too few samples per group to show boxplot.")
         st.stop()
 
-    # Plot
     fig3, ax3 = plt.subplots(figsize=(6, 5))
     sns.boxplot(data=df_plot, x="CNA_Status", y="GeneEffect", hue="CNA_Status",
                 palette={"Amplified": "#e74c3c", "WT": "#3498db"}, legend=False)
