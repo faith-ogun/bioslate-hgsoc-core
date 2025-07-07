@@ -8,7 +8,7 @@ from io import BytesIO
 # --- Page config ---
 st.set_page_config(page_title="Synthetic Lethality Visualisation", layout="wide")
 st.title("Visualising Synthetic Lethality in Amplified Genes")
-st.caption("Last updated: June 2025")
+st.caption("Last updated: July 2025")
 
 # --- Load SL Results ---
 @st.cache_data
@@ -34,7 +34,16 @@ def load_crispr_and_cna():
     cna.columns = cna.columns.astype(str).str.strip()
     return crispr, cna
 
+# --- Load amplified biomarkers ---
+@st.cache_data
+def load_amp_sig_genes():
+    df = pd.read_csv("streamlit_app/data/cross_val_amp_sig_genes.csv")
+    return set(df["Gene"].astype(str).str.strip())
+
+# --- Load all data ---
 results_df = load_results()
+crispr_df, cna_df = load_crispr_and_cna()
+amp_biomarkers = load_amp_sig_genes()
 
 # --- Select View ---
 plot_option = st.radio(
@@ -66,7 +75,6 @@ if plot_option == "Volcano Plot":
     ax.legend()
     st.pyplot(fig)
 
-    # Volcano download
     buf_volcano = BytesIO()
     fig.savefig(buf_volcano, format="png", dpi=300)
     st.download_button(
@@ -130,21 +138,14 @@ elif plot_option == "Heatmap":
 elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     st.subheader("Boxplot of Gene Effect by CNA Status")
 
-    crispr_df, cna_df = load_crispr_and_cna()
     amp_threshold = 4.0
     min_group_size = 3
 
-    # Load amplified biomarkers (Entrez IDs, as in original script)
-    amp_sig_df = pd.read_csv("streamlit_app/data/cross_val_amp_sig_genes.csv")
-    amp_biomarkers = set(amp_sig_df["Gene"].astype(str).str.strip())
-
-    # Allow user to tweak the CRISPR dependency threshold
     effect_threshold = st.slider(
         "Minimum CRISPR dependency score (lower = stricter)",
         min_value=-1.5, max_value=0.0, value=-0.6, step=0.05
     )
 
-    # Filter SL results
     valid_df = results_df[
         (results_df["FDR"] < 0.05) &
         (results_df["EffectSize"] < 0) &
@@ -152,7 +153,6 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
         (results_df["Biomarker"].astype(str).isin(amp_biomarkers))
     ].copy()
 
-    # Keep only targets with at least one strong dependency
     strong_crispr_genes = [g for g in crispr_df.columns if (crispr_df[g] < effect_threshold).any()]
     valid_df = valid_df[valid_df["TargetGene"].isin(strong_crispr_genes)]
 
@@ -160,52 +160,49 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
         st.warning("No valid SL gene pairs passed all filters. Try relaxing the CRISPR threshold.")
         st.stop()
 
-    # Define dropdown options
     valid_df["pair_display"] = valid_df["Biomarker_HGNC"] + " → " + valid_df["TargetGene_HGNC"]
     pair_options = valid_df["pair_display"].unique()
     selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=pair_options)
 
-    filtered_rows = valid_df[valid_df["pair_display"] == selected_display]
-    if filtered_rows.empty:
-        st.warning("Selected gene pair not available after filtering. Please select another.")
-        st.stop()
-    else:
-        sel_row = filtered_rows.iloc[0]
+    sel_row = valid_df[valid_df["pair_display"] == selected_display].iloc[0]
 
-    biomarker = sel_row["Biomarker"]  # Entrez
-    target = sel_row["TargetGene"]    # Entrez
+    biomarker = sel_row["Biomarker"]
+    target = sel_row["TargetGene"]
     biomarker_hgnc = sel_row["Biomarker_HGNC"]
     target_hgnc = sel_row["TargetGene_HGNC"]
 
     if biomarker not in cna_df.columns or target not in crispr_df.columns:
         st.warning(f"Selected genes not found in CNA or CRISPR matrix: {biomarker}, {target}")
-    else:
-        cna_status = cna_df[biomarker].apply(lambda x: "Amplified" if x > amp_threshold else "WT")
-        common = crispr_df.index.intersection(cna_status.index)
-        df_plot = pd.DataFrame({
-            "GeneEffect": crispr_df.loc[common, target],
-            "CNA_Status": cna_status.loc[common]
-        }).dropna()
+        st.stop()
 
-        df_plot = df_plot[df_plot["CNA_Status"].isin(["Amplified", "WT"])]
-        if df_plot["CNA_Status"].value_counts().min() < min_group_size:
-            st.warning("Too few samples per group to show boxplot.")
-        else:
-            fig3, ax3 = plt.subplots(figsize=(6, 5))
-            sns.boxplot(data=df_plot, x="CNA_Status", y="GeneEffect", hue="CNA_Status",
-                        palette={"Amplified": "#e74c3c", "WT": "#3498db"}, legend=False)
-            sns.stripplot(data=df_plot, x="CNA_Status", y="GeneEffect", color="black", alpha=0.4, jitter=True, size=4)
-            ax3.set_title(f"{target_hgnc} Dependency in {biomarker_hgnc}-Amplified vs WT")
-            ax3.set_ylabel("CRISPR Gene Effect Score")
-            ax3.set_xlabel("CNA Status")
-            ax3.axhline(0, linestyle="--", color="gray", linewidth=1)
-            st.pyplot(fig3)
+    cna_status = cna_df[biomarker].apply(lambda x: "Amplified" if x > amp_threshold else "WT")
+    common = crispr_df.index.intersection(cna_status.index)
+    df_plot = pd.DataFrame({
+        "GeneEffect": crispr_df.loc[common, target],
+        "CNA_Status": cna_status.loc[common]
+    }).dropna()
 
-            buf3 = BytesIO()
-            fig3.savefig(buf3, format="png", dpi=300)
-            st.download_button(
-                label="⬇️ Download Boxplot (.png)",
-                data=buf3.getvalue(),
-                file_name=f"boxplot_{biomarker_hgnc}_{target_hgnc}.png",
-                mime="image/png"
-            )
+    df_plot = df_plot[df_plot["CNA_Status"].isin(["Amplified", "WT"])]
+
+    if df_plot["CNA_Status"].value_counts().min() < min_group_size:
+        st.warning("Too few samples per group to show boxplot.")
+        st.stop()
+
+    fig3, ax3 = plt.subplots(figsize=(6, 5))
+    sns.boxplot(data=df_plot, x="CNA_Status", y="GeneEffect", hue="CNA_Status",
+                palette={"Amplified": "#e74c3c", "WT": "#3498db"}, legend=False)
+    sns.stripplot(data=df_plot, x="CNA_Status", y="GeneEffect", color="black", alpha=0.4, jitter=True, size=4)
+    ax3.set_title(f"{target_hgnc} Dependency in {biomarker_hgnc}-Amplified vs WT")
+    ax3.set_ylabel("CRISPR Gene Effect Score")
+    ax3.set_xlabel("CNA Status")
+    ax3.axhline(0, linestyle="--", color="gray", linewidth=1)
+    st.pyplot(fig3)
+
+    buf3 = BytesIO()
+    fig3.savefig(buf3, format="png", dpi=300)
+    st.download_button(
+        label="⬇️ Download Boxplot (.png)",
+        data=buf3.getvalue(),
+        file_name=f"boxplot_{biomarker_hgnc}_{target_hgnc}.png",
+        mime="image/png"
+    )
