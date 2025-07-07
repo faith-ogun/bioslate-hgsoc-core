@@ -134,6 +134,10 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     amp_threshold = 4.0
     min_group_size = 3
 
+    # Load amplified biomarkers (Entrez IDs, as in original script)
+    amp_sig_df = pd.read_csv("streamlit_app/data/cross_val_amp_sig_genes.csv")
+    amp_biomarkers = set(amp_sig_df["Gene"].astype(str).str.strip())
+
     # Allow user to tweak the CRISPR dependency threshold
     effect_threshold = st.slider(
         "Minimum CRISPR dependency score (lower = stricter)",
@@ -144,7 +148,8 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     valid_df = results_df[
         (results_df["FDR"] < 0.05) &
         (results_df["EffectSize"] < 0) &
-        (results_df["MeanEffect_WT"] > -1)
+        (results_df["MeanEffect_WT"] > -1) &
+        (results_df["Biomarker"].astype(str).isin(amp_biomarkers))
     ].copy()
 
     # Keep only targets with at least one strong dependency
@@ -152,7 +157,7 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     valid_df = valid_df[valid_df["TargetGene"].isin(strong_crispr_genes)]
 
     if valid_df.empty:
-        st.warning("No valid SL gene pairs passed CRISPR filtering. Try relaxing the effect threshold.")
+        st.warning("No valid SL gene pairs passed all filters. Try relaxing the CRISPR threshold.")
         st.stop()
 
     # Define dropdown options
