@@ -193,7 +193,7 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
 
     fig3, ax3 = plt.subplots(figsize=(6, 5))
     sns.boxplot(data=df_plot, x="CNA_Status", y="GeneEffect", hue="CNA_Status",
-                palette={"Amplified": "#e74c3c", "WT": "#3498db"}, legend=False)
+                palette={"Amplified": "#e74c3c", "WT": "#3498db"}, order=["WT", "Amplified"], legend=False)
     sns.stripplot(data=df_plot, x="CNA_Status", y="GeneEffect", color="black", alpha=0.4, jitter=True, size=4)
     ax3.set_title(f"{target_hgnc} Dependency in {biomarker_hgnc}-Amplified vs WT")
     ax3.set_ylabel("CRISPR Gene Effect Score")
