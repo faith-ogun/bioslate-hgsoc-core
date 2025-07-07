@@ -133,40 +133,47 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     crispr_df, cna_df = load_crispr_and_cna()
     amp_threshold = 4.0
     min_group_size = 3
-    effect_threshold = -0.6
 
-    # Filter results
+    # Allow user to tweak the CRISPR dependency threshold
+    effect_threshold = st.slider(
+        "Minimum CRISPR dependency score (lower = stricter)",
+        min_value=-1.5, max_value=0.0, value=-0.6, step=0.05
+    )
+
+    # Filter SL results
     valid_df = results_df[
         (results_df["FDR"] < 0.05) &
         (results_df["EffectSize"] < 0) &
         (results_df["MeanEffect_WT"] > -1)
     ].copy()
 
-    # Restrict to target genes with at least one cell line with dependency < threshold
-    valid_df = valid_df[valid_df["TargetGene"].isin([
-        g for g in crispr_df.columns if (crispr_df[g] < effect_threshold).any()
-    ])]
+    # Keep only targets with at least one strong dependency
+    strong_crispr_genes = [g for g in crispr_df.columns if (crispr_df[g] < effect_threshold).any()]
+    valid_df = valid_df[valid_df["TargetGene"].isin(strong_crispr_genes)]
 
-    # Define HGNC display pairs
+    if valid_df.empty:
+        st.warning("No valid SL gene pairs passed CRISPR filtering. Try relaxing the effect threshold.")
+        st.stop()
+
+    # Define dropdown options
     valid_df["pair_display"] = valid_df["Biomarker_HGNC"] + " → " + valid_df["TargetGene_HGNC"]
     pair_options = valid_df["pair_display"].unique()
     selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=pair_options)
 
-    # Find matching row
     filtered_rows = valid_df[valid_df["pair_display"] == selected_display]
     if filtered_rows.empty:
         st.warning("Selected gene pair not available after filtering. Please select another.")
         st.stop()
     else:
         sel_row = filtered_rows.iloc[0]
-    
+
     biomarker = sel_row["Biomarker"]  # Entrez
     target = sel_row["TargetGene"]    # Entrez
     biomarker_hgnc = sel_row["Biomarker_HGNC"]
     target_hgnc = sel_row["TargetGene_HGNC"]
 
     if biomarker not in cna_df.columns or target not in crispr_df.columns:
-        st.warning("Selected gene not found in CNA/CRISPR data.")
+        st.warning(f"Selected genes not found in CNA or CRISPR matrix: {biomarker}, {target}")
     else:
         cna_status = cna_df[biomarker].apply(lambda x: "Amplified" if x > amp_threshold else "WT")
         common = crispr_df.index.intersection(cna_status.index)
