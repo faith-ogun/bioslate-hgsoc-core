@@ -8,3 +8,4 @@ sandbox/
 results/synthetic_lethality_screen.csv
 notebooks/pdf/
 results/old/
+results/other
