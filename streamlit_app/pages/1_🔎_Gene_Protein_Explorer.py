@@ -8,6 +8,8 @@ import io
 
 # Page config
 st.set_page_config(page_title="BioSLATE Gene–Protein Explorer", layout="wide")
+st.caption("Last updated: June 27th 2025")
+
 
 @st.cache_data
 def load_data():
