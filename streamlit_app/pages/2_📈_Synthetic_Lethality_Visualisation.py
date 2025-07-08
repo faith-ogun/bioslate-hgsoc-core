@@ -143,7 +143,7 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     </div>
     """,
     unsafe_allow_html=True
-)
+    )
 
     amp_threshold = 4.0
     min_group_size = 3
