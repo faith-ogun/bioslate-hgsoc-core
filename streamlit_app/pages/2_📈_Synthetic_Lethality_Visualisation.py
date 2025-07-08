@@ -10,6 +10,13 @@ st.set_page_config(page_title="Synthetic Lethality Visualisation", layout="wide"
 st.title("Visualising Synthetic Lethality in Amplified Genes")
 st.caption("Last updated: July 2025")
 
+# --- Sidebar options ---
+st.sidebar.title("Visualisation Options")
+plot_option = st.sidebar.radio(
+    "Choose a view:",
+    ["Volcano Plot", "Heatmap", "Boxplot (TargetGene vs CNA Status)"]
+)
+
 # --- Load full SL screen for volcano/heatmap ---
 @st.cache_data
 def load_full_screen():
@@ -48,15 +55,9 @@ def load_amp_sig_genes():
     df = pd.read_csv("streamlit_app/data/cross_val_amp_sig_genes.csv")
     return set(df["Gene"].astype(str).str.strip())
 
-# --- Load common data ---
+# --- Load shared data ---
 crispr_df, cna_df = load_crispr_and_cna()
 amp_biomarkers = load_amp_sig_genes()
-
-# --- Select View ---
-plot_option = st.radio(
-    "Select Visualisation",
-    ["Volcano Plot", "Heatmap", "Boxplot (TargetGene vs CNA Status)"]
-)
 
 # === Volcano Plot ===
 if plot_option == "Volcano Plot":
@@ -75,8 +76,8 @@ if plot_option == "Volcano Plot":
         alpha=0.7,
         edgecolor="black"
     )
-    ax.axhline(y=-np.log10(0.05), linestyle="--", color="gray", label="FDR = 0.05")
-    ax.axvline(x=0, linestyle="--", color="gray", label="Effect Size = 0")
+    ax.axhline(y=-np.log10(0.05), linestyle="--", color="gray")
+    ax.axvline(x=0, linestyle="--", color="gray")
     ax.set_xlabel("Cohen's d (Effect Size)")
     ax.set_ylabel("–log₁₀(FDR)")
     ax.set_title("Volcano Plot: Synthetic Lethality in Amplified Biomarkers")
@@ -143,18 +144,14 @@ elif plot_option == "Heatmap":
         mime="text/csv"
     )
 
-# === Boxplot View ===
+# === Boxplot ===
 elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     st.subheader("Boxplot of Gene Effect by CNA Status")
     results_df = load_selective_hits()
 
     amp_threshold = 4.0
     min_group_size = 3
-
-    effect_threshold = st.slider(
-        "Minimum CRISPR dependency score (lower = stricter)",
-        min_value=-1.5, max_value=0.0, value=-0.6, step=0.05
-    )
+    effect_threshold = -0.6  # fixed
 
     results_df["pair_display"] = results_df["Biomarker_HGNC"] + " → " + results_df["TargetGene_HGNC"]
     selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=sorted(results_df["pair_display"].unique()))
@@ -176,7 +173,6 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
         st.warning(f"CRISPR data for target {target} not found.")
         st.stop()
 
-    # Intersect CNA and CRISPR index
     common = crispr_df.index.intersection(cna_status.index)
     gene_effect = crispr_df.loc[common, target]
     cna_status = cna_status.loc[common]
@@ -192,8 +188,11 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
         st.stop()
 
     fig3, ax3 = plt.subplots(figsize=(6, 5))
-    sns.boxplot(data=df_plot, x="CNA_Status", y="GeneEffect", hue="CNA_Status",
-                palette={"Amplified": "#e74c3c", "WT": "#3498db"}, order=["WT", "Amplified"], legend=False)
+    sns.boxplot(
+        data=df_plot, x="CNA_Status", y="GeneEffect", hue="CNA_Status",
+        palette={"Amplified": "#e74c3c", "WT": "#3498db"},
+        order=["WT", "Amplified"], legend=False
+    )
     sns.stripplot(data=df_plot, x="CNA_Status", y="GeneEffect", color="black", alpha=0.4, jitter=True, size=4)
     ax3.set_title(f"{target_hgnc} Dependency in {biomarker_hgnc}-Amplified vs WT")
     ax3.set_ylabel("CRISPR Gene Effect Score")
