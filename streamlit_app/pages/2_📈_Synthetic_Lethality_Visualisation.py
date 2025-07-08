@@ -8,7 +8,7 @@ from io import BytesIO
 # --- Page config ---
 st.set_page_config(page_title="Synthetic Lethality Visualisation", layout="wide")
 st.title("Visualising Synthetic Lethality in Amplified Genes")
-st.caption("Last updated: July 2025")
+st.caption("Last updated: July 8th 2025")
 
 # --- Sidebar options ---
 st.sidebar.title("Visualisation Options")
