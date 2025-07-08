@@ -128,6 +128,23 @@ elif plot_option == "Heatmap":
 elif plot_option == "Boxplot (TargetGene vs CNA Status)":
     st.subheader("Boxplot of Gene Effect by CNA Status")
 
+    st.markdown(
+    """
+    <div style="background-color:#eaf4fb; padding:12px; border-radius:6px;">
+        ℹ️ <b>Context:</b> This view shows the most selective synthetic lethal interactions identified from a large-scale screen.
+        We initially tested <b>1,486,950 gene pairs</b> and applied the following filters:
+        <ul>
+            <li><b>P-value &lt; 0.05</b> → 81,451 hits</li>
+            <li><b>FDR &lt; 0.05</b> → 163 hits</li>
+            <li><b>Strong SL hits</b> (FDR &lt; 0.05 &amp; EffectSize &lt; 0) → 88 hits</li>
+            <li><b>Selective hits</b> (WT MeanEffect &gt; -1 to exclude pan-essential genes) → <b>54 hits</b></li>
+        </ul>
+        These 54 high-confidence pairs are shown in the dropdown below for CRISPR-CNA boxplot comparison.
+    </div>
+    """,
+    unsafe_allow_html=True
+    )
+
     amp_threshold = 4.0
     min_group_size = 3
     effect_threshold = -0.6  # fixed
