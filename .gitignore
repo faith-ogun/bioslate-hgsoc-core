@@ -10,3 +10,4 @@ notebooks/pdf/
 results/old/
 results/other/synthetic_lethality_screen.csv
 streamlit_app/pages/2_🧬_CNV_Explorer.py
+agents/.env
