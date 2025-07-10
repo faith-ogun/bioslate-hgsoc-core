@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 import re
-from markdown import markdown  
 
 # Page setup
 st.set_page_config(page_title="SL Confidence Reports", layout="wide")
@@ -35,20 +34,18 @@ def load_low_confidence_reports():
     reports = {}
     for filename in os.listdir(LOW_CONF_PATH):
         if filename.endswith(".md"):
-            biomarker_target = filename.replace("_report.md", "").replace(".md", "")
-            display_name = biomarker_target.replace("_", " – ")
+            pair_name = filename.replace(".md", "")
             with open(os.path.join(LOW_CONF_PATH, filename), "r", encoding="utf-8") as f:
                 content = f.read()
             score_match = re.search(r"Confidence Score: (\d+)/100", content)
             score = int(score_match.group(1)) if score_match else 0
-            reports[display_name] = {
+            reports[pair_name] = {
                 "content": content,
                 "score": score,
                 "path": os.path.join(LOW_CONF_PATH, filename)
             }
     return reports
 
-# Load reports
 reports = load_low_confidence_reports()
 pair_names = sorted(reports.keys())
 
@@ -61,9 +58,9 @@ st.sidebar.title("Report Selection")
 selected_pair = st.sidebar.selectbox("Select SL Gene Pair", pair_names)
 report = reports[selected_pair]
 
-# Display markdown content as formatted HTML
-html_content = markdown(report["content"])
-st.markdown(html_content, unsafe_allow_html=True)
+# Display markdown content
+st.subheader(f"🧬 Report for {selected_pair.replace('_', ' ')}")
+st.markdown(report["content"])
 
 # Download as Markdown
 with open(report["path"], "rb") as f:
