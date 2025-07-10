@@ -20,4 +20,5 @@ requests
 # For parsing and working with text / reports
 markdown-it-py
 mdurl
+markdown
 
