@@ -7,9 +7,10 @@ numpy
 markdown
 html2text
 
-# Plotting (if you’re visualising SL data or boxplots)
+# Plotting and Stats 
 matplotlib
 plotly
+scipy
 seaborn
 
 # For JSON data, APIs, and HTTP requests
