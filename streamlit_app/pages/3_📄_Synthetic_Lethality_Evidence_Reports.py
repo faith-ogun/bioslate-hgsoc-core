@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 import re
-from markdown import markdown  # Make sure to install this with: pip install markdown
+from markdown import markdown  
 
 # Page setup
 st.set_page_config(page_title="SL Confidence Reports", layout="wide")
