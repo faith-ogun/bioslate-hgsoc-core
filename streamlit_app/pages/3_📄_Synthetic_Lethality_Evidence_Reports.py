@@ -27,7 +27,7 @@ st.markdown(
 )
 
 # Path to low confidence reports only
-LOW_CONF_PATH = "streamlit_app/reports/low_confidence_reports/"
+LOW_CONF_PATH = "streamlit_app/reports/"
 
 @st.cache_data(show_spinner=False)
 def load_low_confidence_reports():
