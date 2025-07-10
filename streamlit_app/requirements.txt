@@ -2,8 +2,6 @@
 streamlit
 pandas
 numpy
-os
-re
 
 # For markdown report rendering and downloads
 markdown
