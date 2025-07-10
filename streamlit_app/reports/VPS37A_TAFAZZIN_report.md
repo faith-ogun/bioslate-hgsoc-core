@@ -1,8 +1,3 @@
-# Synthetic Lethality Report: VPS37A - TAFAZZIN
-
-⚠️ LOW CONFIDENCE REPORT (20/100)
-
-```markdown
 # VPS37A – TAFAZZIN: Comprehensive Cancer Report
 
 ## 1. Background on Genes
@@ -53,4 +48,3 @@ Currently, no direct synthetic lethality or therapeutic targeting involving VPS3
 - **PMID: 22016507** – [hVps37A Status affects prognosis and cetuximab sensitivity in ovarian cancer](https://pubmed.ncbi.nlm.nih.gov/22016507)
 - **PMID: 28122307** – [HCRP1 downregulation promotes hepatocellular carcinoma cell migration and invasion](https://pubmed.ncbi.nlm.nih.gov/28122307)
 - **PMID: 40603434** – [Tafazzin-deficient zebrafish display mitochondrial dysfunction](https://pubmed.ncbi.nlm.nih.gov/40603434)
-```

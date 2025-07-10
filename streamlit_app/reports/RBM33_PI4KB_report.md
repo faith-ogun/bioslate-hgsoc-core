@@ -1,8 +1,3 @@
-# Synthetic Lethality Report: RBM33 - PI4KB
-
-⚠️ LOW CONFIDENCE REPORT (20/100)
-
-```markdown
 # RBM33 – PI4KB Gene Pair Report
 
 ## 1. Background on Genes
@@ -73,4 +68,3 @@ RBM33 and PI4KB play roles in cancer pathophysiology through RNA methylation and
 
 - PMID: 38300798 – [https://pubmed.ncbi.nlm.nih.gov/38300798](https://pubmed.ncbi.nlm.nih.gov/38300798)  
   Title: Protocol for detecting RBM33-binding sites in HEK293T cells using PAR-CLIP-seq.
-```

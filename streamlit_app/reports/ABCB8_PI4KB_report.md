@@ -1,8 +1,3 @@
-# Synthetic Lethality Report: ABCB8 - PI4KB
-
-⚠️ LOW CONFIDENCE REPORT (15/100)
-
-```markdown
 # Structured Report on Gene Pair: ABCB8 – PI4KB
 
 ## 1. Background on Genes
@@ -67,4 +62,3 @@ Current evidence suggests that while ABCB8 and PI4KB individually hold importanc
 
 - PMID: 39988733 – [https://pubmed.ncbi.nlm.nih.gov/39988733](https://pubmed.ncbi.nlm.nih.gov/39988733)  
   Title: A distinctive form of autophagy induced by oncogenic RAS.
-```

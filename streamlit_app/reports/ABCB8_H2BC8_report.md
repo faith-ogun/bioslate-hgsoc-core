@@ -1,8 +1,3 @@
-# Synthetic Lethality Report: ABCB8 - H2BC8
-
-⚠️ LOW CONFIDENCE REPORT (10/100)
-
-```markdown
 # ABCB8 – H2BC8 Gene Pair: Structured Report
 
 ## 1. Background on Genes
@@ -47,4 +42,3 @@ There is insufficient evidence to establish a synthetic lethality relationship o
 
 - PMID: 38287330 – [Link](https://pubmed.ncbi.nlm.nih.gov/38287330)  
   Title: Elucidating the role of Pyroptosis in papillary thyroid cancer: prognostic, immunological, and therapeutic perspectives.
-```

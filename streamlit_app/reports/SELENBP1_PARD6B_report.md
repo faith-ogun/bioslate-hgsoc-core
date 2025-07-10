@@ -1,8 +1,3 @@
-# Synthetic Lethality Report: SELENBP1 - PARD6B
-
-⚠️ LOW CONFIDENCE REPORT (30/100)
-
-```markdown
 # Report on the Gene Pair: SELENBP1 – PARD6B
 
 ## Background on Genes
@@ -49,4 +44,3 @@ The exploration of SELENBP1 and PARD6B indicates important but separate roles in
 - **PMID: 40533910** – [Polarity Gene PARD6B Promotes Tumor Growth of Colorectal Cancer via Increasing MYC Expression](https://pubmed.ncbi.nlm.nih.gov/40533910)
 - **PMID: 39262489** – [Identification of genes predicting chemoresistance and short survival in ovarian cancer](https://pubmed.ncbi.nlm.nih.gov/39262489)
 - **PMID: 38823535** – [Integrative multi-omics analysis reveals ortho-topolin riboside exhibits anticancer activity by regulating metabolic pathways in radio-resistant triple negative breast cancer cells](https://pubmed.ncbi.nlm.nih.gov/38823535)
-```

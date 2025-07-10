@@ -1,8 +1,3 @@
-# Synthetic Lethality Report: TUSC3 - TAFAZZIN
-
-⚠️ LOW CONFIDENCE REPORT (10/100)
-
-```markdown
 ### TUSC3 – TAFAZZIN Genetic Pair: Scientific Report
 
 #### 1. Background on Genes
@@ -48,4 +43,3 @@ Current evidence does not substantiate a synthetic lethal relationship between T
 
 - **PMID: 40603434** – https://pubmed.ncbi.nlm.nih.gov/40603434  
   Title: Tafazzin-deficient zebrafish display mitochondrial dysfunction, neutropenia, and metabolic defects without myopathy.
-```

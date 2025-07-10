@@ -1,8 +1,3 @@
-# Synthetic Lethality Report: CD47 - ACLY
-
-⚠️ LOW CONFIDENCE REPORT (40/100)
-
-```markdown
 # Report on CD47 – ACLY Gene Pair
 
 ## 1. Background on Genes
@@ -68,4 +63,3 @@ CD47 emerges as a viable immunotherapeutic target in several cancers, with a gro
 
 - Link to Bempedoic Acid Clinical Use - https://www.whocc.no/atc_ddd_index/?code=C10AX15
 
-```

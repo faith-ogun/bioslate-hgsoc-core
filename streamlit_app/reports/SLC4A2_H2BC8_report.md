@@ -1,8 +1,3 @@
-# Synthetic Lethality Report: SLC4A2 - H2BC8
-
-⚠️ LOW CONFIDENCE REPORT (25/100)
-
-```markdown
 # SLC4A2 – H2BC8 Gene Pair: Research and Clinical Insights
 
 ## 1. Background on Genes
@@ -37,4 +32,3 @@ Current evidence for SLC4A2 as a cancer target is supported by its role in pH re
   Title: Knockdown of anion exchanger 2 suppressed the growth of ovarian cancer cells via mTOR/p70S6K1 signaling.
 - PMID: 38287330 – https://pubmed.ncbi.nlm.nih.gov/38287330  
   Title: Elucidating the role of Pyroptosis in papillary thyroid cancer: prognostic, immunological, and therapeutic perspectives.
-```

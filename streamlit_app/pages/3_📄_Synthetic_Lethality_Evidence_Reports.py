@@ -5,7 +5,7 @@ import re
 # Page setup
 st.set_page_config(page_title="SL Confidence Reports", layout="wide")
 st.title("Synthetic Lethality Confidence Reports")
-st.caption("Auto-generated summaries from PubMed, Open Targets, and ClinicalTrials.gov")
+st.caption("Generated summaries from PubMed, Open Targets, and ClinicalTrials.gov")
 
 # Disclaimer about low confidence
 st.markdown(
@@ -34,12 +34,14 @@ def load_low_confidence_reports():
     reports = {}
     for filename in os.listdir(LOW_CONF_PATH):
         if filename.endswith(".md"):
-            pair_name = filename.replace(".md", "")
+            raw_name = filename.replace(".md", "")
+            # Format name as "BIOMARKER - TARGET"
+            name = raw_name.replace("_report", "").replace("_", " - ")
             with open(os.path.join(LOW_CONF_PATH, filename), "r", encoding="utf-8") as f:
                 content = f.read()
             score_match = re.search(r"Confidence Score: (\d+)/100", content)
             score = int(score_match.group(1)) if score_match else 0
-            reports[pair_name] = {
+            reports[name] = {
                 "content": content,
                 "score": score,
                 "path": os.path.join(LOW_CONF_PATH, filename)
@@ -58,7 +60,7 @@ st.sidebar.title("Report Selection")
 selected_pair = st.sidebar.selectbox("Select SL Gene Pair", pair_names)
 report = reports[selected_pair]
 
-# Display markdown content
+# Display markdown content (no extra heading)
 st.markdown(report["content"])
 
 # Download as Markdown
