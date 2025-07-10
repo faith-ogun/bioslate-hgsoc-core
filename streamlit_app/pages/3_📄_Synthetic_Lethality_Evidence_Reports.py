@@ -59,7 +59,6 @@ selected_pair = st.sidebar.selectbox("Select SL Gene Pair", pair_names)
 report = reports[selected_pair]
 
 # Display markdown content
-st.subheader(f"🧬 Report for {selected_pair.replace('_', ' ')}")
 st.markdown(report["content"])
 
 # Download as Markdown
