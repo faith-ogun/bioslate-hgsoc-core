@@ -13,3 +13,6 @@ streamlit_app/pages/2_🧬_CNV_Explorer.py
 agents/.env
 agents/low_confidence_reports/
 agents/logs/
+streamlit_app/reports/
+streamlit_app/scripts/
+streamlit_app/old_pages/
