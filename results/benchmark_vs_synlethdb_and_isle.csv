@@ -1,0 +1,13 @@
+Biomarker_HGNC,TargetGene_HGNC,In_SynLethDB,In_ISLE,Novel?
+ABCF2,PI4KB,False,False,True
+CDK5,PI4KB,False,False,True
+ABCB8,PI4KB,False,False,True
+AGAP3,PI4KB,False,False,True
+RBM33,PI4KB,False,False,True
+PAXIP1,PI4KB,False,False,True
+PRKAG2,PI4KB,False,False,True
+SCARA3,SPAG5,False,False,True
+RHEB,PI4KB,False,False,True
+TFB2M,YTHDC1,False,False,True
+SLC4A2,PI4KB,False,False,True
+TMUB1,PI4KB,False,False,True
