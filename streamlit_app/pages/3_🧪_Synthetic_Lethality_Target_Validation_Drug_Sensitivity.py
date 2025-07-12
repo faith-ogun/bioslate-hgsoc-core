@@ -8,7 +8,7 @@ from io import BytesIO
 # --- Page setup ---
 st.set_page_config(page_title="SL Target Drug Sensitivity", layout="wide")
 st.title("Expression–Drug Sensitivity Validation of SL Targets")
-st.caption("Validating synthetic lethal targets via expression–AUC correlation in HGSOC")
+st.caption("Validating Synthetic Lethal Targets Via Expression–AUC Correlation in HGSOC\nLast Updated: July 12th 2025")
 
 # --- Load data ---
 @st.cache_data(show_spinner=False)
