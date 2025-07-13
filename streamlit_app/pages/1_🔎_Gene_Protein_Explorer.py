@@ -45,13 +45,16 @@ if mode == "T-test + Cohen's d":
     stats_df = stats_df[
         (stats_df["P-value (Amplification vs Neutral)"] < p_thresh) |
         (stats_df["P-value (Deletion vs Neutral)"] < p_thresh)]
+    gene_list = sorted(stats_df["Gene_HGNC"].unique())
+
 elif mode == "Linear Regression":
     stats_df = linear_regression_df.dropna(subset=["P-value"])
     stats_df = stats_df[stats_df["P-value"] < p_thresh]
-else:
-    stats_df = cnv_prot_df[["Gene_HGNC"]].drop_duplicates()  # Show all
+    gene_list = sorted(stats_df["Gene_HGNC"].unique())
 
-gene_list = sorted(stats_df["Gene_HGNC"].unique())
+else:  # Advanced Mode
+    stats_df = cnv_prot_df[["Gene_HGNC"]].drop_duplicates()
+    gene_list = sorted(stats_df["Gene_HGNC"].unique())
 
 # Sidebar gene selection
 if comp_mode == "Single Gene":
