@@ -24,7 +24,7 @@ def load_all_data():
     full_screen["Biomarker_HGNC"] = full_screen["Biomarker_HGNC"].astype(str).str.strip()
     full_screen["TargetGene_HGNC"] = full_screen["TargetGene_HGNC"].astype(str).str.strip()
     full_screen["–log10(FDR)"] = -np.log10(full_screen["FDR"] + 1e-10)
-    full_screen["SL_Hit"] = (full_screen["EffectSize"] < 0) & (full_screen["FDR"] < 0.05)
+    full_screen["SL_Hit"] = (full_screen["EffectSize"] < 0) & (full_screen["FDR"] < 0.1)
     full_screen["OncogeneAddiction"] = full_screen["Biomarker_HGNC"] == full_screen["TargetGene_HGNC"]
 
     selective_hits = pd.read_csv("streamlit_app/data/selective_synthetic_lethal_hits_with_HGNC.csv")
@@ -60,7 +60,7 @@ if plot_option == "Volcano Plot":
         alpha=0.7,
         edgecolor="black"
     )
-    ax.axhline(y=-np.log10(0.05), linestyle="--", color="gray")
+    ax.axhline(y=-np.log10(0.1), linestyle="--", color="gray")
     ax.axvline(x=0, linestyle="--", color="gray")
     ax.set_xlabel("Cohen's d (Effect Size)")
     ax.set_ylabel("–log₁₀(FDR)")
@@ -85,7 +85,7 @@ elif plot_option == "Heatmap":
         ["EffectSize", "–log10(FDR)", "MeanEffect_Amplified"]
     )
     filtered = full_screen_df[
-        (full_screen_df["EffectSize"] < 0) & (full_screen_df["FDR"] < 0.05)
+        (full_screen_df["EffectSize"] < 0) & (full_screen_df["FDR"] < 0.1)
     ].copy()
 
     all_biomarkers = sorted(filtered["Biomarker_HGNC"].unique())
@@ -102,7 +102,7 @@ elif plot_option == "Heatmap":
     value_column = "–log10(FDR)" if metric == "–log10(FDR)" else metric
     heatmap_df = filtered.pivot(index="TargetGene_HGNC", columns="Biomarker_HGNC", values=value_column)
 
-    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.05")
+    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.1")
     fig2, ax2 = plt.subplots(figsize=(12, 10))
     sns.heatmap(
         heatmap_df.clip(-3, 0) if "EffectSize" in metric else heatmap_df,
