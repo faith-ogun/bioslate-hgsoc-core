@@ -17,6 +17,11 @@ def load_data():
     cnv_prot_df = pd.read_csv("streamlit_app/data/cnv_prot_boxplot_with_hgnc.csv")
     t_test_stats_df = pd.read_csv("streamlit_app/data/per_gene_stats_filtered.csv")
     linear_regression_df = pd.read_csv("streamlit_app/data/per_gene_linear_regression.csv")
+
+    # Rename 'Gene' to 'Gene_HGNC' in both
+    t_test_stats_df = t_test_stats_df.rename(columns={"Gene": "Gene_HGNC"})
+    linear_regression_df = linear_regression_df.rename(columns={"Gene": "Gene_HGNC"})
+
     return cnv_prot_df, t_test_stats_df, linear_regression_df
 
 cnv_prot_df, t_test_stats_df, linear_regression_df = load_data()
