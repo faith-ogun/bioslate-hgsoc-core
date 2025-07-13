@@ -135,9 +135,9 @@ elif plot_option == "Boxplot (TargetGene vs CNA Status)":
         We initially tested <b>1,486,950 gene pairs</b> and applied the following filters:
         <ul>
             <li><b>P-value &lt; 0.05</b> → 81,451 hits</li>
-            <li><b>FDR &lt; 0.05</b> → 163 hits</li>
-            <li><b>Strong SL hits</b> (FDR &lt; 0.05 &amp; EffectSize &lt; 0) → 88 hits</li>
-            <li><b>Selective hits</b> (WT MeanEffect &gt; -1 to exclude pan-essential genes) → <b>54 hits</b></li>
+            <li><b>FDR &lt; 0.05</b> → 22 hits</li>
+            <li><b>Strong SL hits</b> (FDR &lt; 0.1 &amp; EffectSize &lt; 0) → 20 hits</li>
+            <li><b>Selective hits</b> (WT MeanEffect &gt; -1 to exclude pan-essential genes) → <b>12 hits</b></li>
         </ul>
         These 12 high-confidence pairs are shown in the dropdown below for CRISPR-CNA boxplot comparison.
     </div>
