@@ -8,13 +8,13 @@ import io
 
 # Page config
 st.set_page_config(page_title="BioSLATE Gene–Protein Explorer", layout="wide")
-st.title("Integrative Viewer of CNA and Protein Expression Dynamics")
-st.caption("Last updated: June 27th 2025")
+st.title("Interactive Viewer of CNA and Protein Expression Dynamics")
+st.caption("Last updated: July 13th 2025")
 
 
 @st.cache_data
 def load_data():
-    cnv_prot_df = pd.read_csv("streamlit_app/data/cnv_prot_boxplot.csv")
+    cnv_prot_df = pd.read_csv("streamlit_app/data/cnv_prot_boxplot_with_hgnc.csv")
     t_test_stats_df = pd.read_csv("streamlit_app/data/per_gene_stats_filtered.csv")
     linear_regression_df = pd.read_csv("streamlit_app/data/per_gene_linear_regression.csv")
     return cnv_prot_df, t_test_stats_df, linear_regression_df
@@ -44,24 +44,24 @@ elif mode == "Linear Regression":
     stats_df = linear_regression_df.dropna(subset=["P-value"])
     stats_df = stats_df[stats_df["P-value"] < p_thresh]
 else:
-    stats_df = cnv_prot_df[["Gene"]].drop_duplicates()  # Show all
+    stats_df = cnv_prot_df[["Gene_HGNC"]].drop_duplicates()  # Show all
 
-gene_list = sorted(stats_df["Gene"].unique())
+gene_list = sorted(stats_df["Gene_HGNC"].unique())
 
 # Sidebar gene selection
 if comp_mode == "Single Gene":
     if mode == "Advanced Mode":
-        gene_cna = st.sidebar.selectbox("Select gene for CNA (Entrez ID)", gene_list, key="gene_cna")
-        gene_prot = st.sidebar.selectbox("Select gene for Protein (Entrez ID)", gene_list, key="gene_prot")
+        gene_cna = st.sidebar.selectbox("Select gene for CNA", gene_list, key="gene_cna")
+        gene_prot = st.sidebar.selectbox("Select gene for Protein", gene_list, key="gene_prot")
     else:
-        gene = st.sidebar.selectbox("Choose a gene (Entrez ID)", gene_list)
+        gene = st.sidebar.selectbox("Choose a gene", gene_list)
 else:
-    gene1 = st.sidebar.selectbox("Choose Gene A (Entrez ID):", gene_list, index=0)
-    gene2 = st.sidebar.selectbox("Choose Gene B (Entrez ID):", gene_list, index=1 if len(gene_list) > 1 else 0)
+    gene1 = st.sidebar.selectbox("Choose Gene A:", gene_list, index=0)
+    gene2 = st.sidebar.selectbox("Choose Gene B:", gene_list, index=1 if len(gene_list) > 1 else 0)
 
 # Plotting functions
 def plot_boxplot(gene, data):
-    gene_df = data[data["Gene"] == gene].copy()
+    gene_df = data[data["Gene_HGNC"] == gene].copy()
     gene_df["Protein"] = pd.to_numeric(gene_df["Protein"], errors="coerce")
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.boxplot(x="CNA", y="Protein", data=gene_df, showfliers=False, palette="Blues", ax=ax)
@@ -79,7 +79,7 @@ def plot_boxplot(gene, data):
     )
 
 def plot_regression(gene, data):
-    gene_df = data[data["Gene"] == gene].copy()
+    gene_df = data[data["Gene_HGNC"] == gene].copy()
     gene_df["Protein"] = pd.to_numeric(gene_df["Protein"], errors="coerce")
     gene_df = gene_df.dropna(subset=["CNA", "Protein"])
     gene_df["CNA"] = gene_df["CNA"].astype(float)
@@ -105,7 +105,7 @@ def plot_regression(gene, data):
 if mode == "T-test + Cohen's d":
     if comp_mode == "Single Gene":
         st.title(f"Gene: {gene}")
-        gene_stats = t_test_stats_df[t_test_stats_df["Gene"] == gene].iloc[0]
+        gene_stats = t_test_stats_df[t_test_stats_df["Gene_HGNC"] == gene].iloc[0]
         st.markdown("### Statistical Summary")
         col1, col2 = st.columns(2)
         with col1:
@@ -123,7 +123,7 @@ if mode == "T-test + Cohen's d":
         st.title("Compare Two Genes")
         col1, col2 = st.columns(2)
         for col, g in zip([col1, col2], [gene1, gene2]):
-            gene_stats = t_test_stats_df[t_test_stats_df["Gene"] == g].iloc[0]
+            gene_stats = t_test_stats_df[t_test_stats_df["Gene_HGNC"] == g].iloc[0]
             col.markdown(f"### {g}")
             col.write(f"**T-statistic (Amplification vs Neutral):** {gene_stats['T-statistic (Amplification vs Neutral)']:.3f}")
             col.write(f"**P-value (Amplification vs Neutral):** {gene_stats['P-value (Amplification vs Neutral)']:.2e}")
@@ -140,7 +140,7 @@ if mode == "T-test + Cohen's d":
 elif mode == "Linear Regression":
     if comp_mode == "Single Gene":
         st.title(f"Gene: {gene}")
-        gene_stats = linear_regression_df[linear_regression_df["Gene"] == gene].iloc[0]
+        gene_stats = linear_regression_df[linear_regression_df["Gene_HGNC"] == gene].iloc[0]
         st.markdown("### Linear Regression Summary")
         st.write(f"**Regression Coefficient:** {gene_stats['Regression Coefficient (Effect Size)']:.3f}")
         st.write(f"**P-value:** {gene_stats['P-value']:.2e}")
@@ -151,7 +151,7 @@ elif mode == "Linear Regression":
         st.title("Compare Two Genes")
         col1, col2 = st.columns(2)
         for col, g in zip([col1, col2], [gene1, gene2]):
-            gene_stats = linear_regression_df[linear_regression_df["Gene"] == g].iloc[0]
+            gene_stats = linear_regression_df[linear_regression_df["Gene_HGNC"] == g].iloc[0]
             col.markdown(f"### {g}")
             col.write(f"**Regression Coefficient:** {gene_stats['Regression Coefficient (Effect Size)']:.3f}")
             col.write(f"**P-value:** {gene_stats['P-value']:.2e}")
@@ -165,8 +165,8 @@ elif mode == "Linear Regression":
 else:  # Advanced Mode
     st.title("🔍 Advanced Mode: Explore Any Gene Pair")
 
-    df_cna = cnv_prot_df[cnv_prot_df["Gene"] == gene_cna][["Sample", "CNA"]].rename(columns={"CNA": "CNA_val"})
-    df_prot = cnv_prot_df[cnv_prot_df["Gene"] == gene_prot][["Sample", "Protein"]].rename(columns={"Protein": "Prot_val"})
+    df_cna = cnv_prot_df[cnv_prot_df["Gene_HGNC"] == gene_cna][["Sample", "CNA"]].rename(columns={"CNA": "CNA_val"})
+    df_prot = cnv_prot_df[cnv_prot_df["Gene_HGNC"] == gene_prot][["Sample", "Protein"]].rename(columns={"Protein": "Prot_val"})
 
     merged = pd.merge(df_cna, df_prot, on="Sample").dropna()
     merged["CNA_val"] = pd.to_numeric(merged["CNA_val"], errors="coerce")
