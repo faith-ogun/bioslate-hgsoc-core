@@ -11,16 +11,21 @@ st.set_page_config(page_title="BioSLATE Gene–Protein Explorer", layout="wide")
 st.title("Interactive Viewer of CNA and Protein Expression Dynamics")
 st.caption("Last updated: July 13th 2025")
 
-
 @st.cache_data
 def load_data():
-    cnv_prot_df = pd.read_csv("streamlit_app/data/cnv_prot_boxplot_with_hgnc.csv", usecols=["Gene", "Gene_HGNC", "Sample", "CNA", "Protein"])
-    t_test_stats_df = pd.read_csv("streamlit_app/data/per_gene_stats_filtered.csv")
-    linear_regression_df = pd.read_csv("streamlit_app/data/per_gene_linear_regression.csv")
+    # Load CNA-protein data with gene symbols
+    cnv_prot_df = pd.read_csv(
+        "streamlit_app/data/cnv_prot_boxplot_with_hgnc.csv",
+        usecols=["Gene", "Gene_HGNC", "Sample", "CNA", "Protein"]
+    )
 
-    # Rename 'Gene' to 'Gene_HGNC' in both
-    t_test_stats_df = t_test_stats_df.rename(columns={"Gene": "Gene_HGNC"})
-    linear_regression_df = linear_regression_df.rename(columns={"Gene": "Gene_HGNC"})
+    # Load raw stats files
+    t_test_stats_df_raw = pd.read_csv("streamlit_app/data/per_gene_stats_filtered.csv")
+    linear_regression_df_raw = pd.read_csv("streamlit_app/data/per_gene_linear_regression.csv")
+
+    # Rename Entrez 'Gene' to HGNC symbol column
+    t_test_stats_df = t_test_stats_df_raw.rename(columns={"Gene": "Gene_HGNC"})
+    linear_regression_df = linear_regression_df_raw.rename(columns={"Gene": "Gene_HGNC"})
 
     return cnv_prot_df, t_test_stats_df, linear_regression_df
 
