@@ -14,7 +14,7 @@ st.caption("Last updated: July 13th 2025")
 
 @st.cache_data
 def load_data():
-    cnv_prot_df = pd.read_csv("streamlit_app/data/cnv_prot_boxplot_with_hgnc.csv")
+    cnv_prot_df = pd.read_csv("streamlit_app/data/cnv_prot_boxplot_with_hgnc.csv", usecols=["Gene", "Gene_HGNC", "Sample", "CNA", "Protein"])
     t_test_stats_df = pd.read_csv("streamlit_app/data/per_gene_stats_filtered.csv")
     linear_regression_df = pd.read_csv("streamlit_app/data/per_gene_linear_regression.csv")
 
