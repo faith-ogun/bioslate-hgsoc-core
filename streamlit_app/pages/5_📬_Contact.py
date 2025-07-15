@@ -16,7 +16,7 @@ with col1:
     ### 📍 UCD Cancer Data Lab
 
     **Faith Ogundimu**  
-    PhD Researcher & Bioinformatics Intern  
+    Research Intern  
     ✉️ [faithogun12@gmail.com](mailto:faithogun12@gmail.com)  
     ✉️ [faith.ogundimu@rcsi.ie](mailto:faith.ogundimu@rcsi.ie)  
     🔗 [LinkedIn](https://www.linkedin.com/in/faith-ogundimu)  
