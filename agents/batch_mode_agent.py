@@ -497,7 +497,7 @@ def run_research(biomarker, target):
 
         Focus on:
         - General cancer relevance
-        - Ovarian and breast cancer specificity
+        - Ovarian cancer specificity
         - Roles in gene regulation, DNA repair, tumour progression
 
         Include:
@@ -517,7 +517,7 @@ def run_research(biomarker, target):
 
         Focus on:
         - General cancer relevance
-        - Ovarian and breast cancer specificity
+        - Ovarian cancer specificity
         - Roles in gene regulation, DNA repair, tumour progression
 
         Include:
@@ -561,7 +561,7 @@ def run_research(biomarker, target):
         - Condition/disease being studied
         - Direct link to trial
 
-        Focus on **cancer-related** trials, especially those in **ovarian** or **breast** cancer.
+        Focus on **cancer-related** trials, especially those in **ovarian** cancer.
 
         This task is strictly ClinicalTrials.gov-focused. Do not include drug or PubMed data.
         """,
@@ -594,10 +594,10 @@ def run_research(biomarker, target):
            - 10–15 points for partial data (e.g. no disease context or unknown status).
            - <10 if only weak or inactive agents.
         3. **Clinical Trials – 15 points**
-           - 10–15 for direct trial mentions in ovarian or breast cancer.
+           - 10–15 for direct trial mentions in ovarian cancer.
            - <10 if general cancer trials or gene only appears as exploratory.
         4. **Cancer-Relevant Literature – 20 points**
-           - 15–20 for mentions in ovarian or breast cancer.
+           - 15–20 for mentions in ovarian cancer.
            - 5–10 for mentions in other cancers without SL.
            - 0 if no cancer relevance at all.
         Use this exact output format:
@@ -640,7 +640,7 @@ def run_research(biomarker, target):
            - Status
            - Condition
 
-        5. **Translational Potential (across cancers)** – If drugs or SL evidence exist in non-ovarian/breast cancers, describe them briefly.
+        5. **Translational Potential (across cancers)** – If drugs or SL evidence exist in non-ovarian cancers, describe them briefly.
         6. **Conclusion** – Final summary and interpretation.
 
         7. **References** – List PMIDs using this format:
@@ -731,7 +731,7 @@ def run_research(biomarker, target):
 if __name__ == "__main__":
     import pandas as pd
 
-    input_csv = "agents/assets/clean_gene_pairs.csv"
+    input_csv = "agents/assets/test_sl.csv"
     df = pd.read_csv(input_csv)
 
     for idx, row in df.iterrows():

@@ -53,27 +53,22 @@ def load_hgnc_map(filepath: str) -> dict:
     return dict(zip(df["symbol"], df["ensembl_gene_id"]))
 
 # ---------------------------
-# TOOL: PubMed Search
+# TOOL 1: SL-Specific Pair Search
 # ---------------------------
 
-class PubMedSearchInput(BaseModel):
-    biomarker: str = Field(description="The biomarker gene symbol")
-    target: str = Field(description="The target gene symbol")
+class SLPairSearchInput(BaseModel):
+    biomarker: str
+    target: str
 
-class PubMedSearchTool(BaseTool):
-    name: str = "PubMed Search Tool"
-    description: str = "Searches PubMed for SL-related studies for a gene pair"
-    args_schema: Type[BaseModel] = PubMedSearchInput
+class SLPairSearchTool(BaseTool):
+    name: str = "SL Pair PubMed Search Tool"
+    description: str = "Searches PubMed for synthetic lethality between a biomarker-target gene pair."
+    args_schema: Type[BaseModel] = SLPairSearchInput
 
     def _run(self, biomarker: str, target: str) -> str:
         queries = [
             f"{biomarker} AND {target} AND synthetic lethality",
-            f"{biomarker} AND cancer",
-            f"{target} AND cancer",
-            f"{biomarker} AND {target}",
-            f"{biomarker} OR {target} AND ovarian cancer",
-            f"{target} AND ovarian cancer",
-            f"{biomarker} AND ovarian cancer"
+            f"{biomarker} AND {target}"
         ]
 
         try:
@@ -107,12 +102,124 @@ class PubMedSearchTool(BaseTool):
                     )
 
             if not all_entries:
-                return "No relevant PubMed results found."
+                return "No SL-specific PubMed results found."
 
             return "\n\n".join(all_entries)
 
         except Exception as e:
-            return f"Error accessing PubMed: {str(e)}"
+            return f"Error accessing PubMed SL pair search: {str(e)}"
+
+# ---------------------------
+# TOOL 2: Biomarker-only Cancer Context
+# ---------------------------
+
+class BiomarkerSearchInput(BaseModel):
+    biomarker: str
+
+class BiomarkerPubMedSearchTool(BaseTool):
+    name: str = "Biomarker PubMed Search Tool"
+    description: str = "Searches PubMed for cancer-related studies involving the biomarker gene"
+    args_schema: Type[BaseModel] = BiomarkerSearchInput
+
+    def _run(self, biomarker: str) -> str:
+        queries = [
+            f"{biomarker} AND cancer",
+            f"{biomarker} AND ovarian cancer"
+        ]
+
+        try:
+            all_entries = []
+            seen_pmids = set()
+
+            for query in queries:
+                handle = Entrez.esearch(db="pubmed", term=query, retmax=3)
+                record = Entrez.read(handle)
+                pmid_list = record["IdList"]
+
+                if not pmid_list:
+                    continue
+
+                handle = Entrez.efetch(db="pubmed", id=",".join(pmid_list), retmode="xml")
+                results = Entrez.read(handle)
+
+                for article in results["PubmedArticle"]:
+                    pmid = str(article["MedlineCitation"]["PMID"])
+                    if pmid in seen_pmids:
+                        continue
+                    seen_pmids.add(pmid)
+
+                    article_data = article["MedlineCitation"]["Article"]
+                    title = article_data.get("ArticleTitle", "No title")
+                    abstract = " ".join(article_data["Abstract"]["AbstractText"]) if "Abstract" in article_data else "No abstract"
+                    url = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}"
+
+                    all_entries.append(
+                        f"Query: {query}\n- PMID: {pmid} – {url}\n  **Title**: {title.strip()}\n  **Abstract**: {abstract.strip()}"
+                    )
+
+            if not all_entries:
+                return f"No cancer-related results found for {biomarker}"
+
+            return "\n\n".join(all_entries)
+
+        except Exception as e:
+            return f"Error accessing PubMed for biomarker: {str(e)}"
+
+# ---------------------------
+# TOOL 3: Target-only Cancer Context
+# ---------------------------
+
+class TargetSearchInput(BaseModel):
+    target: str
+
+class TargetPubMedSearchTool(BaseTool):
+    name: str = "Target PubMed Search Tool"
+    description: str = "Searches PubMed for cancer-related studies involving the target gene"
+    args_schema: Type[BaseModel] = TargetSearchInput
+
+    def _run(self, target: str) -> str:
+        queries = [
+            f"{target} AND cancer",
+            f"{target} AND ovarian cancer"
+        ]
+
+        try:
+            all_entries = []
+            seen_pmids = set()
+
+            for query in queries:
+                handle = Entrez.esearch(db="pubmed", term=query, retmax=3)
+                record = Entrez.read(handle)
+                pmid_list = record["IdList"]
+
+                if not pmid_list:
+                    continue
+
+                handle = Entrez.efetch(db="pubmed", id=",".join(pmid_list), retmode="xml")
+                results = Entrez.read(handle)
+
+                for article in results["PubmedArticle"]:
+                    pmid = str(article["MedlineCitation"]["PMID"])
+                    if pmid in seen_pmids:
+                        continue
+                    seen_pmids.add(pmid)
+
+                    article_data = article["MedlineCitation"]["Article"]
+                    title = article_data.get("ArticleTitle", "No title")
+                    abstract = " ".join(article_data["Abstract"]["AbstractText"]) if "Abstract" in article_data else "No abstract"
+                    url = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}"
+
+                    all_entries.append(
+                        f"Query: {query}\n- PMID: {pmid} – {url}\n  **Title**: {title.strip()}\n  **Abstract**: {abstract.strip()}"
+                    )
+
+            if not all_entries:
+                return f"No cancer-related results found for {target}"
+
+            return "\n\n".join(all_entries)
+
+        except Exception as e:
+            return f"Error accessing PubMed for target: {str(e)}"
 
 
 # ---------------------------
@@ -277,19 +384,38 @@ def log_agent_output(biomarker, target, agent_name, content):
 # ---------------------------
 
 def run_research(biomarker, target):
-    pubmed_tool = PubMedSearchTool()
+
+    sl_pair_tool = SLPairSearchTool()
+    biomarker_tool = BiomarkerPubMedSearchTool()
+    target_tool = TargetPubMedSearchTool()
 
     hgnc_map = load_hgnc_map("agents/assets/gene_with_protein_product.txt")
     opentargets_tool = OpenTargetsTool(hgnc_map)
 
     clinical_trials_tool = ClinicalTrialsTool()
 
-    pubmed = Agent(
-    role="Cancer Literature Analyst",
-    goal="Retrieve PubMed abstracts supporting synthetic lethality and cancer relevance",
-    backstory="Expert in mining literature to assess the scientific and translational value of candidate gene pairs.",
-    tools=[pubmed_tool],
-    allow_delegation=False
+    sl_pair_agent = Agent(
+        role="SL PubMed Searcher",
+        goal="Search PubMed for synthetic lethality between the biomarker and target gene pair",
+        backstory="Specialist in extracting SL pair interactions from biomedical literature.",
+        tools=[sl_pair_tool],
+        allow_delegation=False
+    )
+
+    biomarker_agent = Agent(
+        role="Biomarker Literature Analyst",
+        goal="Retrieve cancer-related PubMed studies about the biomarker gene",
+        backstory="Expert in biomarker discovery through mining cancer-focused publications.",
+        tools=[biomarker_tool],
+        allow_delegation=False
+    )
+
+    target_agent = Agent(
+        role="Target Gene Literature Analyst",
+        goal="Retrieve cancer-related PubMed studies about the target gene",
+        backstory="Expert in evaluating potential therapeutic targets using literature evidence.",
+        tools=[target_tool],
+        allow_delegation=False
     )
 
     opentargets = Agent(
@@ -348,24 +474,61 @@ def run_research(biomarker, target):
     )
 
     # Tasks
-    pubmed_task = Task(
+    sl_pair_task = Task(
         description=f"""
-        Search PubMed for literature mentioning the genes **{biomarker}** and **{target}**.
+        Search PubMed for **synthetic lethality** studies mentioning both **{biomarker}** and **{target}**.
 
-        Prioritise:
-        - Any **synthetic lethality** interactions between the two genes.
-        - Studies mentioning **either gene** in a cancer context, especially **ovarian** or **breast** cancer.
-        - Abstracts with relevance to **gene regulation**, **DNA repair**, or **tumour progression**.
+        Focus strictly on co-mentions where synthetic lethality is explicitly discussed between the two genes.
 
         Include:
-        - Up to 5 abstracts per query.
-        - PubMed IDs, titles, and clean abstracts.
-        - Direct URLs to each abstract.
+        - Up to 5 relevant abstracts.
+        - PubMed IDs (PMIDs), titles, abstracts.
+        - Direct PubMed links.
 
-        This task is strictly PubMed-focused. Do not include drug or clinical trial data.
+        This task is for SL-specific co-mentions, but you can mention general cancer, but NOT single-gene studies.
         """,
-        expected_output="List of relevant PubMed abstracts with PMIDs, summaries, and relevance notes.",
-        agent=pubmed
+        expected_output="List of SL-specific PubMed abstracts for the gene pair with PMIDs and URLs.",
+        agent=sl_pair_agent
+    )
+
+    biomarker_task = Task(
+        description=f"""
+        Search PubMed for **cancer-related studies** involving the biomarker gene: **{biomarker}**.
+
+        Focus on:
+        - General cancer relevance
+        - Ovarian and breast cancer specificity
+        - Roles in gene regulation, DNA repair, tumour progression
+
+        Include:
+        - Up to 3 abstracts per query
+        - PubMed IDs, titles, abstracts
+        - Direct links
+
+        This task should only return results related to the **biomarker**, not the target.
+        """,
+        expected_output=f"List of PubMed results focused on biomarker {biomarker}.",
+        agent=biomarker_agent
+    )
+
+    target_task = Task(
+        description=f"""
+        Search PubMed for **cancer-related studies** involving the target gene: **{target}**.
+
+        Focus on:
+        - General cancer relevance
+        - Ovarian and breast cancer specificity
+        - Roles in gene regulation, DNA repair, tumour progression
+
+        Include:
+        - Up to 3 abstracts per query
+        - PubMed IDs, titles, abstracts
+        - Direct links
+
+        This task should only return results related to the **target**, not the biomarker.
+        """,
+        expected_output=f"List of PubMed results focused on target gene {target}.",
+        agent=target_agent
     )
 
     drug_task = Task(
@@ -407,9 +570,9 @@ def run_research(biomarker, target):
     )
 
     analysis_task = Task(
-        description="Analyse search results and assess their relevance to synthetic lethality and cancer context.",
-        expected_output="A structured analysis of whether this gene pair is synthetically lethal, and if drugs exist.",
-        context=[pubmed_task, drug_task, clinical_task],
+        description="Analyse the search results from all agents and assess their relevance to synthetic lethality, cancer context, and potential therapeutic value.",
+        expected_output="A structured analysis of whether this gene pair is synthetically lethal and cancer-relevant, and whether any drug targets exist.",
+        context=[sl_pair_task, biomarker_task, target_task, drug_task, clinical_task],
         agent=analyst
     )
 
@@ -426,6 +589,7 @@ def run_research(biomarker, target):
         1. **SL Evidence (PubMed) – 40 points**
            - Full points if at least one abstract **explicitly** mentions synthetic lethality between the pair.
            - Partial (10–30) for synergy, DNA repair links, or indirect evidence.
+           - If there are sources that refute synthetic lethality, do not be afraid to give this section a score of 0. Honesty overpowers discovery.
         2. **Drug Evidence (Open Targets) – 25 points**
            - 20–25 points for drugs with known MoA and cancer relevance.
            - 10–15 points for partial data (e.g. no disease context or unknown status).
@@ -457,57 +621,73 @@ def run_research(biomarker, target):
         ```
         """,
         expected_output="Structured score with component breakdown and rationale.",
-        context=[qa_task, pubmed_task, drug_task, clinical_task],
+        context=[qa_task, sl_pair_task, biomarker_task, target_task, drug_task, clinical_task],
         agent=confidence_agent
-    )   
+    )
 
     writing_task = Task(
         description=f"""
-    Using only the search_task output, write a structured markdown report for the gene pair: **{biomarker} – {target}**.
+        Using only the search_task outputs, write a structured markdown report for the gene pair: **{biomarker} – {target}**.
 
-    Mandatory report sections:
+        Mandatory report sections:
+        1. **Background on Genes** – Summarise roles of both genes and their relevance to cancer, only if supported by the biomarker/target PubMed results.
+        2. **SL Evidence (with PMIDs)** – Report abstracts that explicitly mention synthetic lethality between the pair. Cite with PMID and link.
+        3. **Drug Targets (with Open Targets data)** – List known inhibitors, mechanism of action, approval status, and disease context.
+        
+        4. **Clinical Trials** – Summarise relevant trials involving either gene, with:
+           - NCT ID
+           - Trial Title (linked)
+           - Phase
+           - Status
+           - Condition
 
-    1. **Background on Genes** – Basic roles and relevance to cancer (only if supported by literature).
-    2. **SL Evidence (with PMIDs)** – Include ONLY synthetic lethality mentions explicitly stated in abstracts. Cite with PMID and link.
-    3. **Drug Targets (with Open Targets data)** – Summarise any known inhibitors, status, mechanism of action, and disease area.
-    4. **Clinical Trials** – List any relevant trials involving either gene from ClinicalTrials.gov. Include:
-       - NCT ID
-       - Trial Title (linked)
-       - Phase
-       - Status
-       - Condition
-       Skip this section if no trials found.
+        5. **Translational Potential (across cancers)** – If drugs or SL evidence exist in non-ovarian/breast cancers, describe them briefly.
+        6. **Conclusion** – Final summary and interpretation.
 
-    5. **Translational Potential (across cancers)** – If SL evidence or drugs exist in other cancers, describe them briefly.
+        7. **References** – List PMIDs using this format:
+           - PMID: 12345678 – https://pubmed.ncbi.nlm.nih.gov/12345678  
+             Title: Title of the study.
 
-    6. **Conclusion** – Wrap-up summary.
+        Rules:
+        - Only use real outputs from the SL, biomarker, and target PubMed tasks — do not fabricate PMIDs or titles.
+        - Do not invent or infer SL if not clearly stated.
+        - Do not fabricate drug or trial information.
+        - If evidence is weak, say so explicitly. Do not add filler or boilerplate text.
+        - If there are sources that refute synthetic lethality, do not be afraid to say so. Honesty overpowers discovery.
 
-    7. **References** – Markdown list of cited PubMed PMIDs in this format:
-       - PMID: 28112439 – https://pubmed.ncbi.nlm.nih.gov/28112439  
-         Title: ABCF2, an Nrf2 target gene, contributes to cisplatin resistance in ovarian cancer cells.
+        If the QA task result begins with `REJECTED:`, do not write a report. Return only the rejection message.
 
-    Strict Rules:
-    - Use **only** abstracts and PMIDs found in search_task.
-    - Do NOT fabricate PMIDs, titles, or URLs.
-    - Do NOT guess drug info not found in Open Targets.
-    - Do NOT invent clinical trial info not found in ClinicalTrials.gov tool output.
-    - Do NOT infer synthetic lethality unless explicitly stated in the abstract.
-    - If no evidence is found, clearly say so. Do NOT write filler or boilerplate.
-
-    If the QA task result begins with `REJECTED:`, do not write a report. Output only the rejection message.
-
-    Ensure all content is written in **clean, clinical markdown** suitable for cancer research reporting.
-    """,
-        expected_output="A clean, markdown-formatted report with structured citations from real PubMed and trial results.",
-        context=[qa_task, pubmed_task, drug_task, clinical_task],
+        Write in clean, clinical markdown.
+        """,
+        expected_output="A markdown-formatted report with real citations and structured sections.",
+        context=[qa_task, sl_pair_task, biomarker_task, target_task, drug_task, clinical_task],
         agent=writer
     )
 
-
     # Run crew
     crew = Crew(
-        agents=[pubmed, opentargets, trials, analyst, qa, confidence_agent, writer],
-        tasks=[pubmed_task, drug_task, clinical_task, analysis_task, qa_task, confidence_task, writing_task],
+        agents=[
+            sl_pair_agent,
+            biomarker_agent,
+            target_agent,
+            opentargets,
+            trials,
+            analyst,
+            qa,
+            confidence_agent,
+            writer
+        ],
+        tasks=[
+            sl_pair_task,
+            biomarker_task,
+            target_task,
+            drug_task,
+            clinical_task,
+            analysis_task,
+            qa_task,
+            confidence_task,
+            writing_task
+        ],
         verbose=True,
         process=Process.sequential
     )
@@ -515,7 +695,9 @@ def run_research(biomarker, target):
     result = crew.kickoff()
 
     # Logs
-    log_agent_output(biomarker, target, "pubmed", pubmed_task.output)
+    log_agent_output(biomarker, target, "sl_pair_pubmed", sl_pair_task.output)
+    log_agent_output(biomarker, target, "biomarker_pubmed", biomarker_task.output)
+    log_agent_output(biomarker, target, "target_pubmed", target_task.output)
     log_agent_output(biomarker, target, "opentargets", drug_task.output)
     log_agent_output(biomarker, target, "clinicaltrials", clinical_task.output)
     log_agent_output(biomarker, target, "analysis", analysis_task.output)
@@ -545,7 +727,7 @@ def run_research(biomarker, target):
         write_markdown_report(biomarker, target, result)
 
 # ---------------------------
-# RUN INTERACTIVELY
+# RUN BATCH MODE
 # ---------------------------
 
 if __name__ == "__main__":
