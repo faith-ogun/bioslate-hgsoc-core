@@ -9,6 +9,7 @@ sandbox/
 results/synthetic_lethality_screen.csv
 results/old/
 results/other/synthetic_lethality_screen.csv
+results/other/
 results/candidate_genes_tcga
 results/T-Test (> -0.6)/
 results/T-Test (< -0.6)/

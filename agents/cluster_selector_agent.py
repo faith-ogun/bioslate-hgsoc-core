@@ -96,6 +96,15 @@ class OpenTargetsTool(BaseTool):
             return "Error"
 
 # --------------------------
+# Ovarian Oncogene Overrides
+# --------------------------
+
+OVARIAN_ONCOGENES = {
+    "CCNE1", "MYC", "KRAS", "MECOM", "PIK3CA", "BCL2", "CDK2", "CDK12",
+    "BRD4", "BIRC5", "RSF1", "YAP1", "AKT2"
+}
+
+# --------------------------
 # Helpers
 # --------------------------
 
@@ -113,7 +122,6 @@ def create_agent(llm):
     )
 
 def extract_declared_gene(output: str, gene_list: list[str]) -> Optional[str]:
-    """Attempts to parse out the gene that the agent explicitly selected in text."""
     pattern = r"(?:select|chosen|recommend|representative).*?\b(" + "|".join(gene_list) + r")\b"
     match = re.search(pattern, output, flags=re.IGNORECASE)
     return match.group(1) if match else None
@@ -122,6 +130,17 @@ def run_selector_on_cluster(i, genes, pubmed_tool, ot_tool, selector_agent):
     gene_data = []
     prompt = "## Candidate Genes:\n"
 
+    # ✅ Step 0: Manual override if known ovarian oncogene is present
+    for preferred in OVARIAN_ONCOGENES:
+        if preferred in genes:
+            os.makedirs("agents/cluster_selector/logs", exist_ok=True)
+            with open(f"agents/cluster_selector/logs/cluster_{i+1}.md", "w") as f:
+                f.write(f"## Override Applied\n{preferred} was selected as it is a known ovarian oncogene.\n")
+                f.write(f"\n## Original Cluster\n{', '.join(genes)}\n")
+            print(f"[Cluster {i+1}] OVERRIDE: Selecting {preferred} due to known oncogene status.")
+            return preferred
+
+    # If no override hit, continue with agent evaluation
     for gene in genes:
         pubmed_raw = pubmed_tool._run(gene=gene)
         ot = ot_tool._run(target=gene)
@@ -129,7 +148,7 @@ def run_selector_on_cluster(i, genes, pubmed_tool, ot_tool, selector_agent):
         try:
             pubmed = json.loads(pubmed_raw)
         except:
-            pubmed = {"cancer": 0, "ovarian": 0, "sl": 0, "ts": 0}
+            pubmed = {"cancer": 0, "ovarian": 0, "sl": 0, "onc": 0}
 
         score = (
             20 * int(pubmed["cancer"]) +
@@ -152,7 +171,6 @@ def run_selector_on_cluster(i, genes, pubmed_tool, ot_tool, selector_agent):
     result = crew.kickoff()
     result_str = str(result)
 
-    # Attempt to parse declared selected gene from agent's output
     declared_gene = extract_declared_gene(result_str, genes)
 
     if declared_gene:

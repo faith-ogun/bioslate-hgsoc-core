@@ -7,7 +7,7 @@ from Bio import Entrez
 from crewai import Agent, Task, Crew, Process, LLM
 from langchain_openai import ChatOpenAI
 from crewai.tools import BaseTool
-from ddgs import DDGS
+import re
 
 # ---------------------------
 # WARNING CONTROL
@@ -68,6 +68,7 @@ class SLPairSearchTool(BaseTool):
     def _run(self, biomarker: str, target: str) -> str:
         queries = [
             f"{biomarker} AND {target} AND synthetic lethality",
+            f"{biomarker} AND {target} AND synthetic lethal",
             f"{biomarker} AND {target}"
         ]
 
@@ -76,7 +77,7 @@ class SLPairSearchTool(BaseTool):
             seen_pmids = set()
 
             for query in queries:
-                handle = Entrez.esearch(db="pubmed", term=query, retmax=5)
+                handle = Entrez.esearch(db="pubmed", term=query, retmax=10)
                 record = Entrez.read(handle)
                 pmid_list = record["IdList"]
 
@@ -132,7 +133,7 @@ class BiomarkerPubMedSearchTool(BaseTool):
             seen_pmids = set()
 
             for query in queries:
-                handle = Entrez.esearch(db="pubmed", term=query, retmax=3)
+                handle = Entrez.esearch(db="pubmed", term=query, retmax=10)
                 record = Entrez.read(handle)
                 pmid_list = record["IdList"]
 
@@ -188,7 +189,7 @@ class TargetPubMedSearchTool(BaseTool):
             seen_pmids = set()
 
             for query in queries:
-                handle = Entrez.esearch(db="pubmed", term=query, retmax=3)
+                handle = Entrez.esearch(db="pubmed", term=query, retmax=10)
                 record = Entrez.read(handle)
                 pmid_list = record["IdList"]
 
@@ -703,24 +704,36 @@ def run_research(biomarker, target):
     log_agent_output(biomarker, target, "confidence", confidence_task.output)
     log_agent_output(biomarker, target, "writer", result)
 
-    # Extract score
+# ---------------------------
+# Extract Confidence Score Safely
+# ---------------------------
     conf_text = confidence_task.output.output if hasattr(confidence_task.output, "output") else str(confidence_task.output)
-    try:
-        score_line = next(line for line in conf_text.splitlines() if "Confidence Score" in line)
-        score = int(score_line.split(":")[1].strip().split("/")[0])
-    except:
-        score = 0
 
-    # QA rejection?
+    # Extract score using regex for robustness
+    score = 0
+    score_match = re.search(r"Confidence Score:\s*(\d+)", conf_text)
+    if score_match:
+        score = int(score_match.group(1))
+
+    # Check QA rejection
     qa_text = str(qa_task.output)
-    rejected = qa_text.startswith("REJECTED:")
+    rejected = qa_text.strip().startswith("REJECTED:")
 
-    # Save to appropriate location
-    if rejected or score < 50:
+# ---------------------------
+# Save Report Based on Outcome
+# ---------------------------
+    if rejected:
+        header = f"❌ QA REJECTED\n\n"
+        fallback_text = header + (result.output if hasattr(result, "output") else str(result))
+        write_markdown_report(biomarker, target, fallback_text, folder="oncosynth/low_confidence_reports")
+        print("❌ QA rejected this report.")
+
+    elif score < 50:
         header = f"⚠️ LOW CONFIDENCE REPORT ({score}/100)\n\n"
         fallback_text = header + (result.output if hasattr(result, "output") else str(result))
-        write_markdown_report(biomarker, target, fallback_text, folder="agents/low_confidence_reports")
-        print(f"⚠️ Report saved to low confidence folder due to low score or QA rejection.")
+        write_markdown_report(biomarker, target, fallback_text, folder="oncosynth/low_confidence_reports")
+        print(f"⚠️ Score too low ({score}/100) — saved to low confidence folder.")
+
     else:
         write_markdown_report(biomarker, target, result)
 
@@ -731,7 +744,7 @@ def run_research(biomarker, target):
 if __name__ == "__main__":
     import pandas as pd
 
-    input_csv = "agents/assets/test_sl.csv"
+    input_csv = "agents/assets/clean_gene_pairs.csv"
     df = pd.read_csv(input_csv)
 
     for idx, row in df.iterrows():

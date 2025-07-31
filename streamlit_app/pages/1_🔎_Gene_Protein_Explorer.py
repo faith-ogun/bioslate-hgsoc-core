@@ -76,8 +76,17 @@ else:
 def plot_boxplot(gene, data):
     gene_df = data[data["Gene_HGNC"] == gene].copy()
     gene_df["Protein"] = pd.to_numeric(gene_df["Protein"], errors="coerce")
+    gene_df["CNA"] = pd.to_numeric(gene_df["CNA"], errors="coerce")
     fig, ax = plt.subplots(figsize=(8, 5))
-    sns.boxplot(x="CNA", y="Protein", data=gene_df, showfliers=False, palette="Blues", ax=ax)
+    sns.boxplot(
+    x="CNA", 
+    y="Protein", 
+    data=gene_df, 
+    order=[-2, -1, 0, 1, 2],  # Ensure GISTIC CNA order
+    showfliers=False, 
+    palette="Blues", 
+    ax=ax
+    )
     ax.set_title(f"Protein Expression vs CNA for {gene}")
     ax.yaxis.set_major_locator(plt.MaxNLocator(6))
     st.pyplot(fig)

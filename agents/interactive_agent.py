@@ -7,7 +7,7 @@ from Bio import Entrez
 from crewai import Agent, Task, Crew, Process, LLM
 from langchain_openai import ChatOpenAI
 from crewai.tools import BaseTool
-from ddgs import DDGS
+import re
 
 # ---------------------------
 # WARNING CONTROL
@@ -68,6 +68,7 @@ class SLPairSearchTool(BaseTool):
     def _run(self, biomarker: str, target: str) -> str:
         queries = [
             f"{biomarker} AND {target} AND synthetic lethality",
+            f"{biomarker} AND {target} AND synthetic lethal",
             f"{biomarker} AND {target}"
         ]
 
@@ -76,7 +77,7 @@ class SLPairSearchTool(BaseTool):
             seen_pmids = set()
 
             for query in queries:
-                handle = Entrez.esearch(db="pubmed", term=query, retmax=5)
+                handle = Entrez.esearch(db="pubmed", term=query, retmax=10)
                 record = Entrez.read(handle)
                 pmid_list = record["IdList"]
 
@@ -132,7 +133,7 @@ class BiomarkerPubMedSearchTool(BaseTool):
             seen_pmids = set()
 
             for query in queries:
-                handle = Entrez.esearch(db="pubmed", term=query, retmax=3)
+                handle = Entrez.esearch(db="pubmed", term=query, retmax=10)
                 record = Entrez.read(handle)
                 pmid_list = record["IdList"]
 
@@ -188,7 +189,7 @@ class TargetPubMedSearchTool(BaseTool):
             seen_pmids = set()
 
             for query in queries:
-                handle = Entrez.esearch(db="pubmed", term=query, retmax=3)
+                handle = Entrez.esearch(db="pubmed", term=query, retmax=10)
                 record = Entrez.read(handle)
                 pmid_list = record["IdList"]
 
@@ -497,7 +498,7 @@ def run_research(biomarker, target):
 
         Focus on:
         - General cancer relevance
-        - Ovarian and breast cancer specificity
+        - Ovarian cancer specificity
         - Roles in gene regulation, DNA repair, tumour progression
 
         Include:
@@ -517,7 +518,7 @@ def run_research(biomarker, target):
 
         Focus on:
         - General cancer relevance
-        - Ovarian and breast cancer specificity
+        - Ovarian cancer specificity
         - Roles in gene regulation, DNA repair, tumour progression
 
         Include:
@@ -561,7 +562,7 @@ def run_research(biomarker, target):
         - Condition/disease being studied
         - Direct link to trial
 
-        Focus on **cancer-related** trials, especially those in **ovarian** or **breast** cancer.
+        Focus on **cancer-related** trials, especially those in **ovarian** cancer.
 
         This task is strictly ClinicalTrials.gov-focused. Do not include drug or PubMed data.
         """,
@@ -589,16 +590,15 @@ def run_research(biomarker, target):
         1. **SL Evidence (PubMed) – 40 points**
            - Full points if at least one abstract **explicitly** mentions synthetic lethality between the pair.
            - Partial (10–30) for synergy, DNA repair links, or indirect evidence.
-           - If there are sources that refute synthetic lethality, do not be afraid to give this section a score of 0. Honesty overpowers discovery.
         2. **Drug Evidence (Open Targets) – 25 points**
            - 20–25 points for drugs with known MoA and cancer relevance.
            - 10–15 points for partial data (e.g. no disease context or unknown status).
            - <10 if only weak or inactive agents.
         3. **Clinical Trials – 15 points**
-           - 10–15 for direct trial mentions in ovarian or breast cancer.
+           - 10–15 for direct trial mentions in ovarian cancer.
            - <10 if general cancer trials or gene only appears as exploratory.
         4. **Cancer-Relevant Literature – 20 points**
-           - 15–20 for mentions in ovarian or breast cancer.
+           - 15–20 for mentions in ovarian cancer.
            - 5–10 for mentions in other cancers without SL.
            - 0 if no cancer relevance at all.
         Use this exact output format:
@@ -641,7 +641,7 @@ def run_research(biomarker, target):
            - Status
            - Condition
 
-        5. **Translational Potential (across cancers)** – If drugs or SL evidence exist in non-ovarian/breast cancers, describe them briefly.
+        5. **Translational Potential (across cancers)** – If drugs or SL evidence exist in non-ovarian cancers, describe them briefly.
         6. **Conclusion** – Final summary and interpretation.
 
         7. **References** – List PMIDs using this format:
@@ -653,7 +653,6 @@ def run_research(biomarker, target):
         - Do not invent or infer SL if not clearly stated.
         - Do not fabricate drug or trial information.
         - If evidence is weak, say so explicitly. Do not add filler or boilerplate text.
-        - If there are sources that refute synthetic lethality, do not be afraid to say so. Honesty overpowers discovery.
 
         If the QA task result begins with `REJECTED:`, do not write a report. Return only the rejection message.
 
@@ -705,33 +704,45 @@ def run_research(biomarker, target):
     log_agent_output(biomarker, target, "confidence", confidence_task.output)
     log_agent_output(biomarker, target, "writer", result)
 
-    # Extract score
+# ---------------------------
+# Extract Confidence Score Safely
+# ---------------------------
     conf_text = confidence_task.output.output if hasattr(confidence_task.output, "output") else str(confidence_task.output)
-    try:
-        score_line = next(line for line in conf_text.splitlines() if "Confidence Score" in line)
-        score = int(score_line.split(":")[1].strip().split("/")[0])
-    except:
-        score = 0
 
-    # QA rejection?
+    # Extract score using regex for robustness
+    score = 0
+    score_match = re.search(r"Confidence Score:\s*(\d+)", conf_text)
+    if score_match:
+        score = int(score_match.group(1))
+
+    # Check QA rejection
     qa_text = str(qa_task.output)
-    rejected = qa_text.startswith("REJECTED:")
+    rejected = qa_text.strip().startswith("REJECTED:")
 
-    # Save to appropriate location
-    if rejected or score < 50:
+# ---------------------------
+# Save Report Based on Outcome
+# ---------------------------
+    if rejected:
+        header = f"❌ QA REJECTED\n\n"
+        fallback_text = header + (result.output if hasattr(result, "output") else str(result))
+        write_markdown_report(biomarker, target, fallback_text, folder="oncosynth/low_confidence_reports")
+        print("❌ QA rejected this report.")
+
+    elif score < 50:
         header = f"⚠️ LOW CONFIDENCE REPORT ({score}/100)\n\n"
         fallback_text = header + (result.output if hasattr(result, "output") else str(result))
-        write_markdown_report(biomarker, target, fallback_text, folder="agents/low_confidence_reports")
-        print(f"⚠️ Report saved to low confidence folder due to low score or QA rejection.")
+        write_markdown_report(biomarker, target, fallback_text, folder="oncosynth/low_confidence_reports")
+        print(f"⚠️ Score too low ({score}/100) — saved to low confidence folder.")
+
     else:
         write_markdown_report(biomarker, target, result)
 
 # ---------------------------
-# RUN BATCH MODE
+# RUN INTERACTIVE MODE
 # ---------------------------
 
 if __name__ == "__main__":
     print("🔬 SL Report Generator")
     biomarker = input("Enter biomarker gene symbol (e.g. MYC): ").strip().upper()
     target = input("Enter target gene symbol (e.g. CHEK1): ").strip().upper()
-    run_research(biomarker, target)
+    run_research(biomarker, target) 
