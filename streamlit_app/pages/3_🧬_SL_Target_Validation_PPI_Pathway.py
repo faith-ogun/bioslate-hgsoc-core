@@ -4,11 +4,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 import holoviews as hv
-import panel as pn 
 from holoviews import opts, dim
 from holoviews.element.graphs import Chord
-hv.extension('bokeh')
-pn.extension('bokeh') 
+import streamlit.components.v1 as components
+import tempfile
+import os
 
 # --- Page config ---
 st.set_page_config(page_title="PPI & Pathway Analysis of SL Targets", layout="wide")
@@ -99,6 +99,7 @@ elif view_option == "Pathway Network (Chord Diagram)":
         'Breast cancer': 'Breast cancer'
     }
 
+    # Data processing
     mapping_df['CollapsedPathway'] = mapping_df['Pathway'].replace(collapse_map)
     keep_terms = set(collapse_map.values())
     subset = mapping_df[mapping_df['CollapsedPathway'].isin(keep_terms)]
@@ -109,6 +110,12 @@ elif view_option == "Pathway Network (Chord Diagram)":
     edges = subset[['Gene', 'CollapsedPathway']].drop_duplicates()
     edges.columns = ['Gene', 'Pathway']
 
+    # Check if we have data
+    if len(edges) == 0:
+        st.warning("No pathway-gene connections found with current filters.")
+        st.stop()
+
+    # Prepare nodes and edges
     unique_pathways = edges['Pathway'].unique().tolist()
     unique_genes = edges['Gene'].unique().tolist()
     nodes_df = pd.DataFrame({'name': unique_pathways + unique_genes})
@@ -124,13 +131,68 @@ elif view_option == "Pathway Network (Chord Diagram)":
     edges_named = edges.copy()
     edges_named.columns = ['source', 'target']
 
-    chord = Chord((edges_named, hv.Dataset(nodes_df, 'name'))).opts(
-        opts.Chord(
-            labels='name',
-            node_color=dim('name').categorize(color_dict, default='#9edae5'),
-            edge_color=dim('target').categorize(color_dict, default='#9edae5'),
-            width=950, height=950,
-            title="Gene–Pathway Interactions (Curated List)"
+    # Display summary
+    st.info(f"Found {len(edges_named)} gene-pathway connections involving {len(unique_genes)} genes and {len(unique_pathways)} pathways.")
+
+    # Method 1: Try direct Streamlit bokeh_chart
+    try:
+        st.write("**Rendering chord diagram...**")
+        
+        chord = Chord((edges_named, hv.Dataset(nodes_df, 'name'))).opts(
+            opts.Chord(
+                labels='name',
+                node_color=dim('name').categorize(color_dict, default='#9edae5'),
+                edge_color=dim('target').categorize(color_dict, default='#9edae5'),
+                width=900, height=900,
+                title="Gene–Pathway Interactions"
+            )
         )
-    )
-    st.bokeh_chart(hv.render(chord, backend='bokeh'), use_container_width=True)
+        
+        # Convert to Bokeh
+        bokeh_plot = hv.render(chord, backend='bokeh')
+        
+        # Try st.bokeh_chart first
+        st.bokeh_chart(bokeh_plot, use_container_width=True)
+        st.success("✅ Chord diagram rendered successfully!")
+        
+    except Exception as e1:
+        st.warning(f"Method 1 failed: {str(e1)}")
+        st.write("Trying alternative rendering method...")
+        
+        # Method 2: HTML components fallback
+        try:
+            # Save to temporary HTML file
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False) as f:
+                temp_filename = f.name
+                
+            # Save the plot as HTML
+            hv.save(chord, temp_filename, backend='bokeh')
+            
+            # Read the HTML content
+            with open(temp_filename, 'r', encoding='utf-8') as f:
+                html_content = f.read()
+            
+            # Display using components
+            components.html(html_content, height=950, scrolling=True)
+            st.success("✅ Chord diagram rendered using HTML components!")
+            
+            # Clean up
+            os.unlink(temp_filename)
+            
+        except Exception as e2:
+            st.error(f"All rendering methods failed!")
+            st.error(f"Method 1 error: {str(e1)}")
+            st.error(f"Method 2 error: {str(e2)}")
+            
+            # Fallback: show the data
+            st.write("**Fallback: Showing raw data instead**")
+            st.dataframe(edges_named.head(20))
+            
+            # Show debugging info
+            with st.expander("🔧 Debug Information"):
+                st.write("**Edges shape:**", edges_named.shape)
+                st.write("**Nodes shape:**", nodes_df.shape)
+                st.write("**Sample edges:**")
+                st.dataframe(edges_named.head())
+                st.write("**Sample nodes:**")
+                st.dataframe(nodes_df.head())
