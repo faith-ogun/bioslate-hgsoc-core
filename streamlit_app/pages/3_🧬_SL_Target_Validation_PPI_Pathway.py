@@ -132,4 +132,4 @@ elif view_option == "Pathway Network (Chord Diagram)":
             title="Gene–Pathway Interactions (Curated List)"
         )
     )
-    st.write(chord)
+    st.bokeh_chart(hv.render(chord, backend='bokeh'), use_container_width=True)
