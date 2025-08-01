@@ -5,6 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from io import BytesIO
 from PIL import Image
+import plotly.express as px
 
 # --- Page config ---
 st.set_page_config(page_title="Synthetic Lethality Visualisation", layout="wide")
@@ -68,10 +69,13 @@ elif plot_option == "Heatmap":
         "Select Metric to Visualise",
         ["EffectSize", "–log10(FDR)", "MeanEffect_Amplified"]
     )
+
+    # Filter SL hits
     filtered = full_screen_df[
         (full_screen_df["EffectSize"] < 0) & (full_screen_df["FDR"] < 0.1)
     ].copy()
 
+    # Available biomarker and target options
     all_biomarkers = sorted(filtered["Biomarker_HGNC"].unique())
     all_targets = sorted(filtered["TargetGene_HGNC"].unique())
 
@@ -86,23 +90,28 @@ elif plot_option == "Heatmap":
     value_column = "–log10(FDR)" if metric == "–log10(FDR)" else metric
     heatmap_df = filtered.pivot(index="TargetGene_HGNC", columns="Biomarker_HGNC", values=value_column)
 
-    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.05")
-    fig_width = max(12, len(heatmap_df.columns) * 0.4)
-    fig_height = max(10, len(heatmap_df.index) * 0.4)
-    fig2, ax2 = plt.subplots(figsize=(fig_width, fig_height))
-    sns.heatmap(
-        heatmap_df.clip(-3, 0) if "EffectSize" in metric else heatmap_df,
-        cmap="coolwarm" if "EffectSize" in metric else "YlGnBu",
-        center=0 if "EffectSize" in metric else None,
-        linewidths=0.5,
-        linecolor="gray",
-        cbar_kws={"shrink": 0.7}
-    )
-    ax2.set_title(f"Heatmap: {metric} across SL hits")
-    ax2.set_xlabel("Amplified Biomarkers")
-    ax2.set_ylabel("Target Genes")
-    st.pyplot(fig2)
+    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.1")
 
+    # Plotly heatmap
+    fig2 = px.imshow(
+        heatmap_df,
+        labels=dict(x="Amplified Biomarkers", y="Target Genes", color=metric),
+        x=heatmap_df.columns,
+        y=heatmap_df.index,
+        color_continuous_scale="RdBu" if "EffectSize" in metric else "YlGnBu",
+        aspect="auto"
+    )
+    fig2.update_layout(
+        title=f"Heatmap: {metric} across SL hits",
+        height=800,
+        margin=dict(l=100, r=100, t=50, b=100)
+    )
+    fig2.update_traces(
+        hovertemplate="Biomarker: %{x}<br>Target: %{y}<br>" + metric + ": %{z:.3f}<extra></extra>"
+    )
+    st.plotly_chart(fig2, use_container_width=True)
+
+    # Download CSV
     csv = heatmap_df.to_csv().encode("utf-8")
     st.download_button(
         label="⬇️ Download Heatmap Matrix (.csv)",
