@@ -3,11 +3,12 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
-from io import BytesIO
 import holoviews as hv
+import panel as pn 
 from holoviews import opts, dim
 from holoviews.element.graphs import Chord
 hv.extension('bokeh')
+pn.extension('bokeh') 
 
 # --- Page config ---
 st.set_page_config(page_title="PPI & Pathway Analysis of SL Targets", layout="wide")
@@ -132,4 +133,5 @@ elif view_option == "Pathway Network (Chord Diagram)":
             title="Gene–Pathway Interactions (Curated List)"
         )
     )
-    st.bokeh_chart(hv.render(chord, backend='bokeh'), use_container_width=True)
+    panel_chord = pn.panel(chord)
+    st.bokeh_chart(panel_chord.get_root(), use_container_width=True)
