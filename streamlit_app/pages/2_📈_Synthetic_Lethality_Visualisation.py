@@ -4,6 +4,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from io import BytesIO
+from PIL import Image
 
 # --- Page config ---
 st.set_page_config(page_title="Synthetic Lethality Visualisation", layout="wide")
@@ -48,34 +49,17 @@ full_screen_df, selective_hits_df, amp_biomarkers, crispr_df, cna_df = load_all_
 # === Volcano Plot ===
 if plot_option == "Volcano Plot":
     st.subheader("Volcano Plot: Effect Size vs FDR")
-    fig, ax = plt.subplots(figsize=(10, 6))
-    sns.scatterplot(
-        data=full_screen_df,
-        x="EffectSize",
-        y="–log10(FDR)",
-        hue="SL_Hit",
-        size="OncogeneAddiction",
-        sizes=(20, 200),
-        palette={True: "#e74c3c", False: "#bdc3c7"},
-        alpha=0.7,
-        edgecolor="black"
-    )
-    ax.axhline(y=-np.log10(0.1), linestyle="--", color="gray")
-    ax.axvline(x=0, linestyle="--", color="gray")
-    ax.set_xlabel("Cohen's d (Effect Size)")
-    ax.set_ylabel("–log₁₀(FDR)")
-    ax.set_title("Volcano Plot: Synthetic Lethality in Amplified Biomarkers")
-    ax.legend()
-    st.pyplot(fig)
+    
+    image = Image.open("streamlit_app/assets/volcano_plot_static.png")
+    st.image(image, caption="Volcano Plot: Synthetic Lethality in Amplified Biomarkers", use_column_width=True)
 
-    buf_volcano = BytesIO()
-    fig.savefig(buf_volcano, format="png", dpi=300)
-    st.download_button(
-        label="⬇️ Download Volcano Plot (.png)",
-        data=buf_volcano.getvalue(),
-        file_name="volcano_plot.png",
-        mime="image/png"
-    )
+    with open("streamlit_app/assets/volcano_plot_static.png", "rb") as f:
+        st.download_button(
+            label="⬇️ Download Volcano Plot (.png)",
+            data=f,
+            file_name="volcano_plot.png",
+            mime="image/png"
+        )
 
 # === Heatmap ===
 elif plot_option == "Heatmap":
@@ -102,7 +86,7 @@ elif plot_option == "Heatmap":
     value_column = "–log10(FDR)" if metric == "–log10(FDR)" else metric
     heatmap_df = filtered.pivot(index="TargetGene_HGNC", columns="Biomarker_HGNC", values=value_column)
 
-    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.1")
+    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.05")
     fig2, ax2 = plt.subplots(figsize=(12, 10))
     sns.heatmap(
         heatmap_df.clip(-3, 0) if "EffectSize" in metric else heatmap_df,

@@ -6,6 +6,7 @@ numpy
 # For markdown report rendering and downloads
 markdown
 html2text
+Pillow
 
 # Plotting and Stats 
 matplotlib
