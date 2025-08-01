@@ -217,9 +217,8 @@ else:  # Advanced Mode
             data=merged,
             scatter=True,
             ci=95,
-            color="red",
-            scatter_kws={"s": 40, "alpha": 0.7},
-            line_kws={"linewidth": 2},
+            line_kws={"color": "red", "linewidth": 2},
+            scatter_kws={"s": 40, "alpha": 0.7, "color": "steelblue"},
             ax=ax
         )
 
