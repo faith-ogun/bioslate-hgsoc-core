@@ -133,5 +133,4 @@ elif view_option == "Pathway Network (Chord Diagram)":
             title="Gene–Pathway Interactions (Curated List)"
         )
     )
-    panel_chord = pn.panel(chord)
-    st.bokeh_chart(panel_chord.get_root(), use_container_width=True)
+    st.bokeh_chart(hv.render(chord, backend='bokeh'), use_container_width=True)
