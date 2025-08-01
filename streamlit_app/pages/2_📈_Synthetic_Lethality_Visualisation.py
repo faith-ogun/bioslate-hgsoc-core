@@ -44,7 +44,7 @@ def load_all_data():
 
     return full_screen, potent_hits, amp_set, crispr_df, cna_df
 
-full_screen_df, selective_hits_df, amp_biomarkers, crispr_df, cna_df = load_all_data()
+full_screen_df, potent_hits, amp_biomarkers, crispr_df, cna_df = load_all_data()
 
 # === Volcano Plot ===
 if plot_option == "Volcano Plot":
