@@ -110,34 +110,25 @@ elif view_option == "Pathway Network (Chord Diagram)":
     edges = subset[['Gene', 'CollapsedPathway']].drop_duplicates()
     edges.columns = ['Gene', 'Pathway']
 
-    # Check if we have data
     if len(edges) == 0:
         st.warning("No pathway-gene connections found with current filters.")
-        st.stop()
+    else:
+        # Prepare nodes and edges
+        unique_pathways = edges['Pathway'].unique().tolist()
+        unique_genes = edges['Gene'].unique().tolist()
+        nodes_df = pd.DataFrame({'name': unique_pathways + unique_genes})
+        nodes_df['type'] = ['Pathway'] * len(unique_pathways) + ['Gene'] * len(unique_genes)
 
-    # Prepare nodes and edges
-    unique_pathways = edges['Pathway'].unique().tolist()
-    unique_genes = edges['Gene'].unique().tolist()
-    nodes_df = pd.DataFrame({'name': unique_pathways + unique_genes})
-    nodes_df['type'] = ['Pathway'] * len(unique_pathways) + ['Gene'] * len(unique_genes)
-    nodes_df['index'] = range(len(nodes_df))
+        color_dict = {
+            'Cell cycle': '#1f77b4', 'Apoptosis': '#d62728', 'PI3K-Akt signaling': '#ff7f0e',
+            'mTOR signaling': '#ffbb78', 'FoxO signaling': '#2ca02c', 'VEGF signaling': '#98df8a',
+            'Pathways in cancer': '#7f7f7f', 'Breast cancer': '#c7c7c7'
+        }
 
-    color_dict = {
-        'Cell cycle': '#1f77b4', 'Apoptosis': '#d62728', 'PI3K-Akt signaling': '#ff7f0e',
-        'mTOR signaling': '#ffbb78', 'FoxO signaling': '#2ca02c', 'VEGF signaling': '#98df8a',
-        'Pathways in cancer': '#7f7f7f', 'Breast cancer': '#c7c7c7'
-    }
+        edges_named = edges.copy()
+        edges_named.columns = ['source', 'target']
 
-    edges_named = edges.copy()
-    edges_named.columns = ['source', 'target']
-
-    # Display summary
-    st.info(f"Found {len(edges_named)} gene-pathway connections involving {len(unique_genes)} genes and {len(unique_pathways)} pathways.")
-
-    # Method 1: Try direct Streamlit bokeh_chart
-    try:
-        st.write("**Rendering chord diagram...**")
-        
+        # Create and render chord diagram
         chord = Chord((edges_named, hv.Dataset(nodes_df, 'name'))).opts(
             opts.Chord(
                 labels='name',
@@ -148,51 +139,16 @@ elif view_option == "Pathway Network (Chord Diagram)":
             )
         )
         
-        # Convert to Bokeh
-        bokeh_plot = hv.render(chord, backend='bokeh')
+        # Save to temporary HTML file and display
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False) as f:
+            temp_filename = f.name
+            
+        hv.save(chord, temp_filename, backend='bokeh')
         
-        # Try st.bokeh_chart first
-        st.bokeh_chart(bokeh_plot, use_container_width=True)
-        st.success("✅ Chord diagram rendered successfully!")
+        with open(temp_filename, 'r', encoding='utf-8') as f:
+            html_content = f.read()
         
-    except Exception as e1:
-        st.warning(f"Method 1 failed: {str(e1)}")
-        st.write("Trying alternative rendering method...")
+        components.html(html_content, height=950, scrolling=True)
         
-        # Method 2: HTML components fallback
-        try:
-            # Save to temporary HTML file
-            with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False) as f:
-                temp_filename = f.name
-                
-            # Save the plot as HTML
-            hv.save(chord, temp_filename, backend='bokeh')
-            
-            # Read the HTML content
-            with open(temp_filename, 'r', encoding='utf-8') as f:
-                html_content = f.read()
-            
-            # Display using components
-            components.html(html_content, height=950, scrolling=True)
-            st.success("✅ Chord diagram rendered using HTML components!")
-            
-            # Clean up
-            os.unlink(temp_filename)
-            
-        except Exception as e2:
-            st.error(f"All rendering methods failed!")
-            st.error(f"Method 1 error: {str(e1)}")
-            st.error(f"Method 2 error: {str(e2)}")
-            
-            # Fallback: show the data
-            st.write("**Fallback: Showing raw data instead**")
-            st.dataframe(edges_named.head(20))
-            
-            # Show debugging info
-            with st.expander("🔧 Debug Information"):
-                st.write("**Edges shape:**", edges_named.shape)
-                st.write("**Nodes shape:**", nodes_df.shape)
-                st.write("**Sample edges:**")
-                st.dataframe(edges_named.head())
-                st.write("**Sample nodes:**")
-                st.dataframe(nodes_df.head())
+        # Clean up temp file
+        os.unlink(temp_filename)
