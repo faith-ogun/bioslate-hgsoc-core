@@ -37,7 +37,7 @@ view_option = st.sidebar.radio(
 st.subheader("🔗 PPI Check (STRING database)")
 n_total = len(ppi_df)
 n_with_ppi = ppi_df["PPI_found"].sum()
-st.markdown(f"Out of **{n_total}** SL pairs, **{n_with_ppi}** show direct STRING-supported protein–protein interactions (combined score ≥ 400).")
+st.markdown(f"Out of 197 SL pairs, **{n_with_ppi}** show direct STRING-supported protein–protein interactions (combined score ≥ 400).")
 
 with st.expander("📄 View All PPI-Annotated Pairs"):
     st.dataframe(ppi_df, use_container_width=True)
