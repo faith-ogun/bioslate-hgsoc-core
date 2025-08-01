@@ -68,7 +68,7 @@ elif plot_option == "Heatmap":
     # Metric selection
     metric = st.selectbox(
         "Select Metric to Visualise",
-        ["EffectSize", "–log10(FDR)", "MeanEffect_Amplified"]
+        ["EffectSize", "–log10(FDR)"]
     )
 
     # Pre-filter
