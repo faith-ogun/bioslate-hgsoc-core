@@ -51,7 +51,7 @@ if plot_option == "Volcano Plot":
     st.subheader("Volcano Plot: Effect Size vs FDR")
     
     image = Image.open("streamlit_app/assets/volcano_plot_static.png")
-    st.image(image, caption="Volcano Plot: Synthetic Lethality in Amplified Biomarkers", use_column_width=True)
+    st.image(image, caption="Volcano Plot: Synthetic Lethality in Amplified Biomarkers", use_container_width=True)
 
     with open("streamlit_app/assets/volcano_plot_static.png", "rb") as f:
         st.download_button(
