@@ -64,10 +64,14 @@ if plot_option == "Volcano Plot":
 # === Heatmap ===
 elif plot_option == "Heatmap":
     st.subheader("Heatmap of SL Hits")
+
+    # Metric selection
     metric = st.selectbox(
         "Select Metric to Visualise",
         ["EffectSize", "–log10(FDR)", "MeanEffect_Amplified"]
     )
+
+    # Pre-filter
     filtered = full_screen_df[
         (full_screen_df["EffectSize"] < 0) & (full_screen_df["FDR"] < 0.1)
     ].copy()
@@ -75,18 +79,40 @@ elif plot_option == "Heatmap":
     all_biomarkers = sorted(filtered["Biomarker_HGNC"].unique())
     all_targets = sorted(filtered["TargetGene_HGNC"].unique())
 
-    selected_biomarkers = st.multiselect("Filter by Biomarkers", all_biomarkers, default=all_biomarkers)
-    selected_targets = st.multiselect("Filter by Target Genes", all_targets, default=all_targets)
+    # Set max allowed
+    max_biomarkers = 20
+    max_targets = 20
 
+    # Selection UI with defaults
+    selected_biomarkers = st.multiselect(
+        f"Filter by Biomarkers (max {max_biomarkers})",
+        all_biomarkers,
+        default=all_biomarkers[:max_biomarkers]
+    )
+    selected_targets = st.multiselect(
+        f"Filter by Target Genes (max {max_targets})",
+        all_targets,
+        default=all_targets[:max_targets]
+    )
+
+    # Enforce selection limits
+    if len(selected_biomarkers) > max_biomarkers or len(selected_targets) > max_targets:
+        st.warning(f"Please select ≤ {max_biomarkers} biomarkers and ≤ {max_targets} target genes.")
+        st.stop()
+
+    # Apply selection filter
     filtered = filtered[
         filtered["Biomarker_HGNC"].isin(selected_biomarkers) &
         filtered["TargetGene_HGNC"].isin(selected_targets)
     ]
 
+    # Pivot matrix
     value_column = "–log10(FDR)" if metric == "–log10(FDR)" else metric
     heatmap_df = filtered.pivot(index="TargetGene_HGNC", columns="Biomarker_HGNC", values=value_column)
 
-    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.05")
+    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.1")
+
+    # Plot heatmap
     fig2, ax2 = plt.subplots(figsize=(12, 10))
     sns.heatmap(
         heatmap_df.clip(-3, 0) if "EffectSize" in metric else heatmap_df,
@@ -100,6 +126,7 @@ elif plot_option == "Heatmap":
     ax2.set_ylabel("Target Genes")
     st.pyplot(fig2)
 
+    # CSV export
     csv = heatmap_df.to_csv().encode("utf-8")
     st.download_button(
         label="⬇️ Download Heatmap Matrix (.csv)",
@@ -107,6 +134,7 @@ elif plot_option == "Heatmap":
         file_name=f"heatmap_{metric.replace(' ', '_')}.csv",
         mime="text/csv"
     )
+
 
 # === Boxplot ===
 elif plot_option == "Boxplot (TargetGene vs CNA Status)":
