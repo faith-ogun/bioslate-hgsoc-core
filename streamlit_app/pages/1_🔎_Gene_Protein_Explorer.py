@@ -44,12 +44,11 @@ if mode != "Advanced Mode":
 
 # Filter gene list
 if mode == "T-test + Cohen's d":
-    stats_df = t_test_stats_df.dropna(subset=[
-        "P-value (Amplification vs Neutral)", "P-value (Deletion vs Neutral)",
-        "Cohen's d (Amplification vs Neutral)", "Cohen's d (Deletion vs Neutral)"])
-    stats_df = stats_df[
-        (stats_df["P-value (Amplification vs Neutral)"] < p_thresh) |
-        (stats_df["P-value (Deletion vs Neutral)"] < p_thresh)]
+    stats_df = t_test_stats_df[
+    (t_test_stats_df["P-value (Amplification vs Neutral)"] < p_thresh) |
+    (t_test_stats_df["P-value (Deletion vs Neutral)"] < p_thresh)
+    ]
+    stats_df = stats_df.dropna(subset=["Gene_HGNC"])
     gene_list = sorted(stats_df["Gene_HGNC"].unique())
 
 elif mode == "Linear Regression":
