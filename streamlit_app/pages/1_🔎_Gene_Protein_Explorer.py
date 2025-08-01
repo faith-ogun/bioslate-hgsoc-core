@@ -9,7 +9,7 @@ import io
 # Page config
 st.set_page_config(page_title="BioSLATE Gene–Protein Explorer", layout="wide")
 st.title("Interactive Viewer of CNA and Protein Expression Dynamics")
-st.caption("Last updated: July 13th 2025")
+st.caption("Last updated: August 1st 2025")
 
 @st.cache_data
 def load_data():
