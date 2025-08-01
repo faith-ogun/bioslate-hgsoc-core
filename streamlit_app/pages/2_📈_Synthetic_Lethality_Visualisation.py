@@ -80,8 +80,8 @@ elif plot_option == "Heatmap":
     all_targets = sorted(filtered["TargetGene_HGNC"].unique())
 
     # Set max allowed
-    max_biomarkers = 30
-    max_targets = 30
+    max_biomarkers = 50
+    max_targets = 50
 
     # Selection UI with defaults
     selected_biomarkers = st.multiselect(
