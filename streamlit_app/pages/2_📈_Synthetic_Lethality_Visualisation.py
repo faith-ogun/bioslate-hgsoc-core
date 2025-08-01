@@ -15,7 +15,7 @@ st.caption("Last updated: August 1st 2025")
 st.sidebar.title("Visualisation Options")
 plot_option = st.sidebar.radio(
     "Choose a view:",
-    ["Volcano Plot", "Heatmap", "Regression Plot"]
+    ["Volcano Plot", "Heatmap", "Regression (TargetGene ~ CNA)"]
 )
 
 # --- Load all shared data in one go ---
