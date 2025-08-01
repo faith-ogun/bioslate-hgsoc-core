@@ -49,7 +49,7 @@ if view_option == "Top Pathways (Barplot)":
     top = sig.nsmallest(15, 'p_value')
 
     fig1, ax1 = plt.subplots(figsize=(8, 6))
-    sns.barplot(y='name', x=-np.log10(top['p_value']), data=top, color='#235b91', ax=ax1)
+    sns.barplot(y='name', x=-np.log10(top['p_value']), data=top, color='#1f76b4', ax=ax1)
     ax1.set_xlabel('-log₁₀(p-value)')
     ax1.set_ylabel('Pathway')
     ax1.set_title('Top 15 Enriched Pathways')
@@ -68,7 +68,7 @@ elif view_option == "Pathway × Gene (Dotplot)":
     dot_matrix = dot_data.groupby(['Pathway', 'Gene']).size().unstack(fill_value=0)
 
     fig2, ax2 = plt.subplots(figsize=(10, 12))
-    sns.heatmap(dot_matrix.T, cmap=sns.color_palette(["white", "#235b91"]),
+    sns.heatmap(dot_matrix.T, cmap=sns.color_palette(["white", "#1f76b4"]),
                 cbar=False, linewidths=0.5, linecolor="gray", ax=ax2)
     ax2.set_xlabel("Pathway")
     ax2.set_ylabel("Gene")
