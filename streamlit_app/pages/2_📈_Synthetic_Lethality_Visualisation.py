@@ -147,8 +147,7 @@ elif plot_option == "Regression (TargetGene ~ CNA)":
         ℹ️ <b>Context:</b> This view shows linear relationships between CNA and CRISPR dependency scores across a high-confidence subset of synthetic lethal gene pairs.<br><br>
         The following filters were applied from an initial screen of <b>521,374 gene pairs</b>:
         <ul>
-            <li><b>P-value &lt; 0.05</b> → <b>3476</b> hits</li>
-            <li><b>FDR &lt; 0.05</b> → <b>1601</b> hits</li>
+            <li><b>FDR &lt; 0.05</b> → <b>3476</b> hits</li>
             <li><b>Strong SL hits</b> (FDR &lt; 0.05 &amp; EffectSize &lt; 0) → <b>1601</b> hits</li>
             <li><b>Selective hits</b> (PredictedEffect_CNA2 &gt; –1) → <b>1175</b> hits</li>
             <li><b>Potent hits</b> (DeltaEffect_CNA6minusPred2 ≤ –0.5 &amp; PredictedEffect_CNA2 ≥ –0.6) → <b>197 hits</b></li>
