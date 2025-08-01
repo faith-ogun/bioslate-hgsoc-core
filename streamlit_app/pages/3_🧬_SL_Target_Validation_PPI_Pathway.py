@@ -15,7 +15,7 @@ from streamlit.components.v1 import html
 # --- Page config ---
 st.set_page_config(page_title="PPI & Pathway Analysis of SL Targets", layout="wide")
 st.title("Network & Pathway Analysis of Potent Synthetic Lethal Targets")
-st.caption("Last updated: August 2025")
+st.caption("Last updated: August 1st 2025")
 
 # --- Load data ---
 @st.cache_data
