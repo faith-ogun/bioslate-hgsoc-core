@@ -1,0 +1,1686 @@
+Pathway,Gene
+Chronic myeloid leukemia,AKT2
+Chronic myeloid leukemia,MECOM
+Chronic myeloid leukemia,PIK3CB
+Chronic myeloid leukemia,PIK3CA
+Chronic myeloid leukemia,GAB2
+Chronic myeloid leukemia,E2F3
+Chronic myeloid leukemia,KRAS
+Chronic myeloid leukemia,CCND1
+Chronic myeloid leukemia,RAF1
+Chronic myeloid leukemia,CDK4
+Cellular senescence,AKT2
+Cellular senescence,PIK3CB
+Cellular senescence,PIK3CA
+Cellular senescence,CCNE1
+Cellular senescence,LIN54
+Cellular senescence,E2F3
+Cellular senescence,KRAS
+Cellular senescence,FBXW11
+Cellular senescence,CCND1
+Cellular senescence,RAF1
+Cellular senescence,MYBL2
+Cellular senescence,ZFP36L1
+Cellular senescence,CDK4
+positive regulation of macromolecule metabolic process,EIF4G1
+positive regulation of macromolecule metabolic process,NCOA2
+positive regulation of macromolecule metabolic process,IGF2BP2
+positive regulation of macromolecule metabolic process,SUB1
+positive regulation of macromolecule metabolic process,CLNS1A
+positive regulation of macromolecule metabolic process,IL1RAP
+positive regulation of macromolecule metabolic process,DHX36
+positive regulation of macromolecule metabolic process,ECT2
+positive regulation of macromolecule metabolic process,TRA2B
+positive regulation of macromolecule metabolic process,AKT2
+positive regulation of macromolecule metabolic process,MECOM
+positive regulation of macromolecule metabolic process,EZH2
+positive regulation of macromolecule metabolic process,NCBP2
+positive regulation of macromolecule metabolic process,RFX5
+positive regulation of macromolecule metabolic process,PIK3CB
+positive regulation of macromolecule metabolic process,WWTR1
+positive regulation of macromolecule metabolic process,AGO2
+positive regulation of macromolecule metabolic process,HLTF
+positive regulation of macromolecule metabolic process,PDCD5
+positive regulation of macromolecule metabolic process,ASPH
+positive regulation of macromolecule metabolic process,OPA1
+positive regulation of macromolecule metabolic process,RAP2B
+positive regulation of macromolecule metabolic process,RSF1
+positive regulation of macromolecule metabolic process,PLSCR1
+positive regulation of macromolecule metabolic process,MED29
+positive regulation of macromolecule metabolic process,RBM38
+positive regulation of macromolecule metabolic process,CHD7
+positive regulation of macromolecule metabolic process,SMYD3
+positive regulation of macromolecule metabolic process,WNK1
+positive regulation of macromolecule metabolic process,SUPT5H
+positive regulation of macromolecule metabolic process,PAX8
+positive regulation of macromolecule metabolic process,FZR1
+positive regulation of macromolecule metabolic process,E2F3
+positive regulation of macromolecule metabolic process,KRAS
+positive regulation of macromolecule metabolic process,SKP2
+positive regulation of macromolecule metabolic process,WDR48
+positive regulation of macromolecule metabolic process,ACTR3
+positive regulation of macromolecule metabolic process,TMED2
+positive regulation of macromolecule metabolic process,ATXN7L3
+positive regulation of macromolecule metabolic process,FBXW11
+positive regulation of macromolecule metabolic process,SOX17
+positive regulation of macromolecule metabolic process,SUPT7L
+positive regulation of macromolecule metabolic process,TRAF2
+positive regulation of macromolecule metabolic process,VEZF1
+positive regulation of macromolecule metabolic process,WT1
+positive regulation of macromolecule metabolic process,CCND1
+positive regulation of macromolecule metabolic process,RAF1
+positive regulation of macromolecule metabolic process,MYBL2
+positive regulation of macromolecule metabolic process,SAMD4B
+positive regulation of macromolecule metabolic process,ZFP36L1
+positive regulation of macromolecule metabolic process,ARID2
+positive regulation of macromolecule metabolic process,APC
+positive regulation of macromolecule metabolic process,RICTOR
+positive regulation of macromolecule metabolic process,ZNF780B
+positive regulation of metabolic process,EIF4G1
+positive regulation of metabolic process,NCOA2
+positive regulation of metabolic process,IGF2BP2
+positive regulation of metabolic process,SUB1
+positive regulation of metabolic process,CLNS1A
+positive regulation of metabolic process,IL1RAP
+positive regulation of metabolic process,DHX36
+positive regulation of metabolic process,ECT2
+positive regulation of metabolic process,TRA2B
+positive regulation of metabolic process,AKT2
+positive regulation of metabolic process,MECOM
+positive regulation of metabolic process,EZH2
+positive regulation of metabolic process,FH
+positive regulation of metabolic process,NCBP2
+positive regulation of metabolic process,RFX5
+positive regulation of metabolic process,PIK3CB
+positive regulation of metabolic process,WWTR1
+positive regulation of metabolic process,AGO2
+positive regulation of metabolic process,HLTF
+positive regulation of metabolic process,PDCD5
+positive regulation of metabolic process,ASPH
+positive regulation of metabolic process,OPA1
+positive regulation of metabolic process,RAP2B
+positive regulation of metabolic process,RSF1
+positive regulation of metabolic process,PLSCR1
+positive regulation of metabolic process,MED29
+positive regulation of metabolic process,RBM38
+positive regulation of metabolic process,CHD7
+positive regulation of metabolic process,SMYD3
+positive regulation of metabolic process,WNK1
+positive regulation of metabolic process,SUPT5H
+positive regulation of metabolic process,UVRAG
+positive regulation of metabolic process,PAX8
+positive regulation of metabolic process,FZR1
+positive regulation of metabolic process,E2F3
+positive regulation of metabolic process,KRAS
+positive regulation of metabolic process,SKP2
+positive regulation of metabolic process,WDR48
+positive regulation of metabolic process,ACTR3
+positive regulation of metabolic process,TMED2
+positive regulation of metabolic process,ATXN7L3
+positive regulation of metabolic process,FBXW11
+positive regulation of metabolic process,SOX17
+positive regulation of metabolic process,SUPT7L
+positive regulation of metabolic process,TRAF2
+positive regulation of metabolic process,VEZF1
+positive regulation of metabolic process,WT1
+positive regulation of metabolic process,CCND1
+positive regulation of metabolic process,RAF1
+positive regulation of metabolic process,MYBL2
+positive regulation of metabolic process,SAMD4B
+positive regulation of metabolic process,ZFP36L1
+positive regulation of metabolic process,ARID2
+positive regulation of metabolic process,SCD
+positive regulation of metabolic process,APC
+positive regulation of metabolic process,RICTOR
+positive regulation of metabolic process,ZNF780B
+cell division,SMC4
+cell division,AHCTF1
+cell division,ECT2
+cell division,PIK3CB
+cell division,WWTR1
+cell division,ZC3HC1
+cell division,EXOC4
+cell division,WNK1
+cell division,UVRAG
+cell division,CCNE1
+cell division,FZR1
+cell division,CIT
+cell division,PARD6B
+cell division,PDS5B
+cell division,VPS4B
+cell division,ACTR3
+cell division,MAEA
+cell division,SOX17
+cell division,CCND1
+cell division,CDK4
+cell division,APC
+positive regulation of cellular process,SMC4
+positive regulation of cellular process,DNM1L
+positive regulation of cellular process,EIF4G1
+positive regulation of cellular process,NCOA2
+positive regulation of cellular process,IGF2BP2
+positive regulation of cellular process,SUB1
+positive regulation of cellular process,CLNS1A
+positive regulation of cellular process,IL1RAP
+positive regulation of cellular process,DHX36
+positive regulation of cellular process,ECT2
+positive regulation of cellular process,TRA2B
+positive regulation of cellular process,AKT2
+positive regulation of cellular process,MECOM
+positive regulation of cellular process,EZH2
+positive regulation of cellular process,FH
+positive regulation of cellular process,NCBP2
+positive regulation of cellular process,RFX5
+positive regulation of cellular process,PIK3CB
+positive regulation of cellular process,WWTR1
+positive regulation of cellular process,LSM14A
+positive regulation of cellular process,AGO2
+positive regulation of cellular process,AAMDC
+positive regulation of cellular process,HLTF
+positive regulation of cellular process,PDCD5
+positive regulation of cellular process,MMP7
+positive regulation of cellular process,ASPH
+positive regulation of cellular process,OPA1
+positive regulation of cellular process,GOLT1B
+positive regulation of cellular process,RAP2B
+positive regulation of cellular process,RSF1
+positive regulation of cellular process,PIK3CA
+positive regulation of cellular process,PLSCR1
+positive regulation of cellular process,MED29
+positive regulation of cellular process,RBM38
+positive regulation of cellular process,CHD7
+positive regulation of cellular process,BICD1
+positive regulation of cellular process,GOLPH3
+positive regulation of cellular process,SMYD3
+positive regulation of cellular process,ST6GAL1
+positive regulation of cellular process,WNK1
+positive regulation of cellular process,SUPT5H
+positive regulation of cellular process,UVRAG
+positive regulation of cellular process,CCNE1
+positive regulation of cellular process,TNFSF10
+positive regulation of cellular process,GAB2
+positive regulation of cellular process,PAX8
+positive regulation of cellular process,MIOS
+positive regulation of cellular process,FZR1
+positive regulation of cellular process,E2F3
+positive regulation of cellular process,KRAS
+positive regulation of cellular process,PDCD2
+positive regulation of cellular process,CIT
+positive regulation of cellular process,SKP2
+positive regulation of cellular process,WDR48
+positive regulation of cellular process,VPS4B
+positive regulation of cellular process,ACTR3
+positive regulation of cellular process,TMED2
+positive regulation of cellular process,ATXN7L3
+positive regulation of cellular process,FBXW11
+positive regulation of cellular process,SOX17
+positive regulation of cellular process,SUPT7L
+positive regulation of cellular process,TRAF2
+positive regulation of cellular process,VEZF1
+positive regulation of cellular process,WT1
+positive regulation of cellular process,CCND1
+positive regulation of cellular process,RAF1
+positive regulation of cellular process,MYBL2
+positive regulation of cellular process,SAMD4B
+positive regulation of cellular process,ZFP36L1
+positive regulation of cellular process,ARID2
+positive regulation of cellular process,XRCC2
+positive regulation of cellular process,CDK4
+positive regulation of cellular process,SCD
+positive regulation of cellular process,ARPC2
+positive regulation of cellular process,APC
+positive regulation of cellular process,RICTOR
+positive regulation of cellular process,ZNF780B
+Small cell lung cancer,AKT2
+Small cell lung cancer,PIK3CB
+Small cell lung cancer,PIK3CA
+Small cell lung cancer,CCNE1
+Small cell lung cancer,E2F3
+Small cell lung cancer,SKP2
+Small cell lung cancer,TRAF2
+Small cell lung cancer,CCND1
+Small cell lung cancer,CDK4
+Melanoma,AKT2
+Melanoma,PIK3CB
+Melanoma,PIK3CA
+Melanoma,E2F3
+Melanoma,KRAS
+Melanoma,CCND1
+Melanoma,RAF1
+Melanoma,CDK4
+Non-small cell lung cancer,AKT2
+Non-small cell lung cancer,PIK3CB
+Non-small cell lung cancer,PIK3CA
+Non-small cell lung cancer,E2F3
+Non-small cell lung cancer,KRAS
+Non-small cell lung cancer,CCND1
+Non-small cell lung cancer,RAF1
+Non-small cell lung cancer,CDK4
+positive regulation of biological process,SMC4
+positive regulation of biological process,DNM1L
+positive regulation of biological process,EIF4G1
+positive regulation of biological process,PAK4
+positive regulation of biological process,NCOA2
+positive regulation of biological process,ARFGEF1
+positive regulation of biological process,IGF2BP2
+positive regulation of biological process,SUB1
+positive regulation of biological process,CLNS1A
+positive regulation of biological process,IL1RAP
+positive regulation of biological process,DHX36
+positive regulation of biological process,ECT2
+positive regulation of biological process,TRA2B
+positive regulation of biological process,AKT2
+positive regulation of biological process,MECOM
+positive regulation of biological process,EZH2
+positive regulation of biological process,FH
+positive regulation of biological process,NCBP2
+positive regulation of biological process,RFX5
+positive regulation of biological process,PIK3CB
+positive regulation of biological process,WWTR1
+positive regulation of biological process,LSM14A
+positive regulation of biological process,AGO2
+positive regulation of biological process,AAMDC
+positive regulation of biological process,HLTF
+positive regulation of biological process,PDCD5
+positive regulation of biological process,MMP7
+positive regulation of biological process,ASPH
+positive regulation of biological process,OPA1
+positive regulation of biological process,GOLT1B
+positive regulation of biological process,RAP2B
+positive regulation of biological process,RSF1
+positive regulation of biological process,PIK3CA
+positive regulation of biological process,PLSCR1
+positive regulation of biological process,MED29
+positive regulation of biological process,RBM38
+positive regulation of biological process,CHD7
+positive regulation of biological process,BICD1
+positive regulation of biological process,GOLPH3
+positive regulation of biological process,SMYD3
+positive regulation of biological process,ST6GAL1
+positive regulation of biological process,WNK1
+positive regulation of biological process,SUPT5H
+positive regulation of biological process,UVRAG
+positive regulation of biological process,CCNE1
+positive regulation of biological process,TNFSF10
+positive regulation of biological process,GAB2
+positive regulation of biological process,PAX8
+positive regulation of biological process,MIOS
+positive regulation of biological process,FZR1
+positive regulation of biological process,E2F3
+positive regulation of biological process,KRAS
+positive regulation of biological process,PDCD2
+positive regulation of biological process,CIT
+positive regulation of biological process,SKP2
+positive regulation of biological process,WDR48
+positive regulation of biological process,VPS4B
+positive regulation of biological process,ACTR3
+positive regulation of biological process,TMED2
+positive regulation of biological process,ATXN7L3
+positive regulation of biological process,FBXW11
+positive regulation of biological process,SOX17
+positive regulation of biological process,SUPT7L
+positive regulation of biological process,TRAF2
+positive regulation of biological process,VEZF1
+positive regulation of biological process,WT1
+positive regulation of biological process,CCND1
+positive regulation of biological process,RAF1
+positive regulation of biological process,MYBL2
+positive regulation of biological process,SAMD4B
+positive regulation of biological process,ZFP36L1
+positive regulation of biological process,ARID2
+positive regulation of biological process,XRCC2
+positive regulation of biological process,CDK4
+positive regulation of biological process,SCD
+positive regulation of biological process,ARPC2
+positive regulation of biological process,APC
+positive regulation of biological process,RICTOR
+positive regulation of biological process,ZNF780B
+Glioma,AKT2
+Glioma,PIK3CB
+Glioma,PIK3CA
+Glioma,E2F3
+Glioma,KRAS
+Glioma,CCND1
+Glioma,RAF1
+Glioma,CDK4
+Pancreatic cancer,AKT2
+Pancreatic cancer,PIK3CB
+Pancreatic cancer,PIK3CA
+Pancreatic cancer,E2F3
+Pancreatic cancer,KRAS
+Pancreatic cancer,CCND1
+Pancreatic cancer,RAF1
+Pancreatic cancer,CDK4
+Hepatocellular carcinoma,AKT2
+Hepatocellular carcinoma,PIK3CB
+Hepatocellular carcinoma,PIK3CA
+Hepatocellular carcinoma,E2F3
+Hepatocellular carcinoma,KRAS
+Hepatocellular carcinoma,TXNRD1
+Hepatocellular carcinoma,CCND1
+Hepatocellular carcinoma,RAF1
+Hepatocellular carcinoma,ARID2
+Hepatocellular carcinoma,CDK4
+Hepatocellular carcinoma,APC
+Endometrial cancer,AKT2
+Endometrial cancer,PIK3CB
+Endometrial cancer,PIK3CA
+Endometrial cancer,KRAS
+Endometrial cancer,CCND1
+Endometrial cancer,RAF1
+Endometrial cancer,APC
+cell cycle process,SMC4
+cell cycle process,EIF4G1
+cell cycle process,AHCTF1
+cell cycle process,ECT2
+cell cycle process,EZH2
+cell cycle process,LSM14A
+cell cycle process,PLSCR1
+cell cycle process,CCNL1
+cell cycle process,EXOC4
+cell cycle process,WNK1
+cell cycle process,UVRAG
+cell cycle process,CCNE1
+cell cycle process,FZR1
+cell cycle process,E2F3
+cell cycle process,CIT
+cell cycle process,PARD6B
+cell cycle process,SKP2
+cell cycle process,PDS5B
+cell cycle process,VPS4B
+cell cycle process,ACTR3
+cell cycle process,FBXW11
+cell cycle process,CCND1
+cell cycle process,MYBL2
+cell cycle process,ZFP36L1
+cell cycle process,ARID2
+cell cycle process,XRCC2
+cell cycle process,CDK4
+cell cycle process,APC
+Endocrine resistance,AKT2
+Endocrine resistance,PIK3CB
+Endocrine resistance,PIK3CA
+Endocrine resistance,E2F3
+Endocrine resistance,KRAS
+Endocrine resistance,CCND1
+Endocrine resistance,RAF1
+Endocrine resistance,CDK4
+Renal cell carcinoma,PAK4
+Renal cell carcinoma,AKT2
+Renal cell carcinoma,FH
+Renal cell carcinoma,PIK3CB
+Renal cell carcinoma,PIK3CA
+Renal cell carcinoma,KRAS
+Renal cell carcinoma,RAF1
+Prostate cancer,AKT2
+Prostate cancer,PIK3CB
+Prostate cancer,PIK3CA
+Prostate cancer,CCNE1
+Prostate cancer,E2F3
+Prostate cancer,KRAS
+Prostate cancer,CCND1
+Prostate cancer,RAF1
+Aberrant regulation of mitotic cell cycle due to RB1 defects,CCNE1
+Aberrant regulation of mitotic cell cycle due to RB1 defects,FZR1
+Aberrant regulation of mitotic cell cycle due to RB1 defects,E2F3
+Aberrant regulation of mitotic cell cycle due to RB1 defects,SKP2
+Aberrant regulation of mitotic cell cycle due to RB1 defects,CCND1
+Aberrant regulation of mitotic cell cycle due to RB1 defects,CDK4
+cell cycle,SMC4
+cell cycle,EIF4G1
+cell cycle,AHCTF1
+cell cycle,ECT2
+cell cycle,AKT2
+cell cycle,MECOM
+cell cycle,EZH2
+cell cycle,LSM14A
+cell cycle,PLSCR1
+cell cycle,RBM38
+cell cycle,CCNL1
+cell cycle,EXOC4
+cell cycle,WNK1
+cell cycle,UVRAG
+cell cycle,CCNE1
+cell cycle,FZR1
+cell cycle,E2F3
+cell cycle,CIT
+cell cycle,PARD6B
+cell cycle,SKP2
+cell cycle,PDS5B
+cell cycle,VPS4B
+cell cycle,ACTR3
+cell cycle,FBXW11
+cell cycle,MAEA
+cell cycle,CCND1
+cell cycle,MYBL2
+cell cycle,ZFP36L1
+cell cycle,ARID2
+cell cycle,XRCC2
+cell cycle,CDK4
+cell cycle,APC
+Diseases of mitotic cell cycle,CCNE1
+Diseases of mitotic cell cycle,FZR1
+Diseases of mitotic cell cycle,E2F3
+Diseases of mitotic cell cycle,SKP2
+Diseases of mitotic cell cycle,CCND1
+Diseases of mitotic cell cycle,CDK4
+positive regulation of macromolecule biosynthetic process,EIF4G1
+positive regulation of macromolecule biosynthetic process,NCOA2
+positive regulation of macromolecule biosynthetic process,IGF2BP2
+positive regulation of macromolecule biosynthetic process,SUB1
+positive regulation of macromolecule biosynthetic process,CLNS1A
+positive regulation of macromolecule biosynthetic process,IL1RAP
+positive regulation of macromolecule biosynthetic process,DHX36
+positive regulation of macromolecule biosynthetic process,TRA2B
+positive regulation of macromolecule biosynthetic process,AKT2
+positive regulation of macromolecule biosynthetic process,MECOM
+positive regulation of macromolecule biosynthetic process,NCBP2
+positive regulation of macromolecule biosynthetic process,RFX5
+positive regulation of macromolecule biosynthetic process,PIK3CB
+positive regulation of macromolecule biosynthetic process,WWTR1
+positive regulation of macromolecule biosynthetic process,AGO2
+positive regulation of macromolecule biosynthetic process,HLTF
+positive regulation of macromolecule biosynthetic process,PDCD5
+positive regulation of macromolecule biosynthetic process,ASPH
+positive regulation of macromolecule biosynthetic process,OPA1
+positive regulation of macromolecule biosynthetic process,RSF1
+positive regulation of macromolecule biosynthetic process,PLSCR1
+positive regulation of macromolecule biosynthetic process,MED29
+positive regulation of macromolecule biosynthetic process,RBM38
+positive regulation of macromolecule biosynthetic process,CHD7
+positive regulation of macromolecule biosynthetic process,SMYD3
+positive regulation of macromolecule biosynthetic process,WNK1
+positive regulation of macromolecule biosynthetic process,SUPT5H
+positive regulation of macromolecule biosynthetic process,PAX8
+positive regulation of macromolecule biosynthetic process,E2F3
+positive regulation of macromolecule biosynthetic process,KRAS
+positive regulation of macromolecule biosynthetic process,ACTR3
+positive regulation of macromolecule biosynthetic process,TMED2
+positive regulation of macromolecule biosynthetic process,ATXN7L3
+positive regulation of macromolecule biosynthetic process,FBXW11
+positive regulation of macromolecule biosynthetic process,SOX17
+positive regulation of macromolecule biosynthetic process,SUPT7L
+positive regulation of macromolecule biosynthetic process,TRAF2
+positive regulation of macromolecule biosynthetic process,VEZF1
+positive regulation of macromolecule biosynthetic process,WT1
+positive regulation of macromolecule biosynthetic process,RAF1
+positive regulation of macromolecule biosynthetic process,MYBL2
+positive regulation of macromolecule biosynthetic process,ZNF780B
+positive regulation of nucleobase-containing compound metabolic process,NCOA2
+positive regulation of nucleobase-containing compound metabolic process,SUB1
+positive regulation of nucleobase-containing compound metabolic process,CLNS1A
+positive regulation of nucleobase-containing compound metabolic process,DHX36
+positive regulation of nucleobase-containing compound metabolic process,TRA2B
+positive regulation of nucleobase-containing compound metabolic process,MECOM
+positive regulation of nucleobase-containing compound metabolic process,NCBP2
+positive regulation of nucleobase-containing compound metabolic process,RFX5
+positive regulation of nucleobase-containing compound metabolic process,WWTR1
+positive regulation of nucleobase-containing compound metabolic process,AGO2
+positive regulation of nucleobase-containing compound metabolic process,HLTF
+positive regulation of nucleobase-containing compound metabolic process,ASPH
+positive regulation of nucleobase-containing compound metabolic process,RSF1
+positive regulation of nucleobase-containing compound metabolic process,PLSCR1
+positive regulation of nucleobase-containing compound metabolic process,MED29
+positive regulation of nucleobase-containing compound metabolic process,CHD7
+positive regulation of nucleobase-containing compound metabolic process,SMYD3
+positive regulation of nucleobase-containing compound metabolic process,WNK1
+positive regulation of nucleobase-containing compound metabolic process,SUPT5H
+positive regulation of nucleobase-containing compound metabolic process,PAX8
+positive regulation of nucleobase-containing compound metabolic process,E2F3
+positive regulation of nucleobase-containing compound metabolic process,SKP2
+positive regulation of nucleobase-containing compound metabolic process,WDR48
+positive regulation of nucleobase-containing compound metabolic process,ACTR3
+positive regulation of nucleobase-containing compound metabolic process,ATXN7L3
+positive regulation of nucleobase-containing compound metabolic process,FBXW11
+positive regulation of nucleobase-containing compound metabolic process,SOX17
+positive regulation of nucleobase-containing compound metabolic process,SUPT7L
+positive regulation of nucleobase-containing compound metabolic process,VEZF1
+positive regulation of nucleobase-containing compound metabolic process,WT1
+positive regulation of nucleobase-containing compound metabolic process,RAF1
+positive regulation of nucleobase-containing compound metabolic process,MYBL2
+positive regulation of nucleobase-containing compound metabolic process,SAMD4B
+positive regulation of nucleobase-containing compound metabolic process,ZFP36L1
+positive regulation of nucleobase-containing compound metabolic process,ARID2
+positive regulation of nucleobase-containing compound metabolic process,ZNF780B
+mitotic cell cycle process,SMC4
+mitotic cell cycle process,EIF4G1
+mitotic cell cycle process,ECT2
+mitotic cell cycle process,EZH2
+mitotic cell cycle process,LSM14A
+mitotic cell cycle process,EXOC4
+mitotic cell cycle process,WNK1
+mitotic cell cycle process,CCNE1
+mitotic cell cycle process,FZR1
+mitotic cell cycle process,E2F3
+mitotic cell cycle process,CIT
+mitotic cell cycle process,SKP2
+mitotic cell cycle process,VPS4B
+mitotic cell cycle process,FBXW11
+mitotic cell cycle process,CCND1
+mitotic cell cycle process,MYBL2
+mitotic cell cycle process,ZFP36L1
+mitotic cell cycle process,ARID2
+mitotic cell cycle process,CDK4
+mitotic cell cycle process,APC
+Cyclin A:Cdk2-associated events at S phase entry,PSMD8
+Cyclin A:Cdk2-associated events at S phase entry,AKT2
+Cyclin A:Cdk2-associated events at S phase entry,CCNE1
+Cyclin A:Cdk2-associated events at S phase entry,LIN54
+Cyclin A:Cdk2-associated events at S phase entry,FZR1
+Cyclin A:Cdk2-associated events at S phase entry,SKP2
+Cyclin A:Cdk2-associated events at S phase entry,CCND1
+Cyclin A:Cdk2-associated events at S phase entry,CDK4
+mitotic cell cycle,SMC4
+mitotic cell cycle,EIF4G1
+mitotic cell cycle,ECT2
+mitotic cell cycle,EZH2
+mitotic cell cycle,LSM14A
+mitotic cell cycle,EXOC4
+mitotic cell cycle,WNK1
+mitotic cell cycle,CCNE1
+mitotic cell cycle,FZR1
+mitotic cell cycle,E2F3
+mitotic cell cycle,CIT
+mitotic cell cycle,SKP2
+mitotic cell cycle,VPS4B
+mitotic cell cycle,FBXW11
+mitotic cell cycle,MAEA
+mitotic cell cycle,CCND1
+mitotic cell cycle,MYBL2
+mitotic cell cycle,ZFP36L1
+mitotic cell cycle,ARID2
+mitotic cell cycle,XRCC2
+mitotic cell cycle,CDK4
+mitotic cell cycle,APC
+Breast cancer,AKT2
+Breast cancer,PIK3CB
+Breast cancer,PIK3CA
+Breast cancer,E2F3
+Breast cancer,KRAS
+Breast cancer,CCND1
+Breast cancer,RAF1
+Breast cancer,CDK4
+Breast cancer,APC
+Gastric cancer,AKT2
+Gastric cancer,PIK3CB
+Gastric cancer,PIK3CA
+Gastric cancer,CCNE1
+Gastric cancer,E2F3
+Gastric cancer,KRAS
+Gastric cancer,CCND1
+Gastric cancer,RAF1
+Gastric cancer,APC
+Colorectal cancer,AKT2
+Colorectal cancer,PIK3CB
+Colorectal cancer,PIK3CA
+Colorectal cancer,KRAS
+Colorectal cancer,CCND1
+Colorectal cancer,RAF1
+Colorectal cancer,APC
+positive regulation of RNA metabolic process,NCOA2
+positive regulation of RNA metabolic process,SUB1
+positive regulation of RNA metabolic process,CLNS1A
+positive regulation of RNA metabolic process,DHX36
+positive regulation of RNA metabolic process,TRA2B
+positive regulation of RNA metabolic process,MECOM
+positive regulation of RNA metabolic process,NCBP2
+positive regulation of RNA metabolic process,RFX5
+positive regulation of RNA metabolic process,WWTR1
+positive regulation of RNA metabolic process,AGO2
+positive regulation of RNA metabolic process,HLTF
+positive regulation of RNA metabolic process,ASPH
+positive regulation of RNA metabolic process,RSF1
+positive regulation of RNA metabolic process,PLSCR1
+positive regulation of RNA metabolic process,MED29
+positive regulation of RNA metabolic process,CHD7
+positive regulation of RNA metabolic process,SMYD3
+positive regulation of RNA metabolic process,WNK1
+positive regulation of RNA metabolic process,SUPT5H
+positive regulation of RNA metabolic process,PAX8
+positive regulation of RNA metabolic process,E2F3
+positive regulation of RNA metabolic process,ACTR3
+positive regulation of RNA metabolic process,ATXN7L3
+positive regulation of RNA metabolic process,FBXW11
+positive regulation of RNA metabolic process,SOX17
+positive regulation of RNA metabolic process,SUPT7L
+positive regulation of RNA metabolic process,VEZF1
+positive regulation of RNA metabolic process,WT1
+positive regulation of RNA metabolic process,RAF1
+positive regulation of RNA metabolic process,MYBL2
+positive regulation of RNA metabolic process,SAMD4B
+positive regulation of RNA metabolic process,ZFP36L1
+positive regulation of RNA metabolic process,ZNF780B
+Hepatitis C,AKT2
+Hepatitis C,PIK3CB
+Hepatitis C,PIK3CA
+Hepatitis C,E2F3
+Hepatitis C,KRAS
+Hepatitis C,TRAF2
+Hepatitis C,CCND1
+Hepatitis C,RAF1
+Hepatitis C,CDK4
+Epstein-Barr virus infection,PSMD8
+Epstein-Barr virus infection,AKT2
+Epstein-Barr virus infection,PIK3CB
+Epstein-Barr virus infection,PIK3CA
+Epstein-Barr virus infection,CCNE1
+Epstein-Barr virus infection,E2F3
+Epstein-Barr virus infection,SKP2
+Epstein-Barr virus infection,TRAF2
+Epstein-Barr virus infection,CCND1
+Epstein-Barr virus infection,CDK4
+positive regulation of biosynthetic process,EIF4G1
+positive regulation of biosynthetic process,NCOA2
+positive regulation of biosynthetic process,IGF2BP2
+positive regulation of biosynthetic process,SUB1
+positive regulation of biosynthetic process,CLNS1A
+positive regulation of biosynthetic process,IL1RAP
+positive regulation of biosynthetic process,DHX36
+positive regulation of biosynthetic process,TRA2B
+positive regulation of biosynthetic process,AKT2
+positive regulation of biosynthetic process,MECOM
+positive regulation of biosynthetic process,NCBP2
+positive regulation of biosynthetic process,RFX5
+positive regulation of biosynthetic process,PIK3CB
+positive regulation of biosynthetic process,WWTR1
+positive regulation of biosynthetic process,AGO2
+positive regulation of biosynthetic process,HLTF
+positive regulation of biosynthetic process,PDCD5
+positive regulation of biosynthetic process,ASPH
+positive regulation of biosynthetic process,OPA1
+positive regulation of biosynthetic process,RSF1
+positive regulation of biosynthetic process,PLSCR1
+positive regulation of biosynthetic process,MED29
+positive regulation of biosynthetic process,RBM38
+positive regulation of biosynthetic process,CHD7
+positive regulation of biosynthetic process,SMYD3
+positive regulation of biosynthetic process,WNK1
+positive regulation of biosynthetic process,SUPT5H
+positive regulation of biosynthetic process,PAX8
+positive regulation of biosynthetic process,E2F3
+positive regulation of biosynthetic process,KRAS
+positive regulation of biosynthetic process,ACTR3
+positive regulation of biosynthetic process,TMED2
+positive regulation of biosynthetic process,ATXN7L3
+positive regulation of biosynthetic process,FBXW11
+positive regulation of biosynthetic process,SOX17
+positive regulation of biosynthetic process,SUPT7L
+positive regulation of biosynthetic process,TRAF2
+positive regulation of biosynthetic process,VEZF1
+positive regulation of biosynthetic process,WT1
+positive regulation of biosynthetic process,RAF1
+positive regulation of biosynthetic process,MYBL2
+positive regulation of biosynthetic process,ZNF780B
+regulation of protein metabolic process,EIF4G1
+regulation of protein metabolic process,IGF2BP2
+regulation of protein metabolic process,DHX36
+regulation of protein metabolic process,ECT2
+regulation of protein metabolic process,AKT2
+regulation of protein metabolic process,EZH2
+regulation of protein metabolic process,NCBP2
+regulation of protein metabolic process,WWTR1
+regulation of protein metabolic process,LSM14A
+regulation of protein metabolic process,AGO2
+regulation of protein metabolic process,ASPH
+regulation of protein metabolic process,RAP2B
+regulation of protein metabolic process,PIK3CA
+regulation of protein metabolic process,XRN1
+regulation of protein metabolic process,SMYD3
+regulation of protein metabolic process,WNK1
+regulation of protein metabolic process,UVRAG
+regulation of protein metabolic process,FZR1
+regulation of protein metabolic process,KRAS
+regulation of protein metabolic process,SKP2
+regulation of protein metabolic process,WDR48
+regulation of protein metabolic process,TMED2
+regulation of protein metabolic process,FBXW11
+regulation of protein metabolic process,SOX17
+regulation of protein metabolic process,TRAF2
+regulation of protein metabolic process,CCND1
+regulation of protein metabolic process,RAF1
+regulation of protein metabolic process,SAMD4B
+regulation of protein metabolic process,ZFP36L1
+regulation of protein metabolic process,PFDN1
+regulation of protein metabolic process,METAP1
+regulation of protein metabolic process,APC
+regulation of protein metabolic process,RICTOR
+regulation of programmed cell death,PAK4
+regulation of programmed cell death,ECT2
+regulation of programmed cell death,MECOM
+regulation of programmed cell death,PIK3CB
+regulation of programmed cell death,ZC3HC1
+regulation of programmed cell death,PDCD5
+regulation of programmed cell death,OPA1
+regulation of programmed cell death,PEPD
+regulation of programmed cell death,PIK3CA
+regulation of programmed cell death,CCNL1
+regulation of programmed cell death,GOLPH3
+regulation of programmed cell death,ST6GAL1
+regulation of programmed cell death,ST3GAL1
+regulation of programmed cell death,TNFSF10
+regulation of programmed cell death,PAX8
+regulation of programmed cell death,E2F3
+regulation of programmed cell death,KRAS
+regulation of programmed cell death,PDCD2
+regulation of programmed cell death,SKP2
+regulation of programmed cell death,MAEA
+regulation of programmed cell death,TRAF2
+regulation of programmed cell death,WT1
+regulation of programmed cell death,CCND1
+regulation of programmed cell death,RAF1
+regulation of programmed cell death,MYBL2
+regulation of programmed cell death,ZFP36L1
+regulation of programmed cell death,XRCC2
+regulation of programmed cell death,APC
+regulation of programmed cell death,RICTOR
+protein metabolic process,EIF4G1
+protein metabolic process,PAK4
+protein metabolic process,ARFGEF1
+protein metabolic process,IGF2BP2
+protein metabolic process,DHX36
+protein metabolic process,PSMD8
+protein metabolic process,ECT2
+protein metabolic process,AKT2
+protein metabolic process,EZH2
+protein metabolic process,NCBP2
+protein metabolic process,ERC1
+protein metabolic process,WWTR1
+protein metabolic process,UBXN7
+protein metabolic process,LSM14A
+protein metabolic process,FBXL6
+protein metabolic process,ZC3HC1
+protein metabolic process,AGO2
+protein metabolic process,ALG8
+protein metabolic process,HLTF
+protein metabolic process,PDCD5
+protein metabolic process,MMP7
+protein metabolic process,ASPH
+protein metabolic process,DESI2
+protein metabolic process,RAP2B
+protein metabolic process,PEPD
+protein metabolic process,PIK3CA
+protein metabolic process,XRN1
+protein metabolic process,GOLPH3
+protein metabolic process,SMYD3
+protein metabolic process,ST6GAL1
+protein metabolic process,ST3GAL1
+protein metabolic process,WNK1
+protein metabolic process,UBE2H
+protein metabolic process,UVRAG
+protein metabolic process,GFM1
+protein metabolic process,CCNE1
+protein metabolic process,TIMM50
+protein metabolic process,PDIA4
+protein metabolic process,FZR1
+protein metabolic process,KRAS
+protein metabolic process,CIT
+protein metabolic process,SKP2
+protein metabolic process,WDR26
+protein metabolic process,ZDHHC11
+protein metabolic process,WDR48
+protein metabolic process,VPS4B
+protein metabolic process,TMED2
+protein metabolic process,FBXW11
+protein metabolic process,MAEA
+protein metabolic process,SOX17
+protein metabolic process,RPL28
+protein metabolic process,TRAF2
+protein metabolic process,CCND1
+protein metabolic process,RAF1
+protein metabolic process,SAMD4B
+protein metabolic process,ZFP36L1
+protein metabolic process,PFDN1
+protein metabolic process,METAP1
+protein metabolic process,CDK4
+protein metabolic process,APC
+protein metabolic process,RICTOR
+RNA localization,IGF2BP2
+RNA localization,AHCTF1
+RNA localization,DHX36
+RNA localization,NCBP2
+RNA localization,BICD1
+RNA localization,WNK1
+RNA localization,DDX39B
+RNA localization,YTHDC1
+RNA localization,ZFP36L1
+RNA localization,TOMM20
+Fc gamma R-mediated phagocytosis,AKT2
+Fc gamma R-mediated phagocytosis,PIK3CB
+Fc gamma R-mediated phagocytosis,PIK3CA
+Fc gamma R-mediated phagocytosis,GAB2
+Fc gamma R-mediated phagocytosis,ACTR3
+Fc gamma R-mediated phagocytosis,RAF1
+Fc gamma R-mediated phagocytosis,ARPC2
+Bladder cancer,E2F3
+Bladder cancer,KRAS
+Bladder cancer,CCND1
+Bladder cancer,RAF1
+Bladder cancer,CDK4
+FoxO signaling pathway,AKT2
+FoxO signaling pathway,PIK3CB
+FoxO signaling pathway,PIK3CA
+FoxO signaling pathway,TNFSF10
+FoxO signaling pathway,KRAS
+FoxO signaling pathway,SKP2
+FoxO signaling pathway,CCND1
+FoxO signaling pathway,RAF1
+programmed cell death,DNM1L
+programmed cell death,PAK4
+programmed cell death,ECT2
+programmed cell death,AKT2
+programmed cell death,MECOM
+programmed cell death,PIK3CB
+programmed cell death,ZC3HC1
+programmed cell death,PDCD5
+programmed cell death,OPA1
+programmed cell death,PEPD
+programmed cell death,PIK3CA
+programmed cell death,PLSCR1
+programmed cell death,CCNL1
+programmed cell death,GOLPH3
+programmed cell death,ST6GAL1
+programmed cell death,ST3GAL1
+programmed cell death,TNFSF10
+programmed cell death,TIMM50
+programmed cell death,PAX8
+programmed cell death,E2F3
+programmed cell death,KRAS
+programmed cell death,PDCD2
+programmed cell death,CIT
+programmed cell death,SKP2
+programmed cell death,MAEA
+programmed cell death,TRAF2
+programmed cell death,WT1
+programmed cell death,CCND1
+programmed cell death,RAF1
+programmed cell death,MYBL2
+programmed cell death,ZFP36L1
+programmed cell death,XRCC2
+programmed cell death,APC
+programmed cell death,RICTOR
+Fc epsilon RI signaling pathway,AKT2
+Fc epsilon RI signaling pathway,PIK3CB
+Fc epsilon RI signaling pathway,PIK3CA
+Fc epsilon RI signaling pathway,GAB2
+Fc epsilon RI signaling pathway,KRAS
+Fc epsilon RI signaling pathway,RAF1
+Acute myeloid leukemia,AKT2
+Acute myeloid leukemia,PIK3CB
+Acute myeloid leukemia,PIK3CA
+Acute myeloid leukemia,KRAS
+Acute myeloid leukemia,CCND1
+Acute myeloid leukemia,RAF1
+cell death,DNM1L
+cell death,PAK4
+cell death,ECT2
+cell death,AKT2
+cell death,MECOM
+cell death,PIK3CB
+cell death,ZC3HC1
+cell death,PDCD5
+cell death,OPA1
+cell death,PEPD
+cell death,PIK3CA
+cell death,PLSCR1
+cell death,CCNL1
+cell death,GOLPH3
+cell death,ST6GAL1
+cell death,ST3GAL1
+cell death,TNFSF10
+cell death,TIMM50
+cell death,PAX8
+cell death,E2F3
+cell death,KRAS
+cell death,PDCD2
+cell death,CIT
+cell death,SKP2
+cell death,MAEA
+cell death,TRAF2
+cell death,WT1
+cell death,CCND1
+cell death,RAF1
+cell death,MYBL2
+cell death,ZFP36L1
+cell death,XRCC2
+cell death,APC
+cell death,RICTOR
+organelle organization,SMC4
+organelle organization,DNM1L
+organelle organization,PAK4
+organelle organization,ARFGEF1
+organelle organization,COX20
+organelle organization,FGD4
+organelle organization,IL1RAP
+organelle organization,AHCTF1
+organelle organization,DHX36
+organelle organization,ECT2
+organelle organization,SIPA1L3
+organelle organization,WWTR1
+organelle organization,LSM14A
+organelle organization,AGO2
+organelle organization,NDUFB9
+organelle organization,OPA1
+organelle organization,PIK3CA
+organelle organization,XRN1
+organelle organization,CHCHD3
+organelle organization,CCNL1
+organelle organization,BICD1
+organelle organization,GOLPH3
+organelle organization,WNK1
+organelle organization,UVRAG
+organelle organization,PPFIBP1
+organelle organization,RHPN2
+organelle organization,CCNE1
+organelle organization,TNFSF10
+organelle organization,TIMM50
+organelle organization,SNAP23
+organelle organization,FZR1
+organelle organization,LRFN1
+organelle organization,KRAS
+organelle organization,PARD6B
+organelle organization,PDS5B
+organelle organization,VPS4B
+organelle organization,ACTR3
+organelle organization,TMED2
+organelle organization,FBXW11
+organelle organization,MAEA
+organelle organization,DCLRE1B
+organelle organization,RAF1
+organelle organization,MYBL2
+organelle organization,ARID2
+organelle organization,POLR2M
+organelle organization,XRCC2
+organelle organization,ARPC2
+organelle organization,APC
+organelle organization,RICTOR
+organelle organization,TOMM20
+Prolactin signaling pathway,AKT2
+Prolactin signaling pathway,PIK3CB
+Prolactin signaling pathway,PIK3CA
+Prolactin signaling pathway,KRAS
+Prolactin signaling pathway,CCND1
+Prolactin signaling pathway,RAF1
+apoptotic process,DNM1L
+apoptotic process,PAK4
+apoptotic process,ECT2
+apoptotic process,AKT2
+apoptotic process,MECOM
+apoptotic process,PIK3CB
+apoptotic process,ZC3HC1
+apoptotic process,PDCD5
+apoptotic process,OPA1
+apoptotic process,PIK3CA
+apoptotic process,PLSCR1
+apoptotic process,CCNL1
+apoptotic process,GOLPH3
+apoptotic process,ST6GAL1
+apoptotic process,ST3GAL1
+apoptotic process,TNFSF10
+apoptotic process,TIMM50
+apoptotic process,PAX8
+apoptotic process,E2F3
+apoptotic process,KRAS
+apoptotic process,PDCD2
+apoptotic process,CIT
+apoptotic process,SKP2
+apoptotic process,MAEA
+apoptotic process,TRAF2
+apoptotic process,WT1
+apoptotic process,CCND1
+apoptotic process,RAF1
+apoptotic process,MYBL2
+apoptotic process,ZFP36L1
+apoptotic process,XRCC2
+apoptotic process,APC
+apoptotic process,RICTOR
+positive regulation of cell cycle process,SMC4
+positive regulation of cell cycle process,EIF4G1
+positive regulation of cell cycle process,ECT2
+positive regulation of cell cycle process,EZH2
+positive regulation of cell cycle process,PLSCR1
+positive regulation of cell cycle process,WNK1
+positive regulation of cell cycle process,CCNE1
+positive regulation of cell cycle process,CIT
+positive regulation of cell cycle process,VPS4B
+positive regulation of cell cycle process,CCND1
+positive regulation of cell cycle process,CDK4
+Pathways in cancer,AKT2
+Pathways in cancer,MECOM
+Pathways in cancer,FH
+Pathways in cancer,PIK3CB
+Pathways in cancer,PIK3CA
+Pathways in cancer,CCNE1
+Pathways in cancer,PAX8
+Pathways in cancer,E2F3
+Pathways in cancer,KRAS
+Pathways in cancer,SKP2
+Pathways in cancer,TXNRD1
+Pathways in cancer,TRAF2
+Pathways in cancer,CCND1
+Pathways in cancer,RAF1
+Pathways in cancer,CDK4
+Pathways in cancer,APC
+regulation of primary metabolic process,DNM1L
+regulation of primary metabolic process,EIF4G1
+regulation of primary metabolic process,NCOA2
+regulation of primary metabolic process,IGF2BP2
+regulation of primary metabolic process,SUB1
+regulation of primary metabolic process,CLNS1A
+regulation of primary metabolic process,DHX36
+regulation of primary metabolic process,ECT2
+regulation of primary metabolic process,TRA2B
+regulation of primary metabolic process,AKT2
+regulation of primary metabolic process,MECOM
+regulation of primary metabolic process,EZH2
+regulation of primary metabolic process,NCBP2
+regulation of primary metabolic process,ERC1
+regulation of primary metabolic process,RFX5
+regulation of primary metabolic process,WWTR1
+regulation of primary metabolic process,LSM14A
+regulation of primary metabolic process,AGO2
+regulation of primary metabolic process,REPIN1
+regulation of primary metabolic process,HLTF
+regulation of primary metabolic process,ASPH
+regulation of primary metabolic process,RAP2B
+regulation of primary metabolic process,RSF1
+regulation of primary metabolic process,PIK3CA
+regulation of primary metabolic process,PLSCR1
+regulation of primary metabolic process,XRN1
+regulation of primary metabolic process,ESRP1
+regulation of primary metabolic process,MED29
+regulation of primary metabolic process,RBM38
+regulation of primary metabolic process,CHD7
+regulation of primary metabolic process,CCNL1
+regulation of primary metabolic process,SMYD3
+regulation of primary metabolic process,WNK1
+regulation of primary metabolic process,SUPT5H
+regulation of primary metabolic process,UVRAG
+regulation of primary metabolic process,CCNE1
+regulation of primary metabolic process,PAX8
+regulation of primary metabolic process,LIN54
+regulation of primary metabolic process,FZR1
+regulation of primary metabolic process,E2F3
+regulation of primary metabolic process,KRAS
+regulation of primary metabolic process,NELFB
+regulation of primary metabolic process,SKP2
+regulation of primary metabolic process,WDR48
+regulation of primary metabolic process,ACTR3
+regulation of primary metabolic process,TMED2
+regulation of primary metabolic process,ATXN7L3
+regulation of primary metabolic process,FBXW11
+regulation of primary metabolic process,SOX17
+regulation of primary metabolic process,SUPT7L
+regulation of primary metabolic process,TRAF2
+regulation of primary metabolic process,VEZF1
+regulation of primary metabolic process,WT1
+regulation of primary metabolic process,CCND1
+regulation of primary metabolic process,RAF1
+regulation of primary metabolic process,MYBL2
+regulation of primary metabolic process,YTHDC1
+regulation of primary metabolic process,SAMD4B
+regulation of primary metabolic process,ZFP36L1
+regulation of primary metabolic process,ARID2
+regulation of primary metabolic process,PFDN1
+regulation of primary metabolic process,METAP1
+regulation of primary metabolic process,CDK4
+regulation of primary metabolic process,APC
+regulation of primary metabolic process,RICTOR
+regulation of primary metabolic process,ZNF780B
+PTK6 Regulates Cell Cycle,CCNE1
+PTK6 Regulates Cell Cycle,CCND1
+PTK6 Regulates Cell Cycle,CDK4
+regulation of cell cycle,SMC4
+regulation of cell cycle,EIF4G1
+regulation of cell cycle,AHCTF1
+regulation of cell cycle,ECT2
+regulation of cell cycle,AKT2
+regulation of cell cycle,MECOM
+regulation of cell cycle,EZH2
+regulation of cell cycle,PLSCR1
+regulation of cell cycle,RBM38
+regulation of cell cycle,CCNL1
+regulation of cell cycle,WNK1
+regulation of cell cycle,UVRAG
+regulation of cell cycle,CCNE1
+regulation of cell cycle,FZR1
+regulation of cell cycle,CIT
+regulation of cell cycle,SKP2
+regulation of cell cycle,VPS4B
+regulation of cell cycle,MAEA
+regulation of cell cycle,CCND1
+regulation of cell cycle,ZFP36L1
+regulation of cell cycle,ARID2
+regulation of cell cycle,CDK4
+regulation of cell cycle,APC
+Disease,PSMD8
+Disease,AKT2
+Disease,EZH2
+Disease,NCBP2
+Disease,PIK3CB
+Disease,ZC3HC1
+Disease,AGO2
+Disease,ALG8
+Disease,MTR
+Disease,PIK3CA
+Disease,ESRP1
+Disease,MED29
+Disease,ST6GAL1
+Disease,ST3GAL1
+Disease,SUPT5H
+Disease,UVRAG
+Disease,PPFIBP1
+Disease,CCNE1
+Disease,GAB2
+Disease,FZR1
+Disease,E2F3
+Disease,KRAS
+Disease,NELFB
+Disease,SKP2
+Disease,ZDHHC11
+Disease,WDR48
+Disease,VPS4B
+Disease,ACTR3
+Disease,TXNRD1
+Disease,RPL28
+Disease,TRAF2
+Disease,CCND1
+Disease,RAF1
+Disease,XRCC2
+Disease,CDK4
+Disease,ARPC2
+Disease,APC
+Disease,RICTOR
+Cyclin E associated events during G1/S transition ,PSMD8
+Cyclin E associated events during G1/S transition ,AKT2
+Cyclin E associated events during G1/S transition ,CCNE1
+Cyclin E associated events during G1/S transition ,LIN54
+Cyclin E associated events during G1/S transition ,SKP2
+Cyclin E associated events during G1/S transition ,CCND1
+Cyclin E associated events during G1/S transition ,CDK4
+Aberrant regulation of mitotic G1/S transition in cancer due to RB1 defects,CCNE1
+Aberrant regulation of mitotic G1/S transition in cancer due to RB1 defects,E2F3
+Aberrant regulation of mitotic G1/S transition in cancer due to RB1 defects,CCND1
+Aberrant regulation of mitotic G1/S transition in cancer due to RB1 defects,CDK4
+"Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",CCNE1
+"Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",E2F3
+"Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",CCND1
+"Defective binding of RB1 mutants to E2F1,(E2F2, E2F3)",CDK4
+Mitotic G1 phase and G1/S transition,PSMD8
+Mitotic G1 phase and G1/S transition,AKT2
+Mitotic G1 phase and G1/S transition,CCNE1
+Mitotic G1 phase and G1/S transition,LIN54
+Mitotic G1 phase and G1/S transition,E2F3
+Mitotic G1 phase and G1/S transition,SKP2
+Mitotic G1 phase and G1/S transition,CCND1
+Mitotic G1 phase and G1/S transition,MYBL2
+Mitotic G1 phase and G1/S transition,CDK4
+cellular component organization or biogenesis,CDH6
+cellular component organization or biogenesis,SMC4
+cellular component organization or biogenesis,DNM1L
+cellular component organization or biogenesis,EIF4G1
+cellular component organization or biogenesis,PAK4
+cellular component organization or biogenesis,NDRG1
+cellular component organization or biogenesis,ARFGEF1
+cellular component organization or biogenesis,SPINT2
+cellular component organization or biogenesis,SUB1
+cellular component organization or biogenesis,COX20
+cellular component organization or biogenesis,CLNS1A
+cellular component organization or biogenesis,FGD4
+cellular component organization or biogenesis,TGS1
+cellular component organization or biogenesis,IL1RAP
+cellular component organization or biogenesis,AHCTF1
+cellular component organization or biogenesis,DHX36
+cellular component organization or biogenesis,ECT2
+cellular component organization or biogenesis,AKT2
+cellular component organization or biogenesis,MECOM
+cellular component organization or biogenesis,EZH2
+cellular component organization or biogenesis,ERC1
+cellular component organization or biogenesis,SIPA1L3
+cellular component organization or biogenesis,ATP11B
+cellular component organization or biogenesis,UBN2
+cellular component organization or biogenesis,PIK3CB
+cellular component organization or biogenesis,WWTR1
+cellular component organization or biogenesis,LSM14A
+cellular component organization or biogenesis,AGO2
+cellular component organization or biogenesis,HLTF
+cellular component organization or biogenesis,DGAT1
+cellular component organization or biogenesis,MATN2
+cellular component organization or biogenesis,MMP7
+cellular component organization or biogenesis,ASPH
+cellular component organization or biogenesis,MTR
+cellular component organization or biogenesis,NDUFB9
+cellular component organization or biogenesis,OPA1
+cellular component organization or biogenesis,RSF1
+cellular component organization or biogenesis,PIK3CA
+cellular component organization or biogenesis,PLSCR1
+cellular component organization or biogenesis,XRN1
+cellular component organization or biogenesis,CHCHD3
+cellular component organization or biogenesis,MED29
+cellular component organization or biogenesis,CHD7
+cellular component organization or biogenesis,CCNL1
+cellular component organization or biogenesis,EXOC4
+cellular component organization or biogenesis,BICD1
+cellular component organization or biogenesis,GOLPH3
+cellular component organization or biogenesis,TFB2M
+cellular component organization or biogenesis,NOM1
+cellular component organization or biogenesis,SMYD3
+cellular component organization or biogenesis,WNK1
+cellular component organization or biogenesis,SUPT5H
+cellular component organization or biogenesis,UVRAG
+cellular component organization or biogenesis,PPFIBP1
+cellular component organization or biogenesis,RHPN2
+cellular component organization or biogenesis,CCNE1
+cellular component organization or biogenesis,TNFSF10
+cellular component organization or biogenesis,TIMM50
+cellular component organization or biogenesis,LIN54
+cellular component organization or biogenesis,MIOS
+cellular component organization or biogenesis,SNAP23
+cellular component organization or biogenesis,DDX39B
+cellular component organization or biogenesis,FZR1
+cellular component organization or biogenesis,LRFN1
+cellular component organization or biogenesis,KRAS
+cellular component organization or biogenesis,ESF1
+cellular component organization or biogenesis,PARD6B
+cellular component organization or biogenesis,PDS5B
+cellular component organization or biogenesis,VPS4B
+cellular component organization or biogenesis,ACTR3
+cellular component organization or biogenesis,TMED2
+cellular component organization or biogenesis,ATXN7L3
+cellular component organization or biogenesis,FBXW11
+cellular component organization or biogenesis,MAEA
+cellular component organization or biogenesis,SOX17
+cellular component organization or biogenesis,DCLRE1B
+cellular component organization or biogenesis,TRAF2
+cellular component organization or biogenesis,WT1
+cellular component organization or biogenesis,RAF1
+cellular component organization or biogenesis,MYBL2
+cellular component organization or biogenesis,YTHDC1
+cellular component organization or biogenesis,ARID2
+cellular component organization or biogenesis,POLR2M
+cellular component organization or biogenesis,XRCC2
+cellular component organization or biogenesis,PFDN1
+cellular component organization or biogenesis,ARPC2
+cellular component organization or biogenesis,APC
+cellular component organization or biogenesis,MPHOSPH6
+cellular component organization or biogenesis,RICTOR
+cellular component organization or biogenesis,TOMM20
+regulation of cell cycle process,SMC4
+regulation of cell cycle process,EIF4G1
+regulation of cell cycle process,AHCTF1
+regulation of cell cycle process,ECT2
+regulation of cell cycle process,EZH2
+regulation of cell cycle process,PLSCR1
+regulation of cell cycle process,CCNL1
+regulation of cell cycle process,WNK1
+regulation of cell cycle process,UVRAG
+regulation of cell cycle process,CCNE1
+regulation of cell cycle process,FZR1
+regulation of cell cycle process,CIT
+regulation of cell cycle process,VPS4B
+regulation of cell cycle process,CCND1
+regulation of cell cycle process,ZFP36L1
+regulation of cell cycle process,ARID2
+regulation of cell cycle process,CDK4
+regulation of cell cycle process,APC
+Kaposi sarcoma-associated herpesvirus infection,AKT2
+Kaposi sarcoma-associated herpesvirus infection,PIK3CB
+Kaposi sarcoma-associated herpesvirus infection,PIK3CA
+Kaposi sarcoma-associated herpesvirus infection,E2F3
+Kaposi sarcoma-associated herpesvirus infection,KRAS
+Kaposi sarcoma-associated herpesvirus infection,TRAF2
+Kaposi sarcoma-associated herpesvirus infection,CCND1
+Kaposi sarcoma-associated herpesvirus infection,RAF1
+Kaposi sarcoma-associated herpesvirus infection,CDK4
+mTOR signaling pathway,AKT2
+mTOR signaling pathway,PIK3CB
+mTOR signaling pathway,PIK3CA
+mTOR signaling pathway,MIOS
+mTOR signaling pathway,KRAS
+mTOR signaling pathway,SKP2
+mTOR signaling pathway,RAF1
+mTOR signaling pathway,RICTOR
+regulation of apoptotic process,PAK4
+regulation of apoptotic process,ECT2
+regulation of apoptotic process,PIK3CB
+regulation of apoptotic process,ZC3HC1
+regulation of apoptotic process,PDCD5
+regulation of apoptotic process,OPA1
+regulation of apoptotic process,PIK3CA
+regulation of apoptotic process,CCNL1
+regulation of apoptotic process,GOLPH3
+regulation of apoptotic process,ST6GAL1
+regulation of apoptotic process,ST3GAL1
+regulation of apoptotic process,TNFSF10
+regulation of apoptotic process,PAX8
+regulation of apoptotic process,E2F3
+regulation of apoptotic process,KRAS
+regulation of apoptotic process,PDCD2
+regulation of apoptotic process,SKP2
+regulation of apoptotic process,MAEA
+regulation of apoptotic process,TRAF2
+regulation of apoptotic process,WT1
+regulation of apoptotic process,CCND1
+regulation of apoptotic process,RAF1
+regulation of apoptotic process,MYBL2
+regulation of apoptotic process,ZFP36L1
+regulation of apoptotic process,XRCC2
+regulation of apoptotic process,APC
+regulation of apoptotic process,RICTOR
+ErbB signaling pathway,PAK4
+ErbB signaling pathway,AKT2
+ErbB signaling pathway,PIK3CB
+ErbB signaling pathway,PIK3CA
+ErbB signaling pathway,KRAS
+ErbB signaling pathway,RAF1
+T cell receptor signaling pathway,PAK4
+T cell receptor signaling pathway,AKT2
+T cell receptor signaling pathway,PIK3CB
+T cell receptor signaling pathway,PIK3CA
+T cell receptor signaling pathway,KRAS
+T cell receptor signaling pathway,RAF1
+T cell receptor signaling pathway,CDK4
+cellular response to stress,EIF4G1
+cellular response to stress,NDRG1
+cellular response to stress,DHX36
+cellular response to stress,ECT2
+cellular response to stress,EZH2
+cellular response to stress,FH
+cellular response to stress,PIK3CB
+cellular response to stress,HLTF
+cellular response to stress,MATN2
+cellular response to stress,MTR
+cellular response to stress,OPA1
+cellular response to stress,PIK3CA
+cellular response to stress,ITFG2
+cellular response to stress,WNK1
+cellular response to stress,UVRAG
+cellular response to stress,PDIA4
+cellular response to stress,MIOS
+cellular response to stress,FZR1
+cellular response to stress,SKP2
+cellular response to stress,WDR48
+cellular response to stress,TMED2
+cellular response to stress,ATXN7L3
+cellular response to stress,SUPT7L
+cellular response to stress,DCLRE1B
+cellular response to stress,TRAF2
+cellular response to stress,CCND1
+cellular response to stress,ZFP36L1
+cellular response to stress,ARID2
+cellular response to stress,XRCC2
+cellular response to stress,XPR1
+cellular response to stress,APC
+Viral carcinogenesis,PIK3CB
+Viral carcinogenesis,PIK3CA
+Viral carcinogenesis,RASA2
+Viral carcinogenesis,CCNE1
+Viral carcinogenesis,KRAS
+Viral carcinogenesis,SKP2
+Viral carcinogenesis,TRAF2
+Viral carcinogenesis,CCND1
+Viral carcinogenesis,CDK4
+Sphingolipid signaling pathway,AKT2
+Sphingolipid signaling pathway,PIK3CB
+Sphingolipid signaling pathway,PIK3CA
+Sphingolipid signaling pathway,GAB2
+Sphingolipid signaling pathway,KRAS
+Sphingolipid signaling pathway,TRAF2
+Sphingolipid signaling pathway,RAF1
+Thyroid hormone signaling pathway,NCOA2
+Thyroid hormone signaling pathway,AKT2
+Thyroid hormone signaling pathway,PIK3CB
+Thyroid hormone signaling pathway,PIK3CA
+Thyroid hormone signaling pathway,KRAS
+Thyroid hormone signaling pathway,CCND1
+Thyroid hormone signaling pathway,RAF1
+cytokinesis,AHCTF1
+cytokinesis,ECT2
+cytokinesis,EXOC4
+cytokinesis,WNK1
+cytokinesis,UVRAG
+cytokinesis,CIT
+cytokinesis,VPS4B
+cytokinesis,ACTR3
+cytokinesis,APC
+S Phase,PSMD8
+S Phase,AKT2
+S Phase,CCNE1
+S Phase,LIN54
+S Phase,FZR1
+S Phase,SKP2
+S Phase,PDS5B
+S Phase,CCND1
+S Phase,CDK4
+VEGF signaling pathway,AKT2
+VEGF signaling pathway,PIK3CB
+VEGF signaling pathway,PIK3CA
+VEGF signaling pathway,KRAS
+VEGF signaling pathway,RAF1
+Diseases of signal transduction by growth factor receptors and second messengers,PSMD8
+Diseases of signal transduction by growth factor receptors and second messengers,AKT2
+Diseases of signal transduction by growth factor receptors and second messengers,NCBP2
+Diseases of signal transduction by growth factor receptors and second messengers,PIK3CB
+Diseases of signal transduction by growth factor receptors and second messengers,ZC3HC1
+Diseases of signal transduction by growth factor receptors and second messengers,AGO2
+Diseases of signal transduction by growth factor receptors and second messengers,PIK3CA
+Diseases of signal transduction by growth factor receptors and second messengers,ESRP1
+Diseases of signal transduction by growth factor receptors and second messengers,PPFIBP1
+Diseases of signal transduction by growth factor receptors and second messengers,GAB2
+Diseases of signal transduction by growth factor receptors and second messengers,KRAS
+Diseases of signal transduction by growth factor receptors and second messengers,WDR48
+Diseases of signal transduction by growth factor receptors and second messengers,RAF1
+Diseases of signal transduction by growth factor receptors and second messengers,APC
+Diseases of signal transduction by growth factor receptors and second messengers,RICTOR
+positive regulation of DNA-templated transcription,NCOA2
+positive regulation of DNA-templated transcription,SUB1
+positive regulation of DNA-templated transcription,DHX36
+positive regulation of DNA-templated transcription,MECOM
+positive regulation of DNA-templated transcription,NCBP2
+positive regulation of DNA-templated transcription,RFX5
+positive regulation of DNA-templated transcription,WWTR1
+positive regulation of DNA-templated transcription,AGO2
+positive regulation of DNA-templated transcription,HLTF
+positive regulation of DNA-templated transcription,ASPH
+positive regulation of DNA-templated transcription,RSF1
+positive regulation of DNA-templated transcription,PLSCR1
+positive regulation of DNA-templated transcription,MED29
+positive regulation of DNA-templated transcription,CHD7
+positive regulation of DNA-templated transcription,SMYD3
+positive regulation of DNA-templated transcription,WNK1
+positive regulation of DNA-templated transcription,SUPT5H
+positive regulation of DNA-templated transcription,PAX8
+positive regulation of DNA-templated transcription,E2F3
+positive regulation of DNA-templated transcription,ACTR3
+positive regulation of DNA-templated transcription,ATXN7L3
+positive regulation of DNA-templated transcription,FBXW11
+positive regulation of DNA-templated transcription,SOX17
+positive regulation of DNA-templated transcription,SUPT7L
+positive regulation of DNA-templated transcription,VEZF1
+positive regulation of DNA-templated transcription,WT1
+positive regulation of DNA-templated transcription,RAF1
+positive regulation of DNA-templated transcription,MYBL2
+positive regulation of DNA-templated transcription,ZNF780B
+positive regulation of RNA biosynthetic process,NCOA2
+positive regulation of RNA biosynthetic process,SUB1
+positive regulation of RNA biosynthetic process,DHX36
+positive regulation of RNA biosynthetic process,MECOM
+positive regulation of RNA biosynthetic process,NCBP2
+positive regulation of RNA biosynthetic process,RFX5
+positive regulation of RNA biosynthetic process,WWTR1
+positive regulation of RNA biosynthetic process,AGO2
+positive regulation of RNA biosynthetic process,HLTF
+positive regulation of RNA biosynthetic process,ASPH
+positive regulation of RNA biosynthetic process,RSF1
+positive regulation of RNA biosynthetic process,PLSCR1
+positive regulation of RNA biosynthetic process,MED29
+positive regulation of RNA biosynthetic process,CHD7
+positive regulation of RNA biosynthetic process,SMYD3
+positive regulation of RNA biosynthetic process,WNK1
+positive regulation of RNA biosynthetic process,SUPT5H
+positive regulation of RNA biosynthetic process,PAX8
+positive regulation of RNA biosynthetic process,E2F3
+positive regulation of RNA biosynthetic process,ACTR3
+positive regulation of RNA biosynthetic process,ATXN7L3
+positive regulation of RNA biosynthetic process,FBXW11
+positive regulation of RNA biosynthetic process,SOX17
+positive regulation of RNA biosynthetic process,SUPT7L
+positive regulation of RNA biosynthetic process,VEZF1
+positive regulation of RNA biosynthetic process,WT1
+positive regulation of RNA biosynthetic process,RAF1
+positive regulation of RNA biosynthetic process,MYBL2
+positive regulation of RNA biosynthetic process,ZNF780B
+G1/S transition of mitotic cell cycle,EIF4G1
+G1/S transition of mitotic cell cycle,EZH2
+G1/S transition of mitotic cell cycle,CCNE1
+G1/S transition of mitotic cell cycle,E2F3
+G1/S transition of mitotic cell cycle,SKP2
+G1/S transition of mitotic cell cycle,CCND1
+G1/S transition of mitotic cell cycle,ARID2
+G1/S transition of mitotic cell cycle,CDK4
+G1/S transition of mitotic cell cycle,APC
+Human T-cell leukemia virus 1 infection,AKT2
+Human T-cell leukemia virus 1 infection,PIK3CB
+Human T-cell leukemia virus 1 infection,MMP7
+Human T-cell leukemia virus 1 infection,PIK3CA
+Human T-cell leukemia virus 1 infection,CCNE1
+Human T-cell leukemia virus 1 infection,E2F3
+Human T-cell leukemia virus 1 infection,KRAS
+Human T-cell leukemia virus 1 infection,CCND1
+Human T-cell leukemia virus 1 infection,CDK4
+regulation of epithelial cell differentiation,EZH2
+regulation of epithelial cell differentiation,WWTR1
+regulation of epithelial cell differentiation,ESRP1
+regulation of epithelial cell differentiation,PAX8
+regulation of epithelial cell differentiation,KRAS
+regulation of epithelial cell differentiation,VEZF1
+regulation of epithelial cell differentiation,CCND1
+regulation of epithelial cell differentiation,ZFP36L1
+mRNA 3'-end processing,DHX36
+mRNA 3'-end processing,NCBP2
+mRNA 3'-end processing,PCF11
+mRNA 3'-end processing,YTHDC1
+mRNA 3'-end processing,ZFP36L1
+negative regulation of cellular process,EIF4G1
+negative regulation of cellular process,PAK4
+negative regulation of cellular process,NDRG1
+negative regulation of cellular process,NCOA2
+negative regulation of cellular process,ARFGEF1
+negative regulation of cellular process,IGF2BP2
+negative regulation of cellular process,SPINT2
+negative regulation of cellular process,SUB1
+negative regulation of cellular process,DHX36
+negative regulation of cellular process,AKT2
+negative regulation of cellular process,MECOM
+negative regulation of cellular process,EZH2
+negative regulation of cellular process,NCBP2
+negative regulation of cellular process,RFX5
+negative regulation of cellular process,PIK3CB
+negative regulation of cellular process,WWTR1
+negative regulation of cellular process,LSM14A
+negative regulation of cellular process,ZC3HC1
+negative regulation of cellular process,AGO2
+negative regulation of cellular process,REPIN1
+negative regulation of cellular process,PDCD5
+negative regulation of cellular process,ASPH
+negative regulation of cellular process,OPA1
+negative regulation of cellular process,RAP2B
+negative regulation of cellular process,RSF1
+negative regulation of cellular process,PEPD
+negative regulation of cellular process,PIK3CA
+negative regulation of cellular process,PLSCR1
+negative regulation of cellular process,XRN1
+negative regulation of cellular process,RBM38
+negative regulation of cellular process,CHD7
+negative regulation of cellular process,ITFG2
+negative regulation of cellular process,RASA2
+negative regulation of cellular process,BICD1
+negative regulation of cellular process,GOLPH3
+negative regulation of cellular process,ST6GAL1
+negative regulation of cellular process,ST3GAL1
+negative regulation of cellular process,WNK1
+negative regulation of cellular process,SUPT5H
+negative regulation of cellular process,RHPN2
+negative regulation of cellular process,CCNE1
+negative regulation of cellular process,PAX8
+negative regulation of cellular process,MIOS
+negative regulation of cellular process,FZR1
+negative regulation of cellular process,E2F3
+negative regulation of cellular process,KRAS
+negative regulation of cellular process,NELFB
+negative regulation of cellular process,CIT
+negative regulation of cellular process,PDS5B
+negative regulation of cellular process,VPS4B
+negative regulation of cellular process,TMED2
+negative regulation of cellular process,FBXW11
+negative regulation of cellular process,MAEA
+negative regulation of cellular process,SOX17
+negative regulation of cellular process,TRAF2
+negative regulation of cellular process,WT1
+negative regulation of cellular process,CCND1
+negative regulation of cellular process,RAF1
+negative regulation of cellular process,YTHDC1
+negative regulation of cellular process,SAMD4B
+negative regulation of cellular process,ZFP36L1
+negative regulation of cellular process,ARID2
+negative regulation of cellular process,XRCC2
+negative regulation of cellular process,PFDN1
+negative regulation of cellular process,APC
+negative regulation of cellular process,RICTOR
+regulation of mRNA metabolic process,IGF2BP2
+regulation of mRNA metabolic process,CLNS1A
+regulation of mRNA metabolic process,DHX36
+regulation of mRNA metabolic process,TRA2B
+regulation of mRNA metabolic process,NCBP2
+regulation of mRNA metabolic process,AGO2
+regulation of mRNA metabolic process,RBM38
+regulation of mRNA metabolic process,TRAF2
+regulation of mRNA metabolic process,YTHDC1
+regulation of mRNA metabolic process,SAMD4B
+regulation of mRNA metabolic process,ZFP36L1
+Apoptosis,AKT2
+Apoptosis,PIK3CB
+Apoptosis,PIK3CA
+Apoptosis,TNFSF10
+Apoptosis,KRAS
+Apoptosis,TRAF2
+Apoptosis,RAF1
+Human cytomegalovirus infection,AKT2
+Human cytomegalovirus infection,PIK3CB
+Human cytomegalovirus infection,PIK3CA
+Human cytomegalovirus infection,E2F3
+Human cytomegalovirus infection,KRAS
+Human cytomegalovirus infection,TRAF2
+Human cytomegalovirus infection,CCND1
+Human cytomegalovirus infection,RAF1
+Human cytomegalovirus infection,CDK4
+GnRH secretion,AKT2
+GnRH secretion,PIK3CB
+GnRH secretion,PIK3CA
+GnRH secretion,KRAS
+GnRH secretion,RAF1
+RNA transport,IGF2BP2
+RNA transport,AHCTF1
+RNA transport,NCBP2
+RNA transport,WNK1
+RNA transport,DDX39B
+RNA transport,YTHDC1
+RNA transport,ZFP36L1
+RNA transport,TOMM20
+nucleic acid transport,IGF2BP2
+nucleic acid transport,AHCTF1
+nucleic acid transport,NCBP2
+nucleic acid transport,WNK1
+nucleic acid transport,DDX39B
+nucleic acid transport,YTHDC1
+nucleic acid transport,ZFP36L1
+nucleic acid transport,TOMM20
+mRNA catabolic process,IGF2BP2
+mRNA catabolic process,DHX36
+mRNA catabolic process,NCBP2
+mRNA catabolic process,AGO2
+mRNA catabolic process,XRN1
+mRNA catabolic process,RBM38
+mRNA catabolic process,TRAF2
+mRNA catabolic process,YTHDC1
+mRNA catabolic process,SAMD4B
+mRNA catabolic process,ZFP36L1
