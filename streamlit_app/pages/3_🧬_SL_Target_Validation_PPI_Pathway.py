@@ -46,7 +46,7 @@ with st.expander("📄 View All PPI-Annotated Pairs"):
 
 # --- View 1: Barplot ---
 if view_option == "Top Pathways (Barplot)":
-    st.subheader("📊 Top Enriched Pathways (g:Profiler)")
+    st.subheader("Top Enriched Pathways (g:Profiler)")
     sig = gprofiler_df[gprofiler_df['significant'] == True].copy()
     top = sig.nsmallest(15, 'p_value')
 
@@ -63,7 +63,7 @@ if view_option == "Top Pathways (Barplot)":
 
 # --- View 2: Dotplot ---
 elif view_option == "Pathway × Gene (Dotplot)":
-    st.subheader("🧬 Gene × Pathway Dot Plot")
+    st.subheader("Gene × Pathway Dot Plot")
     sig = gprofiler_df[gprofiler_df['significant'] == True].copy()
     top_pathways = sig.nsmallest(15, 'p_value')["name"].tolist()
     dot_data = mapping_df[mapping_df["Pathway"].isin(top_pathways)]
@@ -79,7 +79,7 @@ elif view_option == "Pathway × Gene (Dotplot)":
 
 # --- View 3: Chord diagram ---
 elif view_option == "Pathway Network (Chord Diagram)":
-    st.subheader("🕸️ Chord Diagram: Curated Pathway–Gene Network")
+    st.subheader("Chord Diagram: Curated Pathway–Gene Network")
 
     collapse_map = {
         'cell cycle': 'Cell cycle', 'cell cycle process': 'Cell cycle',
