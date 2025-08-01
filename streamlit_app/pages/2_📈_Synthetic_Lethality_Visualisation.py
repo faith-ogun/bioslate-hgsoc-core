@@ -9,7 +9,7 @@ from PIL import Image
 # --- Page config ---
 st.set_page_config(page_title="Synthetic Lethality Visualisation", layout="wide")
 st.title("Visualising Synthetic Lethality in Amplified Genes")
-st.caption("Last updated: July 8th 2025")
+st.caption("Last updated: August 1st 2025")
 
 # --- Sidebar options ---
 st.sidebar.title("Visualisation Options")
@@ -28,7 +28,7 @@ def load_all_data():
     full_screen["SL_Hit"] = (full_screen["EffectSize"] < 0) & (full_screen["FDR"] < 0.1)
     full_screen["OncogeneAddiction"] = full_screen["Biomarker_HGNC"] == full_screen["TargetGene_HGNC"]
 
-    selective_hits = pd.read_csv("streamlit_app/data/selective_synthetic_lethal_hits_with_HGNC.csv")
+    selective_hits = pd.read_csv("streamlit_app/data/potent_synthetic_lethal_hits_with_HGNC.csv")
     selective_hits["Biomarker_HGNC"] = selective_hits["Biomarker_HGNC"].astype(str).str.strip()
     selective_hits["TargetGene_HGNC"] = selective_hits["TargetGene_HGNC"].astype(str).str.strip()
 
