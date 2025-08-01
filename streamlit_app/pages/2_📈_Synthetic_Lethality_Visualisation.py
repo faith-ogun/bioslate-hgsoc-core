@@ -28,9 +28,9 @@ def load_all_data():
     full_screen["SL_Hit"] = (full_screen["EffectSize"] < 0) & (full_screen["FDR"] < 0.1)
     full_screen["OncogeneAddiction"] = full_screen["Biomarker_HGNC"] == full_screen["TargetGene_HGNC"]
 
-    selective_hits = pd.read_csv("streamlit_app/data/potent_synthetic_lethal_hits_with_HGNC.csv")
-    selective_hits["Biomarker_HGNC"] = selective_hits["Biomarker_HGNC"].astype(str).str.strip()
-    selective_hits["TargetGene_HGNC"] = selective_hits["TargetGene_HGNC"].astype(str).str.strip()
+    potent_hits = pd.read_csv("streamlit_app/data/potent_synthetic_lethal_hits_with_HGNC.csv")
+    potent_hits["Biomarker_HGNC"] = potent_hits["Biomarker_HGNC"].astype(str).str.strip()
+    potent_hits["TargetGene_HGNC"] = potent_hits["TargetGene_HGNC"].astype(str).str.strip()
 
     amp_biomarkers = pd.read_csv("streamlit_app/data/cross_val_amp_sig_genes.csv")
     amp_set = set(amp_biomarkers["Gene"].astype(str).str.strip())
@@ -42,7 +42,7 @@ def load_all_data():
     crispr_df.columns = crispr_df.columns.astype(str).str.strip()
     cna_df.columns = cna_df.columns.astype(str).str.strip()
 
-    return full_screen, selective_hits, amp_set, crispr_df, cna_df
+    return full_screen, potent_hits, amp_set, crispr_df, cna_df
 
 full_screen_df, selective_hits_df, amp_biomarkers, crispr_df, cna_df = load_all_data()
 
@@ -136,80 +136,72 @@ elif plot_option == "Heatmap":
     )
 
 
-# === Boxplot ===
-elif plot_option == "Boxplot (TargetGene vs CNA Status)":
-    st.subheader("Boxplot of Gene Effect by CNA Status")
+# === Regression ===
+elif plot_option == "Regression (TargetGene ~ CNA)":
+    st.subheader("Regression Plot: CNA vs Gene Dependency")
 
     st.markdown(
-    """
+    f"""
     <div style="background-color:#eaf4fb; padding:12px; border-radius:6px;">
-        ℹ️ <b>Context:</b> This view shows the most selective synthetic lethal interactions identified from a large-scale screen.
-        We initially tested <b>1,486,950 gene pairs</b> and applied the following filters:
+        ℹ️ <b>Context:</b> This view shows linear relationships between CNA and CRISPR dependency scores across a high-confidence subset of synthetic lethal gene pairs.<br><br>
+        The following filters were applied from an initial screen of <b>521,374 gene pairs</b>:
         <ul>
-            <li><b>P-value &lt; 0.05</b> → 81,451 hits</li>
-            <li><b>FDR &lt; 0.05</b> → 22 hits</li>
-            <li><b>Strong SL hits</b> (FDR &lt; 0.1 &amp; EffectSize &lt; 0) → 20 hits</li>
-            <li><b>Selective hits</b> (WT MeanEffect &gt; -1 to exclude pan-essential genes) → <b>12 hits</b></li>
+            <li><b>P-value &lt; 0.05</b> → <b>3476</b> hits</li>
+            <li><b>FDR &lt; 0.05</b> → <b>1601</b> hits</li>
+            <li><b>Strong SL hits</b> (FDR &lt; 0.05 &amp; EffectSize &lt; 0) → <b>1075</b> hits</li>
+            <li><b>Selective hits</b> (PredictedEffect_CNA2 &gt; –1) → <b>?</b> (you can insert if you know)</li>
+            <li><b>Potent hits</b> (DeltaEffect_CNA6minusPred2 ≤ –0.5 &amp; PredictedEffect_CNA2 ≥ –0.6) → <b>197 hits</b></li>
         </ul>
-        These 12 high-confidence pairs are shown in the dropdown below for CRISPR-CNA boxplot comparison.
+        These 197 potent pairs are shown in the dropdown below for regression visualisation.
     </div>
     """,
     unsafe_allow_html=True
     )
 
-    amp_threshold = 4.0
-    min_group_size = 3
-    effect_threshold = -0.6  # fixed
+    potent_hits_df = potent_hits.copy()
 
-    selective_hits_df["pair_display"] = selective_hits_df["Biomarker_HGNC"] + " → " + selective_hits_df["TargetGene_HGNC"]
-    selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", options=sorted(selective_hits_df["pair_display"].unique()))
+    potent_hits_df["pair_display"] = potent_hits_df["Biomarker_HGNC"] + " → " + potent_hits_df["TargetGene_HGNC"]
+    selected_display = st.selectbox("Select SL Gene Pair (Biomarker → Target):", sorted(potent_hits_df["pair_display"].unique()))
 
-    row = selective_hits_df[selective_hits_df["pair_display"] == selected_display].iloc[0]
+    row = potent_hits_df[potent_hits_df["pair_display"] == selected_display].iloc[0]
     biomarker = str(row["Biomarker"])
     target = str(row["TargetGene"])
     biomarker_hgnc = row["Biomarker_HGNC"]
     target_hgnc = row["TargetGene_HGNC"]
 
-    if biomarker not in cna_df.columns:
-        st.warning(f"CNA data for biomarker {biomarker} not found.")
-        st.stop()
-    if target not in crispr_df.columns:
-        st.warning(f"CRISPR data for target {target} not found.")
+    if biomarker not in cna_df.columns or target not in crispr_df.columns:
+        st.warning("CNA or CRISPR data not found for this pair.")
         st.stop()
 
-    cna_status = cna_df[biomarker].apply(lambda x: "Amplified" if x > amp_threshold else "WT")
-    common = crispr_df.index.intersection(cna_status.index)
-    gene_effect = crispr_df.loc[common, target]
-    cna_status = cna_status.loc[common]
+    x = cna_df[biomarker].dropna()
+    y = crispr_df[target].dropna()
+    common = x.index.intersection(y.index)
 
-    df_plot = pd.DataFrame({
-        "GeneEffect": gene_effect,
-        "CNA_Status": cna_status
-    }).dropna()
-    df_plot = df_plot[df_plot["CNA_Status"].isin(["Amplified", "WT"])]
-
-    if df_plot["CNA_Status"].value_counts().min() < min_group_size:
-        st.warning("Too few samples per group to show boxplot.")
+    if len(common) < 3:
+        st.warning("Too few overlapping cell lines to compute regression.")
         st.stop()
 
-    fig3, ax3 = plt.subplots(figsize=(6, 5))
-    sns.boxplot(
-        data=df_plot, x="CNA_Status", y="GeneEffect", hue="CNA_Status",
-        palette={"Amplified": "#e74c3c", "WT": "#3498db"},
-        order=["Amplified", "WT"], legend=False
+    r, p = pearsonr(x[common], y[common])
+
+    fig, ax = plt.subplots(figsize=(6, 5))
+    sns.regplot(
+        x=x[common],
+        y=y[common],
+        scatter_kws={"s": 50, "alpha": 0.8, "color": "#3498db"},
+        line_kws={"color": "black", "linewidth": 1.5},
+        ax=ax
     )
-    sns.stripplot(data=df_plot, x="CNA_Status", y="GeneEffect", color="black", alpha=0.4, jitter=True, size=4)
-    ax3.set_title(f"{target_hgnc} Dependency in {biomarker_hgnc}-Amplified vs WT")
-    ax3.set_ylabel("CRISPR Gene Effect Score")
-    ax3.set_xlabel("CNA Status")
-    ax3.axhline(0, linestyle="--", color="gray", linewidth=1)
-    st.pyplot(fig3)
+    ax.set_xlabel(f"{biomarker_hgnc} CNA", fontsize=11)
+    ax.set_ylabel(f"{target_hgnc} Dependency Score", fontsize=11)
+    ax.set_title(f"{biomarker_hgnc} → {target_hgnc}\nPearson r = {r:.2f}, p = {p:.4f}", fontsize=12)
+    ax.axhline(0, linestyle="--", color="gray", linewidth=1)
+    st.pyplot(fig)
 
-    buf3 = BytesIO()
-    fig3.savefig(buf3, format="png", dpi=300)
+    buf = BytesIO()
+    fig.savefig(buf, format="png", dpi=300)
     st.download_button(
-        label="⬇️ Download Boxplot (.png)",
-        data=buf3.getvalue(),
-        file_name=f"boxplot_{biomarker_hgnc}_{target_hgnc}.png",
+        label="⬇️ Download Regression Plot (.png)",
+        data=buf.getvalue(),
+        file_name=f"regression_{biomarker_hgnc}_{target_hgnc}.png",
         mime="image/png"
     )
