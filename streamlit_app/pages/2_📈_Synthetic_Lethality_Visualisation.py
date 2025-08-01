@@ -87,13 +87,16 @@ elif plot_option == "Heatmap":
     heatmap_df = filtered.pivot(index="TargetGene_HGNC", columns="Biomarker_HGNC", values=value_column)
 
     st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.05")
-    fig2, ax2 = plt.subplots(figsize=(12, 10))
+    fig_width = max(12, len(heatmap_df.columns) * 0.4)
+    fig_height = max(10, len(heatmap_df.index) * 0.4)
+    fig2, ax2 = plt.subplots(figsize=(fig_width, fig_height))
     sns.heatmap(
         heatmap_df.clip(-3, 0) if "EffectSize" in metric else heatmap_df,
         cmap="coolwarm" if "EffectSize" in metric else "YlGnBu",
         center=0 if "EffectSize" in metric else None,
         linewidths=0.5,
-        linecolor="gray"
+        linecolor="gray",
+        cbar_kws={"shrink": 0.7}
     )
     ax2.set_title(f"Heatmap: {metric} across SL hits")
     ax2.set_xlabel("Amplified Biomarkers")
