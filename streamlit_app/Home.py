@@ -36,15 +36,16 @@ st.markdown("""
 ### 📌 Functional Overview
 
 **Gene–Protein Explorer**  
-This module enables users to explore the association between copy number alterations (CNA) and protein abundance across cancer samples.  
-By performing statistical comparisons (T-tests, Cohen’s d effect size, and linear regression), it helps identify genes whose alterations lead to significant proteomic changes, offering a foundation for biomarker discovery or drug target prioritisation.
+Investigate how copy number alterations (CNA) influence protein abundance across cancer samples.  
+This module supports statistical analysis (T-tests, Cohen’s d, and linear regression) to identify genes whose amplifications or deletions lead to proteomic dysregulation — helping prioritise biomarkers and druggable alterations.
 
 **Synthetic Lethality Discovery**  
-This tool leverages gene dependency datasets to uncover potential synthetic lethal pairs, genes that, when co-inhibited, selectively kill cancer cells with specific mutations or deletions. Users can interactively explore dependency profiles, mutation filters, and identify promising targets for combination therapy strategies.
+Explore high-confidence synthetic lethal interactions derived from CNA–CRISPR regression screens in ovarian cancer.  
+Visualise SL pairs with amplification-stratified dependency, access statistical summaries, and interactively browse potent hits filtered by effect size, selectivity, and expression thresholds.
 
-**Drug Response Prediction**  
-This module hosts machine learning classifiers trained on gene expression data to predict how a patient's tumour might respond to specific treatments.  
-By comparing responder vs non-responder profiles across public datasets (e.g. TCGA), it assists in evaluating likely therapeutic outcomes and personalising cancer therapy.
+**Network & Pathway Analysis**  
+Prioritise SL targets based on their functional connectivity and biological relevance.  
+This module integrates STRING PPI data and g:Profiler pathway enrichment to highlight gene pairs with mechanistic support — including dot plots, barplots, and interactive chord diagrams of curated pathways (e.g. apoptosis, cell cycle, PI3K signaling).
 """)
 
 # Licence and credits
