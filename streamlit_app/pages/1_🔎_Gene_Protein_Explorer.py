@@ -207,11 +207,28 @@ else:  # Advanced Mode
         st.write(f"**R-squared:** {r_value**2:.3f}")
 
         fig, ax = plt.subplots(figsize=(8, 5))
-        sns.scatterplot(x="CNA_val", y="Prot_val", data=merged, ax=ax)
-        x_vals = np.array(ax.get_xlim())
-        y_vals = intercept + slope * x_vals
-        ax.plot(x_vals, y_vals, color="red")
-        ax.set_title(f"CNA of {gene_cna} vs Protein of {gene_prot}")
+
+        # Set consistent GISTIC order
+        merged["CNA_val"] = pd.Categorical(merged["CNA_val"], categories=[-2, -1, 0, 1, 2], ordered=True)
+
+        sns.regplot(
+            x="CNA_val",
+            y="Prot_val",
+            data=merged,
+            scatter=True,
+            ci=95,
+            color="red",
+            scatter_kws={"s": 40, "alpha": 0.7},
+            line_kws={"linewidth": 2},
+            ax=ax
+        )
+
+        ax.set_title(f"Protein Expression vs CNA for {gene_prot} (CNA: {gene_cna})", fontsize=12)
+        ax.set_xlabel(f"CNA (GISTIC Score) for {gene_cna}", fontsize=11)
+        ax.set_ylabel(f"Protein Expression (log ratio) for {gene_prot}", fontsize=11)
+        ax.set_xticks([-2, -1, 0, 1, 2])
+        ax.tick_params(axis='both', labelsize=10)
+
         st.pyplot(fig)
 
         buf = io.BytesIO()
