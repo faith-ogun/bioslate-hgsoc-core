@@ -12,6 +12,7 @@ Pillow
 matplotlib
 plotly
 scipy
+holoviews
 seaborn
 
 # For JSON data, APIs, and HTTP requests
