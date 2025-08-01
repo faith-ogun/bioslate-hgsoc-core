@@ -73,7 +73,7 @@ elif plot_option == "Heatmap":
 
     # Pre-filter
     filtered = full_screen_df[
-        (full_screen_df["EffectSize"] < 0) & (full_screen_df["FDR"] < 0.1)
+        (full_screen_df["EffectSize"] < 0) & (full_screen_df["FDR"] < 0.05)
     ].copy()
 
     all_biomarkers = sorted(filtered["Biomarker_HGNC"].unique())
@@ -110,7 +110,7 @@ elif plot_option == "Heatmap":
     value_column = "–log10(FDR)" if metric == "–log10(FDR)" else metric
     heatmap_df = filtered.pivot(index="TargetGene_HGNC", columns="Biomarker_HGNC", values=value_column)
 
-    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.1")
+    st.markdown(f"Showing: **{metric}** for hits with EffectSize < 0 and FDR < 0.05")
 
     # Plot heatmap
     fig2, ax2 = plt.subplots(figsize=(12, 10))
