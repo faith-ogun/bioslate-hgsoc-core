@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import seaborn as sns
+from scipy.stats import pearsonr
 import matplotlib.pyplot as plt
 from io import BytesIO
 from PIL import Image
@@ -148,8 +149,8 @@ elif plot_option == "Regression (TargetGene ~ CNA)":
         <ul>
             <li><b>P-value &lt; 0.05</b> → <b>3476</b> hits</li>
             <li><b>FDR &lt; 0.05</b> → <b>1601</b> hits</li>
-            <li><b>Strong SL hits</b> (FDR &lt; 0.05 &amp; EffectSize &lt; 0) → <b>1075</b> hits</li>
-            <li><b>Selective hits</b> (PredictedEffect_CNA2 &gt; –1) → <b>?</b> (you can insert if you know)</li>
+            <li><b>Strong SL hits</b> (FDR &lt; 0.05 &amp; EffectSize &lt; 0) → <b>1601</b> hits</li>
+            <li><b>Selective hits</b> (PredictedEffect_CNA2 &gt; –1) → <b>1175</b> hits</li>
             <li><b>Potent hits</b> (DeltaEffect_CNA6minusPred2 ≤ –0.5 &amp; PredictedEffect_CNA2 ≥ –0.6) → <b>197 hits</b></li>
         </ul>
         These 197 potent pairs are shown in the dropdown below for regression visualisation.
