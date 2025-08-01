@@ -7,7 +7,7 @@ st.set_page_config(page_title="BioSLATE Home", layout="wide")
 st.image("streamlit_app/assets/bioslate_logo.png", width=300)
 
 st.title("🔬 HGSOC Explorer Platform")
-st.caption("Last updated: June 27th 2025")
+st.caption("Last updated: August 1st 2025")
 st.subheader("Data-Driven Precision Oncology")
 
 # Sidebar logo
