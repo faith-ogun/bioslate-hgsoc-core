@@ -222,7 +222,7 @@ else:  # Advanced Mode
             ax=ax
         )
 
-        ax.set_title(f"Protein Expression vs CNA for {gene_prot} (CNA: {gene_cna})", fontsize=12)
+        ax.set_title(f"Protein Expression vs CNA for {gene_prot}", fontsize=12)
         ax.set_xlabel(f"CNA (GISTIC Score) for {gene_cna}", fontsize=11)
         ax.set_ylabel(f"Protein Expression (log ratio) for {gene_prot}", fontsize=11)
         ax.set_xticks([-2, -1, 0, 1, 2])
