@@ -8,6 +8,9 @@ import holoviews as hv
 from holoviews import opts, dim
 from holoviews.element.graphs import Chord
 hv.extension('bokeh')
+from bokeh.embed import components
+from bokeh.resources import CDN
+from streamlit.components.v1 import html
 
 # --- Page config ---
 st.set_page_config(page_title="PPI & Pathway Analysis of SL Targets", layout="wide")
@@ -132,4 +135,6 @@ elif view_option == "Pathway Network (Chord Diagram)":
             title="Gene–Pathway Interactions (Curated List)"
         )
     )
-    st.write(chord)
+    bokeh_obj = hv.render(chord, backend='bokeh')
+    script, div = components(bokeh_obj, CDN)
+    html(script + div, height=1000, width=1000)

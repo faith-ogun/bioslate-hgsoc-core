@@ -13,6 +13,7 @@ matplotlib
 plotly
 scipy
 holoviews
+bokeh
 seaborn
 
 # For JSON data, APIs, and HTTP requests
