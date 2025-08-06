@@ -149,7 +149,7 @@ elif view_option == "Pathway Network (Chord Diagram)":
         with open(temp_filename, 'r', encoding='utf-8') as f:
             html_content = f.read()
         
-        components.html(html_content, height=950, scrolling=True)
+        components.html(html_content, height=1200, width=1000, scrolling=True)
         
         # Clean up temp file
         os.unlink(temp_filename)
