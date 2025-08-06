@@ -6,6 +6,7 @@ import numpy as np
 import holoviews as hv
 from holoviews import opts, dim
 from holoviews.element.graphs import Chord
+hv.extension('bokeh')
 import streamlit.components.v1 as components
 import tempfile
 import os
