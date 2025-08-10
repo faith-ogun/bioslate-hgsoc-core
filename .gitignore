@@ -10,14 +10,14 @@ results/synthetic_lethality_screen.csv
 results/old/
 results/other/synthetic_lethality_screen.csv
 results/other/
-results/candidate_genes_tcga
-results/T-Test (> -0.6)/
-results/T-Test (< -0.6)/
-results/CNA*/
+results/clinical_translation/
+results/CNA_quantitative_cluster_delta/
+results/unified_validation_cna_expr_fdr_removed/
 
 
 # Notebook PDFs
 notebooks/pdf/
+notebooks/old/
 
 # Streamlit
 streamlit_app/reports/
@@ -28,11 +28,4 @@ streamlit_app/gene_browser_with_stats_home.py
 streamlit_app/streamlit_ui
 
 # Agents
-agents/.env
-agents/low_confidence_reports/
-agents/test_non_sl_reports/
-agents/test_sl_reports/
-agents/logs/
-agents/Agent Reports.zip
-agents/cluster_selector/logs/
-old_reports/
+agents/
