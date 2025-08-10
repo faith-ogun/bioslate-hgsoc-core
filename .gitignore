@@ -29,3 +29,4 @@ streamlit_app/streamlit_ui
 
 # Agents
 agents/
+results/reports_from_agent/
