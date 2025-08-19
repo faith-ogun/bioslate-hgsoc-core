@@ -9,12 +9,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("📬 Contact the BioSLATE Team")
-
-st.markdown("""
-If you have any questions, suggestions, or feedback, feel free to reach out to us using the details below.
-""")
-
 # Custom CSS for professional styling
 st.markdown("""
 <style>
@@ -23,150 +17,73 @@ st.markdown("""
         background-color: #fafbfc;
     }
     
-    /* Hero section styling */
-    .hero-section {
-        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
-        padding: 3rem 2rem;
-        margin: -1rem -1rem 3rem -1rem;
-        border-radius: 0 0 20px 20px;
+    /* Header styling - Indigo Blue Theme */
+    .main-header {
+        background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+        padding: 2rem 1rem;
+        margin: -1rem -1rem 2rem -1rem;
+        border-radius: 0 0 15px 15px;
         color: white;
         text-align: center;
-        box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.1);
-    }
-    
-    .hero-title {
-        color: white !important;
-        font-size: 3.5rem;
-        font-weight: 800;
-        margin-bottom: 1rem;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-    .hero-subtitle {
-        color: #e0e7ff !important;
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-    }
-    
-    .hero-description {
-        color: #cbd5e1 !important;
-        font-size: 1.2rem;
-        max-width: 800px;
-        margin: 0 auto 2rem auto;
-        line-height: 1.6;
-    }
-    
-    .tagline {
-        color: #f8fafc !important;
-        font-size: 1.3rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-        margin-bottom: 1.5rem;
-    }
-    
-    /* Logo container */
-    .logo-container {
-        background: white;
-        padding: 2rem;
-        border-radius: 15px;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        margin-bottom: 2rem;
-        text-align: center;
     }
     
-    /* Feature cards */
-    .feature-card {
-        background: white;
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        border-left: 5px solid #3b82f6;
-        margin-bottom: 2rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .feature-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.1);
-    }
-    
-    .feature-title {
-        color: #1e40af;
-        font-size: 1.4rem;
+    .main-header h1 {
+        color: white !important;
+        margin-bottom: 0.5rem;
         font-weight: 700;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
+        font-size: 2.5rem;
     }
     
-    .feature-description {
-        color: #374151;
-        line-height: 1.7;
-        font-size: 1rem;
+    .main-header .caption {
+        color: #e0e7ff !important;
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
     }
     
-    /* Section headers */
-    .section-header {
-        color: #1e40af;
-        font-size: 2.2rem;
-        font-weight: 700;
-        text-align: center;
-        margin: 3rem 0 2rem 0;
-        border-bottom: 3px solid #e2e8f0;
-        padding-bottom: 1rem;
-    }
-    
-    /* Infographic container */
-    .infographic-container {
-        background: white;
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        margin: 2rem 0;
-    }
-    
-    /* Footer styling */
-    .footer-section {
-        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        padding: 2rem;
-        margin: 3rem -1rem -1rem -1rem;
-        border-radius: 20px 20px 0 0;
-        text-align: center;
-    }
-    
-    .copyright-text {
-        color: #64748b;
+    .last-updated {
+        color: #c7d2fe !important;
         font-size: 0.9rem;
-        margin-top: 2rem;
         font-style: italic;
     }
     
-    /* Sidebar styling */
+    /* Sidebar styling - Consistent across all pages */
     .stSidebar {
         background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
     }
     
-    /* Custom button styling */
-    .cta-button {
-        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-        color: white;
-        padding: 1rem 2rem;
-        border-radius: 10px;
+    .stSidebar .stSelectbox label,
+    .stSidebar .stRadio label,
+    .stSidebar .stNumberInput label,
+    .stSidebar .stSlider label,
+    .stSidebar .stMultiSelect label {
+        color: #1e40af !important;
         font-weight: 600;
-        text-decoration: none;
-        display: inline-block;
-        margin: 1rem 0.5rem;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
     
-    .cta-button:hover {
+    /* Download buttons - Consistent across all pages */
+    .stDownloadButton > button {
+        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    
+    .stDownloadButton > button:hover {
         transform: translateY(-1px);
-        box-shadow: 0 8px 16px -4px rgba(16, 185, 129, 0.3);
+        box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
     }
 </style>
+""", unsafe_allow_html=True)
+
+# Header section
+st.markdown("""
+<div class="main-header">
+    <h1>📬 Contact the BioSLATE Team</h1>
+    <div class="caption">If you have any questions, suggestions, or feedback, feel free to reach out to us using the details below.</div>
+</div>
 """, unsafe_allow_html=True)
 
 # Two columns

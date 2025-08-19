@@ -1,0 +1,736 @@
+Biomarker,Target,Tractability_Flags,Tractability_Interpretation,Known_Drugs,Approved Drug,Advanced Clinical,Phase 1 Clinical,Clinical Precedence,Structure with Ligand,High-Quality Ligand,High-Quality Pocket,Druggable Family
+CDH6,PAX8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CDH6,SMARCA5,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CDH6,UBE2H,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,0,1,0
+KPNA4,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMC4,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMC4,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+YARS2,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+DNM1L,CITED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+DNM1L,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+DNM1L,SPAG5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PRPF6,RELA,4,MODERATE tractability (clinical-stage target),EDASALONEXENT,0,1,0,0,1,1,0,1
+PSMD2,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+NFKBIB,CENPI,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PAK4,DDX39B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SIRT2,DPRX,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIRT2,FZR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MRPS12,LIN52,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PAK4,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PAK4,LRFN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PAK4,MIB1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MRPS12,MRPS9,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SIRT2,PRR13,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MRPS12,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PAK4,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+NDRG1,E2F3,0,LOW tractability (no tractability evidence),EDIFOLIGIDE SODIUM,0,0,0,0,0,0,0,0
+NDRG1,ESF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CPQ,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TCEA1,DDA1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TCEA1,HAPSTR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TCEA1,KIF2C,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+LYPLA1,RAB6A,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+LYPLA1,SLC4A7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TCEA1,TTC4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+NCOA2,HSF1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,0
+NCOA2,KRAS,3,HIGH tractability (approved drug exists),ADAGRASIB; SOTORASIB,1,0,0,0,1,1,0,0
+NCOA2,NELFB,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+NCOA2,PDCD2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+IPO8,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+IPO8,SPAG5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ARFGEF1,KRAS,3,HIGH tractability (approved drug exists),ADAGRASIB; SOTORASIB,1,0,0,0,1,1,0,0
+ARFGEF1,PDCD2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ARFGEF1,PDS5B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+IGF2BP2,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+IGF2BP2,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SPINT2,CENPI,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+YIF1B,DDX39B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SPINT2,DPRX,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SPINT2,FZR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PPP1R14A,LIN52,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SPINT2,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+YIF1B,LRFN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SPINT2,MIB1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+YIF1B,MRPS9,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SPINT2,PRR13,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+YIF1B,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SPINT2,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KHDRBS3,RHPN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SLC12A7,SPAG5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TSPAN9,EIF4G1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TSPAN9,PDS5B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUB1,PAX8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ZFR,SMARCA5,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+ZFR,UBE2H,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,0,1,0
+ADRM1,CEP350,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+OGFR,RELA,4,MODERATE tractability (clinical-stage target),EDASALONEXENT,0,1,0,0,1,1,0,1
+DIDO1,RELA,4,MODERATE tractability (clinical-stage target),EDASALONEXENT,0,1,0,0,1,1,0,1
+PTP4A3,RHPN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ATAD2,ATAD2,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+ATAD2,PARN,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,1,0
+ZHX1,RAD51B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+MFSD3,ESF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CTHRC1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+COX20,CCNE1,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,1
+COX20,CIT,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,1
+COX20,LCE5A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+COX20,PARD3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+COX20,PARD6B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+COX20,SKP2,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+COX20,WDR26,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CLNS1A,ACLY,5,HIGH tractability (approved drug exists),BEMPEDOIC ACID,1,0,0,0,1,1,1,1
+CLNS1A,ARID1A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,BCS1L,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+CLNS1A,CFDP1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,COA7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,DPRX,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,FAM98C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,GLMN,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,KDM2A,4,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,1
+CLNS1A,LENG8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,MEN1,3,MODERATE tractability (clinical-stage target),REVUMENIB; SNDX-5613,0,0,1,0,1,1,0,0
+CLNS1A,MRPL33,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CLNS1A,MRPS12,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CLNS1A,MRPS18B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CLNS1A,MRPS23,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CLNS1A,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,PRPF39,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,RICTOR,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+CLNS1A,SLC30A9,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,SUZ12,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+CLNS1A,TAFAZZIN,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,TOE1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,TOMM20,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CLNS1A,TRUB2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,TTF2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CLNS1A,UQCRC2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CLNS1A,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FGD4,PDS5B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLD3,APLP1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,1,0
+PLD3,BIRC2,5,MODERATE tractability (clinical-stage target),BIRINAPANT,0,1,0,0,1,1,1,1
+PLD3,DICER1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLD3,EXOSC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PLD3,GGN,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLD3,KMT2B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PLD3,L3MBTL3,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+PLD3,LGALS4,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+PLD3,LIN52,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLD3,MPHOSPH6,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PLD3,MRPL11,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PLD3,MRPS10,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PLD3,MRPS11,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PLD3,PLEKHF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLD3,RASGRP4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLD3,SLC13A2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PLD3,TARM1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLD3,TNPO1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PLD3,TWF1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PLD3,WDR87,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLD3,ZC3H3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLD3,ZNF875,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CCDC127,SPAG5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CCDC127,ZDHHC11,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PTDSS1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TGS1,DCLRE1B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TGS1,G6PD,4,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,1
+TGS1,HAPSTR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TGS1,LAGE3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TGS1,SLC4A7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TGS1,WDR48,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+LPP,DOCK7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LPP,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LPP,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CYC1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FAM91A1,ATAD2,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+FAM91A1,PARN,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,1,0
+FAM91A1,RAD51B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+AHCTF1,ATXN7L3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AHCTF1,BTAF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SCCPDH,CCNC,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+AHCTF1,CEP55,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CNST,GSDMC,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SCCPDH,ILK,4,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,1
+AHCTF1,KIF20A,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,0
+AHCTF1,KMT2A,4,MODERATE tractability (clinical-stage target),REVUMENIB; SNDX-5613,0,0,1,0,1,1,0,1
+CNST,LST1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AHCTF1,MAEA,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SCCPDH,MFN2,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+CNST,PI16,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SCCPDH,PPP2R3C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AHCTF1,PPP4R2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CNST,PRAC1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AHCTF1,SLC25A5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AHCTF1,STX4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SCCPDH,TMED10,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SCCPDH,UBE2J2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AHCTF1,VPS4B,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+AHCTF1,WDR26,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+AHCTF1,YTHDF2,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+AHCTF1,ZNF496,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+DHX36,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+DHX36,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HNRNPL,CENPI,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HNRNPL,DDX39B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+HNRNPL,DPRX,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HNRNPL,FZR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HNRNPL,LIN52,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HNRNPL,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HNRNPL,LRFN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ECH1,MIB1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HNRNPL,MRPS9,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+HNRNPL,PRR13,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HNRNPL,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ACTN4,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ECT2,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+EEF1D,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RFC4,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TRA2B,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ADCK5,ESF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AKT2,FAM98C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PSMC4,FZR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PSMC4,GRSF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AKT2,HAMP,1,LOW tractability (ligandable but no clinical-stage evidence),LY-2787106,0,0,0,0,1,0,0,0
+PSMC4,LGALS4,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+PSMC4,LIN52,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PSMC4,LMNB1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PSMC4,LSM14A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PSMC4,METTL17,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PSMC4,NCCRP1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PSMC4,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PSMC4,WWTR1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PSMC4,ZC3H3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FCGBP,ZNF875,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MECOM,ACTR3,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+MECOM,PDS5B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+EZH2,TMED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,ARPC2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+FH,ATXN7L3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,CCNC,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+FH,FBXW11,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,GET3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,GSDMC,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,KIF4A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,LST1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,MAEA,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,MAP3K7,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,1
+FH,MATN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,PI16,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,SOX17,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,STXBP3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,SUPT7L,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FH,TDG,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+FH,TXNRD1,5,HIGH tractability (approved drug exists),MOTEXAFIN GADOLINIUM; AUROTHIOGLUCOSE,1,0,0,0,1,1,1,1
+FH,VBP1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+FH,VPS4B,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+FH,YTHDF2,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+FH,ZFP69,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PUF60,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FKBP4,DCLRE1B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+FKBP4,TOE1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PAK2,DOCK7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PAK2,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+NCBP2,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+STK38L,MECOM,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+STK38L,NUP50,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+STK38L,PDS5B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+STK38L,SMARCA4,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+ERC1,DCLRE1B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+ERC1,KMT5A,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,0
+ERC1,PDS5B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ERC1,RPL28,3,HIGH tractability (approved drug exists),ELX-02; ATALUREN; MT-3724,1,0,0,0,1,1,0,0
+SIPA1L3,CENPI,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIPA1L3,DDX39B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SIPA1L3,DPRX,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIPA1L3,FZR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIPA1L3,LIN52,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIPA1L3,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIPA1L3,LRFN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIPA1L3,MIB1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIPA1L3,MRPS9,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SIPA1L3,PRR13,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIPA1L3,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SIPA1L3,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CGN,ARHGAP29,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+POGZ,ARPC4,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CGN,CEP350,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CGN,PARD3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ZNF687,PPP4R2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CGN,RAC1,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,0
+POGZ,TMED10,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+POGZ,TRAF2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,0,1,0
+POGZ,VEZF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PI4KB,VTI1B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ZNF687,WDR26,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+ZNF687,WT1,0,LOW tractability (no tractability evidence),OMBIPEPIMUT-S; GALINPEPIMUT-S,0,0,0,0,0,0,0,0
+CGN,WWTR1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+EFR3A,E2F3,0,LOW tractability (no tractability evidence),EDIFOLIGIDE SODIUM,0,0,0,0,0,0,0,0
+EFR3A,H1-2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MCCC1,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MCCC1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+BOP1,BRD8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+BOP1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+BOP1,PIGS,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+BOP1,RHPN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+U2SURP,NUP42,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+KIF3B,ATP5F1C,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TM9SF4,PLAA,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,1
+POFUT1,YTHDC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+ACAP2,ACTR3,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+UBN2,MOB4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+UBN2,SMARCA5,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+UBN2,TMED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+NAALADL2,CCND1,3,MODERATE tractability (clinical-stage target),BRICICLIB,0,1,0,0,0,1,0,1
+NAALADL2,RAF1,5,HIGH tractability (approved drug exists),SORAFENIB; SORAFENIB TOSYLATE; REGORAFENIB,1,0,0,0,1,1,1,1
+COPB2,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+COPB2,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+WWTR1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+WWTR1,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TM4SF1,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFRC,DOCK7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+UBXN7,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFRC,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LSM14A,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+LSM14A,KRT8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LSM14A,PAX8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FBXL6,ESF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+COPG2,SMARCA5,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+COPG2,YTHDC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+MTDH,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AGO2,ATP2B1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AGO2,NHLRC2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AGO2,PARN,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,1,0
+AGO2,PSME3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AGO2,RHPN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AGO2,SLC7A1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AGO2,UBQLN4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GOLIM4,ACTR3,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+GOLIM4,PDS5B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,ACLY,5,HIGH tractability (approved drug exists),BEMPEDOIC ACID,1,0,0,0,1,1,1,1
+KCTD21,ARID1A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ALG8,BCS1L,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ALG8,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+ALG8,CFDP1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ALG8,COA7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,DPRX,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,FAM98C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,KDM2A,4,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,1
+KCTD21,LENG8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,MEN1,3,MODERATE tractability (clinical-stage target),REVUMENIB; SNDX-5613,0,0,1,0,1,1,0,0
+KCTD21,MRPL33,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+KCTD21,MRPS12,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+KCTD21,MRPS23,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+KCTD21,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,PRPF39,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,RICTOR,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+KCTD21,SUZ12,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+ALG8,TAFAZZIN,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,TOE1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ALG8,TOMM20,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+KCTD21,TRUB2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,TTF2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+KCTD21,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,ACLY,5,HIGH tractability (approved drug exists),BEMPEDOIC ACID,1,0,0,0,1,1,1,1
+AAMDC,ARID1A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,BCS1L,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+AAMDC,CFDP1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,COA7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,DPRX,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,FAM98C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,GLMN,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,KDM2A,4,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,1
+AAMDC,LENG8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,MEN1,3,MODERATE tractability (clinical-stage target),REVUMENIB; SNDX-5613,0,0,1,0,1,1,0,0
+AAMDC,MRPL33,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+AAMDC,MRPS12,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+AAMDC,MRPS18B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+AAMDC,MRPS23,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+AAMDC,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,PRPF39,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,RICTOR,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+AAMDC,SLC30A9,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,SUZ12,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+AAMDC,TAFAZZIN,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,TOE1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,TOMM20,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+AAMDC,TRUB2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,TTF2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+AAMDC,UQCRC2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+AAMDC,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+COMMD5,ESF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+COMMD5,RRP36,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+REPIN1,CIT,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,1
+REPIN1,TMED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HLTF,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HLTF,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CERS2,ARHGAP29,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CERS2,CEP350,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CERS2,CEP55,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CERS2,MARK2,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,1
+CERS2,RAC1,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,0
+CERS2,SAMD4B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CERS2,TMED10,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CERS2,TRAF2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,0,1,0
+CERS2,VEZF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CERS2,VTI1B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CERS2,WDR26,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CERS2,WT1,0,LOW tractability (no tractability evidence),OMBIPEPIMUT-S; GALINPEPIMUT-S,0,0,0,0,0,0,0,0
+CERS2,WWTR1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+DGAT1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HSF1,RHPN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+HSF1,ZFP36L1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ITPR2,SMARCA4,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+RBM12B,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RBM12B,NUP42,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PDCD5,ARID2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+ANKRD27,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+ANKRD27,PARD6B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ANKRD27,PAX8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LDHB,KIF2C,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+LDHB,PFDN1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+LY6E,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LY6E,SPAG5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LYN,DDA1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+LYN,FAM210A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LYN,GCN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LYN,HAPSTR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LYN,RAB18,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+LYN,RAD51D,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+LYN,SLC4A7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LYN,USP1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+MATN2,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MATN2,NELFB,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+LRRC14,ESF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MBNL1,CITED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MBNL1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MMP7,MED1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+MMP7,POLR2M,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MMP7,RAD51B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+ASPH,KRAS,3,HIGH tractability (approved drug exists),ADAGRASIB; SOTORASIB,1,0,0,0,1,1,0,0
+MTR,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+MTR,CCNE1,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,1
+MTR,CIT,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,1
+MTR,YTHDC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+NDUFB9,ATAD2,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+NDUFB9,KIF2C,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+NDUFB9,PARN,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,1,0
+NDUFB9,RAD51B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+NDUFB9,RAD51D,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+NDUFB9,USP1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+NDUFB9,XRCC2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+NDUFB9,XYLT2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LSG1,DOCK7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+OPA1,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LSG1,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ASAP1,SMARCA5,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+GOLT1B,MAD2L1BP,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+RECQL,PFDN1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+RECQL,TACC3,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+DESI2,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+DESI2,CIT,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,1
+DESI2,KAT6A,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,0
+DESI2,LCE5A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+DESI2,PARD3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+DESI2,PARD6B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+DESI2,SKP2,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+DESI2,WDR26,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+ERGIC2,CITED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ERGIC2,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ERGIC2,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSRC1,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSRC1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+THEM6,PSMG1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+THEM6,SPAG5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PCF11,ATP5MC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PCF11,POLR2M,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PCF11,ZEB1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RAP2B,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+SELENOT,CITED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SELENOT,ELOF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SELENOT,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RAP2B,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SELENOT,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,AARS2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,ACLY,5,HIGH tractability (approved drug exists),BEMPEDOIC ACID,1,0,0,0,1,1,1,1
+RSF1,ARID1A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,BCS1L,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+RSF1,COA7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,DPRX,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,FAM98C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,KDM2A,4,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,1
+RSF1,LARS2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,LENG8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,MEN1,3,MODERATE tractability (clinical-stage target),REVUMENIB; SNDX-5613,0,0,1,0,1,1,0,0
+RSF1,MRPL33,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+RSF1,MRPS12,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+RSF1,MRPS18B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+RSF1,MRPS23,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+RSF1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,PRPF39,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,RICTOR,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+RSF1,SUZ12,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+RSF1,TAFAZZIN,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,TOE1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,TOMM20,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+RSF1,TRUB2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,TTF2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RSF1,UQCRC2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+RSF1,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PEPD,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+PEPD,KRT8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PEPD,PARD6B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PEPD,PAX8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ATP6V1C1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ACTL6A,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLSCR1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLSCR1,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CHRAC1,RHPN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+XRN1,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PLEKHA5,TACC3,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+ESRP1,GATAD1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ESRP1,KRAS,3,HIGH tractability (approved drug exists),ADAGRASIB; SOTORASIB,1,0,0,0,1,1,0,0
+ESRP1,METAP1,5,MODERATE tractability (clinical-stage target),TOSEDOSTAT,0,1,0,0,1,1,0,1
+CHCHD3,MOB4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CHCHD3,RANBP2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CHCHD3,YTHDC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PPP1R2,ACTR3,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+PPP1R2,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GPATCH1,ARID2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+GPATCH1,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+GPATCH1,KRT8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GPATCH1,PARD6B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GPATCH1,PAX8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SAMD4B,FAM98C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SAMD4B,FZR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SAMD4B,GRSF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SAMD4B,HAMP,1,LOW tractability (ligandable but no clinical-stage evidence),LY-2787106,0,0,0,0,1,0,0,0
+SAMD4B,LGALS4,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+MED29,LIN52,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SAMD4B,LMNB1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SAMD4B,LSM14A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SAMD4B,METTL17,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SAMD4B,NCCRP1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SAMD4B,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SAMD4B,WWTR1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SAMD4B,ZC3H3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SAMD4B,ZNF875,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RBM28,KAT6A,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,0
+RBM28,MOB4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RBM28,YTHDC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CCDC91,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ETNK1,CITED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ETNK1,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ETNK1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ETNK1,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RBM38,ARID2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+RBM38,MIB1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RBM38,RELA,4,MODERATE tractability (clinical-stage target),EDASALONEXENT,0,1,0,0,1,1,0,1
+CHD7,ALDOC,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,0,1,0
+CHD7,C1D,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CHD7,CDK4,5,HIGH tractability (approved drug exists),PALBOCICLIB; ABEMACICLIB; RIBOCICLIB SUCCINATE; TRILACICLIB DIHYDROCHLORIDE; TRILACICLIB,1,0,0,0,1,1,1,1
+CHD7,EXOSC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CHD7,IPO9,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CHD7,KCTD10,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CHD7,KRAS,3,HIGH tractability (approved drug exists),ADAGRASIB; SOTORASIB,1,0,0,0,1,1,0,0
+CHD7,METAP1,5,MODERATE tractability (clinical-stage target),TOSEDOSTAT,0,1,0,0,1,1,0,1
+CHD7,METTL15,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CHD7,PARL,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,0
+CHD7,PSME3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CHD7,SCD,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,1
+ITFG2,TOE1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CMAS,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ZC3HAV1,MOB4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ENY2,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SLC33A1,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GMPS,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PTK2,PIGS,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PTK2,RHPN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RASA2,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RASA2,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RASA2,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RASA2,STRIP1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+EXOC4,MOB4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+EXOC4,RANBP2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+EXOC4,YTHDC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+LRCH3,DOCK7,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FYTTD1,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+LRCH3,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+BICD1,KIF2C,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+BICD1,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SDHA,SPAG5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SDHA,ZDHHC11,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GOLPH3,PAX8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GOLPH3,SMARCA5,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+GOLPH3,UBE2H,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,0,1,0
+TFB2M,ARPC2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TFB2M,ATXN7L3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,BRMS1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,CCNC,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+TFB2M,CEP350,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,FBXW11,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,FRS2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,MED25,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TFB2M,MFN2,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+TFB2M,NDUFA2,2,HIGH tractability (approved drug exists),METFORMIN; METFORMIN HYDROCHLORIDE,1,0,0,0,1,0,0,0
+TFB2M,PCBD2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,PCGF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,PEX6,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,PSTK,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,RNF31,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TFB2M,SEC16A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,STX4,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,STXBP3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,SUPT3H,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TFB2M,XPR1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TFB2M,YTHDF2,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+NOM1,DNM1L,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+NOM1,TMED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+NOM1,YTHDC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SMYD3,ARPC2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SMYD3,ATXN7L3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,CNOT2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,FBXW11,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,GET3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,GSDMC,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,ILK,4,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,1,1
+SMYD3,LST1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,MAEA,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,MAP3K7,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,1
+SMYD3,MATN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,MIIP,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,PI16,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,PPP4R2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,SLC25A5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,SOX17,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,TDG,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SMYD3,TMED10,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,VPS4B,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SMYD3,ZFP69,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SMYD3,ZNF496,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+FNDC3B,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ST6GAL1,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ST6GAL1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ST3GAL1,E2F3,0,LOW tractability (no tractability evidence),EDIFOLIGIDE SODIUM,0,0,0,0,0,0,0,0
+ST3GAL1,ESF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+WNK1,DCLRE1B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+WNK1,PDS5B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+WNK1,RPL28,3,HIGH tractability (approved drug exists),ELX-02; ATALUREN; MT-3724,1,0,0,0,1,1,0,0
+SPAG1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUPT5H,FAM98C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUPT5H,FZR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUPT5H,GRSF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUPT5H,HAMP,1,LOW tractability (ligandable but no clinical-stage evidence),LY-2787106,0,0,0,0,1,0,0,0
+SUPT5H,LGALS4,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+SUPT5H,LIN52,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUPT5H,LMNB1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SUPT5H,LSM14A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUPT5H,METTL17,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SUPT5H,NCCRP1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUPT5H,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUPT5H,WWTR1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+SUPT5H,ZC3H3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SUPT5H,ZNF875,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TAF4,RELA,4,MODERATE tractability (clinical-stage target),EDASALONEXENT,0,1,0,0,1,1,0,1
+TRIO,SMARCA5,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TRPS1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MROH1,BRD8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MROH1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+MROH1,PIGS,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+MROH1,RHPN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+UBE2H,SMARCA5,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+UBE2H,YTHDC1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+UVRAG,APC,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+UVRAG,LENG8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+UVRAG,MIB1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+UVRAG,MPHOSPH6,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+UVRAG,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+UVRAG,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+UVRAG,RICTOR,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+UVRAG,SLC44A3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+UVRAG,TOMM20,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+UVRAG,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+YWHAZ,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+DEK,SMARCA5,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+DERL1,PARN,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,1,0
+DERL1,RAD51B,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TBL1XR1,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TBL1XR1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TBL1XR1,NUP42,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TRIP13,SPAG5,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SH3BP5L,EFR3A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+SH3BP5L,TOMM20,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+HM13,BRPF1,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+HM13,PLAA,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,1
+TRAPPC9,RHPN1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+UTP23,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+ALG10,KIF2C,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+NUDCD1,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PPFIBP1,KIF2C,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+PPFIBP1,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PPFIBP1,PFDN1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+PPFIBP1,SNAP23,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RHPN2,KRT8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+RHPN2,PAX8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TSPYL5,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GFM1,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GFM1,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CCNE1,CCNE1,3,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,1
+URI1,HAMP,1,LOW tractability (ligandable but no clinical-stage evidence),LY-2787106,0,0,0,0,1,0,0,0
+URI1,LENG8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CCNE1,LMNB1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CCNE1,MIB1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CCNE1,MPHOSPH6,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CCNE1,MRPL11,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+CCNE1,MRPS14,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+URI1,MTERF3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CCNE1,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+URI1,PLEKHF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CCNE1,PRPF39,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+URI1,PRR13,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+CCNE1,RANBP2,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+URI1,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TNFSF10,MIOS,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+EBAG9,COX20,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TIMM50,FAM98C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TIMM50,FZR1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TIMM50,GRSF1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TIMM50,HAMP,1,LOW tractability (ligandable but no clinical-stage evidence),LY-2787106,0,0,0,0,1,0,0,0
+TIMM50,LGALS4,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+TIMM50,LIN52,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TIMM50,LMNB1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TIMM50,LSM14A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TIMM50,METTL17,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TIMM50,NCCRP1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TIMM50,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TIMM50,WWTR1,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+TIMM50,ZC3H3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+TIMM50,ZNF875,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+PDIA4,CIT,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,0,1,0,1
+PDIA4,TMED2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,APC,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+GAB2,CFDP1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,DPRX,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,FAM98C,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,LENG8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,MIB1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,NSMCE2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,PAX8,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,RICTOR,2,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,1,0,0
+GAB2,SLC44A3,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,TIMM17A,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,TOE1,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+GAB2,TOMM20,1,LOW tractability (ligandable but no clinical-stage evidence),,0,0,0,0,1,0,0,0
+GAB2,ZNF780B,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+C2CD5,LIN54,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
+C2CD5,MYBL2,0,LOW tractability (no tractability evidence),,0,0,0,0,0,0,0,0
