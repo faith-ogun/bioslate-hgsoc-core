@@ -206,6 +206,19 @@ elif plot_option == "Regression (TargetGene ~ CNA)":
         mime="image/png"
     )
 
-# Footer
+# -------------------------- Footer --------------------------
 st.markdown("---")
-st.markdown("🔬 Built for **BioSLATE**, in collaboration with **Breakthrough Cancer Research**")
+
+st.markdown("""
+<div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 15px 15px 0 0;">
+    <div style="font-size: 1.2rem; font-weight: 600; color: #1e40af; margin-bottom: 0.5rem;">
+        🔬 BioSLATE Clinical Translation Platform
+    </div>
+    <div style="color: #64748b; font-size: 1rem;">
+        Developed in collaboration with <strong style="color: #1e40af;">Breakthrough Cancer Research</strong>
+    </div>
+    <div style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">
+        Advancing precision oncology through computational genomics and artificial intelligence
+    </div>
+</div>
+""", unsafe_allow_html=True)

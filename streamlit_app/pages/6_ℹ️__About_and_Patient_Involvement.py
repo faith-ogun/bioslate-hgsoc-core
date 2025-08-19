@@ -100,15 +100,40 @@ st.markdown("""
 col1, col2 = st.columns([1, 1])
 
 with col1:
-    st.markdown("### 💡 The Simple Idea:")
-    st.markdown("Some cancer cells with a specific **biomarker** (like a gene amplification) become **dependent** on a partner gene to survive.")
-    st.markdown("**✨ The Opportunity:** If we can block that partner gene, we can selectively harm the cancer cells while leaving healthy cells unaffected.")
-    st.markdown("**🎯 Our Approach:** We search for genes that become essential when a biomarker is amplified, then validate these findings across multiple datasets and clinical outcomes.")
+    st.markdown("""
+    <div style="background: #F0F4F8; padding: 1.5rem; border-radius: 10px; margin: 1rem 0; border-left: 4px solid #2E86AB;">
+        <strong>💡 The Simple Idea</strong><br>
+        Some cancer cells with a specific biomarker (like a gene amplification) become dependent on a partner gene to survive.
+    </div>
+
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>✨ The Opportunity</strong><br>
+        If we can block that partner gene, we can selectively harm the cancer cells while leaving healthy cells unaffected.
+    </div>
+
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>🎯 Our Approach</strong><br>
+        We search for genes that become essential when a biomarker is amplified, then validate these findings across multiple datasets and clinical outcomes.
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
-    st.markdown("🎯 **Precision Medicine:** Target cancer cells specifically")
-    st.markdown("💊 **Better Treatment:** Potentially fewer side effects") 
-    st.markdown("📈 **Hope:** New therapeutic opportunities")
+    st.markdown("""
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>🎯 Precision Medicine</strong><br>
+        Target cancer cells specifically
+    </div>
+
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>💊 Better Treatment</strong><br>
+        Potentially fewer side effects
+    </div>
+
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>📈 Hope</strong><br>
+        New therapeutic opportunities
+    </div>
+    """, unsafe_allow_html=True)
 
 # --- Our Research Pipeline ---
 st.markdown('<div class="section-spacer"></div>', unsafe_allow_html=True)
@@ -209,11 +234,54 @@ st.markdown("""
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("📝 **Clear Communication:** Simple language and readable gene names")
-    st.markdown("🎯 **Clinical Focus:** Emphasis on biomarker-guided targets and survival outcomes")
-    st.markdown("📊 **Visual Design:** Charts and summaries that are easy to understand")
+    st.markdown("""
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>📝 Clear Communication</strong><br>
+        Simple language and readable gene names
+    </div>
+
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>🎯 Clinical Focus</strong><br>
+        Emphasis on biomarker-guided targets and survival outcomes
+    </div>
+
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>📊 Visual Design</strong><br>
+        Charts and summaries that are easy to understand
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
-    st.markdown("💬 **Share Feedback:** Help us identify unclear language or confusing sections")
-    st.markdown("🎯 **Suggest Priorities:** Tell us which outcomes matter most for future research")
-    st.markdown("🔬 **Trial Insights:** Share thoughts on biomarker-stratified trial concepts")
+    st.markdown("""
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>💬 Share Feedback</strong><br>
+        Help us identify unclear language or confusing sections
+    </div>
+
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>🎯 Suggest Priorities</strong><br>
+        Tell us which outcomes matter most for future research
+    </div>
+
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>🔬 Trial Insights</strong><br>
+        Share thoughts on biomarker-stratified trial concepts
+    </div>
+    """, unsafe_allow_html=True)
+
+# -------------------------- Footer --------------------------
+st.markdown("---")
+
+st.markdown("""
+<div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 15px 15px 0 0;">
+    <div style="font-size: 1.2rem; font-weight: 600; color: #1e40af; margin-bottom: 0.5rem;">
+        🔬 BioSLATE Clinical Validation Platform
+    </div>
+    <div style="color: #64748b; font-size: 1rem;">
+        Developed in collaboration with <strong style="color: #1e40af;">Breakthrough Cancer Research</strong>
+    </div>
+    <div style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">
+        Advancing precision oncology through computational genomics
+    </div>
+</div>
+""", unsafe_allow_html=True)
