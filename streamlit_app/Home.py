@@ -278,57 +278,61 @@ st.markdown("""
 html("""
 <style>
 .icon-row {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    margin: 2rem 0;
-    flex-wrap: wrap;
+   display: flex;
+   gap: 40px;
+   justify-content: center;
+   margin: 2rem 0;
+   flex-wrap: wrap;
 }
 .icon-link {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 15px;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    min-width: 120px;
+   text-decoration: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1.5rem;
+   border-radius: 15px;
+   background: white;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+   transition: all 0.3s ease;
+   min-width: 140px;
+   min-height: 140px;
+   justify-content: center;
 }
 .icon-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+   transform: translateY(-3px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 .icon-img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    margin-bottom: 0.5rem;
+   width: 70px;
+   height: 70px;
+   object-fit: contain;
+   margin-bottom: 0.75rem;
 }
 .icon-label {
-    font-size: 0.8rem;
-    color: #374151;
-    font-weight: 600;
-    text-align: center;
+   font-size: 0.85rem;
+   color: #374151;
+   font-weight: 600;
+   text-align: center;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+   line-height: 1.2;
 }
 </style>
 
 <div class="icon-row">
-    <a href="https://www.linkedin.com/in/faith-ogundimu" target="_blank" class="icon-link">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="icon-img">
-    </a>
-    <a href="https://github.com/faith-ogun" target="_blank" class="icon-link">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="icon-img">
-    </a>
-    <a href="https://cancerdata.ucd.ie/" target="_blank" class="icon-link">
-        <img src="https://cancerdata.ucd.ie/media/icon_dark_hu0ad8bdf2403366b9efcf01fd91c5dcb6_31076_400x0_resize_lanczos_3.png" class="icon-img">
-    </a>
-    <a href="https://breakthroughcancerresearch.ie/" target="_blank" class="icon-link">
-        <img src="https://breakthroughcancerresearch.ie/wp-content/uploads/2024/10/bcr-main-logo.png" class="icon-img">
-    </a>
+   <a href="https://www.linkedin.com/in/faith-ogundimu" target="_blank" class="icon-link">
+       <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="icon-img">
+   </a>
+   <a href="https://github.com/faith-ogun" target="_blank" class="icon-link">
+       <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="icon-img">
+   </a>
+   <a href="https://cancerdata.ucd.ie/" target="_blank" class="icon-link">
+       <img src="https://cancerdata.ucd.ie/media/icon_dark_hu0ad8bdf2403366b9efcf01fd91c5dcb6_31076_400x0_resize_lanczos_3.png" class="icon-img">
+   </a>
+   <a href="https://breakthroughcancerresearch.ie/" target="_blank" class="icon-link">
+       <img src="https://breakthroughcancerresearch.ie/wp-content/uploads/2024/10/bcr-main-logo.png" class="icon-img">
+   </a>
 </div>
-""", height=220)
+""", height=240)
 
 # -------------------------- Footer --------------------------
 st.markdown("---")
