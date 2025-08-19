@@ -92,7 +92,7 @@ with right:
 st.divider()
 
 # --- Patient involvement ---
-st.subheader("Patient involvement")
+st.subheader("Patient Involvement")
 st.markdown(
     """
 **How Patient Input Shaped This Work**
