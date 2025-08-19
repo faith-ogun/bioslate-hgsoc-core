@@ -110,7 +110,7 @@ with col1:
 
     **Dr. Metin Yazar**  
     Postdoctoral Researcher  
-    Mentor & Scientific Contributor  
+    Mentor  
     """)
 
 
