@@ -27,9 +27,9 @@ st.markdown("""
         background-color: #fafbfc;
     }
     
-    /* Header styling */
+    /* Header styling - Medium Blue Theme */
     .main-header {
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
         padding: 2rem 1rem;
         margin: -1rem -1rem 2rem -1rem;
         border-radius: 0 0 15px 15px;
@@ -46,18 +46,18 @@ st.markdown("""
     }
     
     .main-header .caption {
-        color: #cbd5e1 !important;
+        color: #e0e7ff !important;
         font-size: 1.1rem;
         margin-bottom: 0.25rem;
     }
     
     .last-updated {
-        color: #94a3b8 !important;
+        color: #cbd5e1 !important;
         font-size: 0.9rem;
         font-style: italic;
     }
     
-    /* Sidebar styling */
+    /* Sidebar styling - Consistent across all pages */
     .stSidebar {
         background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
     }
@@ -96,7 +96,7 @@ st.markdown("""
         border-left: 4px solid #3b82f6;
     }
     
-    /* Download buttons */
+    /* Download buttons - Consistent across all pages */
     .stDownloadButton > button {
         background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
         color: white;
@@ -130,8 +130,8 @@ st.markdown("""
 # Header section
 st.markdown("""
 <div class="main-header">
-    <h1>🕸️ Network & Pathway Analysis</h1>
-    <div class="caption">Protein-protein interactions and functional enrichment of synthetic lethal targets</div>
+    <h1>🕸️ Network & Pathway Analysis of Potent Synthetic Lethal Targets</h1>
+    <div class="caption">Protein-protein interactions, pathway enrichment, and network topology analysis</div>
     <div class="last-updated">Last updated: August 19th, 2025</div>
 </div>
 """, unsafe_allow_html=True)
