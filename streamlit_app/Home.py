@@ -268,7 +268,7 @@ st.markdown("""
 # Footer Section
 st.markdown("""
 <div class="footer-section">
-    <h3 style="color: #1e40af; margin-bottom: 2rem;">🤝 Our Partners & Collaborators</h3>
+    <h3 style="color: #1e40af; margin-bottom: 2rem;">🤝 Useful Links</h3>
     <p style="color: #64748b; font-size: 1.1rem; margin-bottom: 2rem;">
         Developed in collaboration with leading cancer research institutions
     </p>
@@ -317,28 +317,32 @@ html("""
 <div class="icon-row">
     <a href="https://www.linkedin.com/in/faith-ogundimu" target="_blank" class="icon-link">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="icon-img">
-        <div class="icon-label">LinkedIn</div>
     </a>
     <a href="https://github.com/faith-ogun" target="_blank" class="icon-link">
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="icon-img">
-        <div class="icon-label">GitHub</div>
     </a>
     <a href="https://cancerdata.ucd.ie/" target="_blank" class="icon-link">
         <img src="https://cancerdata.ucd.ie/media/icon_dark_hu0ad8bdf2403366b9efcf01fd91c5dcb6_31076_400x0_resize_lanczos_3.png" class="icon-img">
-        <div class="icon-label">UCD Cancer<br>Data Lab</div>
     </a>
     <a href="https://breakthroughcancerresearch.ie/" target="_blank" class="icon-link">
         <img src="https://breakthroughcancerresearch.ie/wp-content/uploads/2024/10/bcr-main-logo.png" class="icon-img">
-        <div class="icon-label">Breakthrough<br>Cancer Research</div>
     </a>
 </div>
 """, height=220)
 
-# Copyright
+# -------------------------- Footer --------------------------
+st.markdown("---")
+
 st.markdown("""
-    <div class="copyright-text">
-        Copyright © 2025 Faith Ogundimu. This software is distributed under an MIT licence.<br>
-        <strong>Advancing precision oncology through computational genomics and artificial intelligence</strong>
+<div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 15px 15px 0 0;">
+    <div style="font-size: 1.2rem; font-weight: 600; color: #1e40af; margin-bottom: 0.5rem;">
+        🔬 BioSLATE Clinical Translation Platform
+    </div>
+    <div style="color: #64748b; font-size: 1rem;">
+        Developed in collaboration with <strong style="color: #1e40af;">Breakthrough Cancer Research</strong>
+    </div>
+    <div style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">
+        Advancing precision oncology through computational genomics
     </div>
 </div>
 """, unsafe_allow_html=True)
