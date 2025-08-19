@@ -17,9 +17,9 @@ st.markdown("""
         background-color: #fafbfc;
     }
     
-    /* Header styling - Indigo Blue Theme */
+    /* Header styling - Royal Blue Theme */
     .main-header {
-        background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+        background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
         padding: 2rem 1rem;
         margin: -1rem -1rem 2rem -1rem;
         border-radius: 0 0 15px 15px;
@@ -36,13 +36,13 @@ st.markdown("""
     }
     
     .main-header .caption {
-        color: #e0e7ff !important;
+        color: #dbeafe !important;
         font-size: 1.1rem;
         margin-bottom: 0.25rem;
     }
     
     .last-updated {
-        color: #c7d2fe !important;
+        color: #bfdbfe !important;
         font-size: 0.9rem;
         font-style: italic;
     }
@@ -76,6 +76,14 @@ st.markdown("""
         box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
     }
 </style>
+""", unsafe_allow_html=True)
+
+# Header section
+st.markdown("""
+<div class="main-header">
+    <h1>📬 Contact the BioSLATE Team</h1>
+    <div class="caption">If you have any questions, suggestions, or feedback, feel free to reach out to us using the details below.</div>
+</div>
 """, unsafe_allow_html=True)
 
 # Header section
