@@ -165,20 +165,11 @@ st.markdown("""
 
 # Sidebar logo
 with st.sidebar:
-    st.markdown("""
-    <div style="text-align: center; padding: 1rem;">
-        <img src="data:image/png;base64,{}" style="max-width: 100%; height: auto; border-radius: 10px;">
-    </div>
-    """.format(""), unsafe_allow_html=True)
-    # Note: You'll need to add the actual logo here
     st.image("streamlit_app/assets/bioslate_logo.png", use_container_width=True)
 
 # Hero Section
 st.markdown("""
 <div class="hero-section">
-    <div class="logo-container">
-        <img src="streamlit_app/assets/bioslate_logo.png" style="max-height: 120px; margin-bottom: 1rem;">
-    </div>
     <div class="tagline">DISCOVER • DECODE • DELIVER</div>
     <h1 class="hero-title">🔬 HGSOC Explorer Platform</h1>
     <div class="hero-subtitle">Data-Driven Precision Oncology</div>
@@ -192,6 +183,11 @@ st.markdown("""
     </div>
 </div>
 """, unsafe_allow_html=True)
+
+# Display logo after hero section
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("streamlit_app/assets/bioslate_logo.png", use_container_width=True)
 
 # Platform Overview Infographic
 st.markdown('<h2 class="section-header">📊 Platform Overview</h2>', unsafe_allow_html=True)
