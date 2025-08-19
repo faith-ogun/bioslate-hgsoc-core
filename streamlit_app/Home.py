@@ -7,7 +7,7 @@ st.set_page_config(page_title="BioSLATE Home", layout="wide")
 st.image("streamlit_app/assets/bioslate_logo.png", width=300)
 
 st.title("🔬 HGSOC Explorer Platform")
-st.caption("Last updated: August 1st 2025")
+st.caption("Last updated: August 19th 2025")
 st.subheader("Data-Driven Precision Oncology")
 
 # Sidebar logo
@@ -35,17 +35,29 @@ st.markdown("""
 
 ### 📌 Functional Overview
 
-**Gene–Protein Explorer**  
-Investigate how copy number alterations (CNA) influence protein abundance across cancer samples.  
-This module supports statistical analysis (T-tests, Cohen’s d, and linear regression) to identify genes whose amplifications or deletions lead to proteomic dysregulation — helping prioritise biomarkers and druggable alterations.
+**Gene–Protein Explorer**
+Investigate how copy number alterations (CNA) influence protein abundance across cancer samples.
+This module supports statistical analysis (linear regression and significance testing) to identify genes whose amplifications or deletions lead to proteomic dysregulation — helping prioritise biomarkers and druggable alterations.
 
-**Synthetic Lethality Discovery**  
-Explore high-confidence synthetic lethal interactions derived from CNA–CRISPR regression screens in ovarian cancer.  
-Visualise SL pairs with amplification-stratified dependency, access statistical summaries, and interactively browse potent hits filtered by effect size, selectivity, and expression thresholds.
+**Synthetic Lethality Discovery**
+Explore high-confidence synthetic lethal interactions derived from CNA–CRISPR regression screens in ovarian cancer.
+Visualise SL pairs with amplification-stratified dependency, access statistical summaries, and interactively browse potent hits filtered by effect size, selectivity, and essentiality thresholds.
 
-**Network & Pathway Analysis**  
-Prioritise SL targets based on their functional connectivity and biological relevance.  
-This module integrates STRING PPI data and g:Profiler pathway enrichment to highlight gene pairs with mechanistic support — including dot plots, barplots, and interactive chord diagrams of curated pathways (e.g. apoptosis, cell cycle, PI3K signaling).
+**Network & Pathway Analysis**
+Prioritise SL targets based on their functional connectivity and biological relevance.
+This module integrates STRING PPI data and g\:Profiler pathway enrichment to highlight gene pairs with mechanistic support — including dot plots, barplots, and interactive chord diagrams of curated pathways (e.g. apoptosis, cell cycle, PI3K signalling).
+
+**Clinical Validation (TCGA-OV)**
+Assess whether amplified biomarkers are associated with patient outcomes in the TCGA ovarian cancer cohort.
+Visuals include Kaplan–Meier survival curves (overall survival) and forest plots summarising hazard ratios. A summary table lists significant Cox regression terms, including biomarker–interaction effects where applicable, providing translational context for prioritised biomarkers.
+            
+**Drug Sensitivity & Tractability**
+Summarise the translational potential of synthetic lethal targets by integrating Open Targets tractability data.
+Visual outputs highlight how many targets are supported by approved drugs, small molecule inhibitors, antibody modalities, or clinical precedence. Interactive tables allow users to filter by tractability class, providing a rapid overview of which SL hits are already therapeutically accessible.
+
+**About & Patient Involvement**
+Short, accessible text explaining the motivation for synthetic lethality in ovarian cancer and the purpose of this dashboard.
+This section outlines what the dashboard shows, the underlying data sources, and important caveats — framed for patients and the public as well as researchers. The emphasis is on clarity without long blocks of technical prose.
 """)
 
 # Licence and credits
