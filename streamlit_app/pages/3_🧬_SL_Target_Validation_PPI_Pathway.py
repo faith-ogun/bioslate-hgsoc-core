@@ -11,10 +11,144 @@ import streamlit.components.v1 as components
 import tempfile
 import os
 
-# --- Page config ---
-st.set_page_config(page_title="PPI & Pathway Analysis of SL Targets", layout="wide")
-st.title("Network & Pathway Analysis of Potent Synthetic Lethal Targets")
-st.caption("Last updated: August 19th 2025")
+# -------------------------- Page config & styling --------------------------
+st.set_page_config(
+    page_title="PPI & Pathway Analysis | SL Targets",
+    page_icon="🕸️",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Custom CSS for professional styling
+st.markdown("""
+<style>
+    /* Main background and text */
+    .stApp {
+        background-color: #fafbfc;
+    }
+    
+    /* Header styling */
+    .main-header {
+        background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%);
+        padding: 2rem 1rem;
+        margin: -1rem -1rem 2rem -1rem;
+        border-radius: 0 0 15px 15px;
+        color: white;
+        text-align: center;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    
+    .main-header h1 {
+        color: white !important;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    
+    .main-header .caption {
+        color: #bae6fd !important;
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .last-updated {
+        color: #7dd3fc !important;
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+    
+    /* Sidebar styling */
+    .stSidebar {
+        background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%);
+    }
+    
+    .stSidebar .stSelectbox label,
+    .stSidebar .stRadio label,
+    .stSidebar .stNumberInput label,
+    .stSidebar .stSlider label,
+    .stSidebar .stMultiSelect label {
+        color: #0c4a6e !important;
+        font-weight: 600;
+    }
+    
+    /* Metric cards */
+    .metric-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border-left: 4px solid #0284c7;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        margin-bottom: 1rem;
+    }
+    
+    /* Section headers */
+    .section-header {
+        color: #0c4a6e;
+        border-bottom: 2px solid #e0f2fe;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    
+    /* Info boxes */
+    .stAlert {
+        border-radius: 8px;
+        border-left: 4px solid #0284c7;
+    }
+    
+    /* Download buttons */
+    .stDownloadButton > button {
+        background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    
+    .stDownloadButton > button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(2, 132, 199, 0.3);
+    }
+    
+    /* Tables */
+    .stDataFrame {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Expander */
+    .streamlit-expanderHeader {
+        background-color: #f0f9ff;
+        border-radius: 8px;
+        border: 1px solid #e0f2fe;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# Header section
+st.markdown("""
+<div class="main-header">
+    <h1>🕸️ Network & Pathway Analysis of Potent Synthetic Lethal Targets</h1>
+    <div class="caption">Protein-protein interactions, pathway enrichment, and functional network analysis</div>
+    <div class="last-updated">Last updated: August 19th, 2025</div>
+</div>
+""", unsafe_allow_html=True)
+
+# Set professional color palette
+plt.style.use('default')
+sns.set_palette("Blues_r")
+COLORS = {
+    'primary': '#0c4a6e',
+    'secondary': '#0284c7', 
+    'accent': '#38bdf8',
+    'success': '#10b981',
+    'warning': '#f59e0b',
+    'danger': '#ef4444',
+    'light': '#f0f9ff',
+    'dark': '#1e293b'
+}
 
 # --- Load data ---
 @st.cache_data
