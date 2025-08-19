@@ -480,3 +480,7 @@ elif view_option == "Target Network (Chord)":
         
         # Clean up temp file
         os.unlink(temp_filename)
+
+# Footer
+st.markdown("---")
+st.markdown("🔬 Built for **BioSLATE**, in collaboration with **Breakthrough Cancer Research**")

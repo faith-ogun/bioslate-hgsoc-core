@@ -205,3 +205,7 @@ elif plot_option == "Regression (TargetGene ~ CNA)":
         file_name=f"regression_{biomarker_hgnc}_{target_hgnc}.png",
         mime="image/png"
     )
+
+# Footer
+st.markdown("---")
+st.markdown("🔬 Built for **BioSLATE**, in collaboration with **Breakthrough Cancer Research**")

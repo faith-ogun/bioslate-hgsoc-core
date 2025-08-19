@@ -9,7 +9,7 @@ st.markdown("""
     .main-header {
         text-align: center;
         padding: 2rem 0;
-        background: linear-gradient(135deg, #2E86AB 0%, #A23B72 100%);
+        background: linear-gradient(135deg, #7BB3F0 0%, #4A90E2 100%);
         color: white;
         border-radius: 15px;
         margin-bottom: 2rem;
@@ -143,6 +143,7 @@ with col2:
     """, unsafe_allow_html=True)
 
 # --- Our Research Pipeline ---
+st.markdown('<div class="section-spacer"></div>', unsafe_allow_html=True)
 st.markdown("""
 <div class="section-card">
     <h3>🔄 Our Research Pipeline</h3>
@@ -157,7 +158,7 @@ pipeline_steps = [
     ("3️⃣", "Synthetic Lethality Screen", "Test which genes become essential when biomarkers are present using CRISPR technology"),
     ("4️⃣", "Network & Pathway Analysis", "Check if biomarker-target pairs interact through known biological pathways"),
     ("5️⃣", "Drug Sensitivity Testing", "Explore whether genetic changes predict response to existing drugs"),
-    ("6️⃣", "Clinical Outcomes", "Examine links between gene expression and patient survival data")
+    ("6️⃣", "Clinical Outcomes", "Examine links between gene copy number and patient survival data")
 ]
 
 cols = st.columns(2)
@@ -171,6 +172,7 @@ for i, (emoji, title, desc) in enumerate(pipeline_steps):
         """, unsafe_allow_html=True)
 
 # --- Data Sources ---
+st.markdown('<div class="section-spacer"></div>', unsafe_allow_html=True)
 st.markdown("""
 <div class="section-card">
     <h3>📚 Our Data Sources</h3>
@@ -226,6 +228,7 @@ with st.expander("⚠️ Important Considerations & Limitations", expanded=False
     """, unsafe_allow_html=True)
 
 # --- Patient Involvement Section ---
+st.markdown('<div class="section-spacer"></div>', unsafe_allow_html=True)
 st.markdown("""
 <div class="patient-focus">
     <h2>👥 Patient Involvement & Partnership</h2>
@@ -243,17 +246,17 @@ with col1:
         <h4>🤝 How Patients Have Shaped This Work</h4>
         <div style="margin: 1rem 0;">
             <div style="display: flex; align-items: start; margin-bottom: 1rem;">
-                <div style="background: #667eea; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">📝</div>
+                <div style="background: #2E86AB; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">📝</div>
                 <div><strong>Clear Communication:</strong> Simple language and readable gene names</div>
             </div>
             
             <div style="display: flex; align-items: start; margin-bottom: 1rem;">
-                <div style="background: #00b894; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">🎯</div>
+                <div style="background: #4A90E2; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">🎯</div>
                 <div><strong>Clinical Focus:</strong> Emphasis on biomarker-guided targets and survival outcomes</div>
             </div>
             
             <div style="display: flex; align-items: start;">
-                <div style="background: #e17055; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">📊</div>
+                <div style="background: #7BB3F0; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">📊</div>
                 <div><strong>Visual Design:</strong> Charts and summaries that are easy to understand</div>
             </div>
         </div>
@@ -265,36 +268,20 @@ with col2:
     <div class="section-card">
         <h4>🗣️ Ways to Contribute</h4>
         <div style="margin: 1rem 0;">
-            <div style="background: #f8f9ff; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+            <div style="background: #F0F4F8; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
                 <strong>💬 Share Feedback:</strong><br>
                 Help us identify unclear language or confusing sections
             </div>
             
-            <div style="background: #f8f9ff; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+            <div style="background: #F0F4F8; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
                 <strong>🎯 Suggest Priorities:</strong><br>
                 Tell us which outcomes matter most for future research
             </div>
             
-            <div style="background: #f8f9ff; padding: 1rem; border-radius: 8px;">
+            <div style="background: #F0F4F8; padding: 1rem; border-radius: 8px;">
                 <strong>🔬 Trial Insights:</strong><br>
                 Share thoughts on biomarker-stratified trial concepts
             </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
-
-# --- Contact Information ---
-st.markdown("""
-<div style="background: #667eea; color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-top: 2rem;">
-    <h3>📧 Get In Touch</h3>
-    <p style="font-size: 1.1em;">
-        Have questions, suggestions, or want to learn more about our work?<br>
-        Contact information is available on the home page.
-    </p>
-    
-    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px;">
-        <strong>🔒 Privacy Note:</strong> This dashboard uses publicly available, de-identified research data only.
-        No personal patient information is used or stored.
-    </div>
-</div>
-""", unsafe_allow_html=True)
