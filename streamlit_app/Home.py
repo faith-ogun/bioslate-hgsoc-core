@@ -204,7 +204,7 @@ features = [
     {
         "icon": "🧬",
         "title": "Gene–Protein Explorer",
-        "description": "Investigate how copy number alterations (CNA) influence protein abundance across cancer samples. This module supports statistical analysis (linear regression and significance testing) to identify genes whose amplifications or deletions lead to proteomic dysregulation — helping prioritise biomarkers and druggable alterations."
+        "description": "Investigate how copy number alterations (CNA) influence protein abundance across cancer samples. This module supports statistical analysis (linear regression and significance testing) to identify genes whose amplifications or deletions lead to proteomic dysregulation, helping prioritise biomarkers and druggable alterations."
     },
     {
         "icon": "⚡",
@@ -214,7 +214,7 @@ features = [
     {
         "icon": "🕸️",
         "title": "Network & Pathway Analysis",
-        "description": "Prioritise SL targets based on their functional connectivity and biological relevance. This module integrates STRING PPI data and g:Profiler pathway enrichment to highlight gene pairs with mechanistic support — including dot plots, barplots, and interactive chord diagrams of curated pathways."
+        "description": "Prioritise SL targets based on their functional connectivity and biological relevance. This module integrates STRING PPI data and g:Profiler pathway enrichment to highlight gene pairs with mechanistic support, including dot plots, barplots, and interactive chord diagrams of curated pathways."
     },
     {
         "icon": "📈",
@@ -223,13 +223,13 @@ features = [
     },
     {
         "icon": "💊",
-        "title": "Drug Sensitivity & Tractability",
+        "title": "Drug Tractability",
         "description": "Summarise the translational potential of synthetic lethal targets by integrating Open Targets tractability data. Visual outputs highlight targets supported by approved drugs, small molecule inhibitors, antibody modalities, or clinical precedence."
     },
     {
         "icon": "🤝",
         "title": "About & Patient Involvement",
-        "description": "Accessible explanations of synthetic lethality in ovarian cancer and dashboard purpose. Outlines data sources and important caveats — framed for patients, the public, and researchers with emphasis on clarity without technical jargon."
+        "description": "Accessible explanations of synthetic lethality in ovarian cancer and dashboard purpose. Outlines data sources and important caveats, framed for patients, the public, and researchers with emphasis on clarity without technical jargon."
     }
 ]
 
