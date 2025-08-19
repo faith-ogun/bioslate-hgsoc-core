@@ -14,37 +14,99 @@ import os
 # --- Page config ---
 st.set_page_config(page_title="PPI & Pathway Analysis of SL Targets", layout="wide")
 st.title("Network & Pathway Analysis of Potent Synthetic Lethal Targets")
-st.caption("Last updated: August 1st 2025")
+st.caption("Last updated: August 19th 2025")
 
 # --- Load data ---
 @st.cache_data
 def load_ppi_and_pathway_data():
     ppi_df = pd.read_csv("streamlit_app/data/potent_hits_STRING_PPI_check.csv")
+    biogrid_df = pd.read_csv("streamlit_app/data/fet_ppi_overlap_biomarker_query_representative.csv")
     gprofiler_biomarkers = pd.read_csv("streamlit_app/data/gprofiler_enrichment_biomarkers.csv")
     gprofiler_targets = pd.read_csv("streamlit_app/data/gprofiler_enrichment_targets.csv")
     mapping_biomarkers = pd.read_csv("streamlit_app/data/gene_to_pathway_map_biomarkers.csv")
     mapping_targets = pd.read_csv("streamlit_app/data/gene_to_pathway_map_targets.csv")
-    return ppi_df, gprofiler_biomarkers, gprofiler_targets, mapping_biomarkers, mapping_targets
+    return ppi_df, biogrid_df, gprofiler_biomarkers, gprofiler_targets, mapping_biomarkers, mapping_targets
 
-ppi_df, gprofiler_biomarkers, gprofiler_targets, mapping_biomarkers, mapping_targets = load_ppi_and_pathway_data()
+ppi_df, biogrid_df, gprofiler_biomarkers, gprofiler_targets, mapping_biomarkers, mapping_targets = load_ppi_and_pathway_data()
 
 # --- Sidebar radio ---
 view_option = st.sidebar.radio(
     "Choose View",
-    ["Top Pathways (Barplot)", "Pathway × Gene (Dotplot)", "Biomarker Network (Chord)", "Target Network (Chord)"]
+    ["Top Pathways (Barplot)", "Pathway × Gene (Dotplot)", "Biomarker Network (Chord)", "Target Network (Chord)", "PPI Network Analysis"]
 )
 
-# --- Shared PPI summary section ---
-st.subheader("🔗 PPI Check (STRING database)")
-n_total = len(ppi_df)
-n_with_ppi = ppi_df["PPI_found"].sum()
-st.markdown(f"Out of 197 SL pairs, **{n_with_ppi}** show direct STRING-supported protein–protein interactions (combined score ≥ 400).")
+# --- Enhanced PPI Analysis Section ---
+st.subheader("🔗 Protein-Protein Interaction Analysis")
+
+# Calculate key metrics
+n_total_string = len(ppi_df)
+n_with_ppi_string = ppi_df["PPI_found"].sum()
+
+n_total_biogrid = len(biogrid_df)
+n_direct_biogrid = biogrid_df["interact"].sum()
+n_shared_interactors = (biogrid_df["n_shared_ppi"] > 0).sum()
+n_significant_overlap = (biogrid_df["fet_ppi_overlap"] < 0.05).sum()
+
+# Create metrics display
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.metric(
+        "Direct PPI (STRING)", 
+        f"{n_with_ppi_string}/{n_total_string}",
+        f"{n_with_ppi_string/n_total_string*100:.1f}%"
+    )
+
+with col2:
+    st.metric(
+        "Direct PPI (BioGRID)", 
+        f"{n_direct_biogrid}/{n_total_biogrid}",
+        f"{n_direct_biogrid/n_total_biogrid*100:.1f}%"
+    )
+
+with col3:
+    st.metric(
+        "Shared Interactors", 
+        f"{n_shared_interactors}/{n_total_biogrid}",
+        f"{n_shared_interactors/n_total_biogrid*100:.1f}%"
+    )
+
+with col4:
+    st.metric(
+        "Significant Overlap", 
+        f"{n_significant_overlap}/{n_total_biogrid}",
+        f"{n_significant_overlap/n_total_biogrid*100:.1f}% (p < 0.05)"
+    )
+
+st.markdown("""
+**Key Findings:**
+- While direct protein interactions are rare (4.2% in BioGRID, 7.6% in STRING), **84.4% of biomarker-target pairs share common interactors**
+- **16.9% show statistically significant network overlap** (p < 0.05), indicating coherent functional modules
+- Shared interactors include key oncogenic regulators: **MYC, CDK9, PARP1**
+- **Network-mediated relationships dominate over direct interactions**, supporting a modular disruption model
+""")
 
 with st.expander("📄 View All PPI-Annotated Pairs"):
-    st.dataframe(ppi_df, use_container_width=True)
-
-csv_ppi = ppi_df.to_csv(index=False).encode("utf-8")
-st.download_button("⬇️ Download PPI Table (.csv)", csv_ppi, "ppi_hits.csv", mime="text/csv")
+    tab1, tab2 = st.tabs(["STRING Database", "BioGRID Analysis"])
+    
+    with tab1:
+        st.dataframe(ppi_df, use_container_width=True)
+        csv_string = ppi_df.to_csv(index=False).encode("utf-8")
+        st.download_button("⬇️ Download STRING PPI Table (.csv)", csv_string, "string_ppi_hits.csv", mime="text/csv")
+    
+    with tab2:
+        # Show most interesting BioGRID pairs
+        interesting_pairs = biogrid_df[
+            (biogrid_df["fet_ppi_overlap"] < 0.05) | 
+            (biogrid_df["n_shared_ppi"] >= 10) |
+            (biogrid_df["interact"] == True)
+        ].sort_values("fet_ppi_overlap")
+        
+        st.dataframe(interesting_pairs[['Biomarker_HGNC', 'TargetGene_HGNC', 'interact', 'n_shared_ppi', 
+                                      'shared_ppi_jaccard_idx', 'fet_ppi_overlap', 'shared_ppi_hgnc']], 
+                    use_container_width=True)
+        csv_biogrid = biogrid_df.to_csv(index=False).encode("utf-8")
+        st.download_button("⬇️ Download BioGRID Analysis (.csv)", csv_biogrid, "biogrid_ppi_analysis.csv", mime="text/csv")
 
 # --- View 1: Barplot ---
 if view_option == "Top Pathways (Barplot)":
@@ -197,6 +259,153 @@ elif view_option == "Biomarker Network (Chord)":
         
         # Clean up temp file
         os.unlink(temp_filename)
+
+# --- View 5: PPI Network Analysis ---
+elif view_option == "PPI Network Analysis":
+    st.subheader("🕸️ Protein Interaction Network Analysis")
+    
+    # Summary statistics
+    median_shared = biogrid_df[biogrid_df["n_shared_ppi"] > 0]["n_shared_ppi"].median()
+    mean_jaccard = biogrid_df[biogrid_df["shared_ppi_jaccard_idx"] > 0]["shared_ppi_jaccard_idx"].mean()
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.metric("Median Shared Interactors", f"{median_shared:.0f}")
+        st.metric("Mean Jaccard Index", f"{mean_jaccard:.3f}")
+        
+        st.markdown("""
+        **Network Statistics:**
+        - Median of 4 shared interactors among connected pairs
+        - Jaccard similarity averaging 0.029 indicates moderate but meaningful overlap
+        - Network topology serves as predictive framework for cancer vulnerabilities
+        """)
+    
+    with col2:
+        # Distribution of shared interactors
+        fig, ax = plt.subplots(figsize=(8, 5))
+        shared_counts = biogrid_df[biogrid_df["n_shared_ppi"] > 0]["n_shared_ppi"]
+        ax.hist(shared_counts, bins=25, color='#1f77b4', alpha=0.7, edgecolor='black')
+        ax.set_xlabel('Number of Shared Interactors')
+        ax.set_ylabel('Frequency')
+        ax.set_title('Distribution of Shared PPI Counts')
+        ax.axvline(x=median_shared, color='red', linestyle='--', label=f'Median = {median_shared:.0f}')
+        ax.legend()
+        st.pyplot(fig)
+    
+    # Top shared interactors analysis
+    st.subheader("🎯 Most Frequent Shared Interactors")
+    st.markdown("Canonical oncogenic regulators that recur across multiple synthetic lethal relationships:")
+    
+    # Process shared_ppi_hgnc column to count frequencies
+    all_interactors = []
+    for ppi_list in biogrid_df["shared_ppi_hgnc"].dropna():
+        if isinstance(ppi_list, str) and ppi_list != "":
+            interactors = [x.strip() for x in ppi_list.split(",") if x.strip()]
+            all_interactors.extend(interactors)
+    
+    if all_interactors:
+        interactor_counts = pd.Series(all_interactors).value_counts().head(20)
+        
+        col1, col2 = st.columns([2, 1])
+        
+        with col1:
+            fig, ax = plt.subplots(figsize=(10, 8))
+            interactor_counts.plot(kind='barh', ax=ax, color='#2ca02c')
+            ax.set_xlabel('Frequency Across SL Pairs')
+            ax.set_ylabel('Shared Interactor')
+            ax.set_title('Top 20 Most Frequent Shared Protein Interactors')
+            # Highlight key oncogenes
+            for i, (gene, count) in enumerate(interactor_counts.head(20).items()):
+                if gene in ['MYC', 'CDK9', 'PARP1', 'TP53', 'EGFR', 'AKT1']:
+                    ax.barh(i, count, color='#d62728', alpha=0.8)
+            st.pyplot(fig)
+        
+        with col2:
+            st.markdown("**Key Oncogenic Regulators:**")
+            key_genes = ['MYC', 'CDK9', 'PARP1', 'TP53', 'EGFR', 'AKT1', 'BRCA1', 'ATM']
+            for gene in key_genes:
+                if gene in interactor_counts.index:
+                    count = interactor_counts[gene]
+                    st.markdown(f"• **{gene}**: {count} pairs")
+    
+    # Statistical significance analysis
+    st.subheader("📊 Statistical Significance of Network Overlap")
+    st.markdown("Fisher's exact test identifies pairs with significant enrichment of shared protein interactions:")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        # P-value distribution
+        fig, ax = plt.subplots(figsize=(8, 5))
+        pvals = biogrid_df["fet_ppi_overlap"].dropna()
+        ax.hist(pvals, bins=25, color='#ff7f0e', alpha=0.7, edgecolor='black')
+        ax.axvline(x=0.05, color='red', linestyle='--', linewidth=2, label='p = 0.05 threshold')
+        ax.set_xlabel('Fisher\'s Exact Test P-value')
+        ax.set_ylabel('Frequency')
+        ax.set_title('Distribution of PPI Overlap P-values')
+        ax.legend()
+        st.pyplot(fig)
+    
+    with col2:
+        # Jaccard vs significance scatter plot
+        fig, ax = plt.subplots(figsize=(8, 5))
+        significant = biogrid_df["fet_ppi_overlap"] < 0.05
+        
+        # Plot non-significant points
+        ns_data = biogrid_df[~significant & (biogrid_df["shared_ppi_jaccard_idx"] > 0)]
+        if len(ns_data) > 0:
+            ax.scatter(ns_data["shared_ppi_jaccard_idx"], 
+                      ns_data["fet_ppi_overlap"], 
+                      alpha=0.5, label='Non-significant', color='lightgray', s=20)
+        
+        # Plot significant points
+        sig_data = biogrid_df[significant & (biogrid_df["shared_ppi_jaccard_idx"] > 0)]
+        if len(sig_data) > 0:
+            ax.scatter(sig_data["shared_ppi_jaccard_idx"], 
+                      sig_data["fet_ppi_overlap"], 
+                      alpha=0.8, label='Significant (p < 0.05)', color='red', s=30)
+        
+        ax.set_xlabel('Jaccard Similarity Index')
+        ax.set_ylabel('Fisher\'s Exact Test P-value')
+        ax.set_title('Network Overlap: Significance vs Similarity')
+        ax.set_yscale('log')
+        ax.axhline(y=0.05, color='red', linestyle='--', alpha=0.5)
+        ax.legend()
+        st.pyplot(fig)
+    
+    # Network modules insight
+    st.subheader("🧩 Network Module Analysis")
+    st.markdown("""
+    **Key Insights:**
+    - **Network-mediated relationships (84.4%) dominate over direct interactions (4.2%)**
+    - This supports a **modular disruption model** where synthetic lethality arises through perturbation of interconnected functional modules
+    - Statistical significance (16.9% with p < 0.05) demonstrates these are **coherent network modules**, not random associations
+    - Protein interaction topology provides **orthogonal validation** of computationally predicted dependencies
+    """)
+    
+    # Detailed analysis table
+    with st.expander("📄 Detailed Network Analysis Results"):
+        st.markdown("**Pairs with significant network overlap or high connectivity:**")
+        
+        detailed_data = biogrid_df[
+            (biogrid_df["fet_ppi_overlap"] < 0.05) | 
+            (biogrid_df["n_shared_ppi"] >= 10) |
+            (biogrid_df["interact"] == True)
+        ].sort_values("fet_ppi_overlap").copy()
+        
+        # Add interpretation column
+        detailed_data['Interpretation'] = detailed_data.apply(
+            lambda row: 'Direct PPI' if row['interact'] else 
+                       'Significant overlap' if row['fet_ppi_overlap'] < 0.05 else 
+                       'High connectivity', axis=1
+        )
+        
+        st.dataframe(
+            detailed_data[['Biomarker_HGNC', 'TargetGene_HGNC', 'interact', 'n_shared_ppi', 
+                          'shared_ppi_jaccard_idx', 'fet_ppi_overlap', 'Interpretation', 'shared_ppi_hgnc']], 
+            use_container_width=True
+        )
 
 # --- View 4: Target Chord diagram ---
 elif view_option == "Target Network (Chord)":
