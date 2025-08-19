@@ -9,7 +9,7 @@ st.markdown("""
     .main-header {
         text-align: center;
         padding: 2rem 0;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2E86AB 0%, #A23B72 100%);
         color: white;
         border-radius: 15px;
         margin-bottom: 2rem;
@@ -21,12 +21,12 @@ st.markdown("""
         padding: 2rem;
         border-radius: 15px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        border-left: 5px solid #667eea;
+        border-left: 5px solid #2E86AB;
         margin-bottom: 1.5rem;
     }
     
     .highlight-box {
-        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        background: linear-gradient(135deg, #4A90E2 0%, #2E86AB 100%);
         color: white;
         padding: 1.5rem;
         border-radius: 12px;
@@ -35,16 +35,16 @@ st.markdown("""
     }
     
     .pipeline-step {
-        background: #f8f9ff;
-        border: 2px solid #e3e8ff;
+        background: #F0F4F8;
+        border: 2px solid #D6E4F0;
         border-radius: 10px;
         padding: 1rem;
         margin: 0.5rem 0;
-        border-left: 4px solid #667eea;
+        border-left: 4px solid #2E86AB;
     }
     
     .patient-focus {
-        background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+        background: linear-gradient(135deg, #4A90E2 0%, #7BB3F0 100%);
         color: white;
         padding: 2rem;
         border-radius: 15px;
@@ -61,11 +61,15 @@ st.markdown("""
     }
     
     .data-source {
-        background: #e8f4fd;
+        background: #E8F4FD;
         border-radius: 8px;
         padding: 1rem;
         margin: 0.5rem 0;
-        border-left: 3px solid #74b9ff;
+        border-left: 3px solid #4A90E2;
+    }
+    
+    .section-spacer {
+        margin-top: 3rem;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -99,8 +103,8 @@ with col1:
     st.markdown("""
     <div class="section-card">
         <h3>🔬 What is Synthetic Lethality?</h3>
-        <div style="background: #f8f9ff; padding: 1.5rem; border-radius: 10px; margin: 1rem 0;">
-            <h4 style="color: #667eea;">💡 The Simple Idea:</h4>
+        <div style="background: #F0F4F8; padding: 1.5rem; border-radius: 10px; margin: 1rem 0;">
+            <h4 style="color: #2E86AB;">💡 The Simple Idea:</h4>
             <p>Some cancer cells with a specific <strong>biomarker</strong> (like a gene amplification) become 
             <strong>dependent</strong> on a partner gene to survive.</p>
             
@@ -108,7 +112,7 @@ with col1:
             harm the cancer cells while leaving healthy cells unaffected.</p>
         </div>
         
-        <div style="background: #e8f8f5; padding: 1rem; border-radius: 8px; border-left: 4px solid #00b894;">
+        <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; border-left: 4px solid #4A90E2;">
             <strong>🎯 Our Approach:</strong> We search for genes that become essential when a biomarker is amplified, 
             then validate these findings across multiple datasets and clinical outcomes.
         </div>
@@ -121,17 +125,17 @@ with col2:
         <h3>📊 Why This Matters for Patients</h3>
         <div style="padding: 1rem;">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                <div style="background: #667eea; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">🎯</div>
+                <div style="background: #2E86AB; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">🎯</div>
                 <div><strong>Precision Medicine:</strong> Target cancer cells specifically</div>
             </div>
             
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                <div style="background: #00b894; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">💊</div>
+                <div style="background: #4A90E2; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">💊</div>
                 <div><strong>Better Treatment:</strong> Potentially fewer side effects</div>
             </div>
             
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                <div style="background: #e17055; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">📈</div>
+                <div style="background: #7BB3F0; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">📈</div>
                 <div><strong>Hope:</strong> New therapeutic opportunities</div>
             </div>
         </div>
