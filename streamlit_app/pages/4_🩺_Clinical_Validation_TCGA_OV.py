@@ -449,10 +449,10 @@ with st.sidebar:
         help="Threshold for nominal statistical significance"
     )
     
-    exploratory_thresh = st.number_input(
-        "**Exploratory significance threshold**", 
-        value=0.01, step=0.001, min_value=0.0, max_value=1.0,
-        help="Additional threshold for highlighting top exploratory findings"
+    fdr_thresh = st.number_input(
+        "**FDR threshold**", 
+        value=0.05, step=0.01, min_value=0.0, max_value=1.0,
+        help="False Discovery Rate threshold for multiple testing correction"
     )
     
     st.markdown("---")
