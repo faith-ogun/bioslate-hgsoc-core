@@ -276,20 +276,30 @@ elif plot_option == "Regression (TargetGene ~ CNA)":
     st.subheader("Regression Plot: CNA vs Gene Dependency")
 
     st.markdown(
-    f"""
-    <div style="background-color:#9ecae1; padding:12px; border-radius:6px;">
-        ℹ️ <b>Context:</b> This view shows linear relationships between CNA and CRISPR dependency scores across a high-confidence subset of synthetic lethal gene pairs.<br><br>
-        The following filters were applied from an initial screen of <b>521,374 gene pairs</b>:
-        <ul>
-            <li><b>FDR &lt; 0.05</b> → <b>3476</b> hits</li>
-            <li><b>Strong SL hits</b> (FDR &lt; 0.05 &amp; EffectSize &lt; 0) → <b>1601</b> hits</li>
-            <li><b>Selective hits</b> (PredictedEffect_CNA2 &gt; –1) → <b>1075</b> hits</li>
-            <li><b>Potent hits</b> (DeltaEffect_CNA6minusPred2 ≤ –0.2) → <b>735 hits</b></li>
-        </ul>
-        These 735 potent pairs are shown in the dropdown below for regression visualisation.
-    </div>
-    """,
-    unsafe_allow_html=True
+        f"""
+        <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); 
+                    padding: 1.5rem; 
+                    border-radius: 10px; 
+                    border-left: 4px solid #0ea5e9; 
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+                    margin-bottom: 1.5rem;">
+            <div style="color: #0c4a6e; font-weight: 600; font-size: 1.1rem; margin-bottom: 0.75rem;">
+                ℹ️ Context
+            </div>
+            <div style="color: #164e63; line-height: 1.6;">
+                This view shows linear relationships between CNA and CRISPR dependency scores across a high-confidence subset of synthetic lethal gene pairs.<br><br>
+                The following filters were applied from an initial screen of <b>521,374 gene pairs</b>:
+                <ul style="margin: 0.75rem 0; padding-left: 1.25rem;">
+                    <li style="margin-bottom: 0.5rem;"><b>FDR &lt; 0.05</b> → <b>3,476</b> hits</li>
+                    <li style="margin-bottom: 0.5rem;"><b>Strong SL hits</b> (FDR &lt; 0.05 &amp; EffectSize &lt; 0) → <b>1,601</b> hits</li>
+                    <li style="margin-bottom: 0.5rem;"><b>Selective hits</b> (PredictedEffect_CNA2 &gt; –1) → <b>1,075</b> hits</li>
+                    <li style="margin-bottom: 0.5rem;"><b>Potent hits</b> (DeltaEffect_CNA6minusPred2 ≤ –0.2) → <b>735 hits</b></li>
+                </ul>
+                These <b>735 potent pairs</b> are shown in the dropdown below for regression visualization.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
     )
 
     potent_hits_df = potent_hits.copy()
