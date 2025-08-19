@@ -29,7 +29,7 @@ st.markdown("""
     
     /* Header styling */
     .main-header {
-        background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%);
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         padding: 2rem 1rem;
         margin: -1rem -1rem 2rem -1rem;
         border-radius: 0 0 15px 15px;
@@ -46,20 +46,20 @@ st.markdown("""
     }
     
     .main-header .caption {
-        color: #bae6fd !important;
+        color: #cbd5e1 !important;
         font-size: 1.1rem;
         margin-bottom: 0.25rem;
     }
     
     .last-updated {
-        color: #7dd3fc !important;
+        color: #94a3b8 !important;
         font-size: 0.9rem;
         font-style: italic;
     }
     
     /* Sidebar styling */
     .stSidebar {
-        background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%);
+        background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
     }
     
     .stSidebar .stSelectbox label,
@@ -67,7 +67,7 @@ st.markdown("""
     .stSidebar .stNumberInput label,
     .stSidebar .stSlider label,
     .stSidebar .stMultiSelect label {
-        color: #0c4a6e !important;
+        color: #1e40af !important;
         font-weight: 600;
     }
     
@@ -76,15 +76,15 @@ st.markdown("""
         background: white;
         padding: 1.5rem;
         border-radius: 10px;
-        border-left: 4px solid #0284c7;
+        border-left: 4px solid #3b82f6;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         margin-bottom: 1rem;
     }
     
     /* Section headers */
     .section-header {
-        color: #0c4a6e;
-        border-bottom: 2px solid #e0f2fe;
+        color: #1e40af;
+        border-bottom: 2px solid #e2e8f0;
         padding-bottom: 0.5rem;
         margin-bottom: 1.5rem;
         font-weight: 600;
@@ -93,12 +93,12 @@ st.markdown("""
     /* Info boxes */
     .stAlert {
         border-radius: 8px;
-        border-left: 4px solid #0284c7;
+        border-left: 4px solid #3b82f6;
     }
     
     /* Download buttons */
     .stDownloadButton > button {
-        background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%);
+        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
         color: white;
         border: none;
         border-radius: 8px;
@@ -108,7 +108,7 @@ st.markdown("""
     
     .stDownloadButton > button:hover {
         transform: translateY(-1px);
-        box-shadow: 0 4px 8px rgba(2, 132, 199, 0.3);
+        box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
     }
     
     /* Tables */
@@ -120,9 +120,9 @@ st.markdown("""
     
     /* Expander */
     .streamlit-expanderHeader {
-        background-color: #f0f9ff;
+        background-color: #f8fafc;
         border-radius: 8px;
-        border: 1px solid #e0f2fe;
+        border: 1px solid #e2e8f0;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -130,8 +130,8 @@ st.markdown("""
 # Header section
 st.markdown("""
 <div class="main-header">
-    <h1>🕸️ Network & Pathway Analysis of Potent Synthetic Lethal Targets</h1>
-    <div class="caption">Protein-protein interactions, pathway enrichment, and functional network analysis</div>
+    <h1>🕸️ Network & Pathway Analysis</h1>
+    <div class="caption">Protein-protein interactions and functional enrichment of synthetic lethal targets</div>
     <div class="last-updated">Last updated: August 19th, 2025</div>
 </div>
 """, unsafe_allow_html=True)
@@ -140,13 +140,13 @@ st.markdown("""
 plt.style.use('default')
 sns.set_palette("Blues_r")
 COLORS = {
-    'primary': '#0c4a6e',
-    'secondary': '#0284c7', 
-    'accent': '#38bdf8',
+    'primary': '#1e40af',
+    'secondary': '#3b82f6', 
+    'accent': '#60a5fa',
     'success': '#10b981',
     'warning': '#f59e0b',
     'danger': '#ef4444',
-    'light': '#f0f9ff',
+    'light': '#f8fafc',
     'dark': '#1e293b'
 }
 
