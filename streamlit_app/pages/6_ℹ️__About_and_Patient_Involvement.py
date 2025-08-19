@@ -88,7 +88,7 @@ st.markdown("""
 # --- Quick Overview ---
 st.markdown("""
 <div class="highlight-box">
-    <h3>🎯 Our Mission</h3>
+    <h3>🎯 Our Mission and Linked Breakthrough Research Priorities</h3>
     <p style="font-size: 1.1em;">
         We're exploring <strong>synthetic lethality</strong> in High-Grade Serous Ovarian Cancer (HGSOC) 
         to find new treatment targets that could selectively attack cancer cells while protecting healthy tissue.
@@ -115,23 +115,39 @@ with col1:
         <strong>🎯 Our Approach</strong><br>
         We search for genes that become essential when a biomarker is amplified, then validate these findings across multiple datasets and clinical outcomes.
     </div>
+    
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>🔬 Focus on HGSOC</strong><br>
+        High-Grade Serous Ovarian Cancer is one of the most aggressive and difficult-to-treat cancers, making it a priority for synthetic lethality research.
+    </div>
     """, unsafe_allow_html=True)
 
 with col2:
     st.markdown("""
+    <div class="section-card">
+        <h3>📊 Linked Breakthrough Research Priorities</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("""
     <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
-        <strong>🎯 Precision Medicine</strong><br>
-        Target cancer cells specifically
+        <strong>🎯 Priority 1: Poor Prognosis Cancers</strong><br>
+        Increase research investment into poor prognosis cancers prioritising lung, oesophageal, ovarian, pancreatic, brain, liver and stomach cancers
     </div>
 
     <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
-        <strong>💊 Better Treatment</strong><br>
-        Potentially fewer side effects
+        <strong>🏥 Priority 2: Clinical Integration</strong><br>
+        Improve integration of cancer research into cancer care in Ireland and increase clinical capacity through clinical engagement
     </div>
 
     <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
-        <strong>📈 Hope</strong><br>
-        New therapeutic opportunities
+        <strong>💊 Priority 3: New Therapeutics</strong><br>
+        Fund discovery and development of new therapeutics, surgical approaches and technologies, including biological and immune approaches
+    </div>
+    
+    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
+        <strong>🔬 Priority 4: Biomarker Discovery</strong><br>
+        Fund research to improve effectiveness of current therapies through biomarkers discovery, nutrition and therapeutic delivery
     </div>
     """, unsafe_allow_html=True)
 

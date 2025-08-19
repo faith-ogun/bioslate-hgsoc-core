@@ -485,7 +485,7 @@ if df.empty:
     st.stop()
 
 # Summary metrics at the top
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("""
@@ -506,16 +506,6 @@ with col2:
     """.format(n_nom_sig, p_thresh), unsafe_allow_html=True)
 
 with col3:
-    n_fdr_sig = int((df["Adjusted_FDR"] < fdr_thresh).sum()) if "Adjusted_FDR" in df.columns else 0
-    st.markdown("""
-    <div class="metric-card">
-        <h3 style="color: #1e40af; margin: 0;">FDR Significant</h3>
-        <h2 style="color: #1e40af; margin: 0.5rem 0 0 0;">{:,}</h2>
-        <p style="color: #64748b; margin: 0.25rem 0 0 0; font-size: 0.9rem;">FDR < {}</p>
-    </div>
-    """.format(n_fdr_sig, fdr_thresh), unsafe_allow_html=True)
-
-with col4:
     endpoint_full = "Overall Survival" if endpoint == "OS" else "Progression-Free Survival"
     st.markdown("""
     <div class="metric-card">
@@ -727,7 +717,7 @@ st.markdown("---")
 st.markdown("""
 <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 15px 15px 0 0;">
     <div style="font-size: 1.2rem; font-weight: 600; color: #1e40af; margin-bottom: 0.5rem;">
-        🔬 BioSLATE Clinical Validation Platform
+        🔬 BioSLATE Clinical Translation Platform
     </div>
     <div style="color: #64748b; font-size: 1rem;">
         Developed in collaboration with <strong style="color: #1e40af;">Breakthrough Cancer Research</strong>
