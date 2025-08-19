@@ -637,53 +637,6 @@ else:
 
 st.markdown("---")
 
-# -------------------------- Methods and interpretation --------------------------
-with st.expander("📚 **Methods, Interpretation & Important Caveats**", expanded=False):
-    st.markdown("""
-    #### 🔬 **Statistical Methods**
-    
-    **Cox Proportional Hazards Models:**
-    - Individual biomarker analysis adjusted for age
-    - Hazard ratios (HR) with 95% confidence intervals
-    - Multiple testing correction using Benjamini-Hochberg FDR
-    
-    **Kaplan-Meier Analysis:**
-    - Survival curves stratified by GISTIC deep amplification status (≥2 vs <2)
-    - Log-rank test for group comparison
-    - Overall survival (OS) as primary endpoint
-    
-    #### 📊 **Data Sources**
-    - **Clinical Data:** TCGA-OV Pan-Cancer Atlas
-    - **Genomic Data:** GISTIC copy number alterations
-    - **Gene Mapping:** HGNC official gene symbols and Entrez IDs
-    
-    #### ⚠️ **Important Limitations & Caveats**
-    
-    **Statistical Considerations:**
-    - **Multiple Testing:** Expect few/no FDR-significant hits in exploratory genomic screens
-    - **Nominal Significance:** Use p<0.05 findings for hypothesis generation, not clinical decisions
-    - **Association ≠ Causation:** Statistical associations do not imply biological causation
-    
-    **Clinical Interpretation:**
-    - **No Treatment Recommendations:** Results are for research purposes only
-    - **Validation Required:** Findings require independent validation in separate cohorts
-    - **Population Specificity:** Results may not generalize beyond TCGA-OV population
-    
-    **Technical Notes:**
-    - **Amplification Definition:** GISTIC score ≥2 (deep amplification)
-    - **Sample Matching:** Analysis limited to patients with both clinical and genomic data
-    - **Missing Data:** Patients with incomplete survival or genomic data excluded
-    
-    #### 🎯 **Best Practices for Interpretation**
-    1. **Prioritize FDR-significant findings** for follow-up studies
-    2. **Consider biological plausibility** of associations
-    3. **Review amplification frequency** - very rare events may lack power
-    4. **Cross-reference with literature** and pathway knowledge
-    5. **Plan validation studies** for promising candidates
-    """)
-
-st.markdown("---")
-
 # -------------------------- Data download section --------------------------
 st.markdown('<h2 class="section-header">💾 Download Results</h2>', unsafe_allow_html=True)
 
