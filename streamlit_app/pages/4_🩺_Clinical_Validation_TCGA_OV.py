@@ -496,14 +496,14 @@ with col1:
     """.format(len(df)), unsafe_allow_html=True)
 
 with col2:
-    n_nom_sig = int((df["Adjusted_p"] < p_thresh).sum())
-    st.markdown("""
-    <div class="metric-card">
-        <h3 style="color: #1e40af; margin: 0;">Nominally Significant</h3>
-        <h2 style="color: #1e40af; margin: 0.5rem 0 0 0;">{:,}</h2>
-        <p style="color: #64748b; margin: 0.25rem 0 0 0; font-size: 0.9rem;">p < {}</p>
-    </div>
-    """.format(n_nom_sig, p_thresh), unsafe_allow_html=True)
+   n_nom_sig = int((df["Adjusted_p"] < p_thresh).sum())
+   st.markdown("""
+   <div class="metric-card">
+       <h3 style="color: #1e40af; margin: 0;">Nominally Significant</h3>
+       <h2 style="color: #1e40af; margin: 0.25rem 0 0 0;">{:,}</h2>
+       <p style="color: #64748b; margin: 0.25rem 0 0 0; font-size: 0.9rem;">p < {}</p>
+   </div>
+   """.format(n_nom_sig, p_thresh), unsafe_allow_html=True)
 
 with col3:
     endpoint_full = "Overall Survival" if endpoint == "OS" else "Progression-Free Survival"

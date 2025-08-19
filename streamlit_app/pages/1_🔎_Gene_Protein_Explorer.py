@@ -6,10 +6,144 @@ from scipy.stats import linregress
 import numpy as np
 import io
 
-# Page config
-st.set_page_config(page_title="BioSLATE Gene–Protein Explorer", layout="wide")
-st.title("Interactive Viewer of CNA and Protein Expression Dynamics")
-st.caption("Last updated: August 19th 2025")
+# -------------------------- Page config & styling --------------------------
+st.set_page_config(
+    page_title="BioSLATE Gene–Protein Explorer",
+    page_icon="🔎",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Custom CSS for professional styling
+st.markdown("""
+<style>
+    /* Main background and text */
+    .stApp {
+        background-color: #fafbfc;
+    }
+    
+    /* Header styling - Sky Blue Theme */
+    .main-header {
+        background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%);
+        padding: 2rem 1rem;
+        margin: -1rem -1rem 2rem -1rem;
+        border-radius: 0 0 15px 15px;
+        color: white;
+        text-align: center;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    
+    .main-header h1 {
+        color: white !important;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    
+    .main-header .caption {
+        color: #e0f2fe !important;
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .last-updated {
+        color: #bae6fd !important;
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+    
+    /* Sidebar styling - Consistent across all pages */
+    .stSidebar {
+        background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+    }
+    
+    .stSidebar .stSelectbox label,
+    .stSidebar .stRadio label,
+    .stSidebar .stNumberInput label,
+    .stSidebar .stSlider label,
+    .stSidebar .stMultiSelect label {
+        color: #1e40af !important;
+        font-weight: 600;
+    }
+    
+    /* Metric cards */
+    .metric-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border-left: 4px solid #3b82f6;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        margin-bottom: 1rem;
+    }
+    
+    /* Section headers */
+    .section-header {
+        color: #1e40af;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+    }
+    
+    /* Info boxes */
+    .stAlert {
+        border-radius: 8px;
+        border-left: 4px solid #3b82f6;
+    }
+    
+    /* Download buttons - Consistent across all pages */
+    .stDownloadButton > button {
+        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    
+    .stDownloadButton > button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+    }
+    
+    /* Tables */
+    .stDataFrame {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Expander */
+    .streamlit-expanderHeader {
+        background-color: #f8fafc;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# Header section
+st.markdown("""
+<div class="main-header">
+    <h1>🔬 Interactive Viewer of CNA and Protein Expression Dynamics</h1>
+    <div class="caption">Statistical analysis and visualization of copy number alterations and protein expression relationships</div>
+    <div class="last-updated">Last updated: August 19th, 2025</div>
+</div>
+""", unsafe_allow_html=True)
+
+# Set professional color palette
+plt.style.use('default')
+sns.set_palette("Blues_r")
+COLORS = {
+    'primary': '#1e40af',
+    'secondary': '#3b82f6', 
+    'accent': '#60a5fa',
+    'success': '#10b981',
+    'warning': '#f59e0b',
+    'danger': '#ef4444',
+    'light': '#f8fafc',
+    'dark': '#1e293b'
+}
 
 @st.cache_data
 def load_data():
