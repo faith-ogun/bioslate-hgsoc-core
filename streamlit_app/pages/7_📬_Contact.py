@@ -86,14 +86,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Header section
-st.markdown("""
-<div class="main-header">
-    <h1>📬 Contact the BioSLATE Team</h1>
-    <div class="caption">If you have any questions, suggestions, or feedback, feel free to reach out to us using the details below.</div>
-</div>
-""", unsafe_allow_html=True)
-
 # Two columns
 col1, col2 = st.columns([1, 1.2])
 
