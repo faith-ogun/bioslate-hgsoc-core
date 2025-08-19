@@ -100,41 +100,15 @@ st.markdown("""
 col1, col2 = st.columns([1, 1])
 
 with col1:
-    st.markdown("""
-    <div style="background: #F0F4F8; padding: 1.5rem; border-radius: 10px; margin: 1rem 0;">
-        <h4 style="color: #2E86AB;">💡 The Simple Idea:</h4>
-        <p>Some cancer cells with a specific <strong>biomarker</strong> (like a gene amplification) become 
-        <strong>dependent</strong> on a partner gene to survive.</p>
-
-        <p><strong>✨ The Opportunity:</strong> If we can block that partner gene, we can selectively 
-        harm the cancer cells while leaving healthy cells unaffected.</p>
-    </div>
-
-    <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; border-left: 4px solid #4A90E2;">
-        <strong>🎯 Our Approach:</strong> We search for genes that become essential when a biomarker is amplified, 
-        then validate these findings across multiple datasets and clinical outcomes.
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("### 💡 The Simple Idea:")
+    st.markdown("Some cancer cells with a specific **biomarker** (like a gene amplification) become **dependent** on a partner gene to survive.")
+    st.markdown("**✨ The Opportunity:** If we can block that partner gene, we can selectively harm the cancer cells while leaving healthy cells unaffected.")
+    st.markdown("**🎯 Our Approach:** We search for genes that become essential when a biomarker is amplified, then validate these findings across multiple datasets and clinical outcomes.")
 
 with col2:
-    st.markdown("""
-    <div style="padding: 1rem;">
-        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-            <div style="background: #2E86AB; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">🎯</div>
-            <div><strong>Precision Medicine:</strong> Target cancer cells specifically</div>
-        </div>
-
-        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-            <div style="background: #4A90E2; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">💊</div>
-            <div><strong>Better Treatment:</strong> Potentially fewer side effects</div>
-        </div>
-
-        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-            <div style="background: #7BB3F0; color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">📈</div>
-            <div><strong>Hope:</strong> New therapeutic opportunities</div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("🎯 **Precision Medicine:** Target cancer cells specifically")
+    st.markdown("💊 **Better Treatment:** Potentially fewer side effects") 
+    st.markdown("📈 **Hope:** New therapeutic opportunities")
 
 # --- Our Research Pipeline ---
 st.markdown('<div class="section-spacer"></div>', unsafe_allow_html=True)
@@ -235,41 +209,11 @@ st.markdown("""
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("""
-    <div style="margin: 1rem 0;">
-        <div style="display: flex; align-items: start; margin-bottom: 1rem;">
-            <div style="background: #2E86AB; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">📝</div>
-            <div><strong>Clear Communication:</strong> Simple language and readable gene names</div>
-        </div>
-
-        <div style="display: flex; align-items: start; margin-bottom: 1rem;">
-            <div style="background: #4A90E2; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">🎯</div>
-            <div><strong>Clinical Focus:</strong> Emphasis on biomarker-guided targets and survival outcomes</div>
-        </div>
-
-        <div style="display: flex; align-items: start;">
-            <div style="background: #7BB3F0; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">📊</div>
-            <div><strong>Visual Design:</strong> Charts and summaries that are easy to understand</div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("📝 **Clear Communication:** Simple language and readable gene names")
+    st.markdown("🎯 **Clinical Focus:** Emphasis on biomarker-guided targets and survival outcomes")
+    st.markdown("📊 **Visual Design:** Charts and summaries that are easy to understand")
 
 with col2:
-    st.markdown("""
-    <div style="margin: 1rem 0;">
-        <div style="background: #F0F4F8; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-            <strong>💬 Share Feedback:</strong><br>
-            Help us identify unclear language or confusing sections
-        </div>
-        
-        <div style="background: #F0F4F8; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-            <strong>🎯 Suggest Priorities:</strong><br>
-            Tell us which outcomes matter most for future research
-        </div>
-        
-        <div style="background: #F0F4F8; padding: 1rem; border-radius: 8px;">
-            <strong>🔬 Trial Insights:</strong><br>
-            Share thoughts on biomarker-stratified trial concepts
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("💬 **Share Feedback:** Help us identify unclear language or confusing sections")
+    st.markdown("🎯 **Suggest Priorities:** Tell us which outcomes matter most for future research")
+    st.markdown("🔬 **Trial Insights:** Share thoughts on biomarker-stratified trial concepts")
