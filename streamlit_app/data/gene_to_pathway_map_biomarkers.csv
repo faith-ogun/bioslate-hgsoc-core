@@ -1,0 +1,358 @@
+Pathway,Gene
+nitrogen compound transport,ACTN4
+nitrogen compound transport,AHCTF1
+nitrogen compound transport,ANKRD27
+nitrogen compound transport,ARFGEF1
+nitrogen compound transport,ASAP1
+nitrogen compound transport,ASPH
+nitrogen compound transport,C2CD5
+nitrogen compound transport,CCDC91
+nitrogen compound transport,CHD7
+nitrogen compound transport,CNST
+nitrogen compound transport,COPB2
+nitrogen compound transport,COPG2
+nitrogen compound transport,DERL1
+nitrogen compound transport,DNM1L
+nitrogen compound transport,ECT2
+nitrogen compound transport,ENY2
+nitrogen compound transport,ERC1
+nitrogen compound transport,EXOC4
+nitrogen compound transport,FAM91A1
+nitrogen compound transport,FYTTD1
+nitrogen compound transport,GOLPH3
+nitrogen compound transport,GOLT1B
+nitrogen compound transport,HM13
+nitrogen compound transport,HSF1
+nitrogen compound transport,IGF2BP2
+nitrogen compound transport,IPO8
+nitrogen compound transport,KIF3B
+nitrogen compound transport,KPNA4
+nitrogen compound transport,LSG1
+nitrogen compound transport,LYN
+nitrogen compound transport,LYPLA1
+nitrogen compound transport,MMP7
+nitrogen compound transport,NCBP2
+nitrogen compound transport,PDIA4
+nitrogen compound transport,SELENOT
+nitrogen compound transport,SLC33A1
+nitrogen compound transport,TFRC
+nitrogen compound transport,TIMM50
+nitrogen compound transport,TM9SF4
+nitrogen compound transport,WNK1
+nitrogen compound transport,YIF1B
+protein transport,ACTN4
+protein transport,AHCTF1
+protein transport,ANKRD27
+protein transport,ARFGEF1
+protein transport,ASAP1
+protein transport,ASPH
+protein transport,C2CD5
+protein transport,CCDC91
+protein transport,CNST
+protein transport,COPB2
+protein transport,COPG2
+protein transport,DERL1
+protein transport,DNM1L
+protein transport,ECT2
+protein transport,ENY2
+protein transport,ERC1
+protein transport,EXOC4
+protein transport,FAM91A1
+protein transport,GOLPH3
+protein transport,GOLT1B
+protein transport,HM13
+protein transport,IPO8
+protein transport,KIF3B
+protein transport,KPNA4
+protein transport,LSG1
+protein transport,LYPLA1
+protein transport,PDIA4
+protein transport,SELENOT
+protein transport,TFRC
+protein transport,TIMM50
+protein transport,TM9SF4
+protein transport,YIF1B
+intracellular transport,ACAP2
+intracellular transport,ACTN4
+intracellular transport,AHCTF1
+intracellular transport,ANKRD27
+intracellular transport,ASPH
+intracellular transport,BICD1
+intracellular transport,C2CD5
+intracellular transport,CCDC91
+intracellular transport,COPB2
+intracellular transport,COPG2
+intracellular transport,DERL1
+intracellular transport,ECT2
+intracellular transport,ENY2
+intracellular transport,ERC1
+intracellular transport,ERGIC2
+intracellular transport,FAM91A1
+intracellular transport,FYTTD1
+intracellular transport,GOLT1B
+intracellular transport,HM13
+intracellular transport,IPO8
+intracellular transport,KIF3B
+intracellular transport,KPNA4
+intracellular transport,LSG1
+intracellular transport,NCBP2
+intracellular transport,OPA1
+intracellular transport,RSRC1
+intracellular transport,TIMM50
+intracellular transport,TM9SF4
+intracellular transport,TRAPPC9
+intracellular transport,WNK1
+intracellular transport,YIF1B
+Golgi vesicle transport,ASAP1
+Golgi vesicle transport,CCDC91
+Golgi vesicle transport,CNST
+Golgi vesicle transport,COPB2
+Golgi vesicle transport,COPG2
+Golgi vesicle transport,ERGIC2
+Golgi vesicle transport,EXOC4
+Golgi vesicle transport,GOLPH3
+Golgi vesicle transport,GOLT1B
+Golgi vesicle transport,LYPLA1
+Golgi vesicle transport,TRAPPC9
+Golgi vesicle transport,UVRAG
+Golgi vesicle transport,YIF1B
+cellular localization,ACAP2
+cellular localization,ACTN4
+cellular localization,AHCTF1
+cellular localization,AKT2
+cellular localization,ANKRD27
+cellular localization,ARFGEF1
+cellular localization,ASAP1
+cellular localization,ASPH
+cellular localization,ATP6V1C1
+cellular localization,BICD1
+cellular localization,C2CD5
+cellular localization,CCDC91
+cellular localization,CCNE1
+cellular localization,CHD7
+cellular localization,CNST
+cellular localization,COPB2
+cellular localization,COPG2
+cellular localization,DERL1
+cellular localization,DHX36
+cellular localization,DNM1L
+cellular localization,ECT2
+cellular localization,EFR3A
+cellular localization,ENY2
+cellular localization,ERC1
+cellular localization,ERGIC2
+cellular localization,EXOC4
+cellular localization,EZH2
+cellular localization,FAM91A1
+cellular localization,FYTTD1
+cellular localization,GAB2
+cellular localization,GOLPH3
+cellular localization,GOLT1B
+cellular localization,HM13
+cellular localization,IPO8
+cellular localization,ITPR2
+cellular localization,KIF3B
+cellular localization,KPNA4
+cellular localization,LSG1
+cellular localization,LYN
+cellular localization,LYPLA1
+cellular localization,NCBP2
+cellular localization,OPA1
+cellular localization,PAK2
+cellular localization,PDIA4
+cellular localization,PTP4A3
+cellular localization,RSRC1
+cellular localization,SELENOT
+cellular localization,SIRT2
+cellular localization,SMYD3
+cellular localization,TFRC
+cellular localization,TIMM50
+cellular localization,TM9SF4
+cellular localization,TRAPPC9
+cellular localization,UVRAG
+cellular localization,WNK1
+cellular localization,WWTR1
+cellular localization,YIF1B
+cellular localization,YWHAZ
+regulation of RNA splicing,CLNS1A
+regulation of RNA splicing,ENY2
+regulation of RNA splicing,ESRP1
+regulation of RNA splicing,HNRNPL
+regulation of RNA splicing,KHDRBS3
+regulation of RNA splicing,MBNL1
+regulation of RNA splicing,PUF60
+regulation of RNA splicing,RBM12B
+regulation of RNA splicing,RBM38
+regulation of RNA splicing,TRA2B
+establishment of localization in cell,ACAP2
+establishment of localization in cell,ACTN4
+establishment of localization in cell,AHCTF1
+establishment of localization in cell,ANKRD27
+establishment of localization in cell,ASPH
+establishment of localization in cell,ATP6V1C1
+establishment of localization in cell,BICD1
+establishment of localization in cell,C2CD5
+establishment of localization in cell,CCDC91
+establishment of localization in cell,COPB2
+establishment of localization in cell,COPG2
+establishment of localization in cell,DERL1
+establishment of localization in cell,ECT2
+establishment of localization in cell,ENY2
+establishment of localization in cell,ERC1
+establishment of localization in cell,ERGIC2
+establishment of localization in cell,EXOC4
+establishment of localization in cell,FAM91A1
+establishment of localization in cell,FYTTD1
+establishment of localization in cell,GAB2
+establishment of localization in cell,GOLT1B
+establishment of localization in cell,HM13
+establishment of localization in cell,IPO8
+establishment of localization in cell,KIF3B
+establishment of localization in cell,KPNA4
+establishment of localization in cell,LSG1
+establishment of localization in cell,LYN
+establishment of localization in cell,NCBP2
+establishment of localization in cell,OPA1
+establishment of localization in cell,RSRC1
+establishment of localization in cell,SELENOT
+establishment of localization in cell,SIRT2
+establishment of localization in cell,TIMM50
+establishment of localization in cell,TM9SF4
+establishment of localization in cell,TRAPPC9
+establishment of localization in cell,WNK1
+establishment of localization in cell,YIF1B
+establishment of localization in cell,YWHAZ
+establishment of protein localization,ACTN4
+establishment of protein localization,AHCTF1
+establishment of protein localization,AKT2
+establishment of protein localization,ANKRD27
+establishment of protein localization,ARFGEF1
+establishment of protein localization,ASAP1
+establishment of protein localization,ASPH
+establishment of protein localization,C2CD5
+establishment of protein localization,CCDC91
+establishment of protein localization,CNST
+establishment of protein localization,COPB2
+establishment of protein localization,COPG2
+establishment of protein localization,DERL1
+establishment of protein localization,DNM1L
+establishment of protein localization,ECT2
+establishment of protein localization,ENY2
+establishment of protein localization,ERC1
+establishment of protein localization,EXOC4
+establishment of protein localization,FAM91A1
+establishment of protein localization,GOLPH3
+establishment of protein localization,GOLT1B
+establishment of protein localization,HM13
+establishment of protein localization,IPO8
+establishment of protein localization,KIF3B
+establishment of protein localization,KPNA4
+establishment of protein localization,LSG1
+establishment of protein localization,LYPLA1
+establishment of protein localization,PDIA4
+establishment of protein localization,PTP4A3
+establishment of protein localization,SELENOT
+establishment of protein localization,SMYD3
+establishment of protein localization,TFRC
+establishment of protein localization,TIMM50
+establishment of protein localization,TM9SF4
+establishment of protein localization,WNK1
+establishment of protein localization,YIF1B
+establishment of protein localization,YWHAZ
+RNA localization,AHCTF1
+RNA localization,BICD1
+RNA localization,DHX36
+RNA localization,ENY2
+RNA localization,FYTTD1
+RNA localization,HSF1
+RNA localization,IGF2BP2
+RNA localization,NCBP2
+RNA localization,PRPF6
+RNA localization,WNK1
+macromolecule localization,ACTN4
+macromolecule localization,AHCTF1
+macromolecule localization,AKT2
+macromolecule localization,ANKRD27
+macromolecule localization,ARFGEF1
+macromolecule localization,ASAP1
+macromolecule localization,ASPH
+macromolecule localization,BICD1
+macromolecule localization,C2CD5
+macromolecule localization,CCDC91
+macromolecule localization,CCNE1
+macromolecule localization,CNST
+macromolecule localization,COPB2
+macromolecule localization,COPG2
+macromolecule localization,DERL1
+macromolecule localization,DHX36
+macromolecule localization,DNM1L
+macromolecule localization,ECT2
+macromolecule localization,EFR3A
+macromolecule localization,ENY2
+macromolecule localization,ERC1
+macromolecule localization,EXOC4
+macromolecule localization,EZH2
+macromolecule localization,FAM91A1
+macromolecule localization,FYTTD1
+macromolecule localization,GOLPH3
+macromolecule localization,GOLT1B
+macromolecule localization,HM13
+macromolecule localization,HSF1
+macromolecule localization,IGF2BP2
+macromolecule localization,IPO8
+macromolecule localization,KIF3B
+macromolecule localization,KPNA4
+macromolecule localization,LSG1
+macromolecule localization,LYN
+macromolecule localization,LYPLA1
+macromolecule localization,NCBP2
+macromolecule localization,PAK2
+macromolecule localization,PDIA4
+macromolecule localization,PLSCR1
+macromolecule localization,PRPF6
+macromolecule localization,PTP4A3
+macromolecule localization,REPIN1
+macromolecule localization,SELENOT
+macromolecule localization,SMYD3
+macromolecule localization,TFRC
+macromolecule localization,TIMM50
+macromolecule localization,TM9SF4
+macromolecule localization,WNK1
+macromolecule localization,WWTR1
+macromolecule localization,YIF1B
+macromolecule localization,YWHAZ
+positive regulation of RNA metabolic process,ACTL6A
+positive regulation of RNA metabolic process,ACTN4
+positive regulation of RNA metabolic process,AGO2
+positive regulation of RNA metabolic process,ASPH
+positive regulation of RNA metabolic process,ATAD2
+positive regulation of RNA metabolic process,CHD7
+positive regulation of RNA metabolic process,CLNS1A
+positive regulation of RNA metabolic process,DEK
+positive regulation of RNA metabolic process,DHX36
+positive regulation of RNA metabolic process,EEF1D
+positive regulation of RNA metabolic process,ENY2
+positive regulation of RNA metabolic process,HLTF
+positive regulation of RNA metabolic process,HSF1
+positive regulation of RNA metabolic process,MECOM
+positive regulation of RNA metabolic process,MED29
+positive regulation of RNA metabolic process,MTDH
+positive regulation of RNA metabolic process,NCBP2
+positive regulation of RNA metabolic process,NCOA2
+positive regulation of RNA metabolic process,NFKBIB
+positive regulation of RNA metabolic process,PLSCR1
+positive regulation of RNA metabolic process,POGZ
+positive regulation of RNA metabolic process,PRPF6
+positive regulation of RNA metabolic process,RSF1
+positive regulation of RNA metabolic process,SAMD4B
+positive regulation of RNA metabolic process,SIRT2
+positive regulation of RNA metabolic process,SMYD3
+positive regulation of RNA metabolic process,SUB1
+positive regulation of RNA metabolic process,SUPT5H
+positive regulation of RNA metabolic process,TAF4
+positive regulation of RNA metabolic process,TBL1XR1
+positive regulation of RNA metabolic process,TCEA1
+positive regulation of RNA metabolic process,TRA2B
+positive regulation of RNA metabolic process,WNK1
+positive regulation of RNA metabolic process,WWTR1
+positive regulation of RNA metabolic process,ZC3HAV1

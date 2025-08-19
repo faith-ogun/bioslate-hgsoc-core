@@ -1,0 +1,4303 @@
+Pathway,Gene
+regulation of primary metabolic process,ACTR3
+regulation of primary metabolic process,APC
+regulation of primary metabolic process,APLP1
+regulation of primary metabolic process,ARID1A
+regulation of primary metabolic process,ARID2
+regulation of primary metabolic process,ATAD2
+regulation of primary metabolic process,ATXN7L3
+regulation of primary metabolic process,BIRC2
+regulation of primary metabolic process,BRD8
+regulation of primary metabolic process,BRMS1
+regulation of primary metabolic process,BRPF1
+regulation of primary metabolic process,BTAF1
+regulation of primary metabolic process,C1D
+regulation of primary metabolic process,CCNC
+regulation of primary metabolic process,CCND1
+regulation of primary metabolic process,CCNE1
+regulation of primary metabolic process,CDK4
+regulation of primary metabolic process,CEP350
+regulation of primary metabolic process,CITED2
+regulation of primary metabolic process,CNOT2
+regulation of primary metabolic process,DDA1
+regulation of primary metabolic process,DICER1
+regulation of primary metabolic process,DNM1L
+regulation of primary metabolic process,DOCK7
+regulation of primary metabolic process,DPRX
+regulation of primary metabolic process,E2F3
+regulation of primary metabolic process,EIF4G1
+regulation of primary metabolic process,FBXW11
+regulation of primary metabolic process,FZR1
+regulation of primary metabolic process,G6PD
+regulation of primary metabolic process,GATAD1
+regulation of primary metabolic process,GCN1
+regulation of primary metabolic process,GLMN
+regulation of primary metabolic process,GRSF1
+regulation of primary metabolic process,H1-2
+regulation of primary metabolic process,HAMP
+regulation of primary metabolic process,HSF1
+regulation of primary metabolic process,ILK
+regulation of primary metabolic process,KAT6A
+regulation of primary metabolic process,KDM2A
+regulation of primary metabolic process,KMT2A
+regulation of primary metabolic process,KMT2B
+regulation of primary metabolic process,KMT5A
+regulation of primary metabolic process,KRAS
+regulation of primary metabolic process,L3MBTL3
+regulation of primary metabolic process,LIN52
+regulation of primary metabolic process,LIN54
+regulation of primary metabolic process,LSM14A
+regulation of primary metabolic process,MAP3K7
+regulation of primary metabolic process,MARK2
+regulation of primary metabolic process,MECOM
+regulation of primary metabolic process,MED1
+regulation of primary metabolic process,MED25
+regulation of primary metabolic process,MEN1
+regulation of primary metabolic process,METAP1
+regulation of primary metabolic process,MTERF3
+regulation of primary metabolic process,MYBL2
+regulation of primary metabolic process,NELFB
+regulation of primary metabolic process,NSMCE2
+regulation of primary metabolic process,PARD3
+regulation of primary metabolic process,PARL
+regulation of primary metabolic process,PARN
+regulation of primary metabolic process,PAX8
+regulation of primary metabolic process,PCBD2
+regulation of primary metabolic process,PCGF1
+regulation of primary metabolic process,PFDN1
+regulation of primary metabolic process,PLAA
+regulation of primary metabolic process,PPP4R2
+regulation of primary metabolic process,PSME3
+regulation of primary metabolic process,PSTK
+regulation of primary metabolic process,RAF1
+regulation of primary metabolic process,RANBP2
+regulation of primary metabolic process,RELA
+regulation of primary metabolic process,RICTOR
+regulation of primary metabolic process,RNF31
+regulation of primary metabolic process,SAMD4B
+regulation of primary metabolic process,SKP2
+regulation of primary metabolic process,SLC30A9
+regulation of primary metabolic process,SMARCA4
+regulation of primary metabolic process,SMARCA5
+regulation of primary metabolic process,SOX17
+regulation of primary metabolic process,SUPT3H
+regulation of primary metabolic process,SUPT7L
+regulation of primary metabolic process,SUZ12
+regulation of primary metabolic process,TAFAZZIN
+regulation of primary metabolic process,TDG
+regulation of primary metabolic process,TMED10
+regulation of primary metabolic process,TMED2
+regulation of primary metabolic process,TRAF2
+regulation of primary metabolic process,TRUB2
+regulation of primary metabolic process,UBQLN4
+regulation of primary metabolic process,USP1
+regulation of primary metabolic process,VBP1
+regulation of primary metabolic process,VEZF1
+regulation of primary metabolic process,WDR48
+regulation of primary metabolic process,WT1
+regulation of primary metabolic process,WWTR1
+regulation of primary metabolic process,YTHDC1
+regulation of primary metabolic process,YTHDF2
+regulation of primary metabolic process,ZEB1
+regulation of primary metabolic process,ZFP36L1
+regulation of primary metabolic process,ZFP69
+regulation of primary metabolic process,ZNF496
+regulation of primary metabolic process,ZNF780B
+regulation of primary metabolic process,ZNF875
+mitotic cell cycle process,APC
+mitotic cell cycle process,ARID1A
+mitotic cell cycle process,ARID2
+mitotic cell cycle process,CCND1
+mitotic cell cycle process,CCNE1
+mitotic cell cycle process,CDK4
+mitotic cell cycle process,CENPI
+mitotic cell cycle process,CEP55
+mitotic cell cycle process,CIT
+mitotic cell cycle process,E2F3
+mitotic cell cycle process,EIF4G1
+mitotic cell cycle process,FBXW11
+mitotic cell cycle process,FZR1
+mitotic cell cycle process,KIF20A
+mitotic cell cycle process,KIF2C
+mitotic cell cycle process,KIF4A
+mitotic cell cycle process,KMT5A
+mitotic cell cycle process,LSM14A
+mitotic cell cycle process,MAD2L1BP
+mitotic cell cycle process,MIIP
+mitotic cell cycle process,MYBL2
+mitotic cell cycle process,NSMCE2
+mitotic cell cycle process,PSME3
+mitotic cell cycle process,RAD51B
+mitotic cell cycle process,SKP2
+mitotic cell cycle process,SMARCA4
+mitotic cell cycle process,SMARCA5
+mitotic cell cycle process,SPAG5
+mitotic cell cycle process,TACC3
+mitotic cell cycle process,VPS4B
+mitotic cell cycle process,ZFP36L1
+mitotic cell cycle,APC
+mitotic cell cycle,ARID1A
+mitotic cell cycle,ARID2
+mitotic cell cycle,CCND1
+mitotic cell cycle,CCNE1
+mitotic cell cycle,CDK4
+mitotic cell cycle,CENPI
+mitotic cell cycle,CEP55
+mitotic cell cycle,CIT
+mitotic cell cycle,E2F3
+mitotic cell cycle,EIF4G1
+mitotic cell cycle,FBXW11
+mitotic cell cycle,FZR1
+mitotic cell cycle,HSF1
+mitotic cell cycle,KIF20A
+mitotic cell cycle,KIF2C
+mitotic cell cycle,KIF4A
+mitotic cell cycle,KMT5A
+mitotic cell cycle,LSM14A
+mitotic cell cycle,MAD2L1BP
+mitotic cell cycle,MAEA
+mitotic cell cycle,MIIP
+mitotic cell cycle,MYBL2
+mitotic cell cycle,NSMCE2
+mitotic cell cycle,PSME3
+mitotic cell cycle,RAD51B
+mitotic cell cycle,SKP2
+mitotic cell cycle,SMARCA4
+mitotic cell cycle,SMARCA5
+mitotic cell cycle,SPAG5
+mitotic cell cycle,TACC3
+mitotic cell cycle,VPS4B
+mitotic cell cycle,XRCC2
+mitotic cell cycle,ZFP36L1
+cell cycle,ACTR3
+cell cycle,APC
+cell cycle,ARID1A
+cell cycle,ARID2
+cell cycle,BIRC2
+cell cycle,BRD8
+cell cycle,CCNC
+cell cycle,CCND1
+cell cycle,CCNE1
+cell cycle,CDK4
+cell cycle,CENPI
+cell cycle,CEP55
+cell cycle,CIT
+cell cycle,CITED2
+cell cycle,E2F3
+cell cycle,EIF4G1
+cell cycle,FBXW11
+cell cycle,FZR1
+cell cycle,HSF1
+cell cycle,KIF20A
+cell cycle,KIF2C
+cell cycle,KIF4A
+cell cycle,KMT5A
+cell cycle,LSM14A
+cell cycle,MAD2L1BP
+cell cycle,MAEA
+cell cycle,MAP3K7
+cell cycle,MECOM
+cell cycle,MED1
+cell cycle,MEN1
+cell cycle,MIIP
+cell cycle,MYBL2
+cell cycle,NSMCE2
+cell cycle,PARD6B
+cell cycle,PDS5B
+cell cycle,PSME3
+cell cycle,RAD51B
+cell cycle,RAD51D
+cell cycle,SKP2
+cell cycle,SLC25A5
+cell cycle,SMARCA4
+cell cycle,SMARCA5
+cell cycle,SPAG5
+cell cycle,TACC3
+cell cycle,VPS4B
+cell cycle,XRCC2
+cell cycle,YTHDF2
+cell cycle,ZFP36L1
+organelle organization,ACTR3
+organelle organization,APC
+organelle organization,ARID1A
+organelle organization,ARID2
+organelle organization,ARPC2
+organelle organization,ARPC4
+organelle organization,BCS1L
+organelle organization,CCNE1
+organelle organization,CENPI
+organelle organization,CEP350
+organelle organization,CNOT2
+organelle organization,COX20
+organelle organization,DCLRE1B
+organelle organization,DNM1L
+organelle organization,DOCK7
+organelle organization,FBXW11
+organelle organization,FZR1
+organelle organization,GCN1
+organelle organization,GET3
+organelle organization,H1-2
+organelle organization,HSF1
+organelle organization,KAT6A
+organelle organization,KIF20A
+organelle organization,KIF2C
+organelle organization,KIF4A
+organelle organization,KMT5A
+organelle organization,KRAS
+organelle organization,KRT8
+organelle organization,LMNB1
+organelle organization,LRFN1
+organelle organization,LSM14A
+organelle organization,MAD2L1BP
+organelle organization,MAEA
+organelle organization,MARK2
+organelle organization,METTL17
+organelle organization,MFN2
+organelle organization,MTERF3
+organelle organization,MYBL2
+organelle organization,NDUFA2
+organelle organization,NSMCE2
+organelle organization,PARD3
+organelle organization,PARD6B
+organelle organization,PARL
+organelle organization,PARN
+organelle organization,PDS5B
+organelle organization,PEX6
+organelle organization,PLEKHF1
+organelle organization,POLR2M
+organelle organization,PPP2R3C
+organelle organization,RAB18
+organelle organization,RAD51B
+organelle organization,RAD51D
+organelle organization,RAF1
+organelle organization,RHPN1
+organelle organization,RICTOR
+organelle organization,SEC16A
+organelle organization,SLC25A5
+organelle organization,SLC30A9
+organelle organization,SLC4A7
+organelle organization,SMARCA4
+organelle organization,SMARCA5
+organelle organization,SNAP23
+organelle organization,SPAG5
+organelle organization,STRIP1
+organelle organization,STX4
+organelle organization,TACC3
+organelle organization,TAFAZZIN
+organelle organization,TMED10
+organelle organization,TMED2
+organelle organization,TOMM20
+organelle organization,TWF1
+organelle organization,UBQLN4
+organelle organization,VPS4B
+organelle organization,VTI1B
+organelle organization,WWTR1
+organelle organization,XRCC2
+organelle organization,YTHDF2
+chromatin organization,ARID1A
+chromatin organization,ARID2
+chromatin organization,ATAD2
+chromatin organization,ATXN7L3
+chromatin organization,BRD8
+chromatin organization,BRPF1
+chromatin organization,BTAF1
+chromatin organization,CENPI
+chromatin organization,CFDP1
+chromatin organization,GATAD1
+chromatin organization,GLMN
+chromatin organization,H1-2
+chromatin organization,KAT6A
+chromatin organization,KDM2A
+chromatin organization,KMT2A
+chromatin organization,KMT2B
+chromatin organization,KMT5A
+chromatin organization,L3MBTL3
+chromatin organization,LIN54
+chromatin organization,LMNB1
+chromatin organization,MAP3K7
+chromatin organization,MECOM
+chromatin organization,MEN1
+chromatin organization,NSMCE2
+chromatin organization,PCGF1
+chromatin organization,RELA
+chromatin organization,SMARCA4
+chromatin organization,SMARCA5
+chromatin organization,SUZ12
+chromatin organization,TDG
+chromatin organization,TTF2
+chromatin organization,WT1
+chromatin organization,YTHDC1
+DNA repair,ARID1A
+DNA repair,ARID2
+DNA repair,ATXN7L3
+DNA repair,BRD8
+DNA repair,DCLRE1B
+DNA repair,FZR1
+DNA repair,GGN
+DNA repair,HSF1
+DNA repair,KDM2A
+DNA repair,KMT5A
+DNA repair,MEN1
+DNA repair,NSMCE2
+DNA repair,PPP4R2
+DNA repair,RAD51B
+DNA repair,RAD51D
+DNA repair,SKP2
+DNA repair,SLC30A9
+DNA repair,SMARCA4
+DNA repair,SMARCA5
+DNA repair,SUPT3H
+DNA repair,SUPT7L
+DNA repair,TDG
+DNA repair,TTF2
+DNA repair,UBQLN4
+DNA repair,USP1
+DNA repair,WDR48
+DNA repair,XRCC2
+cell cycle process,ACTR3
+cell cycle process,APC
+cell cycle process,ARID1A
+cell cycle process,ARID2
+cell cycle process,CCNC
+cell cycle process,CCND1
+cell cycle process,CCNE1
+cell cycle process,CDK4
+cell cycle process,CENPI
+cell cycle process,CEP55
+cell cycle process,CIT
+cell cycle process,E2F3
+cell cycle process,EIF4G1
+cell cycle process,FBXW11
+cell cycle process,FZR1
+cell cycle process,KIF20A
+cell cycle process,KIF2C
+cell cycle process,KIF4A
+cell cycle process,KMT5A
+cell cycle process,LSM14A
+cell cycle process,MAD2L1BP
+cell cycle process,MED1
+cell cycle process,MIIP
+cell cycle process,MYBL2
+cell cycle process,NSMCE2
+cell cycle process,PARD6B
+cell cycle process,PDS5B
+cell cycle process,PSME3
+cell cycle process,RAD51B
+cell cycle process,RAD51D
+cell cycle process,SKP2
+cell cycle process,SLC25A5
+cell cycle process,SMARCA4
+cell cycle process,SMARCA5
+cell cycle process,SPAG5
+cell cycle process,TACC3
+cell cycle process,VPS4B
+cell cycle process,XRCC2
+cell cycle process,YTHDF2
+cell cycle process,ZFP36L1
+regulation of nucleobase-containing compound metabolic process,ACTR3
+regulation of nucleobase-containing compound metabolic process,ARID1A
+regulation of nucleobase-containing compound metabolic process,ARID2
+regulation of nucleobase-containing compound metabolic process,ATAD2
+regulation of nucleobase-containing compound metabolic process,ATXN7L3
+regulation of nucleobase-containing compound metabolic process,BIRC2
+regulation of nucleobase-containing compound metabolic process,BRD8
+regulation of nucleobase-containing compound metabolic process,BRMS1
+regulation of nucleobase-containing compound metabolic process,BRPF1
+regulation of nucleobase-containing compound metabolic process,BTAF1
+regulation of nucleobase-containing compound metabolic process,C1D
+regulation of nucleobase-containing compound metabolic process,CCNC
+regulation of nucleobase-containing compound metabolic process,CCND1
+regulation of nucleobase-containing compound metabolic process,CCNE1
+regulation of nucleobase-containing compound metabolic process,CDK4
+regulation of nucleobase-containing compound metabolic process,CEP350
+regulation of nucleobase-containing compound metabolic process,CITED2
+regulation of nucleobase-containing compound metabolic process,CNOT2
+regulation of nucleobase-containing compound metabolic process,DICER1
+regulation of nucleobase-containing compound metabolic process,DNM1L
+regulation of nucleobase-containing compound metabolic process,DPRX
+regulation of nucleobase-containing compound metabolic process,E2F3
+regulation of nucleobase-containing compound metabolic process,FBXW11
+regulation of nucleobase-containing compound metabolic process,GATAD1
+regulation of nucleobase-containing compound metabolic process,GRSF1
+regulation of nucleobase-containing compound metabolic process,H1-2
+regulation of nucleobase-containing compound metabolic process,HAMP
+regulation of nucleobase-containing compound metabolic process,HSF1
+regulation of nucleobase-containing compound metabolic process,ILK
+regulation of nucleobase-containing compound metabolic process,KAT6A
+regulation of nucleobase-containing compound metabolic process,KDM2A
+regulation of nucleobase-containing compound metabolic process,KMT2A
+regulation of nucleobase-containing compound metabolic process,KMT2B
+regulation of nucleobase-containing compound metabolic process,KMT5A
+regulation of nucleobase-containing compound metabolic process,L3MBTL3
+regulation of nucleobase-containing compound metabolic process,LIN52
+regulation of nucleobase-containing compound metabolic process,LIN54
+regulation of nucleobase-containing compound metabolic process,MECOM
+regulation of nucleobase-containing compound metabolic process,MED1
+regulation of nucleobase-containing compound metabolic process,MED25
+regulation of nucleobase-containing compound metabolic process,MEN1
+regulation of nucleobase-containing compound metabolic process,MTERF3
+regulation of nucleobase-containing compound metabolic process,MYBL2
+regulation of nucleobase-containing compound metabolic process,NELFB
+regulation of nucleobase-containing compound metabolic process,NSMCE2
+regulation of nucleobase-containing compound metabolic process,PARN
+regulation of nucleobase-containing compound metabolic process,PAX8
+regulation of nucleobase-containing compound metabolic process,PCBD2
+regulation of nucleobase-containing compound metabolic process,PCGF1
+regulation of nucleobase-containing compound metabolic process,PPP4R2
+regulation of nucleobase-containing compound metabolic process,RAF1
+regulation of nucleobase-containing compound metabolic process,RELA
+regulation of nucleobase-containing compound metabolic process,RNF31
+regulation of nucleobase-containing compound metabolic process,SAMD4B
+regulation of nucleobase-containing compound metabolic process,SKP2
+regulation of nucleobase-containing compound metabolic process,SLC30A9
+regulation of nucleobase-containing compound metabolic process,SMARCA4
+regulation of nucleobase-containing compound metabolic process,SMARCA5
+regulation of nucleobase-containing compound metabolic process,SOX17
+regulation of nucleobase-containing compound metabolic process,SUPT3H
+regulation of nucleobase-containing compound metabolic process,SUPT7L
+regulation of nucleobase-containing compound metabolic process,SUZ12
+regulation of nucleobase-containing compound metabolic process,TAFAZZIN
+regulation of nucleobase-containing compound metabolic process,TDG
+regulation of nucleobase-containing compound metabolic process,TRAF2
+regulation of nucleobase-containing compound metabolic process,UBQLN4
+regulation of nucleobase-containing compound metabolic process,USP1
+regulation of nucleobase-containing compound metabolic process,VEZF1
+regulation of nucleobase-containing compound metabolic process,WDR48
+regulation of nucleobase-containing compound metabolic process,WT1
+regulation of nucleobase-containing compound metabolic process,WWTR1
+regulation of nucleobase-containing compound metabolic process,YTHDC1
+regulation of nucleobase-containing compound metabolic process,YTHDF2
+regulation of nucleobase-containing compound metabolic process,ZEB1
+regulation of nucleobase-containing compound metabolic process,ZFP36L1
+regulation of nucleobase-containing compound metabolic process,ZFP69
+regulation of nucleobase-containing compound metabolic process,ZNF496
+regulation of nucleobase-containing compound metabolic process,ZNF780B
+regulation of nucleobase-containing compound metabolic process,ZNF875
+chromatin remodeling,ARID1A
+chromatin remodeling,ARID2
+chromatin remodeling,ATAD2
+chromatin remodeling,BRPF1
+chromatin remodeling,BTAF1
+chromatin remodeling,CENPI
+chromatin remodeling,CFDP1
+chromatin remodeling,GATAD1
+chromatin remodeling,GLMN
+chromatin remodeling,H1-2
+chromatin remodeling,KAT6A
+chromatin remodeling,KDM2A
+chromatin remodeling,KMT2A
+chromatin remodeling,KMT2B
+chromatin remodeling,KMT5A
+chromatin remodeling,LIN54
+chromatin remodeling,LMNB1
+chromatin remodeling,MAP3K7
+chromatin remodeling,MECOM
+chromatin remodeling,MEN1
+chromatin remodeling,PCGF1
+chromatin remodeling,SMARCA4
+chromatin remodeling,SMARCA5
+chromatin remodeling,SUZ12
+chromatin remodeling,TDG
+chromatin remodeling,TTF2
+chromatin remodeling,WT1
+chromatin remodeling,YTHDC1
+sister chromatid segregation,APC
+sister chromatid segregation,ARID1A
+sister chromatid segregation,ARID2
+sister chromatid segregation,CENPI
+sister chromatid segregation,KIF2C
+sister chromatid segregation,KIF4A
+sister chromatid segregation,KMT5A
+sister chromatid segregation,LSM14A
+sister chromatid segregation,MAD2L1BP
+sister chromatid segregation,MYBL2
+sister chromatid segregation,NSMCE2
+sister chromatid segregation,SMARCA4
+sister chromatid segregation,SMARCA5
+sister chromatid segregation,SPAG5
+sister chromatid segregation,TACC3
+sister chromatid segregation,VPS4B
+positive regulation of metabolic process,ACTR3
+positive regulation of metabolic process,APC
+positive regulation of metabolic process,ARID1A
+positive regulation of metabolic process,ARID2
+positive regulation of metabolic process,ATAD2
+positive regulation of metabolic process,ATXN7L3
+positive regulation of metabolic process,BIRC2
+positive regulation of metabolic process,BRD8
+positive regulation of metabolic process,BRMS1
+positive regulation of metabolic process,BRPF1
+positive regulation of metabolic process,CCNC
+positive regulation of metabolic process,CCND1
+positive regulation of metabolic process,CITED2
+positive regulation of metabolic process,CNOT2
+positive regulation of metabolic process,DDA1
+positive regulation of metabolic process,DOCK7
+positive regulation of metabolic process,E2F3
+positive regulation of metabolic process,EIF4G1
+positive regulation of metabolic process,FBXW11
+positive regulation of metabolic process,FZR1
+positive regulation of metabolic process,GLMN
+positive regulation of metabolic process,GRSF1
+positive regulation of metabolic process,HAMP
+positive regulation of metabolic process,HSF1
+positive regulation of metabolic process,ILK
+positive regulation of metabolic process,KAT6A
+positive regulation of metabolic process,KMT2A
+positive regulation of metabolic process,KMT2B
+positive regulation of metabolic process,KRAS
+positive regulation of metabolic process,L3MBTL3
+positive regulation of metabolic process,MAP3K7
+positive regulation of metabolic process,MARK2
+positive regulation of metabolic process,MECOM
+positive regulation of metabolic process,MED1
+positive regulation of metabolic process,MED25
+positive regulation of metabolic process,MEN1
+positive regulation of metabolic process,MFN2
+positive regulation of metabolic process,MYBL2
+positive regulation of metabolic process,PARN
+positive regulation of metabolic process,PAX8
+positive regulation of metabolic process,PCBD2
+positive regulation of metabolic process,PLEKHF1
+positive regulation of metabolic process,RAF1
+positive regulation of metabolic process,RELA
+positive regulation of metabolic process,RICTOR
+positive regulation of metabolic process,RNF31
+positive regulation of metabolic process,SAMD4B
+positive regulation of metabolic process,SCD
+positive regulation of metabolic process,SKP2
+positive regulation of metabolic process,SLC25A5
+positive regulation of metabolic process,SLC30A9
+positive regulation of metabolic process,SMARCA4
+positive regulation of metabolic process,SMARCA5
+positive regulation of metabolic process,SOX17
+positive regulation of metabolic process,STX4
+positive regulation of metabolic process,SUPT3H
+positive regulation of metabolic process,SUPT7L
+positive regulation of metabolic process,TAFAZZIN
+positive regulation of metabolic process,TDG
+positive regulation of metabolic process,TMED10
+positive regulation of metabolic process,TMED2
+positive regulation of metabolic process,TRAF2
+positive regulation of metabolic process,TRUB2
+positive regulation of metabolic process,USP1
+positive regulation of metabolic process,VEZF1
+positive regulation of metabolic process,WDR48
+positive regulation of metabolic process,WT1
+positive regulation of metabolic process,WWTR1
+positive regulation of metabolic process,YTHDF2
+positive regulation of metabolic process,ZEB1
+positive regulation of metabolic process,ZFP36L1
+positive regulation of metabolic process,ZNF496
+positive regulation of metabolic process,ZNF780B
+cellular component organization or biogenesis,ACTR3
+cellular component organization or biogenesis,APC
+cellular component organization or biogenesis,APLP1
+cellular component organization or biogenesis,ARID1A
+cellular component organization or biogenesis,ARID2
+cellular component organization or biogenesis,ARPC2
+cellular component organization or biogenesis,ARPC4
+cellular component organization or biogenesis,ATAD2
+cellular component organization or biogenesis,ATXN7L3
+cellular component organization or biogenesis,BCS1L
+cellular component organization or biogenesis,BIRC2
+cellular component organization or biogenesis,BRD8
+cellular component organization or biogenesis,BRPF1
+cellular component organization or biogenesis,BTAF1
+cellular component organization or biogenesis,C1D
+cellular component organization or biogenesis,CCNE1
+cellular component organization or biogenesis,CENPI
+cellular component organization or biogenesis,CEP350
+cellular component organization or biogenesis,CEP55
+cellular component organization or biogenesis,CFDP1
+cellular component organization or biogenesis,CNOT2
+cellular component organization or biogenesis,COX20
+cellular component organization or biogenesis,DCLRE1B
+cellular component organization or biogenesis,DDX39B
+cellular component organization or biogenesis,DICER1
+cellular component organization or biogenesis,DNM1L
+cellular component organization or biogenesis,DOCK7
+cellular component organization or biogenesis,EIF4G1
+cellular component organization or biogenesis,ESF1
+cellular component organization or biogenesis,EXOSC1
+cellular component organization or biogenesis,FBXW11
+cellular component organization or biogenesis,FZR1
+cellular component organization or biogenesis,G6PD
+cellular component organization or biogenesis,GATAD1
+cellular component organization or biogenesis,GCN1
+cellular component organization or biogenesis,GET3
+cellular component organization or biogenesis,GLMN
+cellular component organization or biogenesis,H1-2
+cellular component organization or biogenesis,HSF1
+cellular component organization or biogenesis,ILK
+cellular component organization or biogenesis,KAT6A
+cellular component organization or biogenesis,KCTD10
+cellular component organization or biogenesis,KDM2A
+cellular component organization or biogenesis,KIF20A
+cellular component organization or biogenesis,KIF2C
+cellular component organization or biogenesis,KIF4A
+cellular component organization or biogenesis,KMT2A
+cellular component organization or biogenesis,KMT2B
+cellular component organization or biogenesis,KMT5A
+cellular component organization or biogenesis,KRAS
+cellular component organization or biogenesis,KRT8
+cellular component organization or biogenesis,L3MBTL3
+cellular component organization or biogenesis,LIN54
+cellular component organization or biogenesis,LMNB1
+cellular component organization or biogenesis,LRFN1
+cellular component organization or biogenesis,LSM14A
+cellular component organization or biogenesis,LST1
+cellular component organization or biogenesis,MAD2L1BP
+cellular component organization or biogenesis,MAEA
+cellular component organization or biogenesis,MAP3K7
+cellular component organization or biogenesis,MARK2
+cellular component organization or biogenesis,MATN1
+cellular component organization or biogenesis,MECOM
+cellular component organization or biogenesis,MED1
+cellular component organization or biogenesis,MED25
+cellular component organization or biogenesis,MEN1
+cellular component organization or biogenesis,METTL15
+cellular component organization or biogenesis,METTL17
+cellular component organization or biogenesis,MFN2
+cellular component organization or biogenesis,MIB1
+cellular component organization or biogenesis,MIOS
+cellular component organization or biogenesis,MPHOSPH6
+cellular component organization or biogenesis,MTERF3
+cellular component organization or biogenesis,MYBL2
+cellular component organization or biogenesis,NDUFA2
+cellular component organization or biogenesis,NSMCE2
+cellular component organization or biogenesis,PARD3
+cellular component organization or biogenesis,PARD6B
+cellular component organization or biogenesis,PARL
+cellular component organization or biogenesis,PARN
+cellular component organization or biogenesis,PCGF1
+cellular component organization or biogenesis,PDS5B
+cellular component organization or biogenesis,PEX6
+cellular component organization or biogenesis,PFDN1
+cellular component organization or biogenesis,PI16
+cellular component organization or biogenesis,PLAA
+cellular component organization or biogenesis,PLEKHF1
+cellular component organization or biogenesis,POLR2M
+cellular component organization or biogenesis,PPP2R3C
+cellular component organization or biogenesis,PRPF39
+cellular component organization or biogenesis,PSMG1
+cellular component organization or biogenesis,RAB18
+cellular component organization or biogenesis,RAB6A
+cellular component organization or biogenesis,RAD51B
+cellular component organization or biogenesis,RAD51D
+cellular component organization or biogenesis,RAF1
+cellular component organization or biogenesis,RELA
+cellular component organization or biogenesis,RHPN1
+cellular component organization or biogenesis,RICTOR
+cellular component organization or biogenesis,RRP36
+cellular component organization or biogenesis,SEC16A
+cellular component organization or biogenesis,SLC25A5
+cellular component organization or biogenesis,SLC30A9
+cellular component organization or biogenesis,SLC4A7
+cellular component organization or biogenesis,SMARCA4
+cellular component organization or biogenesis,SMARCA5
+cellular component organization or biogenesis,SNAP23
+cellular component organization or biogenesis,SOX17
+cellular component organization or biogenesis,SPAG5
+cellular component organization or biogenesis,STRIP1
+cellular component organization or biogenesis,STX4
+cellular component organization or biogenesis,SUZ12
+cellular component organization or biogenesis,TACC3
+cellular component organization or biogenesis,TAFAZZIN
+cellular component organization or biogenesis,TDG
+cellular component organization or biogenesis,TMED10
+cellular component organization or biogenesis,TMED2
+cellular component organization or biogenesis,TOMM20
+cellular component organization or biogenesis,TRAF2
+cellular component organization or biogenesis,TTF2
+cellular component organization or biogenesis,TWF1
+cellular component organization or biogenesis,UBQLN4
+cellular component organization or biogenesis,VBP1
+cellular component organization or biogenesis,VPS4B
+cellular component organization or biogenesis,VTI1B
+cellular component organization or biogenesis,WT1
+cellular component organization or biogenesis,WWTR1
+cellular component organization or biogenesis,XRCC2
+cellular component organization or biogenesis,YTHDC1
+cellular component organization or biogenesis,YTHDF2
+nuclear chromosome segregation,ACTR3
+nuclear chromosome segregation,APC
+nuclear chromosome segregation,ARID1A
+nuclear chromosome segregation,ARID2
+nuclear chromosome segregation,CCNE1
+nuclear chromosome segregation,CENPI
+nuclear chromosome segregation,KIF2C
+nuclear chromosome segregation,KIF4A
+nuclear chromosome segregation,KMT5A
+nuclear chromosome segregation,LSM14A
+nuclear chromosome segregation,MAD2L1BP
+nuclear chromosome segregation,MYBL2
+nuclear chromosome segregation,NSMCE2
+nuclear chromosome segregation,SMARCA4
+nuclear chromosome segregation,SMARCA5
+nuclear chromosome segregation,SPAG5
+nuclear chromosome segregation,TACC3
+nuclear chromosome segregation,VPS4B
+regulation of cell cycle,APC
+regulation of cell cycle,ARID1A
+regulation of cell cycle,ARID2
+regulation of cell cycle,BIRC2
+regulation of cell cycle,BRD8
+regulation of cell cycle,CCND1
+regulation of cell cycle,CCNE1
+regulation of cell cycle,CDK4
+regulation of cell cycle,CIT
+regulation of cell cycle,CITED2
+regulation of cell cycle,EIF4G1
+regulation of cell cycle,FZR1
+regulation of cell cycle,HSF1
+regulation of cell cycle,KIF20A
+regulation of cell cycle,KIF2C
+regulation of cell cycle,MAD2L1BP
+regulation of cell cycle,MAEA
+regulation of cell cycle,MAP3K7
+regulation of cell cycle,MECOM
+regulation of cell cycle,MED1
+regulation of cell cycle,MEN1
+regulation of cell cycle,MIIP
+regulation of cell cycle,NSMCE2
+regulation of cell cycle,PSME3
+regulation of cell cycle,RAD51B
+regulation of cell cycle,RAD51D
+regulation of cell cycle,SKP2
+regulation of cell cycle,SMARCA4
+regulation of cell cycle,SMARCA5
+regulation of cell cycle,SPAG5
+regulation of cell cycle,TACC3
+regulation of cell cycle,VPS4B
+regulation of cell cycle,YTHDF2
+regulation of cell cycle,ZFP36L1
+mitochondrial translation,AARS2
+mitochondrial translation,LARS2
+mitochondrial translation,MRPL11
+mitochondrial translation,MRPL33
+mitochondrial translation,MRPS10
+mitochondrial translation,MRPS11
+mitochondrial translation,MRPS12
+mitochondrial translation,MRPS14
+mitochondrial translation,MRPS18B
+mitochondrial translation,MRPS23
+mitochondrial translation,MRPS9
+mitochondrial translation,TRUB2
+cellular response to stress,APC
+cellular response to stress,ARID1A
+cellular response to stress,ARID2
+cellular response to stress,ATXN7L3
+cellular response to stress,BRD8
+cellular response to stress,CCND1
+cellular response to stress,CITED2
+cellular response to stress,DCLRE1B
+cellular response to stress,EIF4G1
+cellular response to stress,FZR1
+cellular response to stress,G6PD
+cellular response to stress,GCN1
+cellular response to stress,GGN
+cellular response to stress,HAPSTR1
+cellular response to stress,HSF1
+cellular response to stress,KAT6A
+cellular response to stress,KDM2A
+cellular response to stress,KMT5A
+cellular response to stress,MAP3K7
+cellular response to stress,MEN1
+cellular response to stress,MIOS
+cellular response to stress,NCCRP1
+cellular response to stress,NSMCE2
+cellular response to stress,PPP4R2
+cellular response to stress,RAD51B
+cellular response to stress,RAD51D
+cellular response to stress,RELA
+cellular response to stress,SEC16A
+cellular response to stress,SKP2
+cellular response to stress,SLC30A9
+cellular response to stress,SMARCA4
+cellular response to stress,SMARCA5
+cellular response to stress,STX4
+cellular response to stress,SUPT3H
+cellular response to stress,SUPT7L
+cellular response to stress,TDG
+cellular response to stress,TMED2
+cellular response to stress,TRAF2
+cellular response to stress,TTF2
+cellular response to stress,UBE2J2
+cellular response to stress,UBQLN4
+cellular response to stress,USP1
+cellular response to stress,WDR48
+cellular response to stress,XPR1
+cellular response to stress,XRCC2
+cellular response to stress,ZFP36L1
+positive regulation of nucleobase-containing compound metabolic process,ACTR3
+positive regulation of nucleobase-containing compound metabolic process,ARID1A
+positive regulation of nucleobase-containing compound metabolic process,ARID2
+positive regulation of nucleobase-containing compound metabolic process,ATAD2
+positive regulation of nucleobase-containing compound metabolic process,ATXN7L3
+positive regulation of nucleobase-containing compound metabolic process,BIRC2
+positive regulation of nucleobase-containing compound metabolic process,BRD8
+positive regulation of nucleobase-containing compound metabolic process,BRPF1
+positive regulation of nucleobase-containing compound metabolic process,CCNC
+positive regulation of nucleobase-containing compound metabolic process,CITED2
+positive regulation of nucleobase-containing compound metabolic process,CNOT2
+positive regulation of nucleobase-containing compound metabolic process,E2F3
+positive regulation of nucleobase-containing compound metabolic process,FBXW11
+positive regulation of nucleobase-containing compound metabolic process,GRSF1
+positive regulation of nucleobase-containing compound metabolic process,HAMP
+positive regulation of nucleobase-containing compound metabolic process,HSF1
+positive regulation of nucleobase-containing compound metabolic process,ILK
+positive regulation of nucleobase-containing compound metabolic process,KAT6A
+positive regulation of nucleobase-containing compound metabolic process,KMT2A
+positive regulation of nucleobase-containing compound metabolic process,KMT2B
+positive regulation of nucleobase-containing compound metabolic process,MECOM
+positive regulation of nucleobase-containing compound metabolic process,MED1
+positive regulation of nucleobase-containing compound metabolic process,MED25
+positive regulation of nucleobase-containing compound metabolic process,MEN1
+positive regulation of nucleobase-containing compound metabolic process,MYBL2
+positive regulation of nucleobase-containing compound metabolic process,PARN
+positive regulation of nucleobase-containing compound metabolic process,PAX8
+positive regulation of nucleobase-containing compound metabolic process,PCBD2
+positive regulation of nucleobase-containing compound metabolic process,RAF1
+positive regulation of nucleobase-containing compound metabolic process,RELA
+positive regulation of nucleobase-containing compound metabolic process,SAMD4B
+positive regulation of nucleobase-containing compound metabolic process,SKP2
+positive regulation of nucleobase-containing compound metabolic process,SLC30A9
+positive regulation of nucleobase-containing compound metabolic process,SMARCA4
+positive regulation of nucleobase-containing compound metabolic process,SMARCA5
+positive regulation of nucleobase-containing compound metabolic process,SOX17
+positive regulation of nucleobase-containing compound metabolic process,SUPT3H
+positive regulation of nucleobase-containing compound metabolic process,SUPT7L
+positive regulation of nucleobase-containing compound metabolic process,TAFAZZIN
+positive regulation of nucleobase-containing compound metabolic process,USP1
+positive regulation of nucleobase-containing compound metabolic process,VEZF1
+positive regulation of nucleobase-containing compound metabolic process,WDR48
+positive regulation of nucleobase-containing compound metabolic process,WT1
+positive regulation of nucleobase-containing compound metabolic process,WWTR1
+positive regulation of nucleobase-containing compound metabolic process,YTHDF2
+positive regulation of nucleobase-containing compound metabolic process,ZEB1
+positive regulation of nucleobase-containing compound metabolic process,ZFP36L1
+positive regulation of nucleobase-containing compound metabolic process,ZNF496
+positive regulation of nucleobase-containing compound metabolic process,ZNF780B
+mitochondrial gene expression,AARS2
+mitochondrial gene expression,LARS2
+mitochondrial gene expression,MRPL11
+mitochondrial gene expression,MRPL33
+mitochondrial gene expression,MRPS10
+mitochondrial gene expression,MRPS11
+mitochondrial gene expression,MRPS12
+mitochondrial gene expression,MRPS14
+mitochondrial gene expression,MRPS18B
+mitochondrial gene expression,MRPS23
+mitochondrial gene expression,MRPS9
+mitochondrial gene expression,MTERF3
+mitochondrial gene expression,TRUB2
+positive regulation of macromolecule metabolic process,ACTR3
+positive regulation of macromolecule metabolic process,APC
+positive regulation of macromolecule metabolic process,ARID1A
+positive regulation of macromolecule metabolic process,ARID2
+positive regulation of macromolecule metabolic process,ATAD2
+positive regulation of macromolecule metabolic process,ATXN7L3
+positive regulation of macromolecule metabolic process,BIRC2
+positive regulation of macromolecule metabolic process,BRD8
+positive regulation of macromolecule metabolic process,BRMS1
+positive regulation of macromolecule metabolic process,BRPF1
+positive regulation of macromolecule metabolic process,CCNC
+positive regulation of macromolecule metabolic process,CCND1
+positive regulation of macromolecule metabolic process,CITED2
+positive regulation of macromolecule metabolic process,CNOT2
+positive regulation of macromolecule metabolic process,DDA1
+positive regulation of macromolecule metabolic process,DOCK7
+positive regulation of macromolecule metabolic process,E2F3
+positive regulation of macromolecule metabolic process,EIF4G1
+positive regulation of macromolecule metabolic process,FBXW11
+positive regulation of macromolecule metabolic process,FZR1
+positive regulation of macromolecule metabolic process,GLMN
+positive regulation of macromolecule metabolic process,GRSF1
+positive regulation of macromolecule metabolic process,HAMP
+positive regulation of macromolecule metabolic process,HSF1
+positive regulation of macromolecule metabolic process,ILK
+positive regulation of macromolecule metabolic process,KAT6A
+positive regulation of macromolecule metabolic process,KMT2A
+positive regulation of macromolecule metabolic process,KMT2B
+positive regulation of macromolecule metabolic process,KRAS
+positive regulation of macromolecule metabolic process,L3MBTL3
+positive regulation of macromolecule metabolic process,MAP3K7
+positive regulation of macromolecule metabolic process,MARK2
+positive regulation of macromolecule metabolic process,MECOM
+positive regulation of macromolecule metabolic process,MED1
+positive regulation of macromolecule metabolic process,MED25
+positive regulation of macromolecule metabolic process,MEN1
+positive regulation of macromolecule metabolic process,MYBL2
+positive regulation of macromolecule metabolic process,PARN
+positive regulation of macromolecule metabolic process,PAX8
+positive regulation of macromolecule metabolic process,PCBD2
+positive regulation of macromolecule metabolic process,RAF1
+positive regulation of macromolecule metabolic process,RELA
+positive regulation of macromolecule metabolic process,RICTOR
+positive regulation of macromolecule metabolic process,SAMD4B
+positive regulation of macromolecule metabolic process,SKP2
+positive regulation of macromolecule metabolic process,SLC30A9
+positive regulation of macromolecule metabolic process,SMARCA4
+positive regulation of macromolecule metabolic process,SMARCA5
+positive regulation of macromolecule metabolic process,SOX17
+positive regulation of macromolecule metabolic process,STX4
+positive regulation of macromolecule metabolic process,SUPT3H
+positive regulation of macromolecule metabolic process,SUPT7L
+positive regulation of macromolecule metabolic process,TDG
+positive regulation of macromolecule metabolic process,TMED10
+positive regulation of macromolecule metabolic process,TMED2
+positive regulation of macromolecule metabolic process,TRAF2
+positive regulation of macromolecule metabolic process,TRUB2
+positive regulation of macromolecule metabolic process,USP1
+positive regulation of macromolecule metabolic process,VEZF1
+positive regulation of macromolecule metabolic process,WDR48
+positive regulation of macromolecule metabolic process,WT1
+positive regulation of macromolecule metabolic process,WWTR1
+positive regulation of macromolecule metabolic process,YTHDF2
+positive regulation of macromolecule metabolic process,ZEB1
+positive regulation of macromolecule metabolic process,ZFP36L1
+positive regulation of macromolecule metabolic process,ZNF496
+positive regulation of macromolecule metabolic process,ZNF780B
+cell division,ACTR3
+cell division,APC
+cell division,CCND1
+cell division,CCNE1
+cell division,CDK4
+cell division,CEP55
+cell division,CIT
+cell division,DOCK7
+cell division,FZR1
+cell division,KIF20A
+cell division,KIF2C
+cell division,KIF4A
+cell division,KMT5A
+cell division,MAEA
+cell division,NSMCE2
+cell division,PARD3
+cell division,PARD6B
+cell division,PDS5B
+cell division,SOX17
+cell division,SPAG5
+cell division,TACC3
+cell division,TAFAZZIN
+cell division,VPS4B
+cell division,WWTR1
+cell division,YTHDF2
+regulation of metabolic process,ACTR3
+regulation of metabolic process,APC
+regulation of metabolic process,APLP1
+regulation of metabolic process,ARID1A
+regulation of metabolic process,ARID2
+regulation of metabolic process,ATAD2
+regulation of metabolic process,ATP2B1
+regulation of metabolic process,ATXN7L3
+regulation of metabolic process,BIRC2
+regulation of metabolic process,BRD8
+regulation of metabolic process,BRMS1
+regulation of metabolic process,BRPF1
+regulation of metabolic process,BTAF1
+regulation of metabolic process,C1D
+regulation of metabolic process,CCNC
+regulation of metabolic process,CCND1
+regulation of metabolic process,CCNE1
+regulation of metabolic process,CDK4
+regulation of metabolic process,CEP350
+regulation of metabolic process,CITED2
+regulation of metabolic process,CNOT2
+regulation of metabolic process,DDA1
+regulation of metabolic process,DICER1
+regulation of metabolic process,DNM1L
+regulation of metabolic process,DOCK7
+regulation of metabolic process,DPRX
+regulation of metabolic process,E2F3
+regulation of metabolic process,EIF4G1
+regulation of metabolic process,FBXW11
+regulation of metabolic process,FZR1
+regulation of metabolic process,G6PD
+regulation of metabolic process,GATAD1
+regulation of metabolic process,GCN1
+regulation of metabolic process,GLMN
+regulation of metabolic process,GRSF1
+regulation of metabolic process,H1-2
+regulation of metabolic process,HAMP
+regulation of metabolic process,HSF1
+regulation of metabolic process,ILK
+regulation of metabolic process,KAT6A
+regulation of metabolic process,KDM2A
+regulation of metabolic process,KMT2A
+regulation of metabolic process,KMT2B
+regulation of metabolic process,KMT5A
+regulation of metabolic process,KRAS
+regulation of metabolic process,L3MBTL3
+regulation of metabolic process,LIN52
+regulation of metabolic process,LIN54
+regulation of metabolic process,LMNB1
+regulation of metabolic process,LSM14A
+regulation of metabolic process,MAP3K7
+regulation of metabolic process,MARK2
+regulation of metabolic process,MECOM
+regulation of metabolic process,MED1
+regulation of metabolic process,MED25
+regulation of metabolic process,MEN1
+regulation of metabolic process,METAP1
+regulation of metabolic process,MFN2
+regulation of metabolic process,MTERF3
+regulation of metabolic process,MYBL2
+regulation of metabolic process,NELFB
+regulation of metabolic process,NSMCE2
+regulation of metabolic process,PARD3
+regulation of metabolic process,PARL
+regulation of metabolic process,PARN
+regulation of metabolic process,PAX8
+regulation of metabolic process,PCBD2
+regulation of metabolic process,PCGF1
+regulation of metabolic process,PFDN1
+regulation of metabolic process,PLAA
+regulation of metabolic process,PLEKHF1
+regulation of metabolic process,PPP2R3C
+regulation of metabolic process,PPP4R2
+regulation of metabolic process,PSME3
+regulation of metabolic process,PSTK
+regulation of metabolic process,RAF1
+regulation of metabolic process,RANBP2
+regulation of metabolic process,RELA
+regulation of metabolic process,RICTOR
+regulation of metabolic process,RNF31
+regulation of metabolic process,SAMD4B
+regulation of metabolic process,SCD
+regulation of metabolic process,SKP2
+regulation of metabolic process,SLC25A5
+regulation of metabolic process,SLC30A9
+regulation of metabolic process,SMARCA4
+regulation of metabolic process,SMARCA5
+regulation of metabolic process,SOX17
+regulation of metabolic process,STX4
+regulation of metabolic process,SUPT3H
+regulation of metabolic process,SUPT7L
+regulation of metabolic process,SUZ12
+regulation of metabolic process,TAFAZZIN
+regulation of metabolic process,TDG
+regulation of metabolic process,TMED10
+regulation of metabolic process,TMED2
+regulation of metabolic process,TRAF2
+regulation of metabolic process,TRUB2
+regulation of metabolic process,UBQLN4
+regulation of metabolic process,USP1
+regulation of metabolic process,VBP1
+regulation of metabolic process,VEZF1
+regulation of metabolic process,WDR48
+regulation of metabolic process,WT1
+regulation of metabolic process,WWTR1
+regulation of metabolic process,YTHDC1
+regulation of metabolic process,YTHDF2
+regulation of metabolic process,ZEB1
+regulation of metabolic process,ZFP36L1
+regulation of metabolic process,ZFP69
+regulation of metabolic process,ZNF496
+regulation of metabolic process,ZNF780B
+regulation of metabolic process,ZNF875
+positive regulation of cellular process,ACTR3
+positive regulation of cellular process,APC
+positive regulation of cellular process,ARID1A
+positive regulation of cellular process,ARID2
+positive regulation of cellular process,ARPC2
+positive regulation of cellular process,ATAD2
+positive regulation of cellular process,ATXN7L3
+positive regulation of cellular process,BIRC2
+positive regulation of cellular process,BRD8
+positive regulation of cellular process,BRMS1
+positive regulation of cellular process,BRPF1
+positive regulation of cellular process,CCNC
+positive regulation of cellular process,CCND1
+positive regulation of cellular process,CCNE1
+positive regulation of cellular process,CDK4
+positive regulation of cellular process,CIT
+positive regulation of cellular process,CITED2
+positive regulation of cellular process,CNOT2
+positive regulation of cellular process,DDA1
+positive regulation of cellular process,DICER1
+positive regulation of cellular process,DNM1L
+positive regulation of cellular process,DOCK7
+positive regulation of cellular process,E2F3
+positive regulation of cellular process,EIF4G1
+positive regulation of cellular process,FBXW11
+positive regulation of cellular process,FRS2
+positive regulation of cellular process,FZR1
+positive regulation of cellular process,G6PD
+positive regulation of cellular process,GLMN
+positive regulation of cellular process,GRSF1
+positive regulation of cellular process,HAMP
+positive regulation of cellular process,HSF1
+positive regulation of cellular process,ILK
+positive regulation of cellular process,KAT6A
+positive regulation of cellular process,KMT2A
+positive regulation of cellular process,KMT2B
+positive regulation of cellular process,KRAS
+positive regulation of cellular process,L3MBTL3
+positive regulation of cellular process,LSM14A
+positive regulation of cellular process,MAD2L1BP
+positive regulation of cellular process,MAP3K7
+positive regulation of cellular process,MARK2
+positive regulation of cellular process,MECOM
+positive regulation of cellular process,MED1
+positive regulation of cellular process,MED25
+positive regulation of cellular process,MEN1
+positive regulation of cellular process,MFN2
+positive regulation of cellular process,MIB1
+positive regulation of cellular process,MIOS
+positive regulation of cellular process,MYBL2
+positive regulation of cellular process,NCCRP1
+positive regulation of cellular process,NSMCE2
+positive regulation of cellular process,PARD3
+positive regulation of cellular process,PARN
+positive regulation of cellular process,PAX8
+positive regulation of cellular process,PCBD2
+positive regulation of cellular process,PDCD2
+positive regulation of cellular process,PLAA
+positive regulation of cellular process,PLEKHF1
+positive regulation of cellular process,PPP2R3C
+positive regulation of cellular process,RAD51B
+positive regulation of cellular process,RAF1
+positive regulation of cellular process,RELA
+positive regulation of cellular process,RICTOR
+positive regulation of cellular process,RNF31
+positive regulation of cellular process,SAMD4B
+positive regulation of cellular process,SCD
+positive regulation of cellular process,SKP2
+positive regulation of cellular process,SLC25A5
+positive regulation of cellular process,SLC30A9
+positive regulation of cellular process,SLC7A1
+positive regulation of cellular process,SMARCA4
+positive regulation of cellular process,SMARCA5
+positive regulation of cellular process,SOX17
+positive regulation of cellular process,SPAG5
+positive regulation of cellular process,STX4
+positive regulation of cellular process,SUPT3H
+positive regulation of cellular process,SUPT7L
+positive regulation of cellular process,SUZ12
+positive regulation of cellular process,TAFAZZIN
+positive regulation of cellular process,TDG
+positive regulation of cellular process,TMED10
+positive regulation of cellular process,TMED2
+positive regulation of cellular process,TRAF2
+positive regulation of cellular process,TRUB2
+positive regulation of cellular process,TWF1
+positive regulation of cellular process,UBE2J2
+positive regulation of cellular process,USP1
+positive regulation of cellular process,VEZF1
+positive regulation of cellular process,VPS4B
+positive regulation of cellular process,WDR48
+positive regulation of cellular process,WT1
+positive regulation of cellular process,WWTR1
+positive regulation of cellular process,XRCC2
+positive regulation of cellular process,YTHDF2
+positive regulation of cellular process,ZC3H3
+positive regulation of cellular process,ZEB1
+positive regulation of cellular process,ZFP36L1
+positive regulation of cellular process,ZNF496
+positive regulation of cellular process,ZNF780B
+chromosome organization,APC
+chromosome organization,ARID1A
+chromosome organization,ARID2
+chromosome organization,CCNE1
+chromosome organization,CENPI
+chromosome organization,DCLRE1B
+chromosome organization,H1-2
+chromosome organization,KAT6A
+chromosome organization,KIF2C
+chromosome organization,KIF4A
+chromosome organization,KMT5A
+chromosome organization,LSM14A
+chromosome organization,MAD2L1BP
+chromosome organization,MYBL2
+chromosome organization,NSMCE2
+chromosome organization,PARN
+chromosome organization,PDS5B
+chromosome organization,RAD51D
+chromosome organization,SMARCA4
+chromosome organization,SMARCA5
+chromosome organization,SPAG5
+chromosome organization,TACC3
+chromosome organization,VPS4B
+cell population proliferation,APC
+cell population proliferation,ARID2
+cell population proliferation,BIRC2
+cell population proliferation,CCND1
+cell population proliferation,CCNE1
+cell population proliferation,CDK4
+cell population proliferation,CFDP1
+cell population proliferation,CITED2
+cell population proliferation,DICER1
+cell population proliferation,DOCK7
+cell population proliferation,E2F3
+cell population proliferation,FRS2
+cell population proliferation,FZR1
+cell population proliferation,GLMN
+cell population proliferation,ILK
+cell population proliferation,KMT2A
+cell population proliferation,KRAS
+cell population proliferation,LST1
+cell population proliferation,MAP3K7
+cell population proliferation,MECOM
+cell population proliferation,MED1
+cell population proliferation,MED25
+cell population proliferation,MEN1
+cell population proliferation,MFN2
+cell population proliferation,MIOS
+cell population proliferation,NCCRP1
+cell population proliferation,NELFB
+cell population proliferation,PDCD2
+cell population proliferation,PDS5B
+cell population proliferation,PSMG1
+cell population proliferation,RAD51B
+cell population proliferation,RAF1
+cell population proliferation,RELA
+cell population proliferation,RICTOR
+cell population proliferation,SLC25A5
+cell population proliferation,SLC7A1
+cell population proliferation,SMARCA4
+cell population proliferation,SOX17
+cell population proliferation,STX4
+cell population proliferation,SUZ12
+cell population proliferation,TACC3
+cell population proliferation,TXNRD1
+cell population proliferation,WDR48
+cell population proliferation,WT1
+cell population proliferation,WWTR1
+cell population proliferation,YTHDF2
+cell population proliferation,ZEB1
+cell population proliferation,ZFP36L1
+double-strand break repair,ARID1A
+double-strand break repair,ARID2
+double-strand break repair,BRD8
+double-strand break repair,DCLRE1B
+double-strand break repair,GGN
+double-strand break repair,HSF1
+double-strand break repair,KDM2A
+double-strand break repair,KMT5A
+double-strand break repair,NSMCE2
+double-strand break repair,PPP4R2
+double-strand break repair,RAD51B
+double-strand break repair,RAD51D
+double-strand break repair,SKP2
+double-strand break repair,SMARCA4
+double-strand break repair,UBQLN4
+double-strand break repair,WDR48
+double-strand break repair,XRCC2
+protein metabolic process,AARS2
+protein metabolic process,APC
+protein metabolic process,APLP1
+protein metabolic process,BIRC2
+protein metabolic process,BRMS1
+protein metabolic process,CCND1
+protein metabolic process,CCNE1
+protein metabolic process,CDK4
+protein metabolic process,CIT
+protein metabolic process,CNOT2
+protein metabolic process,DDA1
+protein metabolic process,DOCK7
+protein metabolic process,EIF4G1
+protein metabolic process,ELOF1
+protein metabolic process,FBXW11
+protein metabolic process,FZR1
+protein metabolic process,G6PD
+protein metabolic process,GCN1
+protein metabolic process,GLMN
+protein metabolic process,HAMP
+protein metabolic process,ILK
+protein metabolic process,KAT6A
+protein metabolic process,KCTD10
+protein metabolic process,KMT2A
+protein metabolic process,KMT5A
+protein metabolic process,KRAS
+protein metabolic process,L3MBTL3
+protein metabolic process,LARS2
+protein metabolic process,LSM14A
+protein metabolic process,MAEA
+protein metabolic process,MAP3K7
+protein metabolic process,MARK2
+protein metabolic process,MED1
+protein metabolic process,MEN1
+protein metabolic process,METAP1
+protein metabolic process,METTL17
+protein metabolic process,MIB1
+protein metabolic process,MRPL11
+protein metabolic process,MRPL33
+protein metabolic process,MRPS10
+protein metabolic process,MRPS11
+protein metabolic process,MRPS12
+protein metabolic process,MRPS14
+protein metabolic process,MRPS18B
+protein metabolic process,MRPS23
+protein metabolic process,MRPS9
+protein metabolic process,NCCRP1
+protein metabolic process,NSMCE2
+protein metabolic process,PARD3
+protein metabolic process,PARL
+protein metabolic process,PFDN1
+protein metabolic process,PIGS
+protein metabolic process,PLAA
+protein metabolic process,PPP4R2
+protein metabolic process,PSME3
+protein metabolic process,PSTK
+protein metabolic process,RAB6A
+protein metabolic process,RAF1
+protein metabolic process,RANBP2
+protein metabolic process,RELA
+protein metabolic process,RICTOR
+protein metabolic process,RNF31
+protein metabolic process,RPL28
+protein metabolic process,SAMD4B
+protein metabolic process,SKP2
+protein metabolic process,SOX17
+protein metabolic process,TMED10
+protein metabolic process,TMED2
+protein metabolic process,TRAF2
+protein metabolic process,TRUB2
+protein metabolic process,TTC4
+protein metabolic process,UBE2H
+protein metabolic process,UBE2J2
+protein metabolic process,UBQLN4
+protein metabolic process,UQCRC2
+protein metabolic process,USP1
+protein metabolic process,VBP1
+protein metabolic process,VPS4B
+protein metabolic process,WDR26
+protein metabolic process,WDR48
+protein metabolic process,WWTR1
+protein metabolic process,XYLT2
+protein metabolic process,YTHDF2
+protein metabolic process,ZDHHC11
+protein metabolic process,ZFP36L1
+translation,AARS2
+translation,APLP1
+translation,CNOT2
+translation,EIF4G1
+translation,ELOF1
+translation,GCN1
+translation,LARS2
+translation,LSM14A
+translation,METAP1
+translation,METTL17
+translation,MRPL11
+translation,MRPL33
+translation,MRPS10
+translation,MRPS11
+translation,MRPS12
+translation,MRPS14
+translation,MRPS18B
+translation,MRPS23
+translation,MRPS9
+translation,PSTK
+translation,RPL28
+translation,SAMD4B
+translation,TMED2
+translation,TRUB2
+translation,YTHDF2
+translation,ZFP36L1
+regulation of macromolecule metabolic process,ACTR3
+regulation of macromolecule metabolic process,APC
+regulation of macromolecule metabolic process,APLP1
+regulation of macromolecule metabolic process,ARID1A
+regulation of macromolecule metabolic process,ARID2
+regulation of macromolecule metabolic process,ATAD2
+regulation of macromolecule metabolic process,ATP2B1
+regulation of macromolecule metabolic process,ATXN7L3
+regulation of macromolecule metabolic process,BIRC2
+regulation of macromolecule metabolic process,BRD8
+regulation of macromolecule metabolic process,BRMS1
+regulation of macromolecule metabolic process,BRPF1
+regulation of macromolecule metabolic process,BTAF1
+regulation of macromolecule metabolic process,C1D
+regulation of macromolecule metabolic process,CCNC
+regulation of macromolecule metabolic process,CCND1
+regulation of macromolecule metabolic process,CCNE1
+regulation of macromolecule metabolic process,CDK4
+regulation of macromolecule metabolic process,CEP350
+regulation of macromolecule metabolic process,CITED2
+regulation of macromolecule metabolic process,CNOT2
+regulation of macromolecule metabolic process,DDA1
+regulation of macromolecule metabolic process,DICER1
+regulation of macromolecule metabolic process,DNM1L
+regulation of macromolecule metabolic process,DOCK7
+regulation of macromolecule metabolic process,DPRX
+regulation of macromolecule metabolic process,E2F3
+regulation of macromolecule metabolic process,EIF4G1
+regulation of macromolecule metabolic process,FBXW11
+regulation of macromolecule metabolic process,FZR1
+regulation of macromolecule metabolic process,G6PD
+regulation of macromolecule metabolic process,GATAD1
+regulation of macromolecule metabolic process,GCN1
+regulation of macromolecule metabolic process,GLMN
+regulation of macromolecule metabolic process,GRSF1
+regulation of macromolecule metabolic process,H1-2
+regulation of macromolecule metabolic process,HAMP
+regulation of macromolecule metabolic process,HSF1
+regulation of macromolecule metabolic process,ILK
+regulation of macromolecule metabolic process,KAT6A
+regulation of macromolecule metabolic process,KDM2A
+regulation of macromolecule metabolic process,KMT2A
+regulation of macromolecule metabolic process,KMT2B
+regulation of macromolecule metabolic process,KMT5A
+regulation of macromolecule metabolic process,KRAS
+regulation of macromolecule metabolic process,L3MBTL3
+regulation of macromolecule metabolic process,LIN52
+regulation of macromolecule metabolic process,LIN54
+regulation of macromolecule metabolic process,LMNB1
+regulation of macromolecule metabolic process,LSM14A
+regulation of macromolecule metabolic process,MAP3K7
+regulation of macromolecule metabolic process,MARK2
+regulation of macromolecule metabolic process,MECOM
+regulation of macromolecule metabolic process,MED1
+regulation of macromolecule metabolic process,MED25
+regulation of macromolecule metabolic process,MEN1
+regulation of macromolecule metabolic process,METAP1
+regulation of macromolecule metabolic process,MTERF3
+regulation of macromolecule metabolic process,MYBL2
+regulation of macromolecule metabolic process,NELFB
+regulation of macromolecule metabolic process,NSMCE2
+regulation of macromolecule metabolic process,PARD3
+regulation of macromolecule metabolic process,PARL
+regulation of macromolecule metabolic process,PARN
+regulation of macromolecule metabolic process,PAX8
+regulation of macromolecule metabolic process,PCBD2
+regulation of macromolecule metabolic process,PCGF1
+regulation of macromolecule metabolic process,PFDN1
+regulation of macromolecule metabolic process,PLAA
+regulation of macromolecule metabolic process,PPP4R2
+regulation of macromolecule metabolic process,PSME3
+regulation of macromolecule metabolic process,PSTK
+regulation of macromolecule metabolic process,RAF1
+regulation of macromolecule metabolic process,RELA
+regulation of macromolecule metabolic process,RICTOR
+regulation of macromolecule metabolic process,RNF31
+regulation of macromolecule metabolic process,SAMD4B
+regulation of macromolecule metabolic process,SKP2
+regulation of macromolecule metabolic process,SLC30A9
+regulation of macromolecule metabolic process,SMARCA4
+regulation of macromolecule metabolic process,SMARCA5
+regulation of macromolecule metabolic process,SOX17
+regulation of macromolecule metabolic process,STX4
+regulation of macromolecule metabolic process,SUPT3H
+regulation of macromolecule metabolic process,SUPT7L
+regulation of macromolecule metabolic process,SUZ12
+regulation of macromolecule metabolic process,TDG
+regulation of macromolecule metabolic process,TMED10
+regulation of macromolecule metabolic process,TMED2
+regulation of macromolecule metabolic process,TRAF2
+regulation of macromolecule metabolic process,TRUB2
+regulation of macromolecule metabolic process,UBQLN4
+regulation of macromolecule metabolic process,USP1
+regulation of macromolecule metabolic process,VBP1
+regulation of macromolecule metabolic process,VEZF1
+regulation of macromolecule metabolic process,WDR48
+regulation of macromolecule metabolic process,WT1
+regulation of macromolecule metabolic process,WWTR1
+regulation of macromolecule metabolic process,YTHDC1
+regulation of macromolecule metabolic process,YTHDF2
+regulation of macromolecule metabolic process,ZEB1
+regulation of macromolecule metabolic process,ZFP36L1
+regulation of macromolecule metabolic process,ZFP69
+regulation of macromolecule metabolic process,ZNF496
+regulation of macromolecule metabolic process,ZNF780B
+regulation of macromolecule metabolic process,ZNF875
+DNA metabolic process,ARID1A
+DNA metabolic process,ARID2
+DNA metabolic process,ATXN7L3
+DNA metabolic process,BRD8
+DNA metabolic process,CCNE1
+DNA metabolic process,DCLRE1B
+DNA metabolic process,DICER1
+DNA metabolic process,FZR1
+DNA metabolic process,GGN
+DNA metabolic process,H1-2
+DNA metabolic process,HSF1
+DNA metabolic process,KDM2A
+DNA metabolic process,KMT5A
+DNA metabolic process,MEN1
+DNA metabolic process,NSMCE2
+DNA metabolic process,PARN
+DNA metabolic process,PPP4R2
+DNA metabolic process,RAD51B
+DNA metabolic process,RAD51D
+DNA metabolic process,SKP2
+DNA metabolic process,SLC30A9
+DNA metabolic process,SMARCA4
+DNA metabolic process,SMARCA5
+DNA metabolic process,SUPT3H
+DNA metabolic process,SUPT7L
+DNA metabolic process,TDG
+DNA metabolic process,TTF2
+DNA metabolic process,UBQLN4
+DNA metabolic process,USP1
+DNA metabolic process,WDR48
+DNA metabolic process,XRCC2
+regulation of protein metabolic process,APC
+regulation of protein metabolic process,APLP1
+regulation of protein metabolic process,BIRC2
+regulation of protein metabolic process,BRMS1
+regulation of protein metabolic process,CCND1
+regulation of protein metabolic process,CNOT2
+regulation of protein metabolic process,DDA1
+regulation of protein metabolic process,DOCK7
+regulation of protein metabolic process,EIF4G1
+regulation of protein metabolic process,FBXW11
+regulation of protein metabolic process,FZR1
+regulation of protein metabolic process,G6PD
+regulation of protein metabolic process,GCN1
+regulation of protein metabolic process,GLMN
+regulation of protein metabolic process,HAMP
+regulation of protein metabolic process,ILK
+regulation of protein metabolic process,KRAS
+regulation of protein metabolic process,L3MBTL3
+regulation of protein metabolic process,LSM14A
+regulation of protein metabolic process,MAP3K7
+regulation of protein metabolic process,MARK2
+regulation of protein metabolic process,MEN1
+regulation of protein metabolic process,METAP1
+regulation of protein metabolic process,PARD3
+regulation of protein metabolic process,PARL
+regulation of protein metabolic process,PFDN1
+regulation of protein metabolic process,PLAA
+regulation of protein metabolic process,PSME3
+regulation of protein metabolic process,PSTK
+regulation of protein metabolic process,RAF1
+regulation of protein metabolic process,RELA
+regulation of protein metabolic process,RICTOR
+regulation of protein metabolic process,SAMD4B
+regulation of protein metabolic process,SKP2
+regulation of protein metabolic process,SOX17
+regulation of protein metabolic process,TMED10
+regulation of protein metabolic process,TMED2
+regulation of protein metabolic process,TRAF2
+regulation of protein metabolic process,TRUB2
+regulation of protein metabolic process,UBQLN4
+regulation of protein metabolic process,VBP1
+regulation of protein metabolic process,WDR48
+regulation of protein metabolic process,WWTR1
+regulation of protein metabolic process,YTHDF2
+regulation of protein metabolic process,ZFP36L1
+regulation of RNA metabolic process,ACTR3
+regulation of RNA metabolic process,ARID1A
+regulation of RNA metabolic process,ARID2
+regulation of RNA metabolic process,ATAD2
+regulation of RNA metabolic process,ATXN7L3
+regulation of RNA metabolic process,BIRC2
+regulation of RNA metabolic process,BRD8
+regulation of RNA metabolic process,BRMS1
+regulation of RNA metabolic process,BRPF1
+regulation of RNA metabolic process,BTAF1
+regulation of RNA metabolic process,C1D
+regulation of RNA metabolic process,CCNC
+regulation of RNA metabolic process,CCND1
+regulation of RNA metabolic process,CCNE1
+regulation of RNA metabolic process,CDK4
+regulation of RNA metabolic process,CEP350
+regulation of RNA metabolic process,CITED2
+regulation of RNA metabolic process,CNOT2
+regulation of RNA metabolic process,DICER1
+regulation of RNA metabolic process,DPRX
+regulation of RNA metabolic process,E2F3
+regulation of RNA metabolic process,FBXW11
+regulation of RNA metabolic process,GATAD1
+regulation of RNA metabolic process,GRSF1
+regulation of RNA metabolic process,H1-2
+regulation of RNA metabolic process,HAMP
+regulation of RNA metabolic process,HSF1
+regulation of RNA metabolic process,ILK
+regulation of RNA metabolic process,KAT6A
+regulation of RNA metabolic process,KDM2A
+regulation of RNA metabolic process,KMT2A
+regulation of RNA metabolic process,KMT2B
+regulation of RNA metabolic process,KMT5A
+regulation of RNA metabolic process,L3MBTL3
+regulation of RNA metabolic process,LIN52
+regulation of RNA metabolic process,LIN54
+regulation of RNA metabolic process,MECOM
+regulation of RNA metabolic process,MED1
+regulation of RNA metabolic process,MED25
+regulation of RNA metabolic process,MEN1
+regulation of RNA metabolic process,MTERF3
+regulation of RNA metabolic process,MYBL2
+regulation of RNA metabolic process,NELFB
+regulation of RNA metabolic process,PARN
+regulation of RNA metabolic process,PAX8
+regulation of RNA metabolic process,PCBD2
+regulation of RNA metabolic process,PCGF1
+regulation of RNA metabolic process,RAF1
+regulation of RNA metabolic process,RELA
+regulation of RNA metabolic process,RNF31
+regulation of RNA metabolic process,SAMD4B
+regulation of RNA metabolic process,SLC30A9
+regulation of RNA metabolic process,SMARCA4
+regulation of RNA metabolic process,SMARCA5
+regulation of RNA metabolic process,SOX17
+regulation of RNA metabolic process,SUPT3H
+regulation of RNA metabolic process,SUPT7L
+regulation of RNA metabolic process,SUZ12
+regulation of RNA metabolic process,TDG
+regulation of RNA metabolic process,TRAF2
+regulation of RNA metabolic process,VEZF1
+regulation of RNA metabolic process,WT1
+regulation of RNA metabolic process,WWTR1
+regulation of RNA metabolic process,YTHDC1
+regulation of RNA metabolic process,YTHDF2
+regulation of RNA metabolic process,ZEB1
+regulation of RNA metabolic process,ZFP36L1
+regulation of RNA metabolic process,ZFP69
+regulation of RNA metabolic process,ZNF496
+regulation of RNA metabolic process,ZNF780B
+regulation of RNA metabolic process,ZNF875
+DNA damage response,APC
+DNA damage response,ARID1A
+DNA damage response,ARID2
+DNA damage response,ATXN7L3
+DNA damage response,BRD8
+DNA damage response,CCND1
+DNA damage response,DCLRE1B
+DNA damage response,FZR1
+DNA damage response,GGN
+DNA damage response,HSF1
+DNA damage response,KDM2A
+DNA damage response,KMT5A
+DNA damage response,MEN1
+DNA damage response,NSMCE2
+DNA damage response,PPP4R2
+DNA damage response,RAD51B
+DNA damage response,RAD51D
+DNA damage response,SKP2
+DNA damage response,SLC30A9
+DNA damage response,SMARCA4
+DNA damage response,SMARCA5
+DNA damage response,SUPT3H
+DNA damage response,SUPT7L
+DNA damage response,TDG
+DNA damage response,TTF2
+DNA damage response,UBQLN4
+DNA damage response,USP1
+DNA damage response,WDR48
+DNA damage response,XRCC2
+regulation of DNA repair,ARID1A
+regulation of DNA repair,ARID2
+regulation of DNA repair,ATXN7L3
+regulation of DNA repair,BRD8
+regulation of DNA repair,HSF1
+regulation of DNA repair,KMT5A
+regulation of DNA repair,PPP4R2
+regulation of DNA repair,SKP2
+regulation of DNA repair,SMARCA4
+regulation of DNA repair,SUPT3H
+regulation of DNA repair,SUPT7L
+regulation of DNA repair,UBQLN4
+regulation of DNA repair,USP1
+regulation of DNA repair,WDR48
+chromosome segregation,ACTR3
+chromosome segregation,APC
+chromosome segregation,ARID1A
+chromosome segregation,ARID2
+chromosome segregation,CCNE1
+chromosome segregation,CENPI
+chromosome segregation,KIF2C
+chromosome segregation,KIF4A
+chromosome segregation,KMT5A
+chromosome segregation,LSM14A
+chromosome segregation,MAD2L1BP
+chromosome segregation,MYBL2
+chromosome segregation,NSMCE2
+chromosome segregation,SLC25A5
+chromosome segregation,SMARCA4
+chromosome segregation,SMARCA5
+chromosome segregation,SPAG5
+chromosome segregation,TACC3
+chromosome segregation,VPS4B
+mitotic cell cycle phase transition,APC
+mitotic cell cycle phase transition,ARID1A
+mitotic cell cycle phase transition,ARID2
+mitotic cell cycle phase transition,CCND1
+mitotic cell cycle phase transition,CCNE1
+mitotic cell cycle phase transition,CDK4
+mitotic cell cycle phase transition,E2F3
+mitotic cell cycle phase transition,EIF4G1
+mitotic cell cycle phase transition,FZR1
+mitotic cell cycle phase transition,MAD2L1BP
+mitotic cell cycle phase transition,MIIP
+mitotic cell cycle phase transition,NSMCE2
+mitotic cell cycle phase transition,PSME3
+mitotic cell cycle phase transition,RAD51B
+mitotic cell cycle phase transition,SKP2
+mitotic cell cycle phase transition,SMARCA4
+mitotic cell cycle phase transition,TACC3
+mitotic cell cycle phase transition,VPS4B
+mitotic cell cycle phase transition,ZFP36L1
+cellular component organization,ACTR3
+cellular component organization,APC
+cellular component organization,APLP1
+cellular component organization,ARID1A
+cellular component organization,ARID2
+cellular component organization,ARPC2
+cellular component organization,ARPC4
+cellular component organization,ATAD2
+cellular component organization,ATXN7L3
+cellular component organization,BCS1L
+cellular component organization,BIRC2
+cellular component organization,BRD8
+cellular component organization,BRPF1
+cellular component organization,BTAF1
+cellular component organization,CCNE1
+cellular component organization,CENPI
+cellular component organization,CEP350
+cellular component organization,CEP55
+cellular component organization,CFDP1
+cellular component organization,CNOT2
+cellular component organization,COX20
+cellular component organization,DCLRE1B
+cellular component organization,DDX39B
+cellular component organization,DICER1
+cellular component organization,DNM1L
+cellular component organization,DOCK7
+cellular component organization,EIF4G1
+cellular component organization,FBXW11
+cellular component organization,FZR1
+cellular component organization,G6PD
+cellular component organization,GATAD1
+cellular component organization,GCN1
+cellular component organization,GET3
+cellular component organization,GLMN
+cellular component organization,H1-2
+cellular component organization,HSF1
+cellular component organization,ILK
+cellular component organization,KAT6A
+cellular component organization,KCTD10
+cellular component organization,KDM2A
+cellular component organization,KIF20A
+cellular component organization,KIF2C
+cellular component organization,KIF4A
+cellular component organization,KMT2A
+cellular component organization,KMT2B
+cellular component organization,KMT5A
+cellular component organization,KRAS
+cellular component organization,KRT8
+cellular component organization,L3MBTL3
+cellular component organization,LIN54
+cellular component organization,LMNB1
+cellular component organization,LRFN1
+cellular component organization,LSM14A
+cellular component organization,LST1
+cellular component organization,MAD2L1BP
+cellular component organization,MAEA
+cellular component organization,MAP3K7
+cellular component organization,MARK2
+cellular component organization,MATN1
+cellular component organization,MECOM
+cellular component organization,MED1
+cellular component organization,MED25
+cellular component organization,MEN1
+cellular component organization,METTL17
+cellular component organization,MFN2
+cellular component organization,MIB1
+cellular component organization,MIOS
+cellular component organization,MTERF3
+cellular component organization,MYBL2
+cellular component organization,NDUFA2
+cellular component organization,NSMCE2
+cellular component organization,PARD3
+cellular component organization,PARD6B
+cellular component organization,PARL
+cellular component organization,PARN
+cellular component organization,PCGF1
+cellular component organization,PDS5B
+cellular component organization,PEX6
+cellular component organization,PFDN1
+cellular component organization,PI16
+cellular component organization,PLAA
+cellular component organization,PLEKHF1
+cellular component organization,POLR2M
+cellular component organization,PPP2R3C
+cellular component organization,PRPF39
+cellular component organization,PSMG1
+cellular component organization,RAB18
+cellular component organization,RAB6A
+cellular component organization,RAD51B
+cellular component organization,RAD51D
+cellular component organization,RAF1
+cellular component organization,RELA
+cellular component organization,RHPN1
+cellular component organization,RICTOR
+cellular component organization,SEC16A
+cellular component organization,SLC25A5
+cellular component organization,SLC30A9
+cellular component organization,SLC4A7
+cellular component organization,SMARCA4
+cellular component organization,SMARCA5
+cellular component organization,SNAP23
+cellular component organization,SOX17
+cellular component organization,SPAG5
+cellular component organization,STRIP1
+cellular component organization,STX4
+cellular component organization,SUZ12
+cellular component organization,TACC3
+cellular component organization,TAFAZZIN
+cellular component organization,TDG
+cellular component organization,TMED10
+cellular component organization,TMED2
+cellular component organization,TOMM20
+cellular component organization,TRAF2
+cellular component organization,TTF2
+cellular component organization,TWF1
+cellular component organization,UBQLN4
+cellular component organization,VBP1
+cellular component organization,VPS4B
+cellular component organization,VTI1B
+cellular component organization,WT1
+cellular component organization,WWTR1
+cellular component organization,XRCC2
+cellular component organization,YTHDC1
+cellular component organization,YTHDF2
+positive regulation of RNA metabolic process,ACTR3
+positive regulation of RNA metabolic process,ARID1A
+positive regulation of RNA metabolic process,ATAD2
+positive regulation of RNA metabolic process,ATXN7L3
+positive regulation of RNA metabolic process,BIRC2
+positive regulation of RNA metabolic process,BRD8
+positive regulation of RNA metabolic process,BRPF1
+positive regulation of RNA metabolic process,CCNC
+positive regulation of RNA metabolic process,CITED2
+positive regulation of RNA metabolic process,CNOT2
+positive regulation of RNA metabolic process,E2F3
+positive regulation of RNA metabolic process,FBXW11
+positive regulation of RNA metabolic process,GRSF1
+positive regulation of RNA metabolic process,HAMP
+positive regulation of RNA metabolic process,HSF1
+positive regulation of RNA metabolic process,ILK
+positive regulation of RNA metabolic process,KAT6A
+positive regulation of RNA metabolic process,KMT2A
+positive regulation of RNA metabolic process,KMT2B
+positive regulation of RNA metabolic process,MECOM
+positive regulation of RNA metabolic process,MED1
+positive regulation of RNA metabolic process,MED25
+positive regulation of RNA metabolic process,MEN1
+positive regulation of RNA metabolic process,MYBL2
+positive regulation of RNA metabolic process,PARN
+positive regulation of RNA metabolic process,PAX8
+positive regulation of RNA metabolic process,PCBD2
+positive regulation of RNA metabolic process,RAF1
+positive regulation of RNA metabolic process,RELA
+positive regulation of RNA metabolic process,SAMD4B
+positive regulation of RNA metabolic process,SLC30A9
+positive regulation of RNA metabolic process,SMARCA4
+positive regulation of RNA metabolic process,SMARCA5
+positive regulation of RNA metabolic process,SOX17
+positive regulation of RNA metabolic process,SUPT3H
+positive regulation of RNA metabolic process,SUPT7L
+positive regulation of RNA metabolic process,VEZF1
+positive regulation of RNA metabolic process,WT1
+positive regulation of RNA metabolic process,WWTR1
+positive regulation of RNA metabolic process,YTHDF2
+positive regulation of RNA metabolic process,ZEB1
+positive regulation of RNA metabolic process,ZFP36L1
+positive regulation of RNA metabolic process,ZNF496
+positive regulation of RNA metabolic process,ZNF780B
+positive regulation of biological process,ACTR3
+positive regulation of biological process,APC
+positive regulation of biological process,ARID1A
+positive regulation of biological process,ARID2
+positive regulation of biological process,ARPC2
+positive regulation of biological process,ATAD2
+positive regulation of biological process,ATP2B1
+positive regulation of biological process,ATXN7L3
+positive regulation of biological process,BIRC2
+positive regulation of biological process,BRD8
+positive regulation of biological process,BRMS1
+positive regulation of biological process,BRPF1
+positive regulation of biological process,CCNC
+positive regulation of biological process,CCND1
+positive regulation of biological process,CCNE1
+positive regulation of biological process,CDK4
+positive regulation of biological process,CIT
+positive regulation of biological process,CITED2
+positive regulation of biological process,CNOT2
+positive regulation of biological process,DDA1
+positive regulation of biological process,DICER1
+positive regulation of biological process,DNM1L
+positive regulation of biological process,DOCK7
+positive regulation of biological process,E2F3
+positive regulation of biological process,EIF4G1
+positive regulation of biological process,FBXW11
+positive regulation of biological process,FRS2
+positive regulation of biological process,FZR1
+positive regulation of biological process,G6PD
+positive regulation of biological process,GLMN
+positive regulation of biological process,GRSF1
+positive regulation of biological process,HAMP
+positive regulation of biological process,HSF1
+positive regulation of biological process,ILK
+positive regulation of biological process,KAT6A
+positive regulation of biological process,KMT2A
+positive regulation of biological process,KMT2B
+positive regulation of biological process,KRAS
+positive regulation of biological process,L3MBTL3
+positive regulation of biological process,LSM14A
+positive regulation of biological process,MAD2L1BP
+positive regulation of biological process,MAP3K7
+positive regulation of biological process,MARK2
+positive regulation of biological process,MECOM
+positive regulation of biological process,MED1
+positive regulation of biological process,MED25
+positive regulation of biological process,MEN1
+positive regulation of biological process,MFN2
+positive regulation of biological process,MIB1
+positive regulation of biological process,MIOS
+positive regulation of biological process,MYBL2
+positive regulation of biological process,NCCRP1
+positive regulation of biological process,NSMCE2
+positive regulation of biological process,PARD3
+positive regulation of biological process,PARN
+positive regulation of biological process,PAX8
+positive regulation of biological process,PCBD2
+positive regulation of biological process,PDCD2
+positive regulation of biological process,PLAA
+positive regulation of biological process,PLEKHF1
+positive regulation of biological process,PPP2R3C
+positive regulation of biological process,RAD51B
+positive regulation of biological process,RAF1
+positive regulation of biological process,RASGRP4
+positive regulation of biological process,RELA
+positive regulation of biological process,RICTOR
+positive regulation of biological process,RNF31
+positive regulation of biological process,SAMD4B
+positive regulation of biological process,SCD
+positive regulation of biological process,SKP2
+positive regulation of biological process,SLC25A5
+positive regulation of biological process,SLC30A9
+positive regulation of biological process,SLC7A1
+positive regulation of biological process,SMARCA4
+positive regulation of biological process,SMARCA5
+positive regulation of biological process,SOX17
+positive regulation of biological process,SPAG5
+positive regulation of biological process,STX4
+positive regulation of biological process,SUPT3H
+positive regulation of biological process,SUPT7L
+positive regulation of biological process,SUZ12
+positive regulation of biological process,TAFAZZIN
+positive regulation of biological process,TDG
+positive regulation of biological process,TMED10
+positive regulation of biological process,TMED2
+positive regulation of biological process,TRAF2
+positive regulation of biological process,TRUB2
+positive regulation of biological process,TWF1
+positive regulation of biological process,UBE2J2
+positive regulation of biological process,USP1
+positive regulation of biological process,VEZF1
+positive regulation of biological process,VPS4B
+positive regulation of biological process,WDR48
+positive regulation of biological process,WT1
+positive regulation of biological process,WWTR1
+positive regulation of biological process,XRCC2
+positive regulation of biological process,YTHDF2
+positive regulation of biological process,ZC3H3
+positive regulation of biological process,ZEB1
+positive regulation of biological process,ZFP36L1
+positive regulation of biological process,ZNF496
+positive regulation of biological process,ZNF780B
+DNA-templated transcription,ACTR3
+DNA-templated transcription,ARID1A
+DNA-templated transcription,ARID2
+DNA-templated transcription,ATAD2
+DNA-templated transcription,ATXN7L3
+DNA-templated transcription,BIRC2
+DNA-templated transcription,BRD8
+DNA-templated transcription,BRMS1
+DNA-templated transcription,BRPF1
+DNA-templated transcription,BTAF1
+DNA-templated transcription,C1D
+DNA-templated transcription,CCNC
+DNA-templated transcription,CCND1
+DNA-templated transcription,CCNE1
+DNA-templated transcription,CDK4
+DNA-templated transcription,CEP350
+DNA-templated transcription,CITED2
+DNA-templated transcription,CNOT2
+DNA-templated transcription,DICER1
+DNA-templated transcription,DPRX
+DNA-templated transcription,E2F3
+DNA-templated transcription,ELOF1
+DNA-templated transcription,FBXW11
+DNA-templated transcription,GATAD1
+DNA-templated transcription,H1-2
+DNA-templated transcription,HAMP
+DNA-templated transcription,HSF1
+DNA-templated transcription,ILK
+DNA-templated transcription,KAT6A
+DNA-templated transcription,KDM2A
+DNA-templated transcription,KMT2A
+DNA-templated transcription,KMT2B
+DNA-templated transcription,KMT5A
+DNA-templated transcription,L3MBTL3
+DNA-templated transcription,LIN52
+DNA-templated transcription,LIN54
+DNA-templated transcription,MECOM
+DNA-templated transcription,MED1
+DNA-templated transcription,MED25
+DNA-templated transcription,MEN1
+DNA-templated transcription,MTERF3
+DNA-templated transcription,MYBL2
+DNA-templated transcription,NELFB
+DNA-templated transcription,PAX8
+DNA-templated transcription,PCBD2
+DNA-templated transcription,PCGF1
+DNA-templated transcription,POLR2M
+DNA-templated transcription,RAF1
+DNA-templated transcription,RELA
+DNA-templated transcription,RNF31
+DNA-templated transcription,SLC30A9
+DNA-templated transcription,SMARCA4
+DNA-templated transcription,SMARCA5
+DNA-templated transcription,SOX17
+DNA-templated transcription,SUPT3H
+DNA-templated transcription,SUPT7L
+DNA-templated transcription,SUZ12
+DNA-templated transcription,TDG
+DNA-templated transcription,TRAF2
+DNA-templated transcription,TTF2
+DNA-templated transcription,VEZF1
+DNA-templated transcription,WT1
+DNA-templated transcription,WWTR1
+DNA-templated transcription,ZEB1
+DNA-templated transcription,ZFP69
+DNA-templated transcription,ZNF496
+DNA-templated transcription,ZNF780B
+DNA-templated transcription,ZNF875
+regulation of mitotic cell cycle phase transition,APC
+regulation of mitotic cell cycle phase transition,ARID1A
+regulation of mitotic cell cycle phase transition,ARID2
+regulation of mitotic cell cycle phase transition,CCND1
+regulation of mitotic cell cycle phase transition,CCNE1
+regulation of mitotic cell cycle phase transition,CDK4
+regulation of mitotic cell cycle phase transition,EIF4G1
+regulation of mitotic cell cycle phase transition,FZR1
+regulation of mitotic cell cycle phase transition,MAD2L1BP
+regulation of mitotic cell cycle phase transition,MIIP
+regulation of mitotic cell cycle phase transition,NSMCE2
+regulation of mitotic cell cycle phase transition,PSME3
+regulation of mitotic cell cycle phase transition,RAD51B
+regulation of mitotic cell cycle phase transition,SMARCA4
+regulation of mitotic cell cycle phase transition,VPS4B
+regulation of mitotic cell cycle phase transition,ZFP36L1
+regulation of DNA-templated transcription,ACTR3
+regulation of DNA-templated transcription,ARID1A
+regulation of DNA-templated transcription,ARID2
+regulation of DNA-templated transcription,ATAD2
+regulation of DNA-templated transcription,ATXN7L3
+regulation of DNA-templated transcription,BIRC2
+regulation of DNA-templated transcription,BRD8
+regulation of DNA-templated transcription,BRMS1
+regulation of DNA-templated transcription,BRPF1
+regulation of DNA-templated transcription,BTAF1
+regulation of DNA-templated transcription,C1D
+regulation of DNA-templated transcription,CCNC
+regulation of DNA-templated transcription,CCND1
+regulation of DNA-templated transcription,CCNE1
+regulation of DNA-templated transcription,CDK4
+regulation of DNA-templated transcription,CEP350
+regulation of DNA-templated transcription,CITED2
+regulation of DNA-templated transcription,CNOT2
+regulation of DNA-templated transcription,DICER1
+regulation of DNA-templated transcription,DPRX
+regulation of DNA-templated transcription,E2F3
+regulation of DNA-templated transcription,FBXW11
+regulation of DNA-templated transcription,GATAD1
+regulation of DNA-templated transcription,H1-2
+regulation of DNA-templated transcription,HAMP
+regulation of DNA-templated transcription,HSF1
+regulation of DNA-templated transcription,ILK
+regulation of DNA-templated transcription,KAT6A
+regulation of DNA-templated transcription,KDM2A
+regulation of DNA-templated transcription,KMT2A
+regulation of DNA-templated transcription,KMT2B
+regulation of DNA-templated transcription,KMT5A
+regulation of DNA-templated transcription,L3MBTL3
+regulation of DNA-templated transcription,LIN52
+regulation of DNA-templated transcription,LIN54
+regulation of DNA-templated transcription,MECOM
+regulation of DNA-templated transcription,MED1
+regulation of DNA-templated transcription,MED25
+regulation of DNA-templated transcription,MEN1
+regulation of DNA-templated transcription,MTERF3
+regulation of DNA-templated transcription,MYBL2
+regulation of DNA-templated transcription,NELFB
+regulation of DNA-templated transcription,PAX8
+regulation of DNA-templated transcription,PCBD2
+regulation of DNA-templated transcription,PCGF1
+regulation of DNA-templated transcription,RAF1
+regulation of DNA-templated transcription,RELA
+regulation of DNA-templated transcription,RNF31
+regulation of DNA-templated transcription,SLC30A9
+regulation of DNA-templated transcription,SMARCA4
+regulation of DNA-templated transcription,SMARCA5
+regulation of DNA-templated transcription,SOX17
+regulation of DNA-templated transcription,SUPT3H
+regulation of DNA-templated transcription,SUPT7L
+regulation of DNA-templated transcription,SUZ12
+regulation of DNA-templated transcription,TDG
+regulation of DNA-templated transcription,TRAF2
+regulation of DNA-templated transcription,VEZF1
+regulation of DNA-templated transcription,WT1
+regulation of DNA-templated transcription,WWTR1
+regulation of DNA-templated transcription,ZEB1
+regulation of DNA-templated transcription,ZFP69
+regulation of DNA-templated transcription,ZNF496
+regulation of DNA-templated transcription,ZNF780B
+regulation of DNA-templated transcription,ZNF875
+response to stress,ACTR3
+response to stress,APC
+response to stress,ARID1A
+response to stress,ARID2
+response to stress,ATXN7L3
+response to stress,BIRC2
+response to stress,BRD8
+response to stress,CCND1
+response to stress,CITED2
+response to stress,DCLRE1B
+response to stress,EIF4G1
+response to stress,FZR1
+response to stress,G6PD
+response to stress,GCN1
+response to stress,GGN
+response to stress,GSDMC
+response to stress,HAMP
+response to stress,HAPSTR1
+response to stress,HSF1
+response to stress,ILK
+response to stress,KAT6A
+response to stress,KDM2A
+response to stress,KMT5A
+response to stress,KRT8
+response to stress,LGALS4
+response to stress,LSM14A
+response to stress,MAP3K7
+response to stress,MED1
+response to stress,MEN1
+response to stress,METAP1
+response to stress,MFN2
+response to stress,MIOS
+response to stress,NCCRP1
+response to stress,NSMCE2
+response to stress,PLAA
+response to stress,PPP2R3C
+response to stress,PPP4R2
+response to stress,RAD51B
+response to stress,RAD51D
+response to stress,RAF1
+response to stress,RASGRP4
+response to stress,RELA
+response to stress,RICTOR
+response to stress,RNF31
+response to stress,SEC16A
+response to stress,SKP2
+response to stress,SLC30A9
+response to stress,SMARCA4
+response to stress,SMARCA5
+response to stress,SNAP23
+response to stress,STX4
+response to stress,STXBP3
+response to stress,SUPT3H
+response to stress,SUPT7L
+response to stress,TARM1
+response to stress,TDG
+response to stress,TMED2
+response to stress,TRAF2
+response to stress,TTC4
+response to stress,TTF2
+response to stress,TXNRD1
+response to stress,UBE2J2
+response to stress,UBQLN4
+response to stress,USP1
+response to stress,VEZF1
+response to stress,VPS4B
+response to stress,WDR48
+response to stress,XPR1
+response to stress,XRCC2
+response to stress,YTHDF2
+response to stress,ZDHHC11
+response to stress,ZFP36L1
+regulation of cell cycle process,APC
+regulation of cell cycle process,ARID1A
+regulation of cell cycle process,ARID2
+regulation of cell cycle process,CCND1
+regulation of cell cycle process,CCNE1
+regulation of cell cycle process,CDK4
+regulation of cell cycle process,CIT
+regulation of cell cycle process,EIF4G1
+regulation of cell cycle process,FZR1
+regulation of cell cycle process,KIF20A
+regulation of cell cycle process,KIF2C
+regulation of cell cycle process,MAD2L1BP
+regulation of cell cycle process,MED1
+regulation of cell cycle process,MIIP
+regulation of cell cycle process,NSMCE2
+regulation of cell cycle process,PSME3
+regulation of cell cycle process,RAD51B
+regulation of cell cycle process,SMARCA4
+regulation of cell cycle process,SMARCA5
+regulation of cell cycle process,SPAG5
+regulation of cell cycle process,TACC3
+regulation of cell cycle process,VPS4B
+regulation of cell cycle process,YTHDF2
+regulation of cell cycle process,ZFP36L1
+regulation of RNA biosynthetic process,ACTR3
+regulation of RNA biosynthetic process,ARID1A
+regulation of RNA biosynthetic process,ARID2
+regulation of RNA biosynthetic process,ATAD2
+regulation of RNA biosynthetic process,ATXN7L3
+regulation of RNA biosynthetic process,BIRC2
+regulation of RNA biosynthetic process,BRD8
+regulation of RNA biosynthetic process,BRMS1
+regulation of RNA biosynthetic process,BRPF1
+regulation of RNA biosynthetic process,BTAF1
+regulation of RNA biosynthetic process,C1D
+regulation of RNA biosynthetic process,CCNC
+regulation of RNA biosynthetic process,CCND1
+regulation of RNA biosynthetic process,CCNE1
+regulation of RNA biosynthetic process,CDK4
+regulation of RNA biosynthetic process,CEP350
+regulation of RNA biosynthetic process,CITED2
+regulation of RNA biosynthetic process,CNOT2
+regulation of RNA biosynthetic process,DICER1
+regulation of RNA biosynthetic process,DPRX
+regulation of RNA biosynthetic process,E2F3
+regulation of RNA biosynthetic process,FBXW11
+regulation of RNA biosynthetic process,GATAD1
+regulation of RNA biosynthetic process,H1-2
+regulation of RNA biosynthetic process,HAMP
+regulation of RNA biosynthetic process,HSF1
+regulation of RNA biosynthetic process,ILK
+regulation of RNA biosynthetic process,KAT6A
+regulation of RNA biosynthetic process,KDM2A
+regulation of RNA biosynthetic process,KMT2A
+regulation of RNA biosynthetic process,KMT2B
+regulation of RNA biosynthetic process,KMT5A
+regulation of RNA biosynthetic process,L3MBTL3
+regulation of RNA biosynthetic process,LIN52
+regulation of RNA biosynthetic process,LIN54
+regulation of RNA biosynthetic process,MECOM
+regulation of RNA biosynthetic process,MED1
+regulation of RNA biosynthetic process,MED25
+regulation of RNA biosynthetic process,MEN1
+regulation of RNA biosynthetic process,MTERF3
+regulation of RNA biosynthetic process,MYBL2
+regulation of RNA biosynthetic process,NELFB
+regulation of RNA biosynthetic process,PAX8
+regulation of RNA biosynthetic process,PCBD2
+regulation of RNA biosynthetic process,PCGF1
+regulation of RNA biosynthetic process,RAF1
+regulation of RNA biosynthetic process,RELA
+regulation of RNA biosynthetic process,RNF31
+regulation of RNA biosynthetic process,SLC30A9
+regulation of RNA biosynthetic process,SMARCA4
+regulation of RNA biosynthetic process,SMARCA5
+regulation of RNA biosynthetic process,SOX17
+regulation of RNA biosynthetic process,SUPT3H
+regulation of RNA biosynthetic process,SUPT7L
+regulation of RNA biosynthetic process,SUZ12
+regulation of RNA biosynthetic process,TDG
+regulation of RNA biosynthetic process,TRAF2
+regulation of RNA biosynthetic process,VEZF1
+regulation of RNA biosynthetic process,WT1
+regulation of RNA biosynthetic process,WWTR1
+regulation of RNA biosynthetic process,ZEB1
+regulation of RNA biosynthetic process,ZFP69
+regulation of RNA biosynthetic process,ZNF496
+regulation of RNA biosynthetic process,ZNF780B
+regulation of RNA biosynthetic process,ZNF875
+regulation of cell population proliferation,APC
+regulation of cell population proliferation,ARID2
+regulation of cell population proliferation,BIRC2
+regulation of cell population proliferation,CCND1
+regulation of cell population proliferation,CCNE1
+regulation of cell population proliferation,CDK4
+regulation of cell population proliferation,CFDP1
+regulation of cell population proliferation,CITED2
+regulation of cell population proliferation,DICER1
+regulation of cell population proliferation,E2F3
+regulation of cell population proliferation,FRS2
+regulation of cell population proliferation,FZR1
+regulation of cell population proliferation,GLMN
+regulation of cell population proliferation,ILK
+regulation of cell population proliferation,KMT2A
+regulation of cell population proliferation,KRAS
+regulation of cell population proliferation,LST1
+regulation of cell population proliferation,MAP3K7
+regulation of cell population proliferation,MED1
+regulation of cell population proliferation,MED25
+regulation of cell population proliferation,MEN1
+regulation of cell population proliferation,MFN2
+regulation of cell population proliferation,NCCRP1
+regulation of cell population proliferation,PDCD2
+regulation of cell population proliferation,PDS5B
+regulation of cell population proliferation,RAD51B
+regulation of cell population proliferation,RAF1
+regulation of cell population proliferation,RELA
+regulation of cell population proliferation,RICTOR
+regulation of cell population proliferation,SLC25A5
+regulation of cell population proliferation,SLC7A1
+regulation of cell population proliferation,SMARCA4
+regulation of cell population proliferation,SOX17
+regulation of cell population proliferation,STX4
+regulation of cell population proliferation,SUZ12
+regulation of cell population proliferation,WDR48
+regulation of cell population proliferation,WT1
+regulation of cell population proliferation,WWTR1
+regulation of cell population proliferation,ZEB1
+regulation of cell population proliferation,ZFP36L1
+mitotic sister chromatid segregation,APC
+mitotic sister chromatid segregation,CENPI
+mitotic sister chromatid segregation,KIF2C
+mitotic sister chromatid segregation,KIF4A
+mitotic sister chromatid segregation,KMT5A
+mitotic sister chromatid segregation,LSM14A
+mitotic sister chromatid segregation,MAD2L1BP
+mitotic sister chromatid segregation,MYBL2
+mitotic sister chromatid segregation,NSMCE2
+mitotic sister chromatid segregation,SMARCA5
+mitotic sister chromatid segregation,SPAG5
+mitotic sister chromatid segregation,VPS4B
+negative regulation of cellular process,APC
+negative regulation of cellular process,APLP1
+negative regulation of cellular process,ARID2
+negative regulation of cellular process,ATP2B1
+negative regulation of cellular process,BIRC2
+negative regulation of cellular process,BRMS1
+negative regulation of cellular process,BTAF1
+negative regulation of cellular process,C1D
+negative regulation of cellular process,CCNC
+negative regulation of cellular process,CCND1
+negative regulation of cellular process,CCNE1
+negative regulation of cellular process,CFDP1
+negative regulation of cellular process,CIT
+negative regulation of cellular process,CITED2
+negative regulation of cellular process,CNOT2
+negative regulation of cellular process,DICER1
+negative regulation of cellular process,DOCK7
+negative regulation of cellular process,E2F3
+negative regulation of cellular process,EIF4G1
+negative regulation of cellular process,FBXW11
+negative regulation of cellular process,FRS2
+negative regulation of cellular process,FZR1
+negative regulation of cellular process,G6PD
+negative regulation of cellular process,GLMN
+negative regulation of cellular process,H1-2
+negative regulation of cellular process,HAMP
+negative regulation of cellular process,HAPSTR1
+negative regulation of cellular process,HSF1
+negative regulation of cellular process,ILK
+negative regulation of cellular process,KAT6A
+negative regulation of cellular process,KCTD10
+negative regulation of cellular process,KDM2A
+negative regulation of cellular process,KMT2A
+negative regulation of cellular process,KMT5A
+negative regulation of cellular process,KRAS
+negative regulation of cellular process,L3MBTL3
+negative regulation of cellular process,LMNB1
+negative regulation of cellular process,LSM14A
+negative regulation of cellular process,LST1
+negative regulation of cellular process,MAD2L1BP
+negative regulation of cellular process,MAEA
+negative regulation of cellular process,MAP3K7
+negative regulation of cellular process,MECOM
+negative regulation of cellular process,MED1
+negative regulation of cellular process,MED25
+negative regulation of cellular process,MEN1
+negative regulation of cellular process,MFN2
+negative regulation of cellular process,MIB1
+negative regulation of cellular process,MIIP
+negative regulation of cellular process,MIOS
+negative regulation of cellular process,MOB4
+negative regulation of cellular process,MTERF3
+negative regulation of cellular process,NELFB
+negative regulation of cellular process,PARD3
+negative regulation of cellular process,PARL
+negative regulation of cellular process,PARN
+negative regulation of cellular process,PAX8
+negative regulation of cellular process,PCGF1
+negative regulation of cellular process,PDS5B
+negative regulation of cellular process,PFDN1
+negative regulation of cellular process,PI16
+negative regulation of cellular process,PLAA
+negative regulation of cellular process,PSME3
+negative regulation of cellular process,RAF1
+negative regulation of cellular process,RELA
+negative regulation of cellular process,RHPN1
+negative regulation of cellular process,RICTOR
+negative regulation of cellular process,RNF31
+negative regulation of cellular process,SAMD4B
+negative regulation of cellular process,SLC25A5
+negative regulation of cellular process,SMARCA4
+negative regulation of cellular process,SMARCA5
+negative regulation of cellular process,SOX17
+negative regulation of cellular process,STRIP1
+negative regulation of cellular process,STXBP3
+negative regulation of cellular process,SUZ12
+negative regulation of cellular process,TARM1
+negative regulation of cellular process,TDG
+negative regulation of cellular process,TMED2
+negative regulation of cellular process,TRAF2
+negative regulation of cellular process,TWF1
+negative regulation of cellular process,UBQLN4
+negative regulation of cellular process,VBP1
+negative regulation of cellular process,VPS4B
+negative regulation of cellular process,WT1
+negative regulation of cellular process,WWTR1
+negative regulation of cellular process,XRCC2
+negative regulation of cellular process,YTHDC1
+negative regulation of cellular process,YTHDF2
+negative regulation of cellular process,ZEB1
+negative regulation of cellular process,ZFP36L1
+organelle localization,ACTR3
+organelle localization,APC
+organelle localization,DNM1L
+organelle localization,DOCK7
+organelle localization,FBXW11
+organelle localization,KIF2C
+organelle localization,LMNB1
+organelle localization,MARK2
+organelle localization,MFN2
+organelle localization,PARD3
+organelle localization,POLR2M
+organelle localization,RAB6A
+organelle localization,SEC16A
+organelle localization,SNAP23
+organelle localization,SPAG5
+organelle localization,STX4
+organelle localization,STXBP3
+organelle localization,TMED10
+organelle localization,TMED2
+organelle localization,VPS4B
+organelle localization,VTI1B
+regulation of double-strand break repair,ARID1A
+regulation of double-strand break repair,ARID2
+regulation of double-strand break repair,BRD8
+regulation of double-strand break repair,HSF1
+regulation of double-strand break repair,KMT5A
+regulation of double-strand break repair,PPP4R2
+regulation of double-strand break repair,SKP2
+regulation of double-strand break repair,SMARCA4
+regulation of double-strand break repair,UBQLN4
+regulation of double-strand break repair,WDR48
+cell cycle phase transition,APC
+cell cycle phase transition,ARID1A
+cell cycle phase transition,ARID2
+cell cycle phase transition,CCND1
+cell cycle phase transition,CCNE1
+cell cycle phase transition,CDK4
+cell cycle phase transition,E2F3
+cell cycle phase transition,EIF4G1
+cell cycle phase transition,FZR1
+cell cycle phase transition,MAD2L1BP
+cell cycle phase transition,MIIP
+cell cycle phase transition,NSMCE2
+cell cycle phase transition,PSME3
+cell cycle phase transition,RAD51B
+cell cycle phase transition,SKP2
+cell cycle phase transition,SMARCA4
+cell cycle phase transition,TACC3
+cell cycle phase transition,VPS4B
+cell cycle phase transition,ZFP36L1
+regulation of mitotic cell cycle,APC
+regulation of mitotic cell cycle,ARID1A
+regulation of mitotic cell cycle,ARID2
+regulation of mitotic cell cycle,CCND1
+regulation of mitotic cell cycle,CCNE1
+regulation of mitotic cell cycle,CDK4
+regulation of mitotic cell cycle,EIF4G1
+regulation of mitotic cell cycle,FZR1
+regulation of mitotic cell cycle,HSF1
+regulation of mitotic cell cycle,MAD2L1BP
+regulation of mitotic cell cycle,MAEA
+regulation of mitotic cell cycle,MIIP
+regulation of mitotic cell cycle,NSMCE2
+regulation of mitotic cell cycle,PSME3
+regulation of mitotic cell cycle,RAD51B
+regulation of mitotic cell cycle,SMARCA4
+regulation of mitotic cell cycle,VPS4B
+regulation of mitotic cell cycle,ZFP36L1
+double-strand break repair via homologous recombination,ARID2
+double-strand break repair via homologous recombination,BRD8
+double-strand break repair via homologous recombination,KMT5A
+double-strand break repair via homologous recombination,NSMCE2
+double-strand break repair via homologous recombination,PPP4R2
+double-strand break repair via homologous recombination,RAD51B
+double-strand break repair via homologous recombination,RAD51D
+double-strand break repair via homologous recombination,SKP2
+double-strand break repair via homologous recombination,UBQLN4
+double-strand break repair via homologous recombination,WDR48
+double-strand break repair via homologous recombination,XRCC2
+macromolecule catabolic process,APC
+macromolecule catabolic process,BIRC2
+macromolecule catabolic process,CNOT2
+macromolecule catabolic process,DDA1
+macromolecule catabolic process,DICER1
+macromolecule catabolic process,EXOSC1
+macromolecule catabolic process,FBXW11
+macromolecule catabolic process,FZR1
+macromolecule catabolic process,GLMN
+macromolecule catabolic process,GRSF1
+macromolecule catabolic process,HAMP
+macromolecule catabolic process,HSF1
+macromolecule catabolic process,KCTD10
+macromolecule catabolic process,L3MBTL3
+macromolecule catabolic process,MAEA
+macromolecule catabolic process,MIB1
+macromolecule catabolic process,NCCRP1
+macromolecule catabolic process,PARN
+macromolecule catabolic process,PLAA
+macromolecule catabolic process,PSME3
+macromolecule catabolic process,RELA
+macromolecule catabolic process,SAMD4B
+macromolecule catabolic process,SKP2
+macromolecule catabolic process,SOX17
+macromolecule catabolic process,TRAF2
+macromolecule catabolic process,UBE2H
+macromolecule catabolic process,UBE2J2
+macromolecule catabolic process,UBQLN4
+macromolecule catabolic process,VPS4B
+macromolecule catabolic process,WDR26
+macromolecule catabolic process,WWTR1
+macromolecule catabolic process,YTHDC1
+macromolecule catabolic process,YTHDF2
+macromolecule catabolic process,ZFP36L1
+positive regulation of macromolecule biosynthetic process,ACTR3
+positive regulation of macromolecule biosynthetic process,ARID1A
+positive regulation of macromolecule biosynthetic process,ATAD2
+positive regulation of macromolecule biosynthetic process,ATXN7L3
+positive regulation of macromolecule biosynthetic process,BIRC2
+positive regulation of macromolecule biosynthetic process,BRD8
+positive regulation of macromolecule biosynthetic process,BRPF1
+positive regulation of macromolecule biosynthetic process,CCNC
+positive regulation of macromolecule biosynthetic process,CITED2
+positive regulation of macromolecule biosynthetic process,E2F3
+positive regulation of macromolecule biosynthetic process,EIF4G1
+positive regulation of macromolecule biosynthetic process,FBXW11
+positive regulation of macromolecule biosynthetic process,GLMN
+positive regulation of macromolecule biosynthetic process,HAMP
+positive regulation of macromolecule biosynthetic process,HSF1
+positive regulation of macromolecule biosynthetic process,ILK
+positive regulation of macromolecule biosynthetic process,KAT6A
+positive regulation of macromolecule biosynthetic process,KMT2A
+positive regulation of macromolecule biosynthetic process,KMT2B
+positive regulation of macromolecule biosynthetic process,KRAS
+positive regulation of macromolecule biosynthetic process,MAP3K7
+positive regulation of macromolecule biosynthetic process,MECOM
+positive regulation of macromolecule biosynthetic process,MED1
+positive regulation of macromolecule biosynthetic process,MED25
+positive regulation of macromolecule biosynthetic process,MEN1
+positive regulation of macromolecule biosynthetic process,MYBL2
+positive regulation of macromolecule biosynthetic process,PARN
+positive regulation of macromolecule biosynthetic process,PAX8
+positive regulation of macromolecule biosynthetic process,PCBD2
+positive regulation of macromolecule biosynthetic process,RAF1
+positive regulation of macromolecule biosynthetic process,RELA
+positive regulation of macromolecule biosynthetic process,SLC30A9
+positive regulation of macromolecule biosynthetic process,SMARCA4
+positive regulation of macromolecule biosynthetic process,SMARCA5
+positive regulation of macromolecule biosynthetic process,SOX17
+positive regulation of macromolecule biosynthetic process,STX4
+positive regulation of macromolecule biosynthetic process,SUPT3H
+positive regulation of macromolecule biosynthetic process,SUPT7L
+positive regulation of macromolecule biosynthetic process,TDG
+positive regulation of macromolecule biosynthetic process,TMED10
+positive regulation of macromolecule biosynthetic process,TMED2
+positive regulation of macromolecule biosynthetic process,TRAF2
+positive regulation of macromolecule biosynthetic process,TRUB2
+positive regulation of macromolecule biosynthetic process,USP1
+positive regulation of macromolecule biosynthetic process,VEZF1
+positive regulation of macromolecule biosynthetic process,WT1
+positive regulation of macromolecule biosynthetic process,WWTR1
+positive regulation of macromolecule biosynthetic process,YTHDF2
+positive regulation of macromolecule biosynthetic process,ZEB1
+positive regulation of macromolecule biosynthetic process,ZNF496
+positive regulation of macromolecule biosynthetic process,ZNF780B
+organelle fission,ACTR3
+organelle fission,APC
+organelle fission,CCNE1
+organelle fission,CENPI
+organelle fission,DNM1L
+organelle fission,FZR1
+organelle fission,KIF2C
+organelle fission,KIF4A
+organelle fission,KMT5A
+organelle fission,LSM14A
+organelle fission,MAD2L1BP
+organelle fission,MYBL2
+organelle fission,NSMCE2
+organelle fission,RAD51B
+organelle fission,RAD51D
+organelle fission,SMARCA5
+organelle fission,SPAG5
+organelle fission,VPS4B
+regulation of DNA metabolic process,ARID1A
+regulation of DNA metabolic process,ARID2
+regulation of DNA metabolic process,ATXN7L3
+regulation of DNA metabolic process,BRD8
+regulation of DNA metabolic process,H1-2
+regulation of DNA metabolic process,HSF1
+regulation of DNA metabolic process,KMT5A
+regulation of DNA metabolic process,NSMCE2
+regulation of DNA metabolic process,PARN
+regulation of DNA metabolic process,PPP4R2
+regulation of DNA metabolic process,SKP2
+regulation of DNA metabolic process,SMARCA4
+regulation of DNA metabolic process,SMARCA5
+regulation of DNA metabolic process,SUPT3H
+regulation of DNA metabolic process,SUPT7L
+regulation of DNA metabolic process,UBQLN4
+regulation of DNA metabolic process,USP1
+regulation of DNA metabolic process,WDR48
+positive regulation of mitotic cell cycle phase transition,CCND1
+positive regulation of mitotic cell cycle phase transition,CCNE1
+positive regulation of mitotic cell cycle phase transition,CDK4
+positive regulation of mitotic cell cycle phase transition,EIF4G1
+positive regulation of mitotic cell cycle phase transition,MAD2L1BP
+positive regulation of mitotic cell cycle phase transition,NSMCE2
+positive regulation of mitotic cell cycle phase transition,RAD51B
+positive regulation of mitotic cell cycle phase transition,VPS4B
+nuclear division,ACTR3
+nuclear division,APC
+nuclear division,CCNE1
+nuclear division,CENPI
+nuclear division,FZR1
+nuclear division,KIF2C
+nuclear division,KIF4A
+nuclear division,KMT5A
+nuclear division,LSM14A
+nuclear division,MAD2L1BP
+nuclear division,MYBL2
+nuclear division,NSMCE2
+nuclear division,RAD51B
+nuclear division,RAD51D
+nuclear division,SMARCA5
+nuclear division,SPAG5
+nuclear division,VPS4B
+recombinational repair,ARID2
+recombinational repair,BRD8
+recombinational repair,KMT5A
+recombinational repair,NSMCE2
+recombinational repair,PPP4R2
+recombinational repair,RAD51B
+recombinational repair,RAD51D
+recombinational repair,SKP2
+recombinational repair,UBQLN4
+recombinational repair,WDR48
+recombinational repair,XRCC2
+positive regulation of mitotic cell cycle,CCND1
+positive regulation of mitotic cell cycle,CCNE1
+positive regulation of mitotic cell cycle,CDK4
+positive regulation of mitotic cell cycle,EIF4G1
+positive regulation of mitotic cell cycle,HSF1
+positive regulation of mitotic cell cycle,MAD2L1BP
+positive regulation of mitotic cell cycle,NSMCE2
+positive regulation of mitotic cell cycle,RAD51B
+positive regulation of mitotic cell cycle,VPS4B
+positive regulation of DNA-templated transcription,ACTR3
+positive regulation of DNA-templated transcription,ARID1A
+positive regulation of DNA-templated transcription,ATAD2
+positive regulation of DNA-templated transcription,ATXN7L3
+positive regulation of DNA-templated transcription,BIRC2
+positive regulation of DNA-templated transcription,BRD8
+positive regulation of DNA-templated transcription,BRPF1
+positive regulation of DNA-templated transcription,CCNC
+positive regulation of DNA-templated transcription,CITED2
+positive regulation of DNA-templated transcription,E2F3
+positive regulation of DNA-templated transcription,FBXW11
+positive regulation of DNA-templated transcription,HAMP
+positive regulation of DNA-templated transcription,HSF1
+positive regulation of DNA-templated transcription,ILK
+positive regulation of DNA-templated transcription,KAT6A
+positive regulation of DNA-templated transcription,KMT2A
+positive regulation of DNA-templated transcription,KMT2B
+positive regulation of DNA-templated transcription,MECOM
+positive regulation of DNA-templated transcription,MED1
+positive regulation of DNA-templated transcription,MED25
+positive regulation of DNA-templated transcription,MEN1
+positive regulation of DNA-templated transcription,MYBL2
+positive regulation of DNA-templated transcription,PAX8
+positive regulation of DNA-templated transcription,PCBD2
+positive regulation of DNA-templated transcription,RAF1
+positive regulation of DNA-templated transcription,RELA
+positive regulation of DNA-templated transcription,SLC30A9
+positive regulation of DNA-templated transcription,SMARCA4
+positive regulation of DNA-templated transcription,SMARCA5
+positive regulation of DNA-templated transcription,SOX17
+positive regulation of DNA-templated transcription,SUPT3H
+positive regulation of DNA-templated transcription,SUPT7L
+positive regulation of DNA-templated transcription,VEZF1
+positive regulation of DNA-templated transcription,WT1
+positive regulation of DNA-templated transcription,WWTR1
+positive regulation of DNA-templated transcription,ZEB1
+positive regulation of DNA-templated transcription,ZNF496
+positive regulation of DNA-templated transcription,ZNF780B
+positive regulation of RNA biosynthetic process,ACTR3
+positive regulation of RNA biosynthetic process,ARID1A
+positive regulation of RNA biosynthetic process,ATAD2
+positive regulation of RNA biosynthetic process,ATXN7L3
+positive regulation of RNA biosynthetic process,BIRC2
+positive regulation of RNA biosynthetic process,BRD8
+positive regulation of RNA biosynthetic process,BRPF1
+positive regulation of RNA biosynthetic process,CCNC
+positive regulation of RNA biosynthetic process,CITED2
+positive regulation of RNA biosynthetic process,E2F3
+positive regulation of RNA biosynthetic process,FBXW11
+positive regulation of RNA biosynthetic process,HAMP
+positive regulation of RNA biosynthetic process,HSF1
+positive regulation of RNA biosynthetic process,ILK
+positive regulation of RNA biosynthetic process,KAT6A
+positive regulation of RNA biosynthetic process,KMT2A
+positive regulation of RNA biosynthetic process,KMT2B
+positive regulation of RNA biosynthetic process,MECOM
+positive regulation of RNA biosynthetic process,MED1
+positive regulation of RNA biosynthetic process,MED25
+positive regulation of RNA biosynthetic process,MEN1
+positive regulation of RNA biosynthetic process,MYBL2
+positive regulation of RNA biosynthetic process,PAX8
+positive regulation of RNA biosynthetic process,PCBD2
+positive regulation of RNA biosynthetic process,RAF1
+positive regulation of RNA biosynthetic process,RELA
+positive regulation of RNA biosynthetic process,SLC30A9
+positive regulation of RNA biosynthetic process,SMARCA4
+positive regulation of RNA biosynthetic process,SMARCA5
+positive regulation of RNA biosynthetic process,SOX17
+positive regulation of RNA biosynthetic process,SUPT3H
+positive regulation of RNA biosynthetic process,SUPT7L
+positive regulation of RNA biosynthetic process,VEZF1
+positive regulation of RNA biosynthetic process,WT1
+positive regulation of RNA biosynthetic process,WWTR1
+positive regulation of RNA biosynthetic process,ZEB1
+positive regulation of RNA biosynthetic process,ZNF496
+positive regulation of RNA biosynthetic process,ZNF780B
+regulation of gene expression,ACTR3
+regulation of gene expression,APLP1
+regulation of gene expression,ARID1A
+regulation of gene expression,ARID2
+regulation of gene expression,ATAD2
+regulation of gene expression,ATP2B1
+regulation of gene expression,ATXN7L3
+regulation of gene expression,BIRC2
+regulation of gene expression,BRD8
+regulation of gene expression,BRMS1
+regulation of gene expression,BRPF1
+regulation of gene expression,BTAF1
+regulation of gene expression,C1D
+regulation of gene expression,CCNC
+regulation of gene expression,CCND1
+regulation of gene expression,CCNE1
+regulation of gene expression,CDK4
+regulation of gene expression,CEP350
+regulation of gene expression,CITED2
+regulation of gene expression,CNOT2
+regulation of gene expression,DICER1
+regulation of gene expression,DNM1L
+regulation of gene expression,DPRX
+regulation of gene expression,E2F3
+regulation of gene expression,EIF4G1
+regulation of gene expression,FBXW11
+regulation of gene expression,GATAD1
+regulation of gene expression,GCN1
+regulation of gene expression,GLMN
+regulation of gene expression,GRSF1
+regulation of gene expression,H1-2
+regulation of gene expression,HAMP
+regulation of gene expression,HSF1
+regulation of gene expression,ILK
+regulation of gene expression,KAT6A
+regulation of gene expression,KDM2A
+regulation of gene expression,KMT2A
+regulation of gene expression,KMT2B
+regulation of gene expression,KMT5A
+regulation of gene expression,KRAS
+regulation of gene expression,L3MBTL3
+regulation of gene expression,LIN52
+regulation of gene expression,LIN54
+regulation of gene expression,LMNB1
+regulation of gene expression,LSM14A
+regulation of gene expression,MAP3K7
+regulation of gene expression,MECOM
+regulation of gene expression,MED1
+regulation of gene expression,MED25
+regulation of gene expression,MEN1
+regulation of gene expression,METAP1
+regulation of gene expression,MTERF3
+regulation of gene expression,MYBL2
+regulation of gene expression,NELFB
+regulation of gene expression,PARN
+regulation of gene expression,PAX8
+regulation of gene expression,PCBD2
+regulation of gene expression,PCGF1
+regulation of gene expression,PSTK
+regulation of gene expression,RAF1
+regulation of gene expression,RELA
+regulation of gene expression,RICTOR
+regulation of gene expression,RNF31
+regulation of gene expression,SAMD4B
+regulation of gene expression,SLC30A9
+regulation of gene expression,SMARCA4
+regulation of gene expression,SMARCA5
+regulation of gene expression,SOX17
+regulation of gene expression,STX4
+regulation of gene expression,SUPT3H
+regulation of gene expression,SUPT7L
+regulation of gene expression,SUZ12
+regulation of gene expression,TDG
+regulation of gene expression,TMED10
+regulation of gene expression,TMED2
+regulation of gene expression,TRAF2
+regulation of gene expression,TRUB2
+regulation of gene expression,VEZF1
+regulation of gene expression,WT1
+regulation of gene expression,WWTR1
+regulation of gene expression,YTHDC1
+regulation of gene expression,YTHDF2
+regulation of gene expression,ZEB1
+regulation of gene expression,ZFP36L1
+regulation of gene expression,ZFP69
+regulation of gene expression,ZNF496
+regulation of gene expression,ZNF780B
+regulation of gene expression,ZNF875
+regulation of response to stimulus,APC
+regulation of response to stimulus,APLP1
+regulation of response to stimulus,ARHGAP29
+regulation of response to stimulus,ARID1A
+regulation of response to stimulus,ARID2
+regulation of response to stimulus,ATP2B1
+regulation of response to stimulus,ATXN7L3
+regulation of response to stimulus,BIRC2
+regulation of response to stimulus,BRD8
+regulation of response to stimulus,BRMS1
+regulation of response to stimulus,CCNC
+regulation of response to stimulus,CEP55
+regulation of response to stimulus,CIT
+regulation of response to stimulus,CITED2
+regulation of response to stimulus,CNOT2
+regulation of response to stimulus,DICER1
+regulation of response to stimulus,DNM1L
+regulation of response to stimulus,EIF4G1
+regulation of response to stimulus,FBXW11
+regulation of response to stimulus,FRS2
+regulation of response to stimulus,G6PD
+regulation of response to stimulus,HAMP
+regulation of response to stimulus,HAPSTR1
+regulation of response to stimulus,HSF1
+regulation of response to stimulus,ILK
+regulation of response to stimulus,KAT6A
+regulation of response to stimulus,KCTD10
+regulation of response to stimulus,KMT5A
+regulation of response to stimulus,KRAS
+regulation of response to stimulus,LSM14A
+regulation of response to stimulus,MAD2L1BP
+regulation of response to stimulus,MAP3K7
+regulation of response to stimulus,MECOM
+regulation of response to stimulus,MED1
+regulation of response to stimulus,MEN1
+regulation of response to stimulus,MFN2
+regulation of response to stimulus,MIOS
+regulation of response to stimulus,MOB4
+regulation of response to stimulus,PARL
+regulation of response to stimulus,PI16
+regulation of response to stimulus,PLEKHF1
+regulation of response to stimulus,PPP2R3C
+regulation of response to stimulus,PPP4R2
+regulation of response to stimulus,PSME3
+regulation of response to stimulus,RAF1
+regulation of response to stimulus,RASGRP4
+regulation of response to stimulus,RELA
+regulation of response to stimulus,RICTOR
+regulation of response to stimulus,RNF31
+regulation of response to stimulus,SKP2
+regulation of response to stimulus,SLC25A5
+regulation of response to stimulus,SMARCA4
+regulation of response to stimulus,SOX17
+regulation of response to stimulus,STRIP1
+regulation of response to stimulus,STX4
+regulation of response to stimulus,SUPT3H
+regulation of response to stimulus,SUPT7L
+regulation of response to stimulus,TARM1
+regulation of response to stimulus,TMED2
+regulation of response to stimulus,TRAF2
+regulation of response to stimulus,TWF1
+regulation of response to stimulus,UBQLN4
+regulation of response to stimulus,USP1
+regulation of response to stimulus,WDR48
+regulation of response to stimulus,WWTR1
+regulation of response to stimulus,YTHDF2
+regulation of response to stimulus,ZC3H3
+regulation of response to stimulus,ZDHHC11
+regulation of response to stimulus,ZEB1
+regulation of cellular process,ACTR3
+regulation of cellular process,APC
+regulation of cellular process,APLP1
+regulation of cellular process,ARHGAP29
+regulation of cellular process,ARID1A
+regulation of cellular process,ARID2
+regulation of cellular process,ARPC2
+regulation of cellular process,ATAD2
+regulation of cellular process,ATP2B1
+regulation of cellular process,ATXN7L3
+regulation of cellular process,BIRC2
+regulation of cellular process,BRD8
+regulation of cellular process,BRMS1
+regulation of cellular process,BRPF1
+regulation of cellular process,BTAF1
+regulation of cellular process,C1D
+regulation of cellular process,CCNC
+regulation of cellular process,CCND1
+regulation of cellular process,CCNE1
+regulation of cellular process,CDK4
+regulation of cellular process,CEP350
+regulation of cellular process,CEP55
+regulation of cellular process,CFDP1
+regulation of cellular process,CIT
+regulation of cellular process,CITED2
+regulation of cellular process,CNOT2
+regulation of cellular process,DDA1
+regulation of cellular process,DICER1
+regulation of cellular process,DNM1L
+regulation of cellular process,DOCK7
+regulation of cellular process,DPRX
+regulation of cellular process,E2F3
+regulation of cellular process,EIF4G1
+regulation of cellular process,FBXW11
+regulation of cellular process,FRS2
+regulation of cellular process,FZR1
+regulation of cellular process,G6PD
+regulation of cellular process,GATAD1
+regulation of cellular process,GCN1
+regulation of cellular process,GLMN
+regulation of cellular process,GRSF1
+regulation of cellular process,H1-2
+regulation of cellular process,HAMP
+regulation of cellular process,HAPSTR1
+regulation of cellular process,HSF1
+regulation of cellular process,ILK
+regulation of cellular process,KAT6A
+regulation of cellular process,KCTD10
+regulation of cellular process,KDM2A
+regulation of cellular process,KIF20A
+regulation of cellular process,KIF2C
+regulation of cellular process,KMT2A
+regulation of cellular process,KMT2B
+regulation of cellular process,KMT5A
+regulation of cellular process,KRAS
+regulation of cellular process,KRT8
+regulation of cellular process,L3MBTL3
+regulation of cellular process,LIN52
+regulation of cellular process,LIN54
+regulation of cellular process,LMNB1
+regulation of cellular process,LRFN1
+regulation of cellular process,LSM14A
+regulation of cellular process,LST1
+regulation of cellular process,MAD2L1BP
+regulation of cellular process,MAEA
+regulation of cellular process,MAP3K7
+regulation of cellular process,MARK2
+regulation of cellular process,MECOM
+regulation of cellular process,MED1
+regulation of cellular process,MED25
+regulation of cellular process,MEN1
+regulation of cellular process,METAP1
+regulation of cellular process,MFN2
+regulation of cellular process,MIB1
+regulation of cellular process,MIIP
+regulation of cellular process,MIOS
+regulation of cellular process,MOB4
+regulation of cellular process,MTERF3
+regulation of cellular process,MYBL2
+regulation of cellular process,NCCRP1
+regulation of cellular process,NELFB
+regulation of cellular process,NSMCE2
+regulation of cellular process,PARD3
+regulation of cellular process,PARD6B
+regulation of cellular process,PARL
+regulation of cellular process,PARN
+regulation of cellular process,PAX8
+regulation of cellular process,PCBD2
+regulation of cellular process,PCGF1
+regulation of cellular process,PDCD2
+regulation of cellular process,PDS5B
+regulation of cellular process,PFDN1
+regulation of cellular process,PI16
+regulation of cellular process,PLAA
+regulation of cellular process,PLEKHF1
+regulation of cellular process,POLR2M
+regulation of cellular process,PPP2R3C
+regulation of cellular process,PPP4R2
+regulation of cellular process,PSME3
+regulation of cellular process,PSTK
+regulation of cellular process,RAB18
+regulation of cellular process,RAD51B
+regulation of cellular process,RAD51D
+regulation of cellular process,RAF1
+regulation of cellular process,RANBP2
+regulation of cellular process,RASGRP4
+regulation of cellular process,RELA
+regulation of cellular process,RHPN1
+regulation of cellular process,RICTOR
+regulation of cellular process,RNF31
+regulation of cellular process,SAMD4B
+regulation of cellular process,SCD
+regulation of cellular process,SEC16A
+regulation of cellular process,SKP2
+regulation of cellular process,SLC25A5
+regulation of cellular process,SLC30A9
+regulation of cellular process,SLC7A1
+regulation of cellular process,SMARCA4
+regulation of cellular process,SMARCA5
+regulation of cellular process,SOX17
+regulation of cellular process,SPAG5
+regulation of cellular process,STRIP1
+regulation of cellular process,STX4
+regulation of cellular process,STXBP3
+regulation of cellular process,SUPT3H
+regulation of cellular process,SUPT7L
+regulation of cellular process,SUZ12
+regulation of cellular process,TACC3
+regulation of cellular process,TAFAZZIN
+regulation of cellular process,TARM1
+regulation of cellular process,TDG
+regulation of cellular process,TMED10
+regulation of cellular process,TMED2
+regulation of cellular process,TRAF2
+regulation of cellular process,TRUB2
+regulation of cellular process,TWF1
+regulation of cellular process,TXNRD1
+regulation of cellular process,UBE2J2
+regulation of cellular process,UBQLN4
+regulation of cellular process,USP1
+regulation of cellular process,VBP1
+regulation of cellular process,VEZF1
+regulation of cellular process,VPS4B
+regulation of cellular process,VTI1B
+regulation of cellular process,WDR48
+regulation of cellular process,WT1
+regulation of cellular process,WWTR1
+regulation of cellular process,XRCC2
+regulation of cellular process,YTHDC1
+regulation of cellular process,YTHDF2
+regulation of cellular process,ZC3H3
+regulation of cellular process,ZEB1
+regulation of cellular process,ZFP36L1
+regulation of cellular process,ZFP69
+regulation of cellular process,ZNF496
+regulation of cellular process,ZNF780B
+regulation of cellular process,ZNF875
+positive regulation of biosynthetic process,ACTR3
+positive regulation of biosynthetic process,ARID1A
+positive regulation of biosynthetic process,ATAD2
+positive regulation of biosynthetic process,ATXN7L3
+positive regulation of biosynthetic process,BIRC2
+positive regulation of biosynthetic process,BRD8
+positive regulation of biosynthetic process,BRPF1
+positive regulation of biosynthetic process,CCNC
+positive regulation of biosynthetic process,CITED2
+positive regulation of biosynthetic process,E2F3
+positive regulation of biosynthetic process,EIF4G1
+positive regulation of biosynthetic process,FBXW11
+positive regulation of biosynthetic process,GLMN
+positive regulation of biosynthetic process,HAMP
+positive regulation of biosynthetic process,HSF1
+positive regulation of biosynthetic process,ILK
+positive regulation of biosynthetic process,KAT6A
+positive regulation of biosynthetic process,KMT2A
+positive regulation of biosynthetic process,KMT2B
+positive regulation of biosynthetic process,KRAS
+positive regulation of biosynthetic process,MAP3K7
+positive regulation of biosynthetic process,MECOM
+positive regulation of biosynthetic process,MED1
+positive regulation of biosynthetic process,MED25
+positive regulation of biosynthetic process,MEN1
+positive regulation of biosynthetic process,MYBL2
+positive regulation of biosynthetic process,PARN
+positive regulation of biosynthetic process,PAX8
+positive regulation of biosynthetic process,PCBD2
+positive regulation of biosynthetic process,RAF1
+positive regulation of biosynthetic process,RELA
+positive regulation of biosynthetic process,SLC30A9
+positive regulation of biosynthetic process,SMARCA4
+positive regulation of biosynthetic process,SMARCA5
+positive regulation of biosynthetic process,SOX17
+positive regulation of biosynthetic process,STX4
+positive regulation of biosynthetic process,SUPT3H
+positive regulation of biosynthetic process,SUPT7L
+positive regulation of biosynthetic process,TAFAZZIN
+positive regulation of biosynthetic process,TDG
+positive regulation of biosynthetic process,TMED10
+positive regulation of biosynthetic process,TMED2
+positive regulation of biosynthetic process,TRAF2
+positive regulation of biosynthetic process,TRUB2
+positive regulation of biosynthetic process,USP1
+positive regulation of biosynthetic process,VEZF1
+positive regulation of biosynthetic process,WT1
+positive regulation of biosynthetic process,WWTR1
+positive regulation of biosynthetic process,YTHDF2
+positive regulation of biosynthetic process,ZEB1
+positive regulation of biosynthetic process,ZNF496
+positive regulation of biosynthetic process,ZNF780B
+proteasome-mediated ubiquitin-dependent protein catabolic process,APC
+proteasome-mediated ubiquitin-dependent protein catabolic process,BIRC2
+proteasome-mediated ubiquitin-dependent protein catabolic process,DDA1
+proteasome-mediated ubiquitin-dependent protein catabolic process,FBXW11
+proteasome-mediated ubiquitin-dependent protein catabolic process,FZR1
+proteasome-mediated ubiquitin-dependent protein catabolic process,GLMN
+proteasome-mediated ubiquitin-dependent protein catabolic process,HAMP
+proteasome-mediated ubiquitin-dependent protein catabolic process,KCTD10
+proteasome-mediated ubiquitin-dependent protein catabolic process,MAEA
+proteasome-mediated ubiquitin-dependent protein catabolic process,NCCRP1
+proteasome-mediated ubiquitin-dependent protein catabolic process,PLAA
+proteasome-mediated ubiquitin-dependent protein catabolic process,SKP2
+proteasome-mediated ubiquitin-dependent protein catabolic process,UBE2H
+proteasome-mediated ubiquitin-dependent protein catabolic process,UBQLN4
+proteasome-mediated ubiquitin-dependent protein catabolic process,WDR26
+proteasome-mediated ubiquitin-dependent protein catabolic process,WWTR1
+programmed cell death,APC
+programmed cell death,APLP1
+programmed cell death,BIRC2
+programmed cell death,BRD8
+programmed cell death,BRMS1
+programmed cell death,C1D
+programmed cell death,CCND1
+programmed cell death,CFDP1
+programmed cell death,CIT
+programmed cell death,CITED2
+programmed cell death,DICER1
+programmed cell death,DNM1L
+programmed cell death,E2F3
+programmed cell death,FRS2
+programmed cell death,G6PD
+programmed cell death,GSDMC
+programmed cell death,HSF1
+programmed cell death,KMT2A
+programmed cell death,KRAS
+programmed cell death,KRT8
+programmed cell death,MAEA
+programmed cell death,MAP3K7
+programmed cell death,MECOM
+programmed cell death,MED1
+programmed cell death,MFN2
+programmed cell death,MYBL2
+programmed cell death,PARL
+programmed cell death,PAX8
+programmed cell death,PDCD2
+programmed cell death,PLEKHF1
+programmed cell death,PSME3
+programmed cell death,RAF1
+programmed cell death,RELA
+programmed cell death,RICTOR
+programmed cell death,RNF31
+programmed cell death,SKP2
+programmed cell death,SLC25A5
+programmed cell death,STX4
+programmed cell death,TRAF2
+programmed cell death,WT1
+programmed cell death,XRCC2
+programmed cell death,ZFP36L1
+regulation of biosynthetic process,ACTR3
+regulation of biosynthetic process,APLP1
+regulation of biosynthetic process,ARID1A
+regulation of biosynthetic process,ARID2
+regulation of biosynthetic process,ATAD2
+regulation of biosynthetic process,ATP2B1
+regulation of biosynthetic process,ATXN7L3
+regulation of biosynthetic process,BIRC2
+regulation of biosynthetic process,BRD8
+regulation of biosynthetic process,BRMS1
+regulation of biosynthetic process,BRPF1
+regulation of biosynthetic process,BTAF1
+regulation of biosynthetic process,C1D
+regulation of biosynthetic process,CCNC
+regulation of biosynthetic process,CCND1
+regulation of biosynthetic process,CCNE1
+regulation of biosynthetic process,CDK4
+regulation of biosynthetic process,CEP350
+regulation of biosynthetic process,CITED2
+regulation of biosynthetic process,CNOT2
+regulation of biosynthetic process,DICER1
+regulation of biosynthetic process,DNM1L
+regulation of biosynthetic process,DPRX
+regulation of biosynthetic process,E2F3
+regulation of biosynthetic process,EIF4G1
+regulation of biosynthetic process,FBXW11
+regulation of biosynthetic process,GATAD1
+regulation of biosynthetic process,GCN1
+regulation of biosynthetic process,GLMN
+regulation of biosynthetic process,GRSF1
+regulation of biosynthetic process,H1-2
+regulation of biosynthetic process,HAMP
+regulation of biosynthetic process,HSF1
+regulation of biosynthetic process,ILK
+regulation of biosynthetic process,KAT6A
+regulation of biosynthetic process,KDM2A
+regulation of biosynthetic process,KMT2A
+regulation of biosynthetic process,KMT2B
+regulation of biosynthetic process,KMT5A
+regulation of biosynthetic process,KRAS
+regulation of biosynthetic process,L3MBTL3
+regulation of biosynthetic process,LIN52
+regulation of biosynthetic process,LIN54
+regulation of biosynthetic process,LMNB1
+regulation of biosynthetic process,LSM14A
+regulation of biosynthetic process,MAP3K7
+regulation of biosynthetic process,MECOM
+regulation of biosynthetic process,MED1
+regulation of biosynthetic process,MED25
+regulation of biosynthetic process,MEN1
+regulation of biosynthetic process,METAP1
+regulation of biosynthetic process,MTERF3
+regulation of biosynthetic process,MYBL2
+regulation of biosynthetic process,NELFB
+regulation of biosynthetic process,PARN
+regulation of biosynthetic process,PAX8
+regulation of biosynthetic process,PCBD2
+regulation of biosynthetic process,PCGF1
+regulation of biosynthetic process,PSTK
+regulation of biosynthetic process,RAF1
+regulation of biosynthetic process,RANBP2
+regulation of biosynthetic process,RELA
+regulation of biosynthetic process,RICTOR
+regulation of biosynthetic process,RNF31
+regulation of biosynthetic process,SAMD4B
+regulation of biosynthetic process,SLC30A9
+regulation of biosynthetic process,SMARCA4
+regulation of biosynthetic process,SMARCA5
+regulation of biosynthetic process,SOX17
+regulation of biosynthetic process,STX4
+regulation of biosynthetic process,SUPT3H
+regulation of biosynthetic process,SUPT7L
+regulation of biosynthetic process,SUZ12
+regulation of biosynthetic process,TAFAZZIN
+regulation of biosynthetic process,TDG
+regulation of biosynthetic process,TMED10
+regulation of biosynthetic process,TMED2
+regulation of biosynthetic process,TRAF2
+regulation of biosynthetic process,TRUB2
+regulation of biosynthetic process,USP1
+regulation of biosynthetic process,VEZF1
+regulation of biosynthetic process,WT1
+regulation of biosynthetic process,WWTR1
+regulation of biosynthetic process,YTHDC1
+regulation of biosynthetic process,YTHDF2
+regulation of biosynthetic process,ZEB1
+regulation of biosynthetic process,ZFP36L1
+regulation of biosynthetic process,ZFP69
+regulation of biosynthetic process,ZNF496
+regulation of biosynthetic process,ZNF780B
+regulation of biosynthetic process,ZNF875
+regulation of macromolecule biosynthetic process,ACTR3
+regulation of macromolecule biosynthetic process,APLP1
+regulation of macromolecule biosynthetic process,ARID1A
+regulation of macromolecule biosynthetic process,ARID2
+regulation of macromolecule biosynthetic process,ATAD2
+regulation of macromolecule biosynthetic process,ATP2B1
+regulation of macromolecule biosynthetic process,ATXN7L3
+regulation of macromolecule biosynthetic process,BIRC2
+regulation of macromolecule biosynthetic process,BRD8
+regulation of macromolecule biosynthetic process,BRMS1
+regulation of macromolecule biosynthetic process,BRPF1
+regulation of macromolecule biosynthetic process,BTAF1
+regulation of macromolecule biosynthetic process,C1D
+regulation of macromolecule biosynthetic process,CCNC
+regulation of macromolecule biosynthetic process,CCND1
+regulation of macromolecule biosynthetic process,CCNE1
+regulation of macromolecule biosynthetic process,CDK4
+regulation of macromolecule biosynthetic process,CEP350
+regulation of macromolecule biosynthetic process,CITED2
+regulation of macromolecule biosynthetic process,CNOT2
+regulation of macromolecule biosynthetic process,DICER1
+regulation of macromolecule biosynthetic process,DNM1L
+regulation of macromolecule biosynthetic process,DPRX
+regulation of macromolecule biosynthetic process,E2F3
+regulation of macromolecule biosynthetic process,EIF4G1
+regulation of macromolecule biosynthetic process,FBXW11
+regulation of macromolecule biosynthetic process,GATAD1
+regulation of macromolecule biosynthetic process,GCN1
+regulation of macromolecule biosynthetic process,GLMN
+regulation of macromolecule biosynthetic process,GRSF1
+regulation of macromolecule biosynthetic process,H1-2
+regulation of macromolecule biosynthetic process,HAMP
+regulation of macromolecule biosynthetic process,HSF1
+regulation of macromolecule biosynthetic process,ILK
+regulation of macromolecule biosynthetic process,KAT6A
+regulation of macromolecule biosynthetic process,KDM2A
+regulation of macromolecule biosynthetic process,KMT2A
+regulation of macromolecule biosynthetic process,KMT2B
+regulation of macromolecule biosynthetic process,KMT5A
+regulation of macromolecule biosynthetic process,KRAS
+regulation of macromolecule biosynthetic process,L3MBTL3
+regulation of macromolecule biosynthetic process,LIN52
+regulation of macromolecule biosynthetic process,LIN54
+regulation of macromolecule biosynthetic process,LMNB1
+regulation of macromolecule biosynthetic process,LSM14A
+regulation of macromolecule biosynthetic process,MAP3K7
+regulation of macromolecule biosynthetic process,MECOM
+regulation of macromolecule biosynthetic process,MED1
+regulation of macromolecule biosynthetic process,MED25
+regulation of macromolecule biosynthetic process,MEN1
+regulation of macromolecule biosynthetic process,METAP1
+regulation of macromolecule biosynthetic process,MTERF3
+regulation of macromolecule biosynthetic process,MYBL2
+regulation of macromolecule biosynthetic process,NELFB
+regulation of macromolecule biosynthetic process,PARN
+regulation of macromolecule biosynthetic process,PAX8
+regulation of macromolecule biosynthetic process,PCBD2
+regulation of macromolecule biosynthetic process,PCGF1
+regulation of macromolecule biosynthetic process,PSTK
+regulation of macromolecule biosynthetic process,RAF1
+regulation of macromolecule biosynthetic process,RELA
+regulation of macromolecule biosynthetic process,RICTOR
+regulation of macromolecule biosynthetic process,RNF31
+regulation of macromolecule biosynthetic process,SAMD4B
+regulation of macromolecule biosynthetic process,SLC30A9
+regulation of macromolecule biosynthetic process,SMARCA4
+regulation of macromolecule biosynthetic process,SMARCA5
+regulation of macromolecule biosynthetic process,SOX17
+regulation of macromolecule biosynthetic process,STX4
+regulation of macromolecule biosynthetic process,SUPT3H
+regulation of macromolecule biosynthetic process,SUPT7L
+regulation of macromolecule biosynthetic process,SUZ12
+regulation of macromolecule biosynthetic process,TDG
+regulation of macromolecule biosynthetic process,TMED10
+regulation of macromolecule biosynthetic process,TMED2
+regulation of macromolecule biosynthetic process,TRAF2
+regulation of macromolecule biosynthetic process,TRUB2
+regulation of macromolecule biosynthetic process,USP1
+regulation of macromolecule biosynthetic process,VEZF1
+regulation of macromolecule biosynthetic process,WT1
+regulation of macromolecule biosynthetic process,WWTR1
+regulation of macromolecule biosynthetic process,YTHDC1
+regulation of macromolecule biosynthetic process,YTHDF2
+regulation of macromolecule biosynthetic process,ZEB1
+regulation of macromolecule biosynthetic process,ZFP36L1
+regulation of macromolecule biosynthetic process,ZFP69
+regulation of macromolecule biosynthetic process,ZNF496
+regulation of macromolecule biosynthetic process,ZNF780B
+regulation of macromolecule biosynthetic process,ZNF875
+cell death,APC
+cell death,APLP1
+cell death,BIRC2
+cell death,BRD8
+cell death,BRMS1
+cell death,C1D
+cell death,CCND1
+cell death,CFDP1
+cell death,CIT
+cell death,CITED2
+cell death,DICER1
+cell death,DNM1L
+cell death,E2F3
+cell death,FRS2
+cell death,G6PD
+cell death,GSDMC
+cell death,HSF1
+cell death,KMT2A
+cell death,KRAS
+cell death,KRT8
+cell death,MAEA
+cell death,MAP3K7
+cell death,MECOM
+cell death,MED1
+cell death,MFN2
+cell death,MYBL2
+cell death,PARL
+cell death,PAX8
+cell death,PDCD2
+cell death,PLEKHF1
+cell death,PSME3
+cell death,RAF1
+cell death,RELA
+cell death,RICTOR
+cell death,RNF31
+cell death,SKP2
+cell death,SLC25A5
+cell death,STX4
+cell death,TRAF2
+cell death,WT1
+cell death,XRCC2
+cell death,ZFP36L1
+transcription by RNA polymerase II,ACTR3
+transcription by RNA polymerase II,ARID1A
+transcription by RNA polymerase II,ARID2
+transcription by RNA polymerase II,ATAD2
+transcription by RNA polymerase II,ATXN7L3
+transcription by RNA polymerase II,BRD8
+transcription by RNA polymerase II,BRMS1
+transcription by RNA polymerase II,BRPF1
+transcription by RNA polymerase II,CCNC
+transcription by RNA polymerase II,CCND1
+transcription by RNA polymerase II,CCNE1
+transcription by RNA polymerase II,CDK4
+transcription by RNA polymerase II,CITED2
+transcription by RNA polymerase II,CNOT2
+transcription by RNA polymerase II,DICER1
+transcription by RNA polymerase II,DPRX
+transcription by RNA polymerase II,E2F3
+transcription by RNA polymerase II,ELOF1
+transcription by RNA polymerase II,H1-2
+transcription by RNA polymerase II,HAMP
+transcription by RNA polymerase II,HSF1
+transcription by RNA polymerase II,KAT6A
+transcription by RNA polymerase II,KDM2A
+transcription by RNA polymerase II,KMT2A
+transcription by RNA polymerase II,KMT5A
+transcription by RNA polymerase II,MECOM
+transcription by RNA polymerase II,MED1
+transcription by RNA polymerase II,MED25
+transcription by RNA polymerase II,MEN1
+transcription by RNA polymerase II,MYBL2
+transcription by RNA polymerase II,NELFB
+transcription by RNA polymerase II,PAX8
+transcription by RNA polymerase II,PCGF1
+transcription by RNA polymerase II,POLR2M
+transcription by RNA polymerase II,RAF1
+transcription by RNA polymerase II,RELA
+transcription by RNA polymerase II,SLC30A9
+transcription by RNA polymerase II,SMARCA4
+transcription by RNA polymerase II,SMARCA5
+transcription by RNA polymerase II,SOX17
+transcription by RNA polymerase II,SUPT3H
+transcription by RNA polymerase II,SUZ12
+transcription by RNA polymerase II,TDG
+transcription by RNA polymerase II,TTF2
+transcription by RNA polymerase II,VEZF1
+transcription by RNA polymerase II,WT1
+transcription by RNA polymerase II,WWTR1
+transcription by RNA polymerase II,ZEB1
+transcription by RNA polymerase II,ZFP69
+transcription by RNA polymerase II,ZNF496
+transcription by RNA polymerase II,ZNF780B
+transcription by RNA polymerase II,ZNF875
+G1/S transition of mitotic cell cycle,APC
+G1/S transition of mitotic cell cycle,ARID1A
+G1/S transition of mitotic cell cycle,ARID2
+G1/S transition of mitotic cell cycle,CCND1
+G1/S transition of mitotic cell cycle,CCNE1
+G1/S transition of mitotic cell cycle,CDK4
+G1/S transition of mitotic cell cycle,E2F3
+G1/S transition of mitotic cell cycle,EIF4G1
+G1/S transition of mitotic cell cycle,PSME3
+G1/S transition of mitotic cell cycle,SKP2
+G1/S transition of mitotic cell cycle,SMARCA4
+negative regulation of biological process,APC
+negative regulation of biological process,APLP1
+negative regulation of biological process,ARID2
+negative regulation of biological process,ATP2B1
+negative regulation of biological process,BIRC2
+negative regulation of biological process,BRMS1
+negative regulation of biological process,BTAF1
+negative regulation of biological process,C1D
+negative regulation of biological process,CCNC
+negative regulation of biological process,CCND1
+negative regulation of biological process,CCNE1
+negative regulation of biological process,CFDP1
+negative regulation of biological process,CIT
+negative regulation of biological process,CITED2
+negative regulation of biological process,CNOT2
+negative regulation of biological process,DICER1
+negative regulation of biological process,DOCK7
+negative regulation of biological process,E2F3
+negative regulation of biological process,EIF4G1
+negative regulation of biological process,FBXW11
+negative regulation of biological process,FRS2
+negative regulation of biological process,FZR1
+negative regulation of biological process,G6PD
+negative regulation of biological process,GLMN
+negative regulation of biological process,H1-2
+negative regulation of biological process,HAMP
+negative regulation of biological process,HAPSTR1
+negative regulation of biological process,HSF1
+negative regulation of biological process,ILK
+negative regulation of biological process,KAT6A
+negative regulation of biological process,KCTD10
+negative regulation of biological process,KDM2A
+negative regulation of biological process,KMT2A
+negative regulation of biological process,KMT5A
+negative regulation of biological process,KRAS
+negative regulation of biological process,L3MBTL3
+negative regulation of biological process,LMNB1
+negative regulation of biological process,LSM14A
+negative regulation of biological process,LST1
+negative regulation of biological process,MAD2L1BP
+negative regulation of biological process,MAEA
+negative regulation of biological process,MAP3K7
+negative regulation of biological process,MECOM
+negative regulation of biological process,MED1
+negative regulation of biological process,MED25
+negative regulation of biological process,MEN1
+negative regulation of biological process,MFN2
+negative regulation of biological process,MIB1
+negative regulation of biological process,MIIP
+negative regulation of biological process,MIOS
+negative regulation of biological process,MOB4
+negative regulation of biological process,MTERF3
+negative regulation of biological process,NELFB
+negative regulation of biological process,PARD3
+negative regulation of biological process,PARL
+negative regulation of biological process,PARN
+negative regulation of biological process,PAX8
+negative regulation of biological process,PCGF1
+negative regulation of biological process,PDS5B
+negative regulation of biological process,PFDN1
+negative regulation of biological process,PI16
+negative regulation of biological process,PLAA
+negative regulation of biological process,PSME3
+negative regulation of biological process,RAF1
+negative regulation of biological process,RELA
+negative regulation of biological process,RHPN1
+negative regulation of biological process,RICTOR
+negative regulation of biological process,RNF31
+negative regulation of biological process,SAMD4B
+negative regulation of biological process,SLC25A5
+negative regulation of biological process,SMARCA4
+negative regulation of biological process,SMARCA5
+negative regulation of biological process,SOX17
+negative regulation of biological process,STRIP1
+negative regulation of biological process,STXBP3
+negative regulation of biological process,SUZ12
+negative regulation of biological process,TARM1
+negative regulation of biological process,TDG
+negative regulation of biological process,TMED2
+negative regulation of biological process,TRAF2
+negative regulation of biological process,TWF1
+negative regulation of biological process,UBQLN4
+negative regulation of biological process,VBP1
+negative regulation of biological process,VPS4B
+negative regulation of biological process,WT1
+negative regulation of biological process,WWTR1
+negative regulation of biological process,XRCC2
+negative regulation of biological process,YTHDC1
+negative regulation of biological process,YTHDF2
+negative regulation of biological process,ZEB1
+negative regulation of biological process,ZFP36L1
+negative regulation of RNA metabolic process,BRMS1
+negative regulation of RNA metabolic process,BTAF1
+negative regulation of RNA metabolic process,C1D
+negative regulation of RNA metabolic process,CCND1
+negative regulation of RNA metabolic process,CCNE1
+negative regulation of RNA metabolic process,CITED2
+negative regulation of RNA metabolic process,CNOT2
+negative regulation of RNA metabolic process,DICER1
+negative regulation of RNA metabolic process,FBXW11
+negative regulation of RNA metabolic process,H1-2
+negative regulation of RNA metabolic process,HAMP
+negative regulation of RNA metabolic process,HSF1
+negative regulation of RNA metabolic process,KAT6A
+negative regulation of RNA metabolic process,KDM2A
+negative regulation of RNA metabolic process,KMT5A
+negative regulation of RNA metabolic process,L3MBTL3
+negative regulation of RNA metabolic process,MECOM
+negative regulation of RNA metabolic process,MED1
+negative regulation of RNA metabolic process,MED25
+negative regulation of RNA metabolic process,MEN1
+negative regulation of RNA metabolic process,MTERF3
+negative regulation of RNA metabolic process,NELFB
+negative regulation of RNA metabolic process,PARN
+negative regulation of RNA metabolic process,PCGF1
+negative regulation of RNA metabolic process,RELA
+negative regulation of RNA metabolic process,SMARCA4
+negative regulation of RNA metabolic process,SMARCA5
+negative regulation of RNA metabolic process,SUZ12
+negative regulation of RNA metabolic process,TDG
+negative regulation of RNA metabolic process,TRAF2
+negative regulation of RNA metabolic process,WT1
+negative regulation of RNA metabolic process,WWTR1
+negative regulation of RNA metabolic process,ZEB1
+ubiquitin-dependent protein catabolic process,APC
+ubiquitin-dependent protein catabolic process,BIRC2
+ubiquitin-dependent protein catabolic process,DDA1
+ubiquitin-dependent protein catabolic process,FBXW11
+ubiquitin-dependent protein catabolic process,FZR1
+ubiquitin-dependent protein catabolic process,GLMN
+ubiquitin-dependent protein catabolic process,HAMP
+ubiquitin-dependent protein catabolic process,KCTD10
+ubiquitin-dependent protein catabolic process,L3MBTL3
+ubiquitin-dependent protein catabolic process,MAEA
+ubiquitin-dependent protein catabolic process,MIB1
+ubiquitin-dependent protein catabolic process,NCCRP1
+ubiquitin-dependent protein catabolic process,PLAA
+ubiquitin-dependent protein catabolic process,SKP2
+ubiquitin-dependent protein catabolic process,UBE2H
+ubiquitin-dependent protein catabolic process,UBE2J2
+ubiquitin-dependent protein catabolic process,UBQLN4
+ubiquitin-dependent protein catabolic process,VPS4B
+ubiquitin-dependent protein catabolic process,WDR26
+ubiquitin-dependent protein catabolic process,WWTR1
+negative regulation of DNA-templated transcription,BRMS1
+negative regulation of DNA-templated transcription,BTAF1
+negative regulation of DNA-templated transcription,C1D
+negative regulation of DNA-templated transcription,CCND1
+negative regulation of DNA-templated transcription,CCNE1
+negative regulation of DNA-templated transcription,CITED2
+negative regulation of DNA-templated transcription,CNOT2
+negative regulation of DNA-templated transcription,DICER1
+negative regulation of DNA-templated transcription,FBXW11
+negative regulation of DNA-templated transcription,H1-2
+negative regulation of DNA-templated transcription,HAMP
+negative regulation of DNA-templated transcription,HSF1
+negative regulation of DNA-templated transcription,KAT6A
+negative regulation of DNA-templated transcription,KDM2A
+negative regulation of DNA-templated transcription,KMT5A
+negative regulation of DNA-templated transcription,L3MBTL3
+negative regulation of DNA-templated transcription,MECOM
+negative regulation of DNA-templated transcription,MED1
+negative regulation of DNA-templated transcription,MED25
+negative regulation of DNA-templated transcription,MEN1
+negative regulation of DNA-templated transcription,MTERF3
+negative regulation of DNA-templated transcription,NELFB
+negative regulation of DNA-templated transcription,PCGF1
+negative regulation of DNA-templated transcription,RELA
+negative regulation of DNA-templated transcription,SMARCA4
+negative regulation of DNA-templated transcription,SMARCA5
+negative regulation of DNA-templated transcription,SUZ12
+negative regulation of DNA-templated transcription,TDG
+negative regulation of DNA-templated transcription,WT1
+negative regulation of DNA-templated transcription,WWTR1
+negative regulation of DNA-templated transcription,ZEB1
+regulation of cell cycle phase transition,APC
+regulation of cell cycle phase transition,ARID1A
+regulation of cell cycle phase transition,ARID2
+regulation of cell cycle phase transition,CCND1
+regulation of cell cycle phase transition,CCNE1
+regulation of cell cycle phase transition,CDK4
+regulation of cell cycle phase transition,EIF4G1
+regulation of cell cycle phase transition,FZR1
+regulation of cell cycle phase transition,MAD2L1BP
+regulation of cell cycle phase transition,MIIP
+regulation of cell cycle phase transition,NSMCE2
+regulation of cell cycle phase transition,PSME3
+regulation of cell cycle phase transition,RAD51B
+regulation of cell cycle phase transition,SMARCA4
+regulation of cell cycle phase transition,VPS4B
+regulation of cell cycle phase transition,ZFP36L1
+biological regulation,AARS2
+biological regulation,ACTR3
+biological regulation,APC
+biological regulation,APLP1
+biological regulation,ARHGAP29
+biological regulation,ARID1A
+biological regulation,ARID2
+biological regulation,ARPC2
+biological regulation,ATAD2
+biological regulation,ATP2B1
+biological regulation,ATXN7L3
+biological regulation,BIRC2
+biological regulation,BRD8
+biological regulation,BRMS1
+biological regulation,BRPF1
+biological regulation,BTAF1
+biological regulation,C1D
+biological regulation,CCNC
+biological regulation,CCND1
+biological regulation,CCNE1
+biological regulation,CDK4
+biological regulation,CEP350
+biological regulation,CEP55
+biological regulation,CFDP1
+biological regulation,CIT
+biological regulation,CITED2
+biological regulation,CNOT2
+biological regulation,DDA1
+biological regulation,DICER1
+biological regulation,DNM1L
+biological regulation,DOCK7
+biological regulation,DPRX
+biological regulation,E2F3
+biological regulation,EIF4G1
+biological regulation,FBXW11
+biological regulation,FRS2
+biological regulation,FZR1
+biological regulation,G6PD
+biological regulation,GATAD1
+biological regulation,GCN1
+biological regulation,GLMN
+biological regulation,GRSF1
+biological regulation,H1-2
+biological regulation,HAMP
+biological regulation,HAPSTR1
+biological regulation,HSF1
+biological regulation,ILK
+biological regulation,KAT6A
+biological regulation,KCTD10
+biological regulation,KDM2A
+biological regulation,KIF20A
+biological regulation,KIF2C
+biological regulation,KMT2A
+biological regulation,KMT2B
+biological regulation,KMT5A
+biological regulation,KRAS
+biological regulation,KRT8
+biological regulation,L3MBTL3
+biological regulation,LARS2
+biological regulation,LIN52
+biological regulation,LIN54
+biological regulation,LMNB1
+biological regulation,LRFN1
+biological regulation,LSM14A
+biological regulation,LST1
+biological regulation,MAD2L1BP
+biological regulation,MAEA
+biological regulation,MAP3K7
+biological regulation,MARK2
+biological regulation,MATN1
+biological regulation,MECOM
+biological regulation,MED1
+biological regulation,MED25
+biological regulation,MEN1
+biological regulation,METAP1
+biological regulation,MFN2
+biological regulation,MIB1
+biological regulation,MIIP
+biological regulation,MIOS
+biological regulation,MOB4
+biological regulation,MTERF3
+biological regulation,MYBL2
+biological regulation,NCCRP1
+biological regulation,NELFB
+biological regulation,NSMCE2
+biological regulation,PARD3
+biological regulation,PARD6B
+biological regulation,PARL
+biological regulation,PARN
+biological regulation,PAX8
+biological regulation,PCBD2
+biological regulation,PCGF1
+biological regulation,PDCD2
+biological regulation,PDS5B
+biological regulation,PEX6
+biological regulation,PFDN1
+biological regulation,PI16
+biological regulation,PLAA
+biological regulation,PLEKHF1
+biological regulation,POLR2M
+biological regulation,PPP2R3C
+biological regulation,PPP4R2
+biological regulation,PSME3
+biological regulation,PSTK
+biological regulation,RAB18
+biological regulation,RAD51B
+biological regulation,RAD51D
+biological regulation,RAF1
+biological regulation,RANBP2
+biological regulation,RASGRP4
+biological regulation,RELA
+biological regulation,RHPN1
+biological regulation,RICTOR
+biological regulation,RNF31
+biological regulation,SAMD4B
+biological regulation,SCD
+biological regulation,SEC16A
+biological regulation,SKP2
+biological regulation,SLC25A5
+biological regulation,SLC30A9
+biological regulation,SLC4A7
+biological regulation,SLC7A1
+biological regulation,SMARCA4
+biological regulation,SMARCA5
+biological regulation,SNAP23
+biological regulation,SOX17
+biological regulation,SPAG5
+biological regulation,STRIP1
+biological regulation,STX4
+biological regulation,STXBP3
+biological regulation,SUPT3H
+biological regulation,SUPT7L
+biological regulation,SUZ12
+biological regulation,TACC3
+biological regulation,TAFAZZIN
+biological regulation,TARM1
+biological regulation,TDG
+biological regulation,TMED10
+biological regulation,TMED2
+biological regulation,TRAF2
+biological regulation,TRUB2
+biological regulation,TWF1
+biological regulation,TXNRD1
+biological regulation,UBE2J2
+biological regulation,UBQLN4
+biological regulation,USP1
+biological regulation,VBP1
+biological regulation,VEZF1
+biological regulation,VPS4B
+biological regulation,VTI1B
+biological regulation,WDR48
+biological regulation,WT1
+biological regulation,WWTR1
+biological regulation,XRCC2
+biological regulation,YTHDC1
+biological regulation,YTHDF2
+biological regulation,ZC3H3
+biological regulation,ZDHHC11
+biological regulation,ZEB1
+biological regulation,ZFP36L1
+biological regulation,ZFP69
+biological regulation,ZNF496
+biological regulation,ZNF780B
+biological regulation,ZNF875
+regulation of biological process,ACTR3
+regulation of biological process,APC
+regulation of biological process,APLP1
+regulation of biological process,ARHGAP29
+regulation of biological process,ARID1A
+regulation of biological process,ARID2
+regulation of biological process,ARPC2
+regulation of biological process,ATAD2
+regulation of biological process,ATP2B1
+regulation of biological process,ATXN7L3
+regulation of biological process,BIRC2
+regulation of biological process,BRD8
+regulation of biological process,BRMS1
+regulation of biological process,BRPF1
+regulation of biological process,BTAF1
+regulation of biological process,C1D
+regulation of biological process,CCNC
+regulation of biological process,CCND1
+regulation of biological process,CCNE1
+regulation of biological process,CDK4
+regulation of biological process,CEP350
+regulation of biological process,CEP55
+regulation of biological process,CFDP1
+regulation of biological process,CIT
+regulation of biological process,CITED2
+regulation of biological process,CNOT2
+regulation of biological process,DDA1
+regulation of biological process,DICER1
+regulation of biological process,DNM1L
+regulation of biological process,DOCK7
+regulation of biological process,DPRX
+regulation of biological process,E2F3
+regulation of biological process,EIF4G1
+regulation of biological process,FBXW11
+regulation of biological process,FRS2
+regulation of biological process,FZR1
+regulation of biological process,G6PD
+regulation of biological process,GATAD1
+regulation of biological process,GCN1
+regulation of biological process,GLMN
+regulation of biological process,GRSF1
+regulation of biological process,H1-2
+regulation of biological process,HAMP
+regulation of biological process,HAPSTR1
+regulation of biological process,HSF1
+regulation of biological process,ILK
+regulation of biological process,KAT6A
+regulation of biological process,KCTD10
+regulation of biological process,KDM2A
+regulation of biological process,KIF20A
+regulation of biological process,KIF2C
+regulation of biological process,KMT2A
+regulation of biological process,KMT2B
+regulation of biological process,KMT5A
+regulation of biological process,KRAS
+regulation of biological process,KRT8
+regulation of biological process,L3MBTL3
+regulation of biological process,LIN52
+regulation of biological process,LIN54
+regulation of biological process,LMNB1
+regulation of biological process,LRFN1
+regulation of biological process,LSM14A
+regulation of biological process,LST1
+regulation of biological process,MAD2L1BP
+regulation of biological process,MAEA
+regulation of biological process,MAP3K7
+regulation of biological process,MARK2
+regulation of biological process,MATN1
+regulation of biological process,MECOM
+regulation of biological process,MED1
+regulation of biological process,MED25
+regulation of biological process,MEN1
+regulation of biological process,METAP1
+regulation of biological process,MFN2
+regulation of biological process,MIB1
+regulation of biological process,MIIP
+regulation of biological process,MIOS
+regulation of biological process,MOB4
+regulation of biological process,MTERF3
+regulation of biological process,MYBL2
+regulation of biological process,NCCRP1
+regulation of biological process,NELFB
+regulation of biological process,NSMCE2
+regulation of biological process,PARD3
+regulation of biological process,PARD6B
+regulation of biological process,PARL
+regulation of biological process,PARN
+regulation of biological process,PAX8
+regulation of biological process,PCBD2
+regulation of biological process,PCGF1
+regulation of biological process,PDCD2
+regulation of biological process,PDS5B
+regulation of biological process,PFDN1
+regulation of biological process,PI16
+regulation of biological process,PLAA
+regulation of biological process,PLEKHF1
+regulation of biological process,POLR2M
+regulation of biological process,PPP2R3C
+regulation of biological process,PPP4R2
+regulation of biological process,PSME3
+regulation of biological process,PSTK
+regulation of biological process,RAB18
+regulation of biological process,RAD51B
+regulation of biological process,RAD51D
+regulation of biological process,RAF1
+regulation of biological process,RANBP2
+regulation of biological process,RASGRP4
+regulation of biological process,RELA
+regulation of biological process,RHPN1
+regulation of biological process,RICTOR
+regulation of biological process,RNF31
+regulation of biological process,SAMD4B
+regulation of biological process,SCD
+regulation of biological process,SEC16A
+regulation of biological process,SKP2
+regulation of biological process,SLC25A5
+regulation of biological process,SLC30A9
+regulation of biological process,SLC7A1
+regulation of biological process,SMARCA4
+regulation of biological process,SMARCA5
+regulation of biological process,SNAP23
+regulation of biological process,SOX17
+regulation of biological process,SPAG5
+regulation of biological process,STRIP1
+regulation of biological process,STX4
+regulation of biological process,STXBP3
+regulation of biological process,SUPT3H
+regulation of biological process,SUPT7L
+regulation of biological process,SUZ12
+regulation of biological process,TACC3
+regulation of biological process,TAFAZZIN
+regulation of biological process,TARM1
+regulation of biological process,TDG
+regulation of biological process,TMED10
+regulation of biological process,TMED2
+regulation of biological process,TRAF2
+regulation of biological process,TRUB2
+regulation of biological process,TWF1
+regulation of biological process,TXNRD1
+regulation of biological process,UBE2J2
+regulation of biological process,UBQLN4
+regulation of biological process,USP1
+regulation of biological process,VBP1
+regulation of biological process,VEZF1
+regulation of biological process,VPS4B
+regulation of biological process,VTI1B
+regulation of biological process,WDR48
+regulation of biological process,WT1
+regulation of biological process,WWTR1
+regulation of biological process,XRCC2
+regulation of biological process,YTHDC1
+regulation of biological process,YTHDF2
+regulation of biological process,ZC3H3
+regulation of biological process,ZDHHC11
+regulation of biological process,ZEB1
+regulation of biological process,ZFP36L1
+regulation of biological process,ZFP69
+regulation of biological process,ZNF496
+regulation of biological process,ZNF780B
+regulation of biological process,ZNF875
+modification-dependent protein catabolic process,APC
+modification-dependent protein catabolic process,BIRC2
+modification-dependent protein catabolic process,DDA1
+modification-dependent protein catabolic process,FBXW11
+modification-dependent protein catabolic process,FZR1
+modification-dependent protein catabolic process,GLMN
+modification-dependent protein catabolic process,HAMP
+modification-dependent protein catabolic process,KCTD10
+modification-dependent protein catabolic process,L3MBTL3
+modification-dependent protein catabolic process,MAEA
+modification-dependent protein catabolic process,MIB1
+modification-dependent protein catabolic process,NCCRP1
+modification-dependent protein catabolic process,PLAA
+modification-dependent protein catabolic process,SKP2
+modification-dependent protein catabolic process,UBE2H
+modification-dependent protein catabolic process,UBE2J2
+modification-dependent protein catabolic process,UBQLN4
+modification-dependent protein catabolic process,VPS4B
+modification-dependent protein catabolic process,WDR26
+modification-dependent protein catabolic process,WWTR1
+primary metabolic process,AARS2
+primary metabolic process,ACLY
+primary metabolic process,ACTR3
+primary metabolic process,ALDOC
+primary metabolic process,APC
+primary metabolic process,APLP1
+primary metabolic process,ARID1A
+primary metabolic process,ARID2
+primary metabolic process,ATAD2
+primary metabolic process,ATP5F1C
+primary metabolic process,ATP5MC1
+primary metabolic process,ATXN7L3
+primary metabolic process,BIRC2
+primary metabolic process,BRD8
+primary metabolic process,BRMS1
+primary metabolic process,BRPF1
+primary metabolic process,BTAF1
+primary metabolic process,C1D
+primary metabolic process,CCNC
+primary metabolic process,CCND1
+primary metabolic process,CCNE1
+primary metabolic process,CDK4
+primary metabolic process,CEP350
+primary metabolic process,CIT
+primary metabolic process,CITED2
+primary metabolic process,CNOT2
+primary metabolic process,DCLRE1B
+primary metabolic process,DDA1
+primary metabolic process,DDX39B
+primary metabolic process,DICER1
+primary metabolic process,DNM1L
+primary metabolic process,DOCK7
+primary metabolic process,DPRX
+primary metabolic process,E2F3
+primary metabolic process,EFR3A
+primary metabolic process,EIF4G1
+primary metabolic process,ELOF1
+primary metabolic process,ESF1
+primary metabolic process,EXOSC1
+primary metabolic process,FBXW11
+primary metabolic process,FZR1
+primary metabolic process,G6PD
+primary metabolic process,GATAD1
+primary metabolic process,GCN1
+primary metabolic process,GGN
+primary metabolic process,GLMN
+primary metabolic process,GRSF1
+primary metabolic process,H1-2
+primary metabolic process,HAMP
+primary metabolic process,HSF1
+primary metabolic process,ILK
+primary metabolic process,KAT6A
+primary metabolic process,KCTD10
+primary metabolic process,KDM2A
+primary metabolic process,KMT2A
+primary metabolic process,KMT2B
+primary metabolic process,KMT5A
+primary metabolic process,KRAS
+primary metabolic process,L3MBTL3
+primary metabolic process,LAGE3
+primary metabolic process,LARS2
+primary metabolic process,LIN52
+primary metabolic process,LIN54
+primary metabolic process,LSM14A
+primary metabolic process,MAEA
+primary metabolic process,MAP3K7
+primary metabolic process,MARK2
+primary metabolic process,MECOM
+primary metabolic process,MED1
+primary metabolic process,MED25
+primary metabolic process,MEN1
+primary metabolic process,METAP1
+primary metabolic process,METTL15
+primary metabolic process,METTL17
+primary metabolic process,MIB1
+primary metabolic process,MPHOSPH6
+primary metabolic process,MRPL11
+primary metabolic process,MRPL33
+primary metabolic process,MRPS10
+primary metabolic process,MRPS11
+primary metabolic process,MRPS12
+primary metabolic process,MRPS14
+primary metabolic process,MRPS18B
+primary metabolic process,MRPS23
+primary metabolic process,MRPS9
+primary metabolic process,MTERF3
+primary metabolic process,MYBL2
+primary metabolic process,NCCRP1
+primary metabolic process,NDUFA2
+primary metabolic process,NELFB
+primary metabolic process,NSMCE2
+primary metabolic process,PARD3
+primary metabolic process,PARL
+primary metabolic process,PARN
+primary metabolic process,PAX8
+primary metabolic process,PCBD2
+primary metabolic process,PCGF1
+primary metabolic process,PFDN1
+primary metabolic process,PIGS
+primary metabolic process,PLAA
+primary metabolic process,POLR2M
+primary metabolic process,PPP4R2
+primary metabolic process,PRPF39
+primary metabolic process,PSME3
+primary metabolic process,PSTK
+primary metabolic process,RAB6A
+primary metabolic process,RAD51B
+primary metabolic process,RAD51D
+primary metabolic process,RAF1
+primary metabolic process,RANBP2
+primary metabolic process,RELA
+primary metabolic process,RICTOR
+primary metabolic process,RNF31
+primary metabolic process,RPL28
+primary metabolic process,RRP36
+primary metabolic process,SAMD4B
+primary metabolic process,SCD
+primary metabolic process,SKP2
+primary metabolic process,SLC30A9
+primary metabolic process,SLC44A3
+primary metabolic process,SLC4A7
+primary metabolic process,SMARCA4
+primary metabolic process,SMARCA5
+primary metabolic process,SOX17
+primary metabolic process,SUPT3H
+primary metabolic process,SUPT7L
+primary metabolic process,SUZ12
+primary metabolic process,TAFAZZIN
+primary metabolic process,TDG
+primary metabolic process,TMED10
+primary metabolic process,TMED2
+primary metabolic process,TOE1
+primary metabolic process,TRAF2
+primary metabolic process,TRUB2
+primary metabolic process,TTC4
+primary metabolic process,TTF2
+primary metabolic process,UBE2H
+primary metabolic process,UBE2J2
+primary metabolic process,UBQLN4
+primary metabolic process,UQCRC2
+primary metabolic process,USP1
+primary metabolic process,VBP1
+primary metabolic process,VEZF1
+primary metabolic process,VPS4B
+primary metabolic process,WDR26
+primary metabolic process,WDR48
+primary metabolic process,WT1
+primary metabolic process,WWTR1
+primary metabolic process,XRCC2
+primary metabolic process,XYLT2
+primary metabolic process,YTHDC1
+primary metabolic process,YTHDF2
+primary metabolic process,ZC3H3
+primary metabolic process,ZDHHC11
+primary metabolic process,ZEB1
+primary metabolic process,ZFP36L1
+primary metabolic process,ZFP69
+primary metabolic process,ZNF496
+primary metabolic process,ZNF780B
+primary metabolic process,ZNF875
+negative regulation of RNA biosynthetic process,BRMS1
+negative regulation of RNA biosynthetic process,BTAF1
+negative regulation of RNA biosynthetic process,C1D
+negative regulation of RNA biosynthetic process,CCND1
+negative regulation of RNA biosynthetic process,CCNE1
+negative regulation of RNA biosynthetic process,CITED2
+negative regulation of RNA biosynthetic process,CNOT2
+negative regulation of RNA biosynthetic process,DICER1
+negative regulation of RNA biosynthetic process,FBXW11
+negative regulation of RNA biosynthetic process,H1-2
+negative regulation of RNA biosynthetic process,HAMP
+negative regulation of RNA biosynthetic process,HSF1
+negative regulation of RNA biosynthetic process,KAT6A
+negative regulation of RNA biosynthetic process,KDM2A
+negative regulation of RNA biosynthetic process,KMT5A
+negative regulation of RNA biosynthetic process,L3MBTL3
+negative regulation of RNA biosynthetic process,MECOM
+negative regulation of RNA biosynthetic process,MED1
+negative regulation of RNA biosynthetic process,MED25
+negative regulation of RNA biosynthetic process,MEN1
+negative regulation of RNA biosynthetic process,MTERF3
+negative regulation of RNA biosynthetic process,NELFB
+negative regulation of RNA biosynthetic process,PCGF1
+negative regulation of RNA biosynthetic process,RELA
+negative regulation of RNA biosynthetic process,SMARCA4
+negative regulation of RNA biosynthetic process,SMARCA5
+negative regulation of RNA biosynthetic process,SUZ12
+negative regulation of RNA biosynthetic process,TDG
+negative regulation of RNA biosynthetic process,WT1
+negative regulation of RNA biosynthetic process,WWTR1
+negative regulation of RNA biosynthetic process,ZEB1
+modification-dependent macromolecule catabolic process,APC
+modification-dependent macromolecule catabolic process,BIRC2
+modification-dependent macromolecule catabolic process,DDA1
+modification-dependent macromolecule catabolic process,FBXW11
+modification-dependent macromolecule catabolic process,FZR1
+modification-dependent macromolecule catabolic process,GLMN
+modification-dependent macromolecule catabolic process,HAMP
+modification-dependent macromolecule catabolic process,KCTD10
+modification-dependent macromolecule catabolic process,L3MBTL3
+modification-dependent macromolecule catabolic process,MAEA
+modification-dependent macromolecule catabolic process,MIB1
+modification-dependent macromolecule catabolic process,NCCRP1
+modification-dependent macromolecule catabolic process,PLAA
+modification-dependent macromolecule catabolic process,SKP2
+modification-dependent macromolecule catabolic process,UBE2H
+modification-dependent macromolecule catabolic process,UBE2J2
+modification-dependent macromolecule catabolic process,UBQLN4
+modification-dependent macromolecule catabolic process,VPS4B
+modification-dependent macromolecule catabolic process,WDR26
+modification-dependent macromolecule catabolic process,WWTR1
+proteasomal protein catabolic process,APC
+proteasomal protein catabolic process,BIRC2
+proteasomal protein catabolic process,DDA1
+proteasomal protein catabolic process,FBXW11
+proteasomal protein catabolic process,FZR1
+proteasomal protein catabolic process,GLMN
+proteasomal protein catabolic process,HAMP
+proteasomal protein catabolic process,KCTD10
+proteasomal protein catabolic process,MAEA
+proteasomal protein catabolic process,NCCRP1
+proteasomal protein catabolic process,PLAA
+proteasomal protein catabolic process,PSME3
+proteasomal protein catabolic process,SKP2
+proteasomal protein catabolic process,UBE2H
+proteasomal protein catabolic process,UBE2J2
+proteasomal protein catabolic process,UBQLN4
+proteasomal protein catabolic process,WDR26
+proteasomal protein catabolic process,WWTR1
+apoptotic process,APC
+apoptotic process,APLP1
+apoptotic process,BIRC2
+apoptotic process,BRD8
+apoptotic process,BRMS1
+apoptotic process,C1D
+apoptotic process,CCND1
+apoptotic process,CFDP1
+apoptotic process,CIT
+apoptotic process,CITED2
+apoptotic process,DICER1
+apoptotic process,DNM1L
+apoptotic process,E2F3
+apoptotic process,FRS2
+apoptotic process,G6PD
+apoptotic process,HSF1
+apoptotic process,KMT2A
+apoptotic process,KRAS
+apoptotic process,KRT8
+apoptotic process,MAEA
+apoptotic process,MAP3K7
+apoptotic process,MECOM
+apoptotic process,MED1
+apoptotic process,MFN2
+apoptotic process,MYBL2
+apoptotic process,PARL
+apoptotic process,PAX8
+apoptotic process,PDCD2
+apoptotic process,PLEKHF1
+apoptotic process,PSME3
+apoptotic process,RAF1
+apoptotic process,RELA
+apoptotic process,RICTOR
+apoptotic process,SKP2
+apoptotic process,SLC25A5
+apoptotic process,STX4
+apoptotic process,TRAF2
+apoptotic process,WT1
+apoptotic process,XRCC2
+apoptotic process,ZFP36L1
+positive regulation of cell cycle,CCND1
+positive regulation of cell cycle,CCNE1
+positive regulation of cell cycle,CDK4
+positive regulation of cell cycle,CIT
+positive regulation of cell cycle,CITED2
+positive regulation of cell cycle,EIF4G1
+positive regulation of cell cycle,HSF1
+positive regulation of cell cycle,MAD2L1BP
+positive regulation of cell cycle,MAP3K7
+positive regulation of cell cycle,MED1
+positive regulation of cell cycle,NSMCE2
+positive regulation of cell cycle,RAD51B
+positive regulation of cell cycle,SPAG5
+positive regulation of cell cycle,VPS4B
