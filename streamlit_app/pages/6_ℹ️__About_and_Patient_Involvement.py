@@ -124,12 +124,6 @@ with col1:
 
 with col2:
     st.markdown("""
-    <div class="section-card">
-        <h3>📊 Linked Breakthrough Research Priorities</h3>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    st.markdown("""
     <div style="background: #E8F4FD; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid #4A90E2;">
         <strong>🎯 Priority 1: Poor Prognosis Cancers</strong><br>
         Increase research investment into poor prognosis cancers prioritising lung, oesophageal, ovarian, pancreatic, brain, liver and stomach cancers
