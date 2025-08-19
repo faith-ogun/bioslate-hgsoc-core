@@ -15,6 +15,7 @@ scipy
 holoviews
 bokeh
 seaborn
+lifelines
 
 # For JSON data, APIs, and HTTP requests
 requests
