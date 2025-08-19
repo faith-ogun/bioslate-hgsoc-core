@@ -190,11 +190,7 @@ with col2:
     st.image("streamlit_app/assets/bioslate_logo.png", use_container_width=True)
 
 # Platform Overview Infographic
-st.markdown('<h2 class="section-header">📊 Platform Overview</h2>', unsafe_allow_html=True)
-
-st.markdown("""
-<div class="infographic-container">
-""", unsafe_allow_html=True)
+st.markdown('<h2 class="section-header">Platform Overview</h2>', unsafe_allow_html=True)
 
 st.image("streamlit_app/assets/bioslate_infographic.png", use_container_width=True, caption="BioSLATE Platform Architecture and Workflow")
 
