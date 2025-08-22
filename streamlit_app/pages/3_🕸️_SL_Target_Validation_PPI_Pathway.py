@@ -214,7 +214,7 @@ with col4:
 
 st.markdown("""
 **Key Findings:**
-- While direct protein interactions are rare (4.2% in BioGRID, 7.6% in STRING), **84.4% of biomarker-target pairs share common interactors**
+- While direct protein interactions are rare (4.2% in BioGRID, 2.1% in STRING), **84.4% of biomarker-target pairs share common interactors**
 - **16.9% show statistically significant network overlap** (p < 0.05), indicating coherent functional modules
 - Shared interactors include key oncogenic regulators: **MYC, CDK9, PARP1**
 - **Network-mediated relationships dominate over direct interactions**, supporting a modular disruption model
