@@ -132,7 +132,7 @@ st.markdown("""
 <div class="main-header">
     <h1>🕸️ Network & Pathway Analysis of Potent Synthetic Lethal Targets</h1>
     <div class="caption">Protein-protein interactions, pathway enrichment, and network topology analysis</div>
-    <div class="last-updated">Last updated: August 19th, 2025</div>
+    <div class="last-updated">Last updated: August 22nd, 2025</div>
 </div>
 """, unsafe_allow_html=True)
 
