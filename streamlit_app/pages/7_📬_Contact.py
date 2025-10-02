@@ -109,7 +109,7 @@ with col1:
     Project Supervisor  
 
     **Dr. Metin Yazar**  
-    Postdoctoral Researcher, UCD 
+    Postdoctoral Researcher, UCD  
     Mentor  
     """)
 
