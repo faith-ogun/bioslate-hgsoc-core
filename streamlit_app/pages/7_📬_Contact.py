@@ -94,13 +94,13 @@ with col1:
     ### 📍 UCD Cancer Data Lab
 
     **Faith Ogundimu**  
-    GOIPG IRC RCSI PhD Candidate  
+    Government of Ireland Postgraduate Scholar  
     ✉️ [faithogun12@gmail.com](mailto:faithogun12@gmail.com)  
-    ✉️ [faith.ogundimu@rcsi.ie](mailto:faith.ogundimu@rcsi.ie)  
+    ✉️ [faithogundimu25@rcsi.ie](mailto:faithogundimu25@rcsi.ie)  
     🔗 [LinkedIn](https://www.linkedin.com/in/faith-ogundimu)  
     🖥️ [UCD Cancer Data Lab](https://cancerdata.ucd.ie/)  
 
-    Passionate about advancing precision oncology through bioinformatics and AI.  
+    Passionate about advancing precision oncology and mechanistic discovery oncology through bioinformatics and AI.  
 
     ---
 
@@ -109,7 +109,7 @@ with col1:
     Project Supervisor  
 
     **Dr. Metin Yazar**  
-    Postdoctoral Researcher  
+    Postdoctoral Researcher, UCD 
     Mentor  
     """)
 
@@ -143,7 +143,7 @@ st.markdown("""
         Developed in collaboration with <strong style="color: #1e40af;">Breakthrough Cancer Research</strong>
     </div>
     <div style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">
-        Advancing precision oncology through computational genomics and artificial intelligence
+        Advancing precision oncology and mechanistic discovery oncology through computational genomics and artificial intelligence
     </div>
 </div>
 """, unsafe_allow_html=True)
